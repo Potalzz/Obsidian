@@ -35,7 +35,8 @@
               "title": "프로토콜 (Protocol)"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,13 +207,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "00b391fafccc6cef",
+  "active": "a9a78c54a5a0e46a",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념",
     "4. Archive(자료 보관소)/잡/생각.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/역전파 알고리즘.md",

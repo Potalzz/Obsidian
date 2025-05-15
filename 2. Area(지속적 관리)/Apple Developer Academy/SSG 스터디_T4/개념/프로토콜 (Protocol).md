@@ -64,16 +64,33 @@ enum Direction: Descriable {
 >계약서(프로토콜)를 사람(struct), 로봇(class), 버튼(enum)등 누구든 따를 수 있다.
 
 
-### 기본 구현 제공 가능(Protocol Extension)
->공통 동작을 extension으로 제공한다.
+### 프로토콜 확장 (Protocol Extension)
+>프로토콜에 기본 구현을 제공할 수 있게 해준다.
 
 ```
+protocol Drawable {
+	func draw()
+	func prepare()
+}
+
+// 프로토콜 확장으로 기본 구현 제공
 extension Drawable {
 	func draw() {
-		
+		print("기본 그리기 구현")
+	}
+
+	func prepare() {
+		print("그리기 준비 중...")
+	}
+
+	// 프로토콜에 없는 추가 메서드 제공 가능
+	func clean() {
+		print("그리기 도구 정리 중...")
 	}
 }
 ```
+>
+
 
 
 

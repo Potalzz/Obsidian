@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
+                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Week 1 \" Protocol\""
+              "title": "프로토콜 (Protocol)"
             }
           },
           {
@@ -35,8 +35,7 @@
               "title": "프로토콜 (Protocol)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,7 +207,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a9a78c54a5a0e46a",
+  "active": "00b391fafccc6cef",
   "lastOpenFiles": [
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",

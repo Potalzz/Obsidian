@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"ea676ce884d1d7d1","type":"text","text":"벡터\n숫자를 리스트로 가지는 방향과 크기\n공간에서 한 \"점\" 혹은 원점으로 부터 상대적 위치\n어떠한 목표에 대해서 가리키고 있는 방향.\n예를 들어 500,240에 있다가 아니라\n500,240쪽 방향이다라는 의미.\n","x":-260,"y":200,"width":500,"height":240},
+		{"id":"c503b08cbe3843d9","type":"text","text":"선형대수학","x":-99,"y":-60,"width":179,"height":50},
+		{"id":"de8358e60526c7a5","type":"text","text":"영벡터\n0으로 이루어진 벡터","x":380,"y":280,"width":260,"height":81},
+		{"id":"886e8494a626bc7b","type":"text","text":"기저벡터\n각 좌표에 존재하는 그 좌표가 가리키는 방향으로의 단위벡터","x":380,"y":45,"width":340,"height":128},
+		{"id":"97cd8e3fc79b1272","type":"text","text":"단위벡터\n크기가 1이고 방향을 갖는 벡터","x":840,"y":50,"width":360,"height":119},
+		{"id":"4a38d9f2e76fda6b","type":"text","text":"노름\n벡터의 크기(길이)를 의미","x":380,"y":480,"width":300,"height":102}
+	],
+	"edges":[
+		{"id":"aa0555f0783065c7","fromNode":"c503b08cbe3843d9","fromSide":"bottom","toNode":"ea676ce884d1d7d1","toSide":"top"},
+		{"id":"8f5601138a19df32","fromNode":"ea676ce884d1d7d1","fromSide":"right","toNode":"886e8494a626bc7b","toSide":"left"},
+		{"id":"f1069e7d70436189","fromNode":"886e8494a626bc7b","fromSide":"right","toNode":"97cd8e3fc79b1272","toSide":"left"},
+		{"id":"0cc72dcf630c1289","fromNode":"ea676ce884d1d7d1","fromSide":"right","toNode":"de8358e60526c7a5","toSide":"left"},
+		{"id":"95fece1df3465114","fromNode":"ea676ce884d1d7d1","fromSide":"right","toNode":"4a38d9f2e76fda6b","toSide":"left"}
+	]
+}

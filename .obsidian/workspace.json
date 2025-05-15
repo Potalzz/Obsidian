@@ -1,0 +1,264 @@
+{
+  "main": {
+    "id": "8b262d2cb5ed27dc",
+    "type": "split",
+    "children": [
+      {
+        "id": "a534f0184485cbaf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "09ab065879faa273",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/리서치 정리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "리서치 정리"
+            }
+          },
+          {
+            "id": "31de6f5a7780f0d0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "세션 내용 기록"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e42e474d312bc044",
+    "type": "split",
+    "children": [
+      {
+        "id": "b7f344e81a3a46e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cb03ac896b648f56",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "01219ce1a86a8da8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "4bf21600524f598a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "46bfd7d2e1cbbdba",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 253.50247192382812,
+    "collapsed": true
+  },
+  "right": {
+    "id": "16a9b7a976caad7b",
+    "type": "split",
+    "children": [
+      {
+        "id": "ea42b6b9d4b17c9b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "91909a1594df59eb",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "c7f8adb2f12b48e6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "59f09496a32487ab",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "afe0019c26227e61",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          },
+          {
+            "id": "f189b04168ee1d17",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "obsidian-file-cleaner:Clean files": false
+    }
+  },
+  "active": "31de6f5a7780f0d0",
+  "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/리서치 정리.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/정처기 필기 기출 풀이.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/정처기 필기 개념정리.md",
+    "Pasted image 20250512205530.png",
+    "쉘.md",
+    "첨부 파일 소스/Image File 1/Pasted image 20250510150812.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250510204416.png",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/가능도.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/결합분포.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/경사하강법.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/공부 방향.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/연쇄법칙.md",
+    "첨부 파일 소스/Image File 1/Pasted image 20250512005723.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250512005254.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250512005241.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250511211846.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250511210359.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250511210336.png",
+    "첨부 파일 소스/Image File 1/Pasted image 20250511174636.png",
+    "Excalidraw/Drawing 2025-05-10 16.12.11.excalidraw.md",
+    "Excalidraw",
+    "2025-04-08.md",
+    "무제.md",
+    "무제.canvas",
+    "무제 2.canvas",
+    "무제 1.canvas",
+    "2. Area(지속적 관리)/Apple Developer Academy/메모.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사",
+    "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/Bridge 2.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/회고.md",
+    "2. Area(지속적 관리)/Apple Developer Academy",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/기초확률론.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/데이터 샘플링.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/로그함수.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/딥러닝 공부 정리.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/몬테카를로 샘플링.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/선형결합.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/기울기(Gradient).md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/활성함수.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학.canvas",
+    "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트",
+    "무제",
+    "3. Resource(정보 저장소)/ADA",
+    "1. Project(진행 중인 프로젝트)/프로그래밍",
+    "4. Archive/AI 공부/Ai Tech 딥러닝 공부/선형대수학.canvas"
+  ]
+}

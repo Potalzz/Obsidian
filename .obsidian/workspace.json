@@ -103,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -119,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Welcome.md",
+                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +130,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Welcome"
+              "title": "프로토콜 (Protocol) 의 백링크"
             }
           },
           {
@@ -209,10 +210,11 @@
   },
   "active": "a9a78c54a5a0e46a",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념",
     "4. Archive(자료 보관소)/잡/생각.md",
@@ -253,7 +255,6 @@
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/기초확률론.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/데이터 샘플링.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/로그함수.md",
-    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/딥러닝 공부 정리.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학.canvas",
     "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트",

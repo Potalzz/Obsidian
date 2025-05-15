@@ -64,7 +64,18 @@ enum Direction: Descriable {
 >계약서(프로토콜)를 사람(struct), 로봇(class), 버튼(enum)등 누구든 따를 수 있다.
 
 
-### 기본 구현 
+### 기본 구현 제공 가능(Protocol Extension)
+>공통 동작을 extension으로 제공한다.
+
+```
+extension Drawable {
+	func draw() {
+		
+	}
+}
+```
+
+
 
 ## 3. 프로토콜은 왜 사용할까 ?
 

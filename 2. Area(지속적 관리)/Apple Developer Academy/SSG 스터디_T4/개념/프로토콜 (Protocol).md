@@ -35,9 +35,23 @@ protocol Vehicle {
 
 ### 다중 채택 가능
 > 여러 프로토콜을 한 타입에 동시에 적용 가능하다.
+
+
+#### 예시
+```
+protocol Flyable {
+	...
+}
+
+protocol Shootable {
+	...
+}
+
+class Jet: Flyable, Shootable {
+	...
+}
+```
 > 
-
-
 
 
 

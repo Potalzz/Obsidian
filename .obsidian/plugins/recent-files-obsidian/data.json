@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "생각",
+      "path": "4. Archive(자료 보관소)/잡/생각.md"
+    },
+    {
       "basename": "Week 1 \" Protocol\"",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "미분",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/미분.md"
-    },
-    {
-      "basename": "numpy",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/numpy.md"
     }
   ],
   "omittedPaths": [],

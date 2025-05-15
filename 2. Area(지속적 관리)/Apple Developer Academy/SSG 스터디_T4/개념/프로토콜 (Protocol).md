@@ -20,16 +20,16 @@
 ## 2. 프로토콜의 특징은 어떤 것이 있을까 ?
 
 ### 추상화 도구
-> 기능만 명시하고, 구현은 하지 않는다.
+>기능만 명시하고, 구현은 하지 않는다.
 
 
 #### 예시
 ```
-protocol Vehicle { func
- drive()
+protocol Vehicle {
+	func drive()
 }
 ```
-
+>각 타입이 drive를 구체화한다.
 
 
 

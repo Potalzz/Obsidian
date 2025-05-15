@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "Challenge 2",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md"
+    },
+    {
+      "basename": "Week 1 \"미정\"",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \"미정\".md"
+    },
+    {
+      "basename": "역전파 알고리즘",
+      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/역전파 알고리즘.md"
+    },
+    {
       "basename": "세션 내용 기록",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md"
+    },
+    {
+      "basename": "무제",
+      "path": "무제.canvas"
     },
     {
       "basename": "리서치 정리",
@@ -55,10 +71,6 @@
     {
       "basename": "메모",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/메모.md"
-    },
-    {
-      "basename": "Challenge 2",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md"
     },
     {
       "basename": "Bridge 2",
@@ -177,10 +189,6 @@
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/연속확률분포.md"
     },
     {
-      "basename": "역전파 알고리즘",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/역전파 알고리즘.md"
-    },
-    {
       "basename": "신경망(neural network)",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/신경망(neural network).md"
     },
@@ -191,14 +199,6 @@
     {
       "basename": "numpy",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/numpy.md"
-    },
-    {
-      "basename": "선형대수학",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학.canvas"
-    },
-    {
-      "basename": "교차 엔트로피",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/교차 엔트로피.md"
     }
   ],
   "omittedPaths": [],

@@ -122,7 +122,6 @@ protocol Container {
 > 여러 타입이 동일한 동작을 하도록 설계할 수 있다.
 
 #### 예시
-
 ```
 protocol Playable {
 	func play()
@@ -140,14 +139,13 @@ struct Video: Playable {
 	}
 }
 ```
-> Song과 Video 모두 Playable을 채택하여 공통 동작 `play()`를 구현한다.
+>Song과 Video 모두 Playable을 채택하여 공통 동작 `play()`를 구현한다.
 
 "재생 가능한 미디어"라는 공통 리모컨을 통해 다양한 기기를 같은 방식으로 제어할 수 있다.
 
 ---
 
 ### 유연한 설계 (추상화)
-
 > 타입이 아닌 역할(행동) 중심으로 설계할 수 있다.
 
 #### 예시
@@ -173,7 +171,6 @@ class ViewModel {
 ---
 
 ### 테스트 용이성 (Mock 가능)
-
 > 실제 구현체 없이도 테스트 가능
 
 #### 예시

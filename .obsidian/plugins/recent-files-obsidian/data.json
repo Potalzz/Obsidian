@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "팀장",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/팀장.md"
-    },
-    {
       "basename": "프로토콜 (Protocol)",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
+    },
+    {
+      "basename": "Swift",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
+    },
+    {
+      "basename": "할 일",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/할 일.md"
     },
     {
       "basename": "Week 1 \" Protocol\"",
@@ -15,10 +19,6 @@
     {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
-      "basename": "Swift",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
     },
     {
       "basename": "Challenge 2",

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/팀장.md",
+                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "팀장"
+              "title": "프로토콜 (Protocol)"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/팀장.md",
+                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "팀장 의 백링크"
+              "title": "프로토콜 (Protocol) 의 백링크"
             }
           },
           {
@@ -194,11 +194,11 @@
   },
   "active": "00b391fafccc6cef",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/할 일.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/팀장.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념",

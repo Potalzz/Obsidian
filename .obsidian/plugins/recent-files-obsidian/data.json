@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "팀장",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/팀장.md"
+    },
+    {
       "basename": "프로토콜 (Protocol)",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "손실함수",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/손실함수.md"
-    },
-    {
-      "basename": "연속확률분포",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/연속확률분포.md"
     }
   ],
   "omittedPaths": [],

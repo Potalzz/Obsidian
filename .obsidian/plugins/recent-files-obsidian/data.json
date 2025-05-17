@@ -1,20 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "세션 내용 기록",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md"
-    },
-    {
       "basename": "Challenge 2",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md"
-    },
-    {
-      "basename": "프로토콜 (Protocol)",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
-    },
-    {
-      "basename": "Swift",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
     },
     {
       "basename": "할 일",
@@ -27,6 +15,26 @@
     {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "문법",
+      "path": "2. Area(지속적 관리)/Swift/문법.md"
+    },
+    {
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
+      "basename": "세션 내용 기록",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md"
+    },
+    {
+      "basename": "프로토콜 (Protocol)",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
+    },
+    {
+      "basename": "Swift",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
     },
     {
       "basename": "생각",
@@ -137,10 +145,6 @@
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/활성함수.md"
     },
     {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
-    },
-    {
       "basename": "Pasted image 20250409194719",
       "path": "첨부 파일 소스/이미지 파일 소스/image/Pasted image 20250409194719.png"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "정규분포",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/정규분포.md"
-    },
-    {
-      "basename": "손실함수",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/손실함수.md"
     }
   ],
   "omittedPaths": [],

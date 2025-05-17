@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "실기 개념정리",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
+    },
+    {
+      "basename": "필기 기출 풀이",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md"
+    },
+    {
+      "basename": "필기 개념정리",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md"
+    },
+    {
       "basename": "Challenge 2",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md"
     },
@@ -51,14 +63,6 @@
     {
       "basename": "리서치 정리",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/리서치 정리.md"
-    },
-    {
-      "basename": "정처기 필기 기출 풀이",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/정처기 필기 기출 풀이.md"
-    },
-    {
-      "basename": "정처기 필기 개념정리",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/정처기 필기 개념정리.md"
     },
     {
       "basename": "Pasted image 20250510150812",
@@ -195,10 +199,6 @@
     {
       "basename": "합성함수",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/합성함수.md"
-    },
-    {
-      "basename": "정규분포",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/정규분포.md"
     }
   ],
   "omittedPaths": [],

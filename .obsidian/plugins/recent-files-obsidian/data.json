@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "Swift 실전편 스터디",
+      "path": "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md"
+    },
+    {
       "basename": "클로저(Closure)",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md"
     },
@@ -43,10 +51,6 @@
     {
       "basename": "필기 개념정리",
       "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "문법",

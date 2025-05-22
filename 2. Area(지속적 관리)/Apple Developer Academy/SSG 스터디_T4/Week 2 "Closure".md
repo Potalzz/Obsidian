@@ -17,6 +17,8 @@
 
 > 이번 챌린지를 진행하면서 발생한 GQ를 작성해보세요!
 
+- 
+
 
 
 ## Guiding Activities

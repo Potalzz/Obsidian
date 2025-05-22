@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
+                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Swift 개념"
+              "title": "클로저(Closure)"
             }
           },
           {
@@ -181,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
+                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Swift 개념 의 개요"
+              "title": "클로저(Closure) 의 개요"
             }
           },
           {
@@ -224,9 +224,10 @@
   },
   "active": "71e4e5b03b2edda1",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/스트럭\b쳐 (Structure).md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
@@ -237,7 +238,6 @@
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/Swift/문법.md",
     "2. Area(지속적 관리)/Swift/단축키.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",

@@ -2,7 +2,19 @@
   "recentFiles": [
     {
       "basename": "Week 2 \"Structure\"",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Week 2 \"Structure\".md"
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Structure\".md"
+    },
+    {
+      "basename": "스트럭\b쳐 (Structure)",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/스트럭\b쳐 (Structure).md"
+    },
+    {
+      "basename": "Week 1 \" Protocol\"",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md"
+    },
+    {
+      "basename": "프로토콜 (Protocol)",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
     },
     {
       "basename": "할 일",
@@ -11,10 +23,6 @@
     {
       "basename": "세션 내용 기록",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md"
-    },
-    {
-      "basename": "프로토콜 (Protocol)",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
     },
     {
       "basename": "MIT 알고리즘 강의",
@@ -35,10 +43,6 @@
     {
       "basename": "Challenge 2",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md"
-    },
-    {
-      "basename": "Week 1 \" Protocol\"",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md"
     },
     {
       "basename": "Swift 개념",
@@ -195,10 +199,6 @@
     {
       "basename": "코딩 테스트",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/코딩 테스트.md"
-    },
-    {
-      "basename": "Hyper Parameter",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/Hyper Parameter.md"
     }
   ],
   "omittedPaths": [],

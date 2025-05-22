@@ -1,12 +1,12 @@
 {
   "recentFiles": [
     {
-      "basename": "Week 2 \"Structure\"",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Structure\".md"
+      "basename": "클로저(\bClosure)",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(\bClosure).md"
     },
     {
-      "basename": "스트럭\b쳐 (Structure)",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/스트럭\b쳐 (Structure).md"
+      "basename": "Week 2 \"Structure\"",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Structure\".md"
     },
     {
       "basename": "Week 1 \" Protocol\"",
@@ -195,10 +195,6 @@
     {
       "basename": "텐서",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/텐서.md"
-    },
-    {
-      "basename": "코딩 테스트",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/코딩 테스트.md"
     }
   ],
   "omittedPaths": [],

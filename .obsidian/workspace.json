@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Challenge 2"
+              "title": "세션 내용 기록"
             }
           },
           {
@@ -195,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Challenge 2 의 개요"
+              "title": "세션 내용 기록 의 개요"
             }
           },
           {
@@ -238,14 +238,14 @@
   },
   "active": "00b391fafccc6cef",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
+    "2. Area(지속적 관리)/Swift/단축키.md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md",
     "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
-    "2. Area(지속적 관리)/Swift/단축키.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/스트럭\b쳐 (Structure).md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",

@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
+                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "세션 내용 기록"
-            }
-          },
-          {
-            "id": "71e4e5b03b2edda1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "모임 내용"
+              "title": "실기 개념정리"
             }
           },
           {
@@ -63,8 +49,7 @@
               "title": "MIT 알고리즘 강의"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
+                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "모임 내용 의 개요"
+              "title": "실기 개념정리 의 개요"
             }
           },
           {
@@ -236,15 +221,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "71e4e5b03b2edda1",
+  "active": "00b391fafccc6cef",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
+    "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
+    "4. Archive(자료 보관소)/지원서/우아한 테크코스.md",
+    "4. Archive(자료 보관소)/지원서/애플 디벨로퍼 아카데미 지원서.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Swift/단축키.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md",
     "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
@@ -269,8 +256,6 @@
     "첨부 파일 소스/Image File 1/Pasted image 20250510204416.png",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/가능도.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/결합분포.md",
-    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/경사하강법.md",
-    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/공부 방향.md",
     "첨부 파일 소스/Image File 1/Pasted image 20250512005723.png",
     "첨부 파일 소스/Image File 1/Pasted image 20250512005254.png",
     "첨부 파일 소스/Image File 1/Pasted image 20250512005241.png",

@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "개발 관련",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md"
+    },
+    {
       "basename": "세션 내용 기록",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Ai 기초지식",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Ai 기초지식.md"
-    },
-    {
-      "basename": "코딩테스트",
-      "path": "첨부 파일 소스/이미지 파일 소스/Image File 1/image/코딩테스트.md"
     }
   ],
   "omittedPaths": [],

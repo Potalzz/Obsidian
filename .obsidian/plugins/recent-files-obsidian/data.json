@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
       "basename": "개발 관련",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md"
     },
@@ -41,10 +49,6 @@
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md"
     },
     {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
-    },
-    {
       "basename": "Challenge 1",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md"
     },
@@ -55,10 +59,6 @@
     {
       "basename": "Swift",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "프로토콜 (Protocol)",

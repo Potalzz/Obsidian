@@ -1139,3 +1139,30 @@ let array2: Array<Int>.init()
 ``` swift
 @frozen public struct Array<Element>
 ```
+
+
+#### 제네릭과 프로토콜 ?
+
+앞에서 설명했듯이, 제네릭은 아무 타입이나 받아와서 사용할 수 있다.
+
+그런데 문제는, 아무 타입이나 받아오기 때문에 해당 타입이 무엇을 할 수 있는지 알 수가 없다는 것이다!
+
+>예제를 통해 살펴보자.
+``` swift
+func decode<T>(_ data: Data) -> T {
+    // ❌ T가 JSON을 디코딩할 수 있다는 보장이 없잖아?
+    let decoded = try? JSONDecoder().decode(T.self, from: data)
+    return decoded // 오류 발생
+}
+```
+
+데이터를 받아와서 
+
+
+
+제네릭에는 다음과 같이 프로토콜을 붙여 사용할 수 있다.
+``` swift
+func decode<T: Decodable>(_ data: Data) -> T? {
+    return try? JSONDecoder().decode(T.self, from: data)
+}
+```

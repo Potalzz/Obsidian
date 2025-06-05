@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
+                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "클로저(Closure)"
+              "title": "Swift 개념"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "MIT 알고리즘 강의"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,13 +181,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md",
+                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "개발 관련 의 개요"
+              "title": "Swift 개념 의 개요"
             }
           },
           {
@@ -221,11 +222,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "00b391fafccc6cef",
+  "active": "03d39603a9391bbe",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Swift/단축키.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md",
+    "2. Area(지속적 관리)/Swift/단축키.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
     "Pasted image 20250529214618.png",
     "Pasted image 20250529213944.png",
@@ -237,13 +241,10 @@
     "4. Archive(자료 보관소)/지원서/애플 디벨로퍼 아카데미 지원서.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md",
     "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/스트럭\b쳐 (Structure).md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
     "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",

@@ -1041,8 +1041,55 @@ Swift Data의 큰 틀 정리
 
 쉽게 말해서 타입을 미리 지정하지 않고 인자를 받아서,
 실제 함수가 호출될 때 해당 매개변수의 타입으로 대체되는 Placeholder이다.
+**어떤 타입이든 담을 수 있는 통!**
 
 #### 제네릭 사용법
+
+##### 1. 제네릭 함수(Generic Function)
+``` swift
+// 일반 함수
+func printString(_ text: String) {
+    print(text)
+}
+
+// 제네릭 함수
+func printAnything<T>(_ value: T) {
+    print(value)
+}
+```
+**일반 함수**
+- 오직 `String`만 출력 가능
+
+**제네릭 함수**
+- `String`, `Int`, `Bool`, `Double`, `내가 만든 타입` 뭐든 다 출력 가능
+
+꺽새`< >`사이에 타입처럼 사용할 **임의의 이름**을 선언해주면,
+그 뒤로 해당 이름을 타입처럼 사용할 수 있다.
+
+위 코드에서는 `T`로 지정하였지만, 어떤 문자든 사용 가능하다.
+
+일반적으로는 T를 많이 사용하는데 그 이유는 바로바로...
+어떤 타입이 들어올 지 모르니까 **Type**의 이니셜을 따와서 대충 **T**라고 써두는 것.
+
+
+> **어떤 상황에서 유용하게 쓸 수 있을까 ?**
+
+**문자열을 스왑하는 함수를 만든다고 가정해보자.**
+
+```swift
+func swapTwoNumber (_ a: inout Int, _ b: inout Int) {
+	let tempA = a
+	a = b
+	b = tempA
+}
+```
+
+위와 같이 함수를 작성하면 잘 작동할 것 같아 보이지만...
+인자로 `Int`타입이 아닌 `Double`이나 다른 타입을 받는 경우 해당 타입을 받는 함수를 각각 제작해줘야 한다...
+
+이럴 때 **제네릭**을 유용하게 사용할 수 있다 !
+
+
 ``` swift
 func swapTwoValues<T>(_ a: inout: T, _ b: inout T) {
 	let tempA = a
@@ -1051,8 +1098,44 @@ func swapTwoValues<T>(_ a: inout: T, _ b: inout T) {
 }
 ```
 
-꺽새`< >`사이에 타입처럼 사용할 **임의의 이름**을 선언해주면,
-그 뒤로 해당 이름을 타입처럼 사용할 수 있다.
+무엇이든 담을 수 있는 제네릭 타입을 선언해주고`<T>` 해당 이름(`T`)을 타입이 들어가는 곳에 사용하면 된다.
 
-위 코드에서는 `T`로 지정하였지만, 어떤 문자든 사용 가능하다.
-(일반적으로는 구분짓기 쉽게 하기 위해서 `T`또는`V`사용)
+
+##### 2. 제네릭 타입(Generic Type)
+위에서 제네릭을 이용한 함수를 **제네릭 함수(Generic Function)** 이라고 하는데, 
+제네릭은 함수에만 가능한 것이 아니라 `구조체`, `클래스`, `열거형`, 타입에도 선언할 수 있는데,
+이것을 **제네릭 타입(Generic Type)** 이라고 한다.
+
+>만약 **Stack**을 제네릭 타입으로 만들고 싶다면 ?
+
+``` swift
+struct Stack<T> {
+	let items: [T] = []
+	
+	mutating func push(_ item: T) { ... }
+	mutating func pop() -> T { ... }
+}
+```
+
+이렇게 제네릭 타입으로 Stack을 선언할 수 있다.
+(**클래스와** **열거형** 또한 가능하다 !)
+
+> 제네릭 타입의 인스턴스를 생성할 땐 어떻게 해야할까 ?
+``` swift
+let stack1 = Stack<T> = .init()
+let stack2 = Stack<T>.init()
+```
+
+제네릭 타입을 사용할 땐 선언과 마찬가지로 `<>`를 통해 타입을 명시해주면 된다.
+
+그런데, 해당 방식은 어디서 많이 본 방식인데...
+바로바로 배열 생성할 때와 같은 방식이다 !
+``` swift
+let array1: Array<Int> = .init()
+let array2: Array<Int>.init()
+```
+
+**그 이유는 바로 Swift에서 Array가 제네릭 타입이기 때문이다 !**
+``` swift
+@frozen public struct Array<Element>
+```

@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "개발 관련",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md"
+    },
+    {
       "basename": "파티 상세 화면",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/파티 상세 화면.md"
     },
     {
-      "basename": "개발 관련",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md"
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
+      "basename": "MIT 알고리즘 강의",
+      "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
     },
     {
       "basename": "인코딩&디코딩(Encoding&Decoding)",
@@ -19,10 +27,6 @@
     {
       "basename": "문법",
       "path": "2. Area(지속적 관리)/Swift/문법.md"
-    },
-    {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
       "basename": "클로저(Closure)",
@@ -75,10 +79,6 @@
     {
       "basename": "Swift 실전편 스터디",
       "path": "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md"
-    },
-    {
-      "basename": "MIT 알고리즘 강의",
-      "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
     },
     {
       "basename": "필기 기출 풀이",

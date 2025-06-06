@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/파티 상세 화면.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "파티 상세 화면"
+              "title": "개발 관련"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
+                "file": "2. Area(지속적 관리)/Swift/단축키.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MIT 알고리즘 강의"
+              "title": "단축키"
             }
           }
         ]
@@ -180,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/파티 상세 화면.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "파티 상세 화면 의 개요"
+              "title": "개발 관련 의 개요"
             }
           },
           {
@@ -223,14 +223,15 @@
   },
   "active": "00b391fafccc6cef",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/파티 상세 화면.md",
+    "2. Area(지속적 관리)/Swift/단축키.md",
+    "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md",
     "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/Swift/문법.md",
     "2. Area(지속적 관리)/Swift/개념 노트",
     "2. Area(지속적 관리)/Swift/무제.md",
-    "2. Area(지속적 관리)/Swift/단축키.md",
     "인코딩/디코딩(Encoding/Decoding).md",
     "인코딩/디코딩(Encoding",
     "인코딩",
@@ -252,7 +253,6 @@
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md",
     "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/스트럭\b쳐 (Structure).md",
-    "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념",

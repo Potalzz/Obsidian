@@ -1196,3 +1196,59 @@ func drive<T: 운전면허있는사람>(_ person: T) {
 **Combine**은 시간에 따른 비동기 이벤트들을 처리하는 Swift API를 제공한다.
 
 콤바인은 시간에 따른 값을 제공할 수 있는 `Publishers`와 `Publishers`로부터 해당 값들을 받는 `Subscribers`로 정의된다.
+
+>C3 파티 상세화면 ViewModel에 쓰인 combine 알아보기
+``` swift
+private func setupObservers() {
+        // 에러 메시지 자동 숨김
+        $showError
+            .filter { $0 }
+            .delay(for: .seconds(3), scheduler: DispatchQueue.main)
+            .sink { [weak self] _ in
+                self?.showError = false
+                self?.errorMessage = nil
+            }
+            .store(in: &cancellables)
+    }
+```
+
+
+``` swift
+$showError
+```
+에러 발생 여부를 `@Published var showError: Bool`을 통해서 선언해둔다.
+`$showError`는 `showError`의 변경을 감지하는 `Publisher`임.
+즉, `showError`가 `true`나 `false`로 바뀌면 감지할 수 있다.
+
+```
+.filter { $0 }
+```
+`.filter { $0 }`는 `true`만 통과시킨다는 뜻이다.
+즉, `showError == true`일 때만 그 다음 단계로 넘어간다.
+`false`일 땐 무시.
+
+```swift
+.delay(for: .seconds(3), scheduler: DispatchQueue.main)
+```
+에러가 `true`되면 3초간 기다린다.
+(3초동안 에러메시지를 보여주고 그 다음 코드에서 사라지게 하기 위해)
+
+```swift
+.sink { [weak self] _ in
+	self?.showError = false
+	self?.errorMessage = nil
+}
+```
+
+3초가 지난 후 `showError`를 다시 `false`로 바꾸고,
+`errorMessage`도 nil로 지운다.
+
+```swift
+.store(in: &cancellables)
+```
+
+이 구독을 `cancellables`에 저장해 둬서, 뷰모델이 사라질 때 자동으로 구독이 해제되게 한다.
+
+`@Published`로 선언한 변수의 `$변수명`은 **Combine**에서 변경 사항을 감지하는 **Publisher**역할을 한다.
+`sink`는 그 변화에 대해 반응하는 **Subscriber(구독자)** 역할이다.
+

@@ -9,6 +9,10 @@
       "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
+      "basename": "CS 지식",
+      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
+    },
+    {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Git",
       "path": "3. Resource(정보 저장소)/프로그래밍/Git.md"
-    },
-    {
-      "basename": "Parameter",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/Parameter.md"
     }
   ],
   "omittedPaths": [],

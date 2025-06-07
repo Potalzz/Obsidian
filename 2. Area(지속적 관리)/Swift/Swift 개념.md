@@ -1252,3 +1252,5 @@ $showError
 `@Published`로 선언한 변수의 `$변수명`은 **Combine**에서 변경 사항을 감지하는 **Publisher**역할을 한다.
 `sink`는 그 변화에 대해 반응하는 **Subscriber(구독자)** 역할이다.
 
+`sink`, `assign`같은 **Combine** 구독 연산자를 사용할 때는 `store(in: &cancellables)`로 저장해 주어야 한다.
+

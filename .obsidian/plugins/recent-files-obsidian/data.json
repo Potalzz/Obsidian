@@ -5,6 +5,10 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md"
     },
     {
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "파티 상세 화면",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/파티 상세 화면.md"
-    },
-    {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
       "basename": "MIT 알고리즘 강의",

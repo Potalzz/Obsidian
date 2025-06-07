@@ -1254,3 +1254,14 @@ $showError
 
 `sink`, `assign`같은 **Combine** 구독 연산자를 사용할 때는 `store(in: &cancellables)`로 저장해 주어야 한다.
 
+**구독을 저장하지 않으면 ?**
+- **Combine**이 내부적으로 강하게 참조해서 구독이 계속 살아있게 된다.
+- 뷰모델이 사라져도 구독이 남아있게 되어, 결과적으로 메모리 누수가 발생한다.
+
+`Set<AnyCancellable>`는 `deinit` 시점에 안에 있는 구독들을 **자동으로 cancel**해주기 때문에, 
+별도로 신경 안 써도 돼서 편리하다.
+
+>++ 별도로 구독을 저장하지 않아도 되는 경우**
+	SwiftUI에서 `@Published`를 `View`에서 `@ObservedObject`, `@StateObject`로 자동 구독 할 때는 SwiftUI가 내부에서 알아서 해주기 때문에 store해주지 않아도 된다.
+
+

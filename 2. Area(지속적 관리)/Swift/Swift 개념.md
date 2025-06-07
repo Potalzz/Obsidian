@@ -1170,7 +1170,7 @@ func decode<T: Decodable>(_ data: Data) -> T? {
 그렇기에, `decode()`함수는 T가 JSON을 디코딩할 수 있는 타입일 때만 쓸 수 있다 !
 
 디코딩이 뭔지 헷갈린다면 ?
->**[[인코딩&디코딩(Encoding&Decoding)]]**
+>[[인코딩&디코딩(Encoding&Decoding)]]
 
 > **비유를 통해 더욱 간단하게 알아보자**
 
@@ -1187,4 +1187,10 @@ func drive<T: 운전면허있는사람>(_ person: T) {
 > “**T는 아무나 받아도 되긴 한데, 운전할 수 있어야 해!**”
 
 이런 조건을 건 것 !!
+
+
+### Combine Framework
+>비동기 이벤트를 핸들링할 수 있게 하는 Apple의 순정 Framework
+
+
 

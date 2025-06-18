@@ -1,28 +1,32 @@
 {
   "recentFiles": [
     {
-      "basename": "리서치 정리",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/리서치 정리.md"
-    },
-    {
-      "basename": "개발 관련",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/개발 관련.md"
-    },
-    {
-      "basename": "세션 내용 기록",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/세션 내용 기록.md"
-    },
-    {
-      "basename": "파티 상세 화면",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge3/파티 상세 화면.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+      "basename": "실기 개념정리",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
     },
     {
       "basename": "단축키",
       "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
+      "basename": "개발 관련",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/개발 관련.md"
+    },
+    {
+      "basename": "리서치 정리",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/리서치 정리.md"
+    },
+    {
+      "basename": "세션 내용 기록",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md"
+    },
+    {
+      "basename": "파티 상세 화면",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/파티 상세 화면.md"
+    },
+    {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "CS 지식",
@@ -51,10 +55,6 @@
     {
       "basename": "Swift",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
-    },
-    {
-      "basename": "실기 개념정리",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
     },
     {
       "basename": "Challenge 2",

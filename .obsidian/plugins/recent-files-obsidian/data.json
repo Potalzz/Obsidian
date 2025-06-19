@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "My Onething 발표",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/My Onething 발표.md"
+    },
+    {
       "basename": "실기 개념정리",
       "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Pasted image 20250409194719",
       "path": "첨부 파일 소스/이미지 파일 소스/image/Pasted image 20250409194719.png"
-    },
-    {
-      "basename": "Git",
-      "path": "3. Resource(정보 저장소)/프로그래밍/Git.md"
     }
   ],
   "omittedPaths": [],

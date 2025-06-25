@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "낙서장",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/낙서장.md"
+    },
+    {
       "basename": "모임 내용",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "활성함수",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/활성함수.md"
-    },
-    {
-      "basename": "Pasted image 20250409194719",
-      "path": "첨부 파일 소스/이미지 파일 소스/image/Pasted image 20250409194719.png"
     }
   ],
   "omittedPaths": [],

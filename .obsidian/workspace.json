@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/낙서장.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "모임 내용"
+              "title": "낙서장"
             }
           }
         ]
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/낙서장.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "모임 내용 의 개요"
+              "title": "낙서장 의 개요"
             }
           },
           {
@@ -195,6 +195,9 @@
   },
   "active": "e7780f6e120099e4",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/낙서장.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4",
     "2. Area(지속적 관리)/Apple Developer Academy/메모.md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/My Onething 발표.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
@@ -223,11 +226,9 @@
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 2.md",
     "4. Archive(자료 보관소)/지원서/우아한 테크코스.md",
     "4. Archive(자료 보관소)/지원서/애플 디벨로퍼 아카데미 지원서.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md",
-    "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념",
     "무제.canvas",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge3",
@@ -243,7 +244,6 @@
     "무제 1.canvas",
     "1. Project(진행 중인 프로젝트)/정보처리기사",
     "2. Area(지속적 관리)/Apple Developer Academy",
-    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학.canvas",
     "4. Archive/AI 공부/Ai Tech 딥러닝 공부/선형대수학.canvas"
   ]

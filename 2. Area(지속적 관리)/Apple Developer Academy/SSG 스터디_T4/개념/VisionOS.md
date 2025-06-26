@@ -38,6 +38,18 @@ VisionOS개발을 위해 애플에서 제공하는 대표적인 프레임워크�
 
 그럼, 가장 먼저 객체를 만들기 위해서는 **Anchor(위치), Material(재질), Model(객체)** 을 알아야 한다.
 
+#### Anchor(위치)
+객체를 생성하면 화면에 배치를 해야 하는데, 어떤 포인트를 통해서 트래킹하여 배치할 지를 지정한다.
+```
+let anchor = AnchorEntity(plane: .horizontal)
+```
+
+#### Material(재질)
+객체의 재질을 지정해준다.
+```
+let boxMaterial = SimpleMaterial(color: .systemPink, isMetalic: true)
+```
+color은 색상, isMetalic
 
 ### ARKit
 

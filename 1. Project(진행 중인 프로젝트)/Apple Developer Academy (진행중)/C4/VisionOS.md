@@ -103,3 +103,49 @@ materials에는 이전에 만든 재질을 지정해준다.
 
 
 ## 개발에 제약되는 사항은 뭐가 있을까 ?
+### ⚠️ 개인 개발자에게 적용되는 기술적 제약사항
+
+1. **Enterprise API 사용 불가**
+    
+    - 카메라 피드, LiDAR 센서 데이터 등 하드웨어 저수준 접근은 **기업 계정 전용**입니다[1](https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/)[2](https://framesixty.com/apple-vision-pro-development-for-enterprise/). 개인 개발자는 다음 기능을 구현할 수 없습니다:
+        
+    - 실시간 카메라 데이터를 활용한 AR 오버레이
+        
+    - LiDAR를 이용한 정밀 공간 매핑
+        
+    - 화면 캡처 시 패스스루 영상 포함[2](https://framesixty.com/apple-vision-pro-development-for-enterprise/)
+        
+2. **상호작용 데이터 접근 제한**
+    
+    - 시선 추적, 정교한 손동작 인식 데이터는 **'꼬집기' 제스처 수준**으로 제한됩니다[3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)[4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/):
+        
+    - 손 뼈대 정보 미제공 → 복잡한 제스처 구현 불가
+        
+    - 시선 위치 추적 불가 → 주의 집중도 분석 등 활용 제한
+        
+3. **공간 고정 API 부재**
+    
+    - 가상 오브젝트를 물리적 공간에 **영구 고정**할 수 없습니다[4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/):
+        
+    - "Magnetically Pinning" API 미구현 → 앱 재실행 시 위치 초기화
+        
+    - 가구/벽면에 UI 고정 불가 → 혼합현실 경험 제한적
+        
+4. **시각 효과 기술 한계**
+    
+    - Shader Graph에서 **HLSL(고급 셰이더 언어) 미지원**[5](https://www.gianty.com/apple-vision-pro-app-development/):
+        
+    - 복잡한 머티리얼 효과 구현 어려움
+        
+    - 파티클 시스템 제한 → 화려한 VFX 구현 불가능
+        
+
+### 🚫 개발이 특히 어려운 앱 유형
+
+|앱 유형|주요 제약사항|
+|---|---|
+|실시간 AR 증강 앱|카메라 피드 수정 불가([1](https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/)), 공간 고정 API 부재([4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/))|
+|정교한 제스처 제어 앱|손 뼈대 데이터 접근 불가([3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)), 시선 추적 제한([3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)[4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/))|
+|산업용 원격 지원 앱|기업 전용 패스스루 영상 공유 필요([2](https://framesixty.com/apple-vision-pro-development-for-enterprise/))|
+|지속적 공간 메모리 앱|오브젝트 위치 저장 기능 미지원([4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/)[6](https://ubos.tech/news/challenges-and-opportunities-in-developing-for-apples-vision-pro/))|
+|고도화된 VFX 앱|파티클 시스템 제한([3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)[5](https://www.gianty.com/apple-vision-pro-app-development/)), HLSL 미지원([5](https://www.gianty.com/apple-vision-pro-app-development/))|

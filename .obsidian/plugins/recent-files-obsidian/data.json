@@ -6,19 +6,23 @@
     },
     {
       "basename": "VisionOS 알아보기",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
-    },
-    {
-      "basename": "Week 2 \"Closure\"",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md"
-    },
-    {
-      "basename": "VisionOS 알아보기",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 알아보기.md"
     },
     {
       "basename": "Main_딥러닝",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝.md"
+    },
+    {
+      "basename": "1",
+      "path": "1.md"
+    },
+    {
+      "basename": "VisionOS 알아보기",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
+    },
+    {
+      "basename": "Week 2 \"Closure\"",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md"
     },
     {
       "basename": "낙서장",
@@ -87,10 +91,6 @@
     {
       "basename": "프로토콜 (Protocol)",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
-    },
-    {
-      "basename": "Swift",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md"
     },
     {
       "basename": "Challenge 2",
@@ -195,10 +195,6 @@
     {
       "basename": "딥러닝 공부 정리",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/딥러닝 공부 정리.md"
-    },
-    {
-      "basename": "몬테카를로 샘플링",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/몬테카를로 샘플링.md"
     }
   ],
   "omittedPaths": [],

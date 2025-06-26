@@ -49,7 +49,10 @@ let anchor = AnchorEntity(plane: .horizontal)
 ```
 let boxMaterial = SimpleMaterial(color: .systemPink, isMetalic: true)
 ```
-color은 색상, isMetalic
+color은 색상, isMetalic은 반사여부?
+
+#### Model(객체)
+
 
 ### ARKit
 

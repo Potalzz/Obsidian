@@ -59,8 +59,10 @@ let box = ModelEntity(
             materials: [boxMaterial]
         )
 ```
-어떤 mesh를 만들 
+어떤 mesh를 만들지 지정해준다.
+materials에는 이전에 만든 재질을 지정해준다.
 
+이렇게 만든 객체를 `arView.scene.`
 ### ARKit
 
 

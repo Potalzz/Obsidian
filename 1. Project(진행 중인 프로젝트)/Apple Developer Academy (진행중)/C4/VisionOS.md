@@ -100,6 +100,9 @@ materials에는 이전에 만든 재질을 지정해준다.
 
 
 ## 비전프로 앱 레퍼런스는 풍부한가 ?
+https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
+카테고리별 다양한 앱 존재
+
 
 
 ## 개발에 제약되는 사항은 뭐가 있을까 ?
@@ -150,7 +153,7 @@ materials에는 이전에 만든 재질을 지정해준다.
 |지속적 공간 메모리 앱|오브젝트 위치 저장 기능 미지원([4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/)[6](https://ubos.tech/news/challenges-and-opportunities-in-developing-for-apples-vision-pro/))|
 |고도화된 VFX 앱|파티클 시스템 제한([3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)[5](https://www.gianty.com/apple-vision-pro-app-development/)), HLSL 미지원([5](https://www.gianty.com/apple-vision-pro-app-development/))|
 
-## Vision Pro 구입 결정 이유와 니즈
+## Vision Pro 사용자들은 어떤 앱을 필요로 할까 ?
 
 ### Vision Pro 구입 결정 이유
 - **최고 수준의 트래킹과 몰입형 디스플레이**

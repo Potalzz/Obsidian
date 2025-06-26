@@ -27,6 +27,10 @@ VisionOS는  **Apple Vision Pro**와 같은 **혼합현실(MR, Mixed Reality) �
 VisionOS개발을 위해 애플에서 제공하는 대표적인 프레임워크는 다음과 같다.
 
 ### RealityKit
+> RealityKit은 iOS, iPadOS, macOS, tvOS 및 visionOS에서 3D 또는 증강 현실(AR) 앱을 개발하는 데 사용할 수 있는 고성능 3D 시뮬레이션 및 렌더링 기능을 제공합니다. **RealityKit**은 **ARKit**을 활용하여 가상 객체를 현실 세계에 완벽하게 통합하는 AR 중심 3D 프레임워크입니다.
+
+애플 공식문서에는 위와 같이 설명되어있다.
+
 
 
 ### ARKit

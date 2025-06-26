@@ -49,8 +49,7 @@
               "title": "VisionOS 알아보기"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "메모장 의 개요"
+              "title": "VisionOS 의 개요"
             }
           },
           {
@@ -222,10 +221,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a96b05793e11ae66",
+  "active": "3d24a8449156bab7",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 알아보기.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",

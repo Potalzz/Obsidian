@@ -108,8 +108,9 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 ## 개발에 제약되는 사항은 뭐가 있을까 ?
 ### 개인 개발자에게 적용되는 기술적 제약사항
 
-1. **Enterprise API 사용 불가**
-    
+1. **Enterprise API 사용 불가** 
+    https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis
+    - 
     - 카메라 피드, LiDAR 센서 데이터 등 하드웨어 저수준 접근은 **기업 계정 전용**입니다[1](https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/)[2](https://framesixty.com/apple-vision-pro-development-for-enterprise/). 개인 개발자는 다음 기능을 구현할 수 없습니다:
         
     - 실시간 카메라 데이터를 활용한 AR 오버레이
@@ -220,4 +221,4 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
         
 - **실생활 연계 앱**
     
-    - 쇼핑, 여행, 항공, 내비게이션 등 일상생활에 유용한 공간 컴퓨팅 앱이 더 다양해지길 바라고 있습니다[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/).
+    - 쇼핑, 여행, 항공, 내비게이션 등 일상생활에 유용한 공간 컴퓨팅 앱이 더 다양해지길 바라고 있습니다[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/)

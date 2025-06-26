@@ -21,6 +21,16 @@ VisionOS는  **Apple Vision Pro**와 같은 **혼합현실(MR, Mixed Reality) �
 	
 - 3D 오브젝트, 애니메이션, 깊이 인식 등도 RealityKit에서 제공.
 
+### VisionOS 앱의 종류
+#### Windowed 앱
+기존 iPad 앱처럼, 하나의 평면 창에서 작동하는 형태.
+
+#### Volumetric 앱
+3D 오브젝트 중심의 인터랙션 제공. 공간 내 입체적으로 배치됨.
+
+#### Full Space 앱
+전체 시야를 차지하는 몰입형 앱. AR/VR 게임, 교육 콘텐츠 등에 사용.
+
 
 ## 애플에서 제공하는 기술들은 어떤 것들이 있을까 ?
 

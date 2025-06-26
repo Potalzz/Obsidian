@@ -32,7 +32,7 @@
 
 > 어떤 노드가 새로 추가 될 예정인가요!?
 
-- [[RealityKit]]
+- [[RealityKit]]
 - [[ARKit]]
 
 ## 피드백

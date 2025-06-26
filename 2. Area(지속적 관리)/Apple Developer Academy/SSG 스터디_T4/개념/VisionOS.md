@@ -24,7 +24,13 @@ VisionOS는  **Apple Vision Pro**와 같은 **혼합현실(MR, Mixed Reality) �
 
 ## 애플에서 제공하는 기술들은 어떤 것들이 있을까 ?
 
-VisionOS개발을 위해 애플에서 제공하는 프레임워크는 다음과 같다.
+VisionOS개발을 위해 애플에서 제공하는 대표적인 프레임워크는 다음과 같다.
+
+### RealityKit
+
+
+### ARKit
+
 
 
 

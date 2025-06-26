@@ -4,6 +4,10 @@
 VisionOS는  **Apple Vision Pro**와 같은 **혼합현실(MR, Mixed Reality) 기기**를 구동하기 위해 설계된 운영체제이며, 공간 컴퓨팅(spatial computing)을 
 중심으로 동작하는 것이 가장 큰 특징이다.
 
+**RealityKit**으로 **AR + 3D렌더링** 용도로 사용하고, **ARKit**을 **AR 기술(추적, 감지, 매핑 등)**의 용도로 사용한다.
+
+RealityKit으로 물체를 만들고, ARKit으로 배치를 하는 개념.
+
 ### 공간 컴퓨팅 (Spatial Computing)
 - 사용자는 물리적인 공간 안에서 앱, 창, UI 요소들을 자유롭게 배치하고 상호작용할 수 있음.
 	
@@ -92,3 +96,8 @@ materials에는 이전에 만든 재질을 지정해준다.
 - **Room Tracking:** 방, 구역 등을 기록 및 추적
 - **Light estimation:** 주변 환경 조명의 특성을 분석
 - **Camera frames:** 카메라 프레임을 변환
+
+
+
+
+

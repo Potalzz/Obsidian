@@ -62,7 +62,8 @@ let box = ModelEntity(
 어떤 mesh를 만들지 지정해준다.
 materials에는 이전에 만든 재질을 지정해준다.
 
-이렇게 만든 객체를 `arView.scene.`
+이렇게 만든 객체를 `arView.scene`에 새로운 Anchor를 추가하여 배치해주면 화면에 객체를 표기할 수 있다.
+
 ### ARKit
 
 

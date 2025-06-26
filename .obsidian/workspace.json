@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/낙서장.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VisionOS"
+              "title": "낙서장"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "낙서장"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -222,12 +221,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "25a5b5eda4e7038d",
+  "active": "3d24a8449156bab7",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 알아보기.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/낙서장.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 알아보기.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/Swift.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝.md",

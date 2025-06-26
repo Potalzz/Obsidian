@@ -103,7 +103,7 @@ materials에는 이전에 만든 재질을 지정해준다.
 
 
 ## 개발에 제약되는 사항은 뭐가 있을까 ?
-### ⚠️ 개인 개발자에게 적용되는 기술적 제약사항
+### 개인 개발자에게 적용되는 기술적 제약사항
 
 1. **Enterprise API 사용 불가**
     
@@ -140,7 +140,7 @@ materials에는 이전에 만든 재질을 지정해준다.
     - 파티클 시스템 제한 → 화려한 VFX 구현 불가능
         
 
-### 🚫 개발이 특히 어려운 앱 유형
+### 개발이 특히 어려운 앱 유형
 
 |앱 유형|주요 제약사항|
 |---|---|
@@ -149,3 +149,72 @@ materials에는 이전에 만든 재질을 지정해준다.
 |산업용 원격 지원 앱|기업 전용 패스스루 영상 공유 필요([2](https://framesixty.com/apple-vision-pro-development-for-enterprise/))|
 |지속적 공간 메모리 앱|오브젝트 위치 저장 기능 미지원([4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/)[6](https://ubos.tech/news/challenges-and-opportunities-in-developing-for-apples-vision-pro/))|
 |고도화된 VFX 앱|파티클 시스템 제한([3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)[5](https://www.gianty.com/apple-vision-pro-app-development/)), HLSL 미지원([5](https://www.gianty.com/apple-vision-pro-app-development/))|
+
+## Vision Pro 구입 결정 이유와 니즈
+
+### Vision Pro 구입 결정 이유
+- **최고 수준의 트래킹과 몰입형 디스플레이**
+    
+    - 사용자들은 Apple Vision Pro의 뛰어난 공간 트래킹(손동작, 시선 추적)과 micro-OLED 기반의 고해상도 디스플레이에 매료되어 구매를 결정합니다. 다른 AR/VR 헤드셋과 비교할 수 없는 몰입감과 시각적 충실도가 큰 매력입니다[1](https://bgr.com/tech/6-reasons-to-buy-an-apple-vision-pro/)[2](https://basicappleguy.com/basicappleblog/apple-vision-pro-1-year-later)[3](https://www.techradar.com/computing/virtual-reality-augmented-reality/apple-vision-pro-8-reasons-to-buy-it-and-6-reasons-to-skip).
+        
+- **컨트롤러 없이 손과 눈으로 조작**
+    
+    - 기존 VR/AR 기기와 달리 별도의 컨트롤러 없이 손동작과 시선으로 직관적으로 조작할 수 있어 접근성이 높고, 사용이 편리하다는 점이 강조됩니다[1](https://bgr.com/tech/6-reasons-to-buy-an-apple-vision-pro/)[4](https://www.linkedin.com/pulse/5-user-experience-advantages-apple-vision-pro-oliver-weidlich-ix6jc).
+        
+- **생산성 향상 및 멀티태스킹**
+    
+    - Mac과 연동해 큰 화면에서 멀티태스킹이 가능하고, 여러 앱을 공간에 배치해 동시에 사용할 수 있어 업무 효율이 크게 높아집니다[1](https://bgr.com/tech/6-reasons-to-buy-an-apple-vision-pro/)[4](https://www.linkedin.com/pulse/5-user-experience-advantages-apple-vision-pro-oliver-weidlich-ix6jc)[5](https://xmind.com/blog/these-apps-will-be-supported-on-apple-vision-pro-at-launch).
+        
+- **최고의 프라이빗 시네마 경험**
+    
+    - Apple TV+, Disney+, Max 등 주요 스트리밍 서비스의 HDR 및 3D 영화, 180도 8K 영상(Apple Immersive Video) 시청이 가능해 집에서 영화관을 즐기는 듯한 경험을 제공합니다[1](https://bgr.com/tech/6-reasons-to-buy-an-apple-vision-pro/)[2](https://basicappleguy.com/basicappleblog/apple-vision-pro-1-year-later).
+        
+- **애플 생태계와의 연동**
+    
+    - iPhone, iPad, Mac 등 애플 기기와의 원활한 연동, 사진·비디오·캘린더 등 데이터의 자동 동기화, Optic ID 등 보안 기능도 구매 결정에 영향을 미칩니다[4](https://www.linkedin.com/pulse/5-user-experience-advantages-apple-vision-pro-oliver-weidlich-ix6jc)[2](https://basicappleguy.com/basicappleblog/apple-vision-pro-1-year-later).
+        
+- **미래지향적인 경험**
+    
+    - 새로운 기술을 먼저 경험하고 싶은 얼리어답터 심리, 그리고 애플이 제시하는 미래 컴퓨팅 비전에 대한 신뢰도 구매 동기 중 하나입니다[1](https://bgr.com/tech/6-reasons-to-buy-an-apple-vision-pro/)[3](https://www.techradar.com/computing/virtual-reality-augmented-reality/apple-vision-pro-8-reasons-to-buy-it-and-6-reasons-to-skip).
+        
+
+### 가장 만족스럽게 활용하는 앱
+
+- **미디어 및 엔터테인먼트 앱**
+    
+    - Apple TV, Disney+, Max 등 영화·TV 시청 앱이 가장 인기가 높으며, 몰입형 비디오(Immersive Video)와 3D 영화 감상 경험은 사용자 만족도가 매우 높습니다[2](https://basicappleguy.com/basicappleblog/apple-vision-pro-1-year-later)[6](https://www.pcmag.com/picks/the-best-apple-vision-pro-apps)[7](https://9to5mac.com/best-apple-vision-apps/).
+        
+- **사진·비디오 앱**
+    
+    - 공간 사진(panorama), 3D 비디오 등 몰입형 사진/비디오 감상 앱도 큰 호응을 얻고 있습니다. 과거 여행 사진을 360도로 감상하거나, iPhone에서 촬영한 Spatial Video를 Vision Pro에서 보는 경험이 매우 감동적이라는 평가가 많습니다[2](https://basicappleguy.com/basicappleblog/apple-vision-pro-1-year-later)[4](https://www.linkedin.com/pulse/5-user-experience-advantages-apple-vision-pro-oliver-weidlich-ix6jc)[7](https://9to5mac.com/best-apple-vision-apps/).
+        
+- **생산성/업무 앱**
+    
+    - Microsoft Office(Word, Excel, PowerPoint), Evernote, Trello, Zoom, Slack 등 업무용 앱이 널리 활용되고 있습니다. 멀티태스킹과 공간 배치가 가능해 업무 효율이 크게 향상됩니다[5](https://xmind.com/blog/these-apps-will-be-supported-on-apple-vision-pro-at-launch)[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/).
+        
+- **게임 및 창작 앱**
+    
+    - 공간 게임(Apple Arcade), 음악 제작(Moog), 디지털 아트(Da Vinci Eye) 등 창의적이고 몰입감 있는 앱도 인기가 높습니다[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/).
+        
+
+### 사용자들이 기대하는 앱
+
+- **더 다양한 몰입형 미디어 및 게임**
+    
+    - 3D 영화, 몰입형 콘텐츠, 공간 게임 등 더 많은 엔터테인먼트 앱이 출시되길 기대합니다[2](https://basicappleguy.com/basicappleblog/apple-vision-pro-1-year-later)[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/).
+        
+- **생산성 및 협업 도구**
+    
+    - 업무 효율을 높일 수 있는 새로운 협업 앱, 화상회의, 프로젝트 관리, 데이터 시각화 앱 등이 추가되길 원합니다[5](https://xmind.com/blog/these-apps-will-be-supported-on-apple-vision-pro-at-launch)[7](https://9to5mac.com/best-apple-vision-apps/).
+        
+- **건강 및 피트니스 앱**
+    
+    - 몰입형 피트니스, 요가, 명상, 건강 관리 앱 등 건강 관련 앱에 대한 기대도 큽니다[7](https://9to5mac.com/best-apple-vision-apps/).
+        
+- **교육 및 학습 앱**
+    
+    - 3D 모델, 가상 현장 학습, 언어 학습 등 교육용 앱도 많은 관심을 받고 있습니다[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/).
+        
+- **실생활 연계 앱**
+    
+    - 쇼핑, 여행, 항공, 내비게이션 등 일상생활에 유용한 공간 컴퓨팅 앱이 더 다양해지길 바라고 있습니다[7](https://9to5mac.com/best-apple-vision-apps/)[8](https://appsforapplevision.com/).

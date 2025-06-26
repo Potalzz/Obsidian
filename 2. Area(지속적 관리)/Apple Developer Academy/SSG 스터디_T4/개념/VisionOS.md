@@ -67,4 +67,18 @@ materials에는 이전에 만든 재질을 지정해준다.
 ### ARKit
 > **증강 현실** (AR)은 기기 센서의 실시간 뷰에 2D 또는 3D 요소를 추가하여 마치 현실 세계에 존재하는 것처럼 보이게 하는 사용자 경험을 말합니다. ARKit은 기기 동작 추적, 세계 추적, 장면 이해 및 디스플레이 편의성을 결합하여 AR 경험 구축을 간소화합니다.
 
+쉽게 얘기하자면, RealityKit이 사용자의 환경에 3D 객체를 자연스럽게 구현해주는 역할을 해준다면, ARKit은 주변환경과 가상의 3D 객체들이 상호작용을 할 수 있도록 해주는 프레임워크.
 
+### ARKit의 기능들
+대표적인 기능만 몇 가지 살펴보자면
+
+- **Plane Detection:** 평면을 찾는 기능 (예: 바닥, 벽, 천장 등)
+- **World Tracking:** 주변 환경을 Tracking
+- **Hand Tracking:** 손을 추적하고 Custom Gesture 기능
+- **Scene reconstruction:** 주변 환경을 재구성, 물리적 환경을 mesh로 만들어 디지털 객체와 상호작용 가능
+- **Image traking:** 이미지를 앵커 포인터로 사용
+- **Object Tracking:** 실제 물체 추적
+- **Barcode detection:** 바코드, QR 추적
+- **Room Tracking:** 방, 구역 등을 기록 및 추적
+- **Light estimation:** 주변 환경 조명의 특성을 분석
+- **Camera frames:** 카메라 프레임을 변환

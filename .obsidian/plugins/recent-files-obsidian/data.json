@@ -6,6 +6,10 @@
     },
     {
       "basename": "VisionOS 알아보기",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
+    },
+    {
+      "basename": "VisionOS 알아보기",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 알아보기.md"
     },
     {
@@ -15,10 +19,6 @@
     {
       "basename": "1",
       "path": "1.md"
-    },
-    {
-      "basename": "VisionOS 알아보기",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
     },
     {
       "basename": "Week 2 \"Closure\"",

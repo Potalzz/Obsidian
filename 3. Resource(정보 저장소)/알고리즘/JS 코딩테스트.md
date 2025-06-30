@@ -13049,7 +13049,6 @@ function solution(begin, target, words) {
 # 프로그래머스 Lv. 4
 ## Lv. 4 [DP] 도둑질
 ### 📖  문제
-
 도둑이 어느 마을을 털 계획을 하고 있습니다. 이 마을의 모든 집들은 아래 그림과 같이 동그랗게 배치되어 있습니다.
 
 ![image.png](https://grepp-programmers.s3.amazonaws.com/files/ybm/e7dd4f51c3/a228c73d-1cbe-4d59-bb5d-833fd18d3382.png)

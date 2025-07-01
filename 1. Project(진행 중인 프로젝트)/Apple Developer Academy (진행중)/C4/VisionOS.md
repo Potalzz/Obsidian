@@ -228,3 +228,4 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 
 ## 개발 기술 타당성 조사
 ### 조명(전시 or 인테리어)
+방 안에 가상 조명을 설치하고, 테스트해볼 수 있는 앱

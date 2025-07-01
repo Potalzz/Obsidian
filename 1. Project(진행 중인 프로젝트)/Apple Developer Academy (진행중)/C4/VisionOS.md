@@ -235,9 +235,11 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 VisionOS에서는 RoomPlan API가 아예 없으므로, 실내 환경의 구조를 가져오기 위해서는 ARKit을 통해서 가져와야 한다.
 
 ARKit의 PlaneDetectionProvider를 통해서 평면 감지(바닥, 벽 등 평면 식별)를 하고, SceneReconstructionProvider를 통해서 실시간 메쉬 재구성(주변 환경의 폴리곤 메쉬)를 ARKit 세션을 통해서 얻을 수 있으며, 이를 조합해서 RoomPlan처럼 방의 구조를 파악하는 로직을 직접 개발해야 한다.
+(**사례** - https://apps.apple.com/us/app/magic-room-lidar-environment/id6477834941)
 
+공간을 스캐닝해서 매쉬를 재구성하는 것까지도 큰 도전이고 이것만 성공한다고 해도 실현해볼 수 있는 것들이 무궁무진할 것 같다. 하지만 여기서 meterial을 새로 적용해서 직접 조명을 적용하는 것은 cost도 너무 많이 들고 그에비해 dynamic한 결과물이 나오지 않아 보인다.
 
-
+**결론적으로** 조명이 적용된 것처럼 fake를 주는 방법이 합리적이다.
 
 **리서치 자료**
 https://chatgpt.com/s/dr_686393909ed08191a417929cd5c426f4

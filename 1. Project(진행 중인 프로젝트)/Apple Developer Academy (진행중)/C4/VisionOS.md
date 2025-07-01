@@ -226,4 +226,5 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 
 
 
-## 개발
+## 개발 기술 타당성 조사
+### 조명(전시 or 인테리어)

@@ -229,3 +229,15 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 ## 개발 기술 타당성 조사
 ### 조명(전시 or 인테리어)
 방 안에 가상 조명을 설치하고, 테스트해볼 수 있는 앱
+
+
+#### AR로 구현
+VisionOS에서는 RoomPlan API가 아예 없으므로, 실내 환경의 구조를 가져오기 위해서는 ARKit을 통해서 가져와야 한다.
+
+ARKit의 PlaneDetectionProvider를 통해서 평면 감지(바닥, 벽 등 평면 식별)를 하고, SceneReconstructionProvider를 통해서 실시간 메쉬 재구성(주변 환경의 폴리곤 메쉬)를 ARKit 세션을 통해서 얻을 수 있으며, 이를 조합해서 RoomPlan처럼 방의 구조를 파악하는 로직을 직접 개발해야 한다.
+
+
+
+
+**리서치 자료**
+https://chatgpt.com/s/dr_686393909ed08191a417929cd5c426f4

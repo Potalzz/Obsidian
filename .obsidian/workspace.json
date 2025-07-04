@@ -13,30 +13,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "세션 내용 기록"
+              "title": "메모장"
             }
           },
           {
             "id": "f6d174e71c576615",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VisionOS"
-            }
-          },
-          {
-            "id": "444f3aa209208773",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -63,8 +49,7 @@
               "title": "실기 개념정리"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -195,13 +180,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "VisionOS 의 개요"
+              "title": "메모장 의 개요"
             }
           },
           {
@@ -236,12 +221,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f6d174e71c576615",
+  "active": "6220f3be5e792dd5",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/개념.md",
+    "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
     "2. Area(지속적 관리)/Apple Developer Academy/메모.md",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md",

@@ -273,4 +273,12 @@ https://chatgpt.com/s/dr_686393909ed08191a417929cd5c426f4
 다만, 브레인 스토밍 기능이 단순히 아이디어를 입력하고 화면에 나온 아이디어의 위치를 옮기거나 하는 등의 기능밖에 하지 않아서, 경험은 새롭지만 유용해보이지는 않는다.
 
 
-## 기술조사 - HeadTracking(ARKit)
+## 공잡기
+
+**VR**
+1. 공이 날아온다.(Reality Kit으로 3D 구현
+   배경을 구성한다. (reality composer pro로 evnirionment 구성)
+   
+   
+2. 공을 쳐다본다.
+3. 쳐다본 공이 hover되면 손짓으로 잡는다.

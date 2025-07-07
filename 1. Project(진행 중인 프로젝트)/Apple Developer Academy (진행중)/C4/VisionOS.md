@@ -275,7 +275,7 @@ https://chatgpt.com/s/dr_686393909ed08191a417929cd5c426f4
 
 ## 공잡기
 
-**VR**
+### 앱 동작 흐름
 1. 앉아서 포수 자세를 취하고 손을 앞으로 뻗는다
 2. 공이 날아온다.(Reality Kit으로 3D 구현
    배경을 구성한다. (reality composer pro로 evnirionment 구성)
@@ -288,23 +288,71 @@ https://chatgpt.com/s/dr_686393909ed08191a417929cd5c426f4
 공을 타이밍 맞게 잡으면 추가점수 (리듬게임처럼 perfect, great 와 같이)
 gamekit을 연동해서 리더보드로 점수 등록
 
-**체크리스트**
-- [ ] 공이 가까워지면 커지게 가능한지
+### 체크리스트
+- [ ] **공이 가까워지면 커지게 가능한지**
 - 사용자가 착용한 HMD 내 Perspective Camera는 객체가 가까워질수록 시각적으로 커 보이도록 자동 지원
 - RealityKit의 `PerspectiveCameraComponent` 사용
 
-- [ ] 손을 미트 자세로 잡고있는지 인식 가능한지(손의 위치값도)
+- [ ] **손을 미트 자세로 잡고있는지 인식 가능한지(손의 위치값도)**
 - `HandTrackingProvider`를 통해 3D 공간 상에서 손의 위치와 방향, 관절 각도 등을 실시간으로 획득 가능
 - 손의 자세를 특정 임계각 기준으로 분석하여 '포수 자세' 여부 판정 가능
 
-- [ ] 손이 잡는 모양을 했는지 확인
+- [ ] **손이 잡는 모양을 했는지 확인**
 - 손가락 관절 간 거리 및 각도를 통해 '손을 움켜쥠(grip)' 모양을 인식 가능
 - Apple의 WWDC 2023 세션에서도 손 모양 인식 예시 제공
 
-- [ ] 사용자가 앉아있는지 확인
-- [ ] 손 위에 글러브를 끼울 수 있는지(가상의 손 사용 ?)
-- [ ] 오른손, 왼손 선택 가능한지
-- [ ] 설정한 속도에 맞춰서 공이 오게끔 가능한지
-- [ ] 공이 변화구처럼 휘어오게 가능한지
-- [ ] 손에끼워진 글러브가 공의 위치에 맞게 이동했는지 판별 가능한지
-- [ ] 공에 위치에 맞게 소리가 나게할 수 있는지
+- [ ] **사용자가 앉아있는지 확인**
+- 사용자 시점 높이와 바닥 Plane Detection을 기반으로 간접적으로 '앉음' 상태를 추정 가능
+
+- [ ] **손 위에 글러브를 끼울 수 있는지(가상의 손 사용 ?)**
+- 가상의 손 모델을 Hand Anchor에 부착 가능
+- 실제 손은 숨기고(`.upperLimbVisibility(.hidden)`), 가상 글러브만 렌더링 가능
+
+- [ ] **오른손, 왼손 선택 가능한지**
+- ARKit의 `Chirality` 속성으로 좌우 손 구분 가능
+- UI 상에서도 사용자에게 선택지 제공 가능
+
+- [ ] **설정한 속도에 맞춰서 공이 오게끔 가능한지**
+- RealityKit의 물리 엔진(`PhysicsBodyComponent`)으로 속도 및 방향 설정 가능
+- `linearVelocity` 속성 조절로 속도 제어
+
+- [ ] **공이 변화구처럼 휘어오게 가능한지**
+- 초기 회전 속도(`angularVelocity`) 및 힘(`force`)을 설정하여 휘는 궤도 구현 가능
+- [ ] **손에끼워진 글러브가 공의 위치에 맞게 이동했는지 판별 가능한지**
+- `CollisionComponent`를 통해 공과 글러브 간 충돌 감지 가능
+- RealityKit의 `CollisionEvents.Began` 등 이벤트 사용
+
+- [ ] **공에 위치에 맞게 소리가 나게할 수 있는지**
+- AVFoundation 또는 RealityKit의 오디오 시스템으로 충돌 시 효과음 재생 가능
+
+- [ ] **공 위치에 맞춰 글러브 가져다 대고 움켜쥐면 캐치할 수 있는지**
+- ARKit의 `HandTrackingProvider`를 통해 충돌 순간에 손의 모양을 확인하고 움켜쥠 동작이면 '성공 판정' 처리
+
+### 구현 기술
+**손 추적**
+ARKit HandTrackingProvider, ARHandAnchor
+
+**손 제스처 인식**
+관절 각도/거리 계산 (직접 구현 필요)
+
+**가상 손 & 글러브**
+RealityKit의 `ModelEntity` + 손 위치 연동
+
+**공 & 궤도 구현**
+RealityKit `PhysicsBodyComponent`, `applyForce`, `angularVelocity`
+
+**충돌 처리**
+`CollisionComponent`, `CollisionEvents.Began`
+
+**효과음**
+AVFoundation, RealityKit Audio
+
+**점수 관리**
+GameKit `GKLeaderboard`, `GKScore` 등
+
+### 학습 자료
+- [Apple Developer: ARKit in visionOS](https://developer.apple.com/documentation/arkit/arkit-in-visionos)
+- [RealityKit 공식 문서](https://developer.apple.com/documentation/realitykit)
+- WWDC23: [Meet ARKit for Spatial Computing](https://developer.apple.com/videos/play/wwdc2023/10074/)
+- WWDC23: [Meet Reality Composer Pro](https://developer.apple.com/videos/play/wwdc2023/10101/)
+- GameKit 리더보드 문서: [GameKit Leaderboards](https://developer.apple.com/documentation/gamekit/gkleaderboard)

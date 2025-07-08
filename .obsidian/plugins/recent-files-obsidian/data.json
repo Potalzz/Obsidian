@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "방탈출",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md"
+    },
+    {
       "basename": "VisionOS",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "회고",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/회고.md"
-    },
-    {
-      "basename": "기초확률론",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/기초확률론.md"
     }
   ],
   "omittedPaths": [],

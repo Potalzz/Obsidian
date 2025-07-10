@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "필기 기출 풀이",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md"
+    },
+    {
+      "basename": "필기 개념정리",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md"
+    },
+    {
       "basename": "방탈출",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md"
     },
@@ -9,20 +21,12 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md"
     },
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
       "basename": "메모장",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md"
     },
     {
       "basename": "개념",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/개념.md"
-    },
-    {
-      "basename": "필기 기출 풀이",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md"
     },
     {
       "basename": "세션 내용 기록",
@@ -147,10 +151,6 @@
     {
       "basename": "Swift 실전편 스터디",
       "path": "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md"
-    },
-    {
-      "basename": "필기 개념정리",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md"
     },
     {
       "basename": "역전파 알고리즘",

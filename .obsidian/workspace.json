@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
+                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Swift 개념"
+              "title": "실기 개념정리"
             }
           },
           {
@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. Area(지속적 관리)/건강/영양제.md",
+                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "영양제 의 개요"
+              "title": "실기 개념정리 의 개요"
             }
           },
           {
@@ -236,18 +236,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f6d174e71c576615",
+  "active": "6220f3be5e792dd5",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
+    "2. Area(지속적 관리)/건강/영양제.md",
     "Pasted image 20250715111709.png",
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
-    "2. Area(지속적 관리)/건강/영양제.md",
     "2. Area(지속적 관리)/건강",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md",
-    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
     "2. Area(지속적 관리)/Apple Developer Academy/메모.md",
@@ -282,7 +282,6 @@
     "첨부 파일 소스/Image File 1/Pasted image 20250510204416.png",
     "첨부 파일 소스/Image File 1/Pasted image 20250512005723.png",
     "첨부 파일 소스/Image File 1/Pasted image 20250512005254.png",
-    "첨부 파일 소스/Image File 1/Pasted image 20250512005241.png",
     "Excalidraw",
     "무제 2.canvas",
     "무제 1.canvas",

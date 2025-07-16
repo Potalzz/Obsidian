@@ -13,6 +13,10 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md"
     },
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
       "basename": "필기 기출 풀이",
       "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "각종 정보",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "영양제",

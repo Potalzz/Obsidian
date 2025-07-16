@@ -13145,6 +13145,11 @@ function solution(money) {
 }
 ```
 
+#### Swift 풀이
+```
+
+```
+
 ---
 
 ## Lv. 4 [!!작성 양식]

@@ -13124,20 +13124,22 @@ money[i] + DP[i - 2]의 경우 해당 집을 털기로 결정했을 경우 바�
 ---
 
 ### 🖥️ 풀이 코드
-```
+``` javascript
 function solution(money) {
     if (money.length <= 3) {
         return Math.max(...money)
     }
     
     // 첫 번째 집 턴 경우 마지막 집 0 처리
-    const DP1 = money.slice()
-    DP1.unshift(0)
+    const DP1 = money.slice() // money배열 복사해오기
+    DP1.unshift(0)// 배열 맨 앞에 0 삽입
     DP1[DP1.length - 1] = 0
+    
     // 마지막 집 턴 경우 첫 번째 집 0 처리
     const DP2 = money.slice()
     DP2.push(0)
     DP2[0] = 0
+    
     for(let i = 2; i < money.length + 1; i ++) {
         DP1[i] = Math.max(DP1[i - 1], DP1[i] + DP1[i - 2])
         DP2[i] = Math.max(DP2[i - 1], DP2[i] + DP2[i - 2])
@@ -13148,7 +13150,7 @@ function solution(money) {
 ```
 
 #### Swift 풀이
-```
+``` swift
 func solution(_ money: [Int]) -> Int {
     let n = money.count
     if n <= 3 {

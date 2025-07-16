@@ -13153,36 +13153,27 @@ function solution(money) {
 #### Swift 풀이
 ``` swift
 func solution(_ money: [Int]) -> Int {
-    let n = money.count
-    if n <= 3 {
+    if money.count <= 3 {
         return money.max() ?? 0
     }
-
+    
     // 첫 번째 집을 털고 마지막은 안 터는 경우
-    var dp1 = [Int](repeating: 0, count: n + 1)
-    for i in 0..<n {
-        dp1[i + 1] = money[i]
-    }
-    dp1[n] = 0  // 마지막 집은 털지 않음
-
-    for i in 2..<n {
-        dp1[i] = max(dp1[i - 1], dp1[i] + dp1[i - 2])
-    }
-
+    var dp1 = Array(money)
+	dp2.insert(1, at: 0)
+	dp1[dp1.count - 1] = 0  // 마지막 집은 털지 않음
+	
     // 마지막 집을 털고 첫 번째는 안 터는 경우
-    var dp2 = [Int](repeating: 0, count: n + 1)
-    for i in 0..<n {
-        dp2[i] = money[i]
-    }
+    var dp2 = Array(money)
+    dp2.append(o)
     dp2[0] = 0  // 첫 번째 집은 털지 않음
-
-    for i in 2..<n {
+    
+    for i in 2..< money.count {
+	    dp1[i] = max(dp1[i - 1], dp1[i] + dp1[i - 2])
         dp2[i] = max(dp2[i - 1], dp2[i] + dp2[i - 2])
     }
-
-    return max(dp1[n - 1], dp2[n - 1])
+    
+    return max(dp1[dp1.count - 1], dp2[dp2.count - 1])
 }
-
 ```
 
 ---

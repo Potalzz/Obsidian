@@ -1192,7 +1192,6 @@ func drive<T: 운전면허있는사람>(_ person: T) {
 ### Combine Framework
 >비동기 이벤트를 핸들링할 수 있게 하는 Apple의 순정 Framework
 
-
 **Combine**은 시간에 따른 비동기 이벤트들을 처리하는 Swift API를 제공한다.
 
 콤바인은 시간에 따른 값을 제공할 수 있는 `Publishers`와 `Publishers`로부터 해당 값들을 받는 `Subscribers`로 정의된다.

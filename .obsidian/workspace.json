@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
+                "file": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모장"
+              "title": "CS 지식"
             }
           },
           {
@@ -195,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
+                "file": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "메모장 의 개요"
+              "title": "CS 지식 의 개요"
             }
           },
           {
@@ -238,12 +238,13 @@
   },
   "active": "4dab0813e88a501d",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
-    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
+    "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "2. Area(지속적 관리)/건강/영양제.md",
     "Pasted image 20250715111709.png",

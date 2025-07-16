@@ -13141,7 +13141,7 @@ function solution(money) {
     DP2[0] = 0
     
     for(let i = 2; i < money.length + 1; i ++) {
-        DP1[i] = Math.max(DP1[i - 1], DP1[i - 2] + money[i])
+        DP1[i] = Math.max(DP1[i - 1], DP1[i - 2] + money[i+1])
         DP2[i] = Math.max(DP2[i - 1], DP2[i - 2] + money[i])
     }
     

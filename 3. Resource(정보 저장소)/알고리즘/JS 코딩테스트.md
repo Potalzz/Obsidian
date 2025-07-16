@@ -13140,9 +13140,10 @@ function solution(money) {
     DP2.push(0)
     DP2[0] = 0
     
+    // DP[i]는 i번째 집의 money값이지만 인덱싱으로 인해 DP[i]로 지칭
     for(let i = 2; i < money.length + 1; i ++) {
-        DP1[i] = Math.max(DP1[i - 1], DP1[i - 2] + money[i+1])
-        DP2[i] = Math.max(DP2[i - 1], DP2[i - 2] + money[i])
+        DP1[i] = Math.max(DP1[i - 1], DP1[i - 2] + DP1[i])
+        DP2[i] = Math.max(DP2[i - 1], DP2[i - 2] + DP2[i])
     }
     
     return Math.max(DP1[DP1.length - 1], DP2[DP2.length - 1])

@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "CS 지식",
+      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
+    },
+    {
+      "basename": "MIT 알고리즘 강의",
+      "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
+    },
+    {
+      "basename": "실기 개념정리",
+      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
+    },
+    {
       "basename": "필기 기출 풀이",
       "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md"
     },
@@ -9,20 +21,8 @@
       "path": "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md"
     },
     {
-      "basename": "MIT 알고리즘 강의",
-      "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
-    },
-    {
-      "basename": "CS 지식",
-      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
-    },
-    {
       "basename": "방탈출",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md"
-    },
-    {
-      "basename": "실기 개념정리",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
     },
     {
       "basename": "Swift 개념",

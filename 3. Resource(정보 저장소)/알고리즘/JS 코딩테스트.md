@@ -13057,6 +13057,7 @@ function solution(begin, target, words) {
 
 각 집에 있는 돈이 담긴 배열 money가 주어질 때, 도둑이 훔칠 수 있는 돈의 최댓값을 return 하도록 solution 함수를 작성하세요.
 
+
 ##### 제한사항
 
 - 이 마을에 있는 집은 3개 이상 1,000,000개 이하입니다.

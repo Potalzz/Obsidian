@@ -13132,6 +13132,8 @@ money[i] + DP[i - 2]의 경우 해당 집을 털기로 결정했을 경우 바�
 ---
 
 ### 🖥️ 풀이 코드
+
+#### JS 풀이
 ``` javascript
 function solution(money) {
     if (money.length <= 3) {

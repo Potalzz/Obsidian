@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,13 +209,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
+                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "CS 지식 의 개요"
+              "title": "실기 개념정리 의 개요"
             }
           },
           {
@@ -250,10 +250,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4dab0813e88a501d",
+  "active": "6220f3be5e792dd5",
   "lastOpenFiles": [
-    "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
+    "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
     "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",

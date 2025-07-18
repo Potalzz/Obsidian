@@ -117,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -224,6 +225,11 @@
   },
   "active": "6e21e8aa4364f503",
   "lastOpenFiles": [
+    "Pasted image 20250718130535.png",
+    "Pasted image 20250718130444.png",
+    "Pasted image 20250718130424.png",
+    "Pasted image 20250718130406.png",
+    "Pasted image 20250718130034.png",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
     "2. Area(지속적 관리)/건강/영양제.md",
@@ -251,7 +257,6 @@
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/코딩 테스트.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Ai 기초지식.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 알아보기.md",
-    "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/모임 내용.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4",
     "2. Area(지속적 관리)/Swift/개념 노트",
     "인코딩/디코딩(Encoding",
@@ -265,10 +270,6 @@
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge3",
     "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4",
     "Pasted image 20250512205530.png",
-    "첨부 파일 소스/Image File 1/Pasted image 20250510150812.png",
-    "첨부 파일 소스/Image File 1/Pasted image 20250510204416.png",
-    "첨부 파일 소스/Image File 1/Pasted image 20250512005723.png",
-    "첨부 파일 소스/Image File 1/Pasted image 20250512005254.png",
     "Excalidraw",
     "무제 2.canvas",
     "무제 1.canvas",

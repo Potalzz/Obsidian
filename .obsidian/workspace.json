@@ -117,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -225,6 +224,10 @@
   },
   "active": "6e21e8aa4364f503",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
     "Pasted image 20250718134131.png",
     "Pasted image 20250718133953.png",
     "Pasted image 20250718133936.png",
@@ -235,12 +238,8 @@
     "Pasted image 20250718133637.png",
     "Pasted image 20250718133602.png",
     "Pasted image 20250718133531.png",
-    "Pasted image 20250718133458.png",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
-    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
     "2. Area(지속적 관리)/건강/영양제.md",
-    "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
     "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md",
@@ -248,7 +247,6 @@
     "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "2. Area(지속적 관리)/건강",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md",
     "2. Area(지속적 관리)/Apple Developer Academy/메모.md",

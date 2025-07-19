@@ -8,35 +8,34 @@
         "type": "tabs",
         "children": [
           {
-            "id": "01a437c90b7002e7",
+            "id": "e280e1939848c8cb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "필기 개념정리"
+              "title": "방탈출"
             }
           },
           {
-            "id": "6e21e8aa4364f503",
+            "id": "d3faf366e1561e5d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "실기 개념정리"
+              "title": "VisionOS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -208,14 +207,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6e21e8aa4364f503",
+  "active": "e280e1939848c8cb",
   "lastOpenFiles": [
-    "Pasted image 20250718212439.png",
-    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
-    "2. Area(지속적 관리)/건강/영양제.md",
-    "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
+    "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
+    "Pasted image 20250718212439.png",
+    "2. Area(지속적 관리)/건강/영양제.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "Pasted image 20250718134131.png",
     "Pasted image 20250718133953.png",
     "Pasted image 20250718133936.png",
@@ -225,14 +225,12 @@
     "Pasted image 20250718133659.png",
     "Pasted image 20250718133637.png",
     "Pasted image 20250718133602.png",
-    "Pasted image 20250718133531.png",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md",
     "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/메모장.md",
     "2. Area(지속적 관리)/건강",
     "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md",

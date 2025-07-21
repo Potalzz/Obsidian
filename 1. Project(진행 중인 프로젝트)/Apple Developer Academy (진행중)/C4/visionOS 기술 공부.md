@@ -20,7 +20,7 @@
 - 특정 컴포넌트를 가진 **Eniity**를 찾아서, 그에 따른 로직을 실행
 - 시간의 흐름에 따라 컴포넌트가 붙은 Entity를 어떻게 업데이트할지 결정
 
-#### ECS(Entity-Component-System) 아키텍처
+### ECS(Entity-Component-System) 패턴
 > 행위(Behavior)와 데이터(Data)를 분리하는 구조
 
 **ECS 아키텍처**는 게임 엔진과 실시간 그래픽 환경(예: RealityKit, Unity DOTS 등)에서 자주 사용되는 구조로써, 전통적인 OOP(객체지향 프로그래밍)와는 **전혀 다른 방식**으로 시스템을 구성한다.

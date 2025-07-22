@@ -1,10 +1,8 @@
-
 ### TapGesture
 ![[Pasted image 20250719163815.png]]
 
 해당 코드를 `RealityView {...}`밖에 추가해준다.
 `targetedToAnyEntity()`를 통해서 어떤 물체가 선택되었는지 확인할 수 있다.
-
 
 
 ### Turntable 예제 코드
@@ -130,3 +128,31 @@ visionOS의 **공간(Scene) 구성과 객체 동작**은 ECS가 표준이고, �
 
 
 ### 커맨드(Command) 패턴
+
+
+### Entity
+```swift
+if let plus = attachments.entity(for: "plus") {
+        plus.position = SIMD3(1.6685265, 1.82187057, -0.07426834)
+        plus.orientation = simd_quatf(angle: -.pi / 2, axis: SIMD3(0, 1, 0))
+
+        content.add(plus)
+      }
+```
+
+위 코드는 enity를 생성하는게 아닌, "plus"라는 ID에 해당하는 SwiftUI 뷰가 Attachments에 등록되어있는 것을 불러온다.
+
+`attachments.entity(for: "plus")`를 호출하면,  
+`Attachment(id: "plus") { ... }`에서 정의한 SwiftUI 뷰가 **Entity 형태로 반환**됨
+
+```swift
+Attachments: {
+    Attachment(id: "plus") {
+        PlusButtonView {
+            print("plus tapped")
+        }
+    }
+}
+```
+
+최종적으로 `.add(plus)`로 RealityView에 추가해서 실제로 보여줌

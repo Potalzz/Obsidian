@@ -129,7 +129,6 @@ visionOS의 **공간(Scene) 구성과 객체 동작**은 ECS가 표준이고, �
 
 ### 커맨드(Command) 패턴
 
-
 ### Entity
 ```swift
 if let plus = attachments.entity(for: "plus") {

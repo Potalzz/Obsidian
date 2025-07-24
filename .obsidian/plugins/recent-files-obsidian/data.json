@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
       "basename": "방탈출 개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md"
     },
@@ -47,10 +51,6 @@
     {
       "basename": "JS 코딩테스트",
       "path": "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "인코딩&디코딩(Encoding&Decoding)",

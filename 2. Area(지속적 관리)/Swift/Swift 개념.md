@@ -1001,6 +1001,59 @@ Swift Data의 큰 틀 정리
 
 ### @ 속성래퍼
 
+#### @State
+>**뷰 내부에서 사용하는 로컬 상태값을 저장**하고, 해당 값이 바뀌면 **자동으로 뷰를 다시 그리게 하는 역할**
+
+---
+
+#### @Binding
+> 다른 뷰로부터 전달받은 `@State` 값을 **읽고 쓸 수 있는 연결 고리** 역할
+
+##### ✔️ 특징
+- 값의 소유권은 `@State`가 있는 부모가 가짐
+    
+- 자식 뷰에서 해당 값을 **수정 가능**
+
+---
+
+#### @ObservedObject
+> 외부에서 옵저빙 가능한 객체를 받아서 그 객체의 상태 변화를 추적
+
+---
+
+#### @Environment
+> SwiftUI가 제공하는 시스템 정보(예: 색상 모드, 접근성 등)를 가져옴
+
+```swift
+@Environment(\.colorScheme) var colorScheme  Text(colorScheme == .dark ? "다크 모드" : "라이트 모드")
+```
+
+---
+
+#### @EnvironmentObject
+> 전역에서 공유되는 모델 데이터를 사용하고 싶을 때 사용.  
+>`@ObservedObject`처럼 동작하지만, **의존성 주입(DI)** 방식으로 전달됨.
+
+```swift
+class UserSettings: ObservableObject {
+    @Published var username = "guest"
+}
+```
+
+```swift
+struct ChildView: View {
+    @EnvironmentObject var settings: UserSettings
+
+    var body: some View {
+        Text("Hello, \(settings.username)")
+    }
+}
+```
+
+상위 뷰에서 `.environmentObject(settings)`로 등록해주어야 작동함
+
+---
+
 #### @StateObject
 >SwiftUI에서 **뷰가 특정 객체의 생명주기를 직접 관리해야 할 때** 사용하는 속성 래퍼.
 
@@ -1032,6 +1085,19 @@ Swift Data의 큰 틀 정리
 | ----------------- | ----------- | ------ | --------------------- |
 | `@StateObject`    | SwiftUI가 관리 | 뷰 내부   | 객체를 **처음 생성**할 때      |
 | `@ObservedObject` | 외부에서 관리     | 부모 뷰   | 이미 생성된 객체를 **전달**받을 때 |
+
+---
+
+#### 요약 비교
+
+|속성 래퍼|소유권|사용 목적|주 사용 위치|
+|---|---|---|---|
+|`@State`|View 내부|간단한 상태 저장|소규모 View|
+|`@Binding`|전달받음|부모 뷰 상태값 제어|자식 View|
+|`@ObservedObject`|외부 주입|외부 모델 객체 추적|상태 추적용|
+|`@StateObject`|View 내부 생성|모델 객체를 직접 생성·관리|주요 화면 View|
+|`@EnvironmentObject`|글로벌 공유|앱 전체에서 공유되는 상태 관리|여러 View 간 공유|
+|`@Environment`|시스템 제공|시스템 설정에 접근|어디서든 사용|
 
 ### [[프로토콜 (Protocol)]]
 

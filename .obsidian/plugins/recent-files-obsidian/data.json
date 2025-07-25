@@ -5,24 +5,28 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md"
     },
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
-      "basename": "visionOS 기술 공부",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/visionOS 기술 공부.md"
+      "basename": "앱 시작점과 화면 전환 관련 개념",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
     },
     {
       "basename": "방탈출",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md"
     },
     {
-      "basename": "VisionOS 리서치",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 리서치.md"
-    },
-    {
       "basename": "각종 정보",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md"
+    },
+    {
+      "basename": "visionOS 기술 공부",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md"
+    },
+    {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "VisionOS 리서치",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 리서치.md"
     },
     {
       "basename": "필기 개념정리",
@@ -195,10 +199,6 @@
     {
       "basename": "연쇄법칙",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/연쇄법칙.md"
-    },
-    {
-      "basename": "Pasted image 20250509135727",
-      "path": "첨부 파일 소스/이미지 파일 소스/image/Pasted image 20250509135727.png"
     }
   ],
   "omittedPaths": [],

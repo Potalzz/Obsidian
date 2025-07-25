@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/visionOS 기술 공부.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md",
                 "mode": "source",
                 "source": false
               },
@@ -237,13 +237,15 @@
   },
   "active": "fcde7003a19f2ea0",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/visionOS 기술 공부.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "Pasted image 20250719163815.png",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 리서치.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md",
     "Pasted image 20250718212439.png",
@@ -273,7 +275,6 @@
     "4. Archive(자료 보관소)/잡/생각.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/공부 방향.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/코딩 테스트.md",
-    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Ai 기초지식.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4",
     "2. Area(지속적 관리)/Swift/개념 노트",
     "인코딩/디코딩(Encoding",
@@ -285,7 +286,6 @@
     "Excalidraw",
     "무제 2.canvas",
     "무제 1.canvas",
-    "1. Project(진행 중인 프로젝트)/정보처리기사",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학.canvas",
     "4. Archive/AI 공부/Ai Tech 딥러닝 공부/선형대수학.canvas"
   ]

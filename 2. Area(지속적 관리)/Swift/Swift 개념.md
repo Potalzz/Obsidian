@@ -1468,8 +1468,13 @@ Task {
 }
 ```
 
-#### SwiftUI에서 자주 쓰이는 패턴
+#### Swift Excutor 시스템이란 ?
+>Concurrency의 스케줄링과 실행 컨텍스트를 관리하는 시스템
+>어떤 Actor
 
+
+
+#### SwiftUI에서 자주 쓰이는 패턴
 `.task` Modifier
 ```swift
 .someView()
@@ -1478,7 +1483,6 @@ Task {
 	}
 ```
 > SwiftUI가 뷰가 나타날 때 자동으로 Task를 시작해준다.`(.onAppear보다 선호됨)`
-
 
 #### @MainActor
 >어떤 함수/클래스/프로퍼티가 **항상 메인 쓰레드(UI 쓰레드)** 에서 실행되어야 함을 명시적으로 선언.
@@ -1508,3 +1512,30 @@ Task {
 - Swift는 `MainActor`라는 객체를 가지고 있고,
 - 내부적으로 `DispatchQueue.main.async`로 해당 작업을 큐로 등록해서 실행한다.
 
+##### @MainActor 메서드의 외부 호출
+외부 동기(conetxt)에서 @MainActor가 선언된 클래스의 함수를 호출하려면 **반드시 `Task` 혹은 `MainActor.run`** 을 사용해서 호출해야 한다.
+
+**왜 그래야 할까 ?**
+`@MainActor`가 붙은 클래스나 함수는 **메인 액터(Main Actor)** 의 동시성 도메인에서 실행되어야 함을 의미한다. 즉, 해당 함수는 **항상 메인 쓰레드에서 실행되어야 한다**는 강제 규칙이 있음.
+
+**동기 함수에서 직접 호출하면 ?**
+```swift
+let vm = MyViewModel()
+vm.updateUI()  // ❌ 오류 발생 가능
+```
+
+- `updateUI`가 `@MainActor`함수라면, 현재 context가 비동기가 아닌 이상, **메인 쓰레드 전환을 보장할 수 없음**
+- 컴파일러는 경고하거나 오류를 발생시킴
+
+**해결 방법**
+```swift
+Task {
+	await vm.updateUI()
+}
+//또는
+await MainActor.run {
+	vm.updateUI()
+}
+```
+
+#### 

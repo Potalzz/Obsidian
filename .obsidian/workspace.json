@@ -63,7 +63,8 @@
               "title": "Swift 개념"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -194,13 +195,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
+                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "방탈출 의 개요"
+              "title": "Swift 개념 의 개요"
             }
           },
           {
@@ -235,10 +236,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fcde7003a19f2ea0",
+  "active": "b63f0ea362e38c4a",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md",

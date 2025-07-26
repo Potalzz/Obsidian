@@ -1392,7 +1392,8 @@ UIKit / SwiftUI 모두 메인 쓰레드에서만 UI를 안전하게 수정할 �
 위 예시 코드에서 쓰레드를 처리할 때 사용하는 `DispatchQueue`는 Apple에서 제공하는 **멀티쓰레딩 처리 프레임워크**인 **GCD(Grand Central Dispatch)** 의 핵심 클래스 중 하나이다.
 
 - `DispatchQueue.main`: 메인 쓰레드 (UI 관련 작업용)
-- `DispatchQueue.global()`: 백그라운드 쓰레드 ()
+- `DispatchQueue.global()`: 백그라운드 쓰레드 (비동기 작업용)
+
 
 
 

@@ -1424,11 +1424,10 @@ Task {
 - `await`: 해당 함수가 완료될 때까지 기다림
 - `fetchDataFromServer()`는 `async`함수여야 한다.
 
-#### 왜 `Task { }`를 사용할까 ?
+#### 왜 Task { }를 사용할까 ?
 `Task { }`는 동기 코드 안에서 비동기 코드를 실행할 때 필요하다.
 
 ```swift
-
 struct MyView: View {
 	var body: some View {
 		Button("Load")
@@ -1439,16 +1438,46 @@ struct MyView: View {
 }
 ```
 
+- SwiftUI의 `.onAppear` 같은 곳은 `async`가 아닌 일반 함수이기 때문에,
+- `async` 함수를 직접 호출할 수 없고 → `Task {}`를 써야 함
 
+#### Task의 내부 구조(간단한 동작 흐름)
+```swift
+Task {
+  print("백그라운드에서 실행")
+  await MainActor.run {
+    print("UI 업데이트 - 메인 스레드")
+  }
+}
+```
 
+**동작 흐름**
+- `Task`는 백그라운드에서 실행된다 (기본적으로 메인 X)
+- `await MainActor.run`는 해당 블록을 메인 쓰레드에서 실행되도록 보장함
 
+#### Task { }는 어떤 쓰레드에서 실행될까?
+- 기본적으로 **Swift의 Executor 시스템**에 따라 스케줄링됨
+- 대부분의 경우 백그라운드 글로벌 큐에서 시작
+- 하지만 필요하면 `MainActor`를 명시해서 메인 스레드에서 실행 가능
 
+```swift
+Task {
+	awiat MainActor.run {
+		self.someUIValue = true
+	}
+}
+```
 
+#### SwiftUI에서 자주 쓰이는 패턴
 
-
-
-#### Task {} 기반
-
+`.task` Modifier
+```swift
+.someView()
+	.task {
+		await viewModel.loadData()
+	}
+```
+> SwiftUI가 뷰가 나타날 때 자동으로 Task를 시작해준다.`(.onAppear보다 선호됨)`
 
 
 #### @MainActor

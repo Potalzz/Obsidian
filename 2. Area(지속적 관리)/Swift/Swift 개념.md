@@ -1470,7 +1470,21 @@ Task {
 
 #### Swift Excutor 시스템이란 ?
 >Concurrency의 스케줄링과 실행 컨텍스트를 관리하는 시스템
->어떤 Actor
+
+#### 용어 정리
+- **Executor:** 어떤 Actor나 Task가 실행될 "실행 컨텍스트"를 의미
+- **Serial Executor:** 순차적으로 Task를 처리하는 Executor(예: `MainActor`)
+- **Concurrent Executor:** 병렬적으로 Task를 처리하는 Excecutor(예: 글러별 큐)
+- **Swift Runtime Scheduler:** 각 Executor의 작업을 스케줄링함
+
+#### 동작 방식
+1. Swift는 `Task` 또는 `Actor`를 실행할 때 내부적으로 적절한 **Executor에 등록**
+2. 해당 Executor는 자신이 관리하는 **작업 큐(Task Queue)**에 이 Task를 넣음**
+3. Swift Runtime**은 Task를 꺼내어 실행 (적절한 순서, 쓰레드로)
+4. `@MainActor`는 **메인 스레드**에서 실행되도록 보장하는 **Serial Executor**
+
+
+
 
 
 

@@ -1424,6 +1424,21 @@ Task {
 - `await`: 해당 함수가 완료될 때까지 기다림
 - `fetchDataFromServer()`는 `async`함수여야 한다.
 
+#### 왜 `Task { }`를 사용할까 ?
+`Task { }`는 동기 코드 안에서 비동기 코드를 실행할 때 필요하다.
+
+```swift
+
+struct MyView: View {
+	var body: some View {
+		Button("Load")
+		Task {
+			await viewModel.loadData()
+		}
+	}
+}
+```
+
 
 
 

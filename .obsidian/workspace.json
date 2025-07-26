@@ -62,9 +62,19 @@
               "icon": "lucide-file",
               "title": "Swift 개념"
             }
+          },
+          {
+            "id": "aebc2f8aec8a2110",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "새 탭"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -236,15 +246,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b63f0ea362e38c4a",
+  "active": "aebc2f8aec8a2110",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "Pasted image 20250719163815.png",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 리서치.md",
     "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md",

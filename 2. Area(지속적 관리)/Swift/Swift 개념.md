@@ -1413,3 +1413,16 @@ class RoomViewModel: ObservableObject {
 ```
 >이렇게 하면 `RoomViewModel`의 모든 메서드와 프로퍼티의 접근은 메인 쓰레드에서 일어나도록 보장된다.
 
+##### 동작 원리
+**컴파일 타임**
+- `@MainActor`가 선언된 함수/타입을 호출할 경우, **컴파일러가 자동으로 await 또는 Dispatch를 삽입**
+- 이를 통해 다른 쓰레드에서 호출하려 할 경우 **런타임에서 안전하게 메인 스레드로 전환**
+```swift
+Task {
+	await viewModel.updateUIState() // 자동으로 메인 쓰레드로 전환
+}
+```
+**런타임**
+- Swift는 `MainActor`라는 객체를 가지고 있고,
+- 내부적으로 `DispatchQueue.main.async`로 해당 작업을 큐로 등록해서 실행한다.
+

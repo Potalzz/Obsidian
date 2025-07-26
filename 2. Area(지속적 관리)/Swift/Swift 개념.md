@@ -1394,9 +1394,22 @@ UIKit / SwiftUI 모두 메인 쓰레드에서만 UI를 안전하게 수정할 �
 - `DispatchQueue.main`: 메인 쓰레드 (UI 관련 작업용)
 - `DispatchQueue.global()`: 백그라운드 쓰레드 (비동기 작업용)
 
-
-
-
 #### 쓰레드 관련 주의점
 -  **메인 쓰레드는 UI만 담당**해야 함. 무거운 작업 넣으면 앱이 멈추거나 튕긴다.
 - 여러 쓰레드가 **같은 변수나 리소스를 동시에 변경**하면 충돌이 발생할 수 있음 → **Race Condition(경쟁 조건)**이라 부름.
+
+#### @MainActor
+>어떤 함수/클래스/프로퍼티가 **항상 메인 쓰레드(UI 쓰레드)** 에서 실행되어야 함을 명시적으로 선언.
+
+```swift
+@Main Actor
+class RoomViewModel: ObservableObject {
+	@Published var someState: Bool = false
+	
+	func updateUIState() {
+		self.someState = true
+	}
+}
+```
+>이렇게 하면 `RoomViewModel`의 모든 메서드와 프로퍼티의 접근은 메인 쓰레드에서 일어나도록 보장된다.
+

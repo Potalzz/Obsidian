@@ -77,7 +77,8 @@
               "title": "MIT 알고리즘 강의"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -249,10 +250,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fcde7003a19f2ea0",
+  "active": "b63f0ea362e38c4a",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",

@@ -5,6 +5,10 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md"
     },
     {
+      "basename": "visionOS 기술 공부",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md"
+    },
+    {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
@@ -23,10 +27,6 @@
     {
       "basename": "각종 정보",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md"
-    },
-    {
-      "basename": "visionOS 기술 공부",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md"
     },
     {
       "basename": "VisionOS 리서치",

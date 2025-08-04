@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "나의 이야기",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge 4/나의 이야기.md"
+    },
+    {
       "basename": "방탈출 개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md"
     },
@@ -34,11 +38,11 @@
     },
     {
       "basename": "필기 개념정리",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 개념정리.md"
+      "path": "3. Resource(정보 저장소)/정보처리기사/필기 개념정리.md"
     },
     {
       "basename": "실기 개념정리",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/실기 개념정리.md"
+      "path": "3. Resource(정보 저장소)/정보처리기사/실기 개념정리.md"
     },
     {
       "basename": "영양제",
@@ -46,7 +50,7 @@
     },
     {
       "basename": "필기 기출 풀이",
-      "path": "1. Project(진행 중인 프로젝트)/정보처리기사/필기 기출 풀이.md"
+      "path": "3. Resource(정보 저장소)/정보처리기사/필기 기출 풀이.md"
     },
     {
       "basename": "CS 지식",
@@ -195,10 +199,6 @@
     {
       "basename": "경사하강법",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/경사하강법.md"
-    },
-    {
-      "basename": "연쇄법칙",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/연쇄법칙.md"
     }
   ],
   "omittedPaths": [],

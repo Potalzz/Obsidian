@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "visionOS 기술 공부",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md"
+    },
+    {
       "basename": "멘토링 목표",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge 4/멘토링 목표.md"
+    },
+    {
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
       "basename": "나의 이야기",
@@ -15,10 +23,6 @@
     {
       "basename": "방탈출 개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출 개발.md"
-    },
-    {
-      "basename": "visionOS 기술 공부",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md"
     },
     {
       "basename": "MIT 알고리즘 강의",
@@ -127,10 +131,6 @@
     {
       "basename": "My Onething 발표",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/My Onething 발표.md"
-    },
-    {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
       "basename": "개발 관련",

@@ -155,3 +155,11 @@ Attachments: {
 ```
 
 최종적으로 `.add(plus)`로 RealityView에 추가해서 실제로 보여줌
+
+
+### SIMD
+> **한 번의 명령어로 여러 데이터를 동시에 처리**하는 방식. CPU/GPU에서 병렬 연산이 가능해 빠르다.
+
+`SIMD3` 3개의 값을 가진 SIMD벡터 (x, y, z 좌표 등)
+
+`realityKit`에서 많이 사용하는 `SIMD3<Float>`는 3차원 벡터를 `Float`타입으로 표현한 구조체이다.ㄹ

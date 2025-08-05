@@ -1,11 +1,11 @@
-### TapGesture
+## TapGesture
 ![[Pasted image 20250719163815.png]]
 
 해당 코드를 `RealityView {...}`밖에 추가해준다.
 `targetedToAnyEntity()`를 통해서 어떤 물체가 선택되었는지 확인할 수 있다.
 
 
-### Turntable 예제 코드
+## Turntable 예제 코드
 > https://developer.apple.com/documentation/visionos/creating-immersive-spaces-in-visionos-with-swiftui
 
 **Component**
@@ -18,11 +18,11 @@
 - 특정 컴포넌트를 가진 **Eniity**를 찾아서, 그에 따른 로직을 실행
 - 시간의 흐름에 따라 컴포넌트가 붙은 Entity를 어떻게 업데이트할지 결정
 
-### ECS(Entity-Component-System) 패턴
+## ECS(Entity-Component-System) 패턴
 > 행위(Behavior)와 데이터(Data)를 분리하는 구조
 
 **ECS 패턴**는 게임 엔진과 실시간 그래픽 환경(예: RealityKit, Unity DOTS 등)에서 자주 사용되는 구조로써, 전통적인 OOP(객체지향 프로그래밍)와는 **전혀 다른 방식**으로 시스템을 구성한다.
-##### Entity (엔티티)
+#### Entity (엔티티)
 - 고유 ID를 가진 존재
 - 자기 자신은 아무 기능도 하지 않음
 - 컴포넌트를 붙여야 의미가 생김
@@ -32,7 +32,7 @@
 let car = Entity()
 ```
 
-##### Component (컴포넌트)
+#### Component (컴포넌트)
 - 순수 데이터만 저장하는 구조체
 - Entity에 부착돼서 "이 엔티티는 어떤 속성을 가진다"고 정의
 - 행동(로직)은 없음
@@ -62,7 +62,7 @@ struc HealthComponent: Component {
 ```
 
 
-##### System (시스템)
+#### System (시스템)
 - 로직과 행위를 담당
 - 특정 컴포넌트를 가진 Entity들을 찾아서, 그에 대한 로직을 실행
 - 시간 흐름에 따른 업데이트 처리
@@ -77,7 +77,7 @@ struct HealthSystem: System {
 ```
 
 
-##### 동작 방식 요약 (예시)
+#### 동작 방식 요약 (예시)
 
 예를 들어, 회전하는 공을 만들고 싶다면:
 
@@ -88,7 +88,7 @@ struct HealthSystem: System {
 3. `TurnTableSystem`이 돌아가며 → 그 공을 계속 회전시킴
 
 
-##### 객체지향과의 차이점
+#### 객체지향과의 차이점
 
 | 항목      | ECS 아키텍처                    | 객체지향 프로그래밍 (OOP)     |
 | ------- | --------------------------- | -------------------- |
@@ -98,14 +98,14 @@ struct HealthSystem: System {
 | 확장성     | 유연함                         | 상속 깊어질수록 어려워짐        |
 | 성능      | 캐시 친화적, 병렬처리 쉬움             | 상대적으로 느림 (특히 실시간 환경) |
 
-##### 현실 예시
+#### 현실 예시
 |상황|Entity|Component|System|
 |---|---|---|---|
 |비행기 시뮬레이터|비행기 Entity|위치, 속도, 방향|물리 시스템, 조작 시스템|
 |RPG 게임 캐릭터|캐릭터 Entity|체력, 위치, 장비, 애니메이션 상태|전투 시스템, AI 시스템|
 |VisionOS에서 회전 오브젝트|큐브 Entity|TurnTableComponent|TurnTableSystem|
 
-##### 그렇다면 MVVM은 쓰지 않는가 ?
+#### 그렇다면 MVVM은 쓰지 않는가 ?
 ECS아키텍처를 사용한다고 해서 모든 로직까지 해당 아키텍처를 통해 구성하지는 않는다.
 
 SwiftUI 등 UI 레이어에서의 **상태 관리와 뷰 바인딩 등 반복적인 UI 로직**에서는 MVVM을 사용한다.
@@ -114,7 +114,7 @@ SwiftUI 등 UI 레이어에서의 **상태 관리와 뷰 바인딩 등 반복적
 공간상의 3D 객체 동작(물리, 회전, 애니메이션)은 ECS로 처리하고,
 UI 상태, 로딩, 네트워크 등은 MVVM으로 처리하는 하이브리드패턴이 보편적으로 사용된다.
 
-###### VisionOS 개발에서의 ECS활용
+##### VisionOS 개발에서의 ECS활용
 - **3D 씬, 물리, 애니메이션, 입력, 렌더링 등** 핵심 동작은 ECS 구조로 처리된다.
 	
 - visionOS용 예제도 대부분 **ECS 기반으로 구현된 코드 위주**
@@ -123,13 +123,13 @@ UI 상태, 로딩, 네트워크 등은 MVVM으로 처리하는 하이브리드�
 
 visionOS의 **공식 권장 방식**이기도 하고, **실제 예제·프로젝트**도 **ECS 기반**이 대부분임.
 
-##### 그래서 결론은 ?
+#### 그래서 결론은 ?
 visionOS의 **공간(Scene) 구성과 객체 동작**은 ECS가 표준이고, 대부분 예제 및 실무도 이 구조를 따른다. 반면, SwiftUI 화면과 일반 로직(UI 상태, 모델 데이터, 로딩 등)은 **MVVM 패턴**이 흔하게 병행됨.
 
 
-### 커맨드(Command) 패턴
+## 커맨드(Command) 패턴
 
-### Entity
+## Entity
 ```swift
 if let plus = attachments.entity(for: "plus") {
         plus.position = SIMD3(1.6685265, 1.82187057, -0.07426834)
@@ -157,27 +157,29 @@ Attachments: {
 최종적으로 `.add(plus)`로 RealityView에 추가해서 실제로 보여줌
 
 
-### SIMD
+## SIMD
 > **한 번의 명령어로 여러 데이터를 동시에 처리**하는 방식. CPU/GPU에서 병렬 연산이 가능해 빠르다.
 
 `realityKit`에서 많이 사용하는 `SIMD3<Float>`는 3차원 벡터를 `Float`타입으로 표현한 구조체이다.
 `SIMD3`:  3개의 값을 가진 SIMD벡터 (x, y, z 좌표 등)
 
-#### `SIMD3<Float>`를 쓰는 이유
+### `SIMD3<Float>`를 쓰는 이유
 
-### 1. 성능 향상
+#### 1. 성능 향상
 - Swift의 `simd` 모듈은 하드웨어 수준의 SIMD 명령어를 활용
     
 - 벡터/행렬 연산을 매우 빠르게 수행 가능  
     (예: 벡터 합, 내적, 외적, 변환 등)
 
-### 2. 가독성 좋고 직관적
+#### 2. 가독성 좋고 직관적
 - 3D 좌표, 색상값 등 벡터 표현이 쉬움  
     예: `SIMD3<Float>(r, g, b)`처럼 RGB 색상도 표현 가능
 
-### 3. 연산 오버로드 제공
+#### 3. 연산 오버로드 제공
 - +, -, *, / 같은 연산자 사용이 가능  
     벡터 간 연산도 직관적으로 표현 가능
 
 
+### 그럼 `SIMD4`는 무엇일까 ?
 
+**SIMD3**까지는 

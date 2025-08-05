@@ -162,4 +162,6 @@ Attachments: {
 
 `SIMD3` 3개의 값을 가진 SIMD벡터 (x, y, z 좌표 등)
 
-`realityKit`에서 많이 사용하는 `SIMD3<Float>`는 3차원 벡터를 `Float`타입으로 표현한 구조체이다.ㄹ
+`realityKit`에서 많이 사용하는 `SIMD3<Float>`는 3차원 벡터를 `Float`타입으로 표현한 구조체이다.
+
+

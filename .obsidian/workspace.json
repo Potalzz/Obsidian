@@ -77,7 +77,8 @@
               "title": "MIT 알고리즘 강의"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -249,10 +250,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fcde7003a19f2ea0",
+  "active": "1dec7db9146fb49d",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge 4/멘토링 목표.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md",
     "2. Area(지속적 관리)/Swift/단축키.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge 4/나의 이야기.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",

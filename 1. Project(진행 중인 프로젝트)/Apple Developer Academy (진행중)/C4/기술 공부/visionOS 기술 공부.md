@@ -229,6 +229,33 @@ Attachments: {
 `w = 0` → 방향은 이동 변환 무시  
 이게 **자동**으로 된다.
 
+**변환 행렬은 변환 공식 압축 파일과도 같다.**
+
+점(1, 0, 0)을 90도 회전, x축으로 5 이동하는 예제를 통해 살펴보자.
+
+**행렬 없이**
+```swift
+// 회전
+let rotatedX = cos(-.pi/2) * 1 - sin(-.pi/2) * 0 // 0
+let rotatedY = sin(-.pi/2) * 1 + cos(-.pi/2) * 0 // -1
+
+// 이동
+let finalX = rotatedX + 5 // 5
+let finalY = rotatedY     // -1
+```
+
+**행렬을 통한 계산**
+```swift
+let rotation = float4x4(rotationZ: -.pi/2)
+let translation = float4x4(translation: SIMD3<Float>(5, 0, 0))
+let transform = translation * rotation
+
+let point = SIMD4<Float>(1, 0, 0, 1)
+let result = transform * point // 자동 계산
+```
+
+행렬을 사용하면 4x4행렬에 변환하고 싶은 수치만 넣어서 간편하게 조정할 수 있다
+
 
 
 

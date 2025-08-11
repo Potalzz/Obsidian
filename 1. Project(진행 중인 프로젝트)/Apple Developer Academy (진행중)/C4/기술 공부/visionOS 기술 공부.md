@@ -126,10 +126,7 @@ visionOS의 **공식 권장 방식**이기도 하고, **실제 예제·프로젝
 #### 그래서 결론은 ?
 visionOS의 **공간(Scene) 구성과 객체 동작**은 ECS가 표준이고, 대부분 예제 및 실무도 이 구조를 따른다. 반면, SwiftUI 화면과 일반 로직(UI 상태, 모델 데이터, 로딩 등)은 **MVVM 패턴**이 흔하게 병행됨.
 
-
-## 커맨드(Command) 패턴
-
-## Entity
+#### Entity에 관한 추가 내용
 ```swift
 if let plus = attachments.entity(for: "plus") {
         plus.position = SIMD3(1.6685265, 1.82187057, -0.07426834)

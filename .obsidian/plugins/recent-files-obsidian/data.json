@@ -1,12 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
       "basename": "visionOS 기술 공부",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/visionOS 기술 공부.md"
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/visionOS 기술 공부.md"
+    },
+    {
+      "basename": "메모",
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/메모.md"
+    },
+    {
+      "basename": "프로젝트 연습",
+      "path": "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/프로젝트 연습.md"
+    },
+    {
+      "basename": "문법",
+      "path": "2. Area(지속적 관리)/Swift/문법.md"
+    },
+    {
+      "basename": "Swift 실전편 스터디",
+      "path": "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/Swift 실전편 스터디.md"
+    },
+    {
+      "basename": "앱 시작점과 화면 전환 관련 개념",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
+    },
+    {
+      "basename": "VisionOS 리서치",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 리서치.md"
     },
     {
       "basename": "멘토링 목표",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge 4/멘토링 목표.md"
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Bridge 4/멘토링 목표.md"
     },
     {
       "basename": "단축키",
@@ -14,11 +42,7 @@
     },
     {
       "basename": "나의 이야기",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge 4/나의 이야기.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+      "path": "2. Area(지속적 관리)/Apple Developer Academy/Bridge 4/나의 이야기.md"
     },
     {
       "basename": "방탈출 개발",
@@ -29,20 +53,12 @@
       "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
     },
     {
-      "basename": "앱 시작점과 화면 전환 관련 개념",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
-    },
-    {
       "basename": "방탈출",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md"
     },
     {
       "basename": "각종 정보",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/각종 정보.md"
-    },
-    {
-      "basename": "VisionOS 리서치",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/VisionOS 리서치.md"
     },
     {
       "basename": "필기 개념정리",
@@ -54,7 +70,7 @@
     },
     {
       "basename": "영양제",
-      "path": "2. Area(지속적 관리)/건강/영양제.md"
+      "path": "3. Resource(정보 저장소)/건강/영양제.md"
     },
     {
       "basename": "필기 기출 풀이",
@@ -79,10 +95,6 @@
     {
       "basename": "세션 내용 기록",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/세션 내용 기록.md"
-    },
-    {
-      "basename": "메모",
-      "path": "2. Area(지속적 관리)/Apple Developer Academy/메모.md"
     },
     {
       "basename": "Week 2 \"Closure\"",
@@ -145,10 +157,6 @@
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge3/파티 상세 화면.md"
     },
     {
-      "basename": "문법",
-      "path": "2. Area(지속적 관리)/Swift/문법.md"
-    },
-    {
       "basename": "클로저(Closure)",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md"
     },
@@ -173,10 +181,6 @@
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md"
     },
     {
-      "basename": "Swift 실전편 스터디",
-      "path": "2. Area(지속적 관리)/Swift/Swift 실전편 스터디.md"
-    },
-    {
       "basename": "역전파 알고리즘",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/역전파 알고리즘.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "가능도",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/가능도.md"
-    },
-    {
-      "basename": "결합분포",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/결합분포.md"
     }
   ],
   "omittedPaths": [],

@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+      "basename": "수학",
+      "path": "2. Area(지속적 관리)/학습/수학.md"
     },
     {
       "basename": "visionOS 기술 공부",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/visionOS 기술 공부.md"
+    },
+    {
+      "basename": "C5 계획",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md"
+    },
+    {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "메모",
@@ -191,14 +199,6 @@
     {
       "basename": "Pasted image 20250510150812",
       "path": "첨부 파일 소스/Image File 1/Pasted image 20250510150812.png"
-    },
-    {
-      "basename": "Pasted image 20250510204416",
-      "path": "첨부 파일 소스/Image File 1/Pasted image 20250510204416.png"
-    },
-    {
-      "basename": "가능도",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/가능도.md"
     }
   ],
   "omittedPaths": [],

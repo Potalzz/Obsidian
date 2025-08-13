@@ -5,12 +5,16 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md"
     },
     {
-      "basename": "Drawing 2025-08-14 00.45.46.excalidraw",
-      "path": "Excalidraw/Drawing 2025-08-14 00.45.46.excalidraw.md"
-    },
-    {
       "basename": "C5 계획",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md"
+    },
+    {
+      "basename": "Drawing 2025-08-14 01.27.14.excalidraw",
+      "path": "Excalidraw/Drawing 2025-08-14 01.27.14.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-08-14 00.45.46.excalidraw",
+      "path": "Excalidraw/Drawing 2025-08-14 00.45.46.excalidraw.md"
     },
     {
       "basename": "MIT 알고리즘 강의",
@@ -195,10 +199,6 @@
     {
       "basename": "역전파 알고리즘",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/역전파 알고리즘.md"
-    },
-    {
-      "basename": "무제",
-      "path": "무제.canvas"
     }
   ],
   "omittedPaths": [],

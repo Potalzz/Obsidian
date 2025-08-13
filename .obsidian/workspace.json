@@ -89,8 +89,7 @@
               "title": "MIT 알고리즘 강의"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -263,10 +262,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ad4ddb3f329ac173",
+  "active": "1dec7db9146fb49d",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md",
+    "Pasted image 20250814004918.png",
     "Excalidraw/Drawing 2025-08-14 00.45.46.excalidraw.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md",
     "Pasted image 20250814004526.png",
     "Pasted image 20250814004340.png",
     "Pasted image 20250814004234.png",
@@ -304,7 +304,6 @@
     "3. Resource(정보 저장소)/정보처리기사/필기 기출 풀이.md",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md",
-    "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md",
     "3. Resource(정보 저장소)/건강",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4",
     "2. Area(지속적 관리)/Swift/개념 노트",

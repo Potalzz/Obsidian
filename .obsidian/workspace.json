@@ -77,7 +77,8 @@
               "title": "MIT 알고리즘 강의"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,11 +251,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1dec7db9146fb49d",
+  "active": "a99321fb5131a36d",
   "lastOpenFiles": [
-    "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md",
+    "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md",
     "Pasted image 20250813163204.png",
     "Pasted image 20250813163202.png",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/visionOS 기술 공부.md",

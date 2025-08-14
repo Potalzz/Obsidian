@@ -5,6 +5,10 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md"
     },
     {
+      "basename": "Drawing 2025-08-14 13.53.02.excalidraw",
+      "path": "Excalidraw/Drawing 2025-08-14 13.53.02.excalidraw.md"
+    },
+    {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Challenge 1",
       "path": "2. Area(지속적 관리)/Apple Developer Academy/Challenge 1.md"
-    },
-    {
-      "basename": "역전파 알고리즘",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/역전파 알고리즘.md"
     }
   ],
   "omittedPaths": [],

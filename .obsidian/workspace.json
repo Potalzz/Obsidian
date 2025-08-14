@@ -77,7 +77,8 @@
               "title": "방탈출"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,10 +251,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1dec7db9146fb49d",
+  "active": "a99321fb5131a36d",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md",
     "Excalidraw/Drawing 2025-08-14 13.53.02.excalidraw.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",

@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "658a46d88411c099",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2025-08-14 17.15.41.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-08-14 17.15.41.excalidraw"
+            }
+          },
+          {
             "id": "a99321fb5131a36d",
             "type": "leaf",
             "state": {
@@ -144,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -227,14 +238,23 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "37d863c3fd94a21c",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -252,8 +272,9 @@
   },
   "active": "1dec7db9146fb49d",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md",
+    "Excalidraw/Drawing 2025-08-14 17.15.41.excalidraw.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 학습 노트.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C5/C5 계획.md",
     "Excalidraw/Drawing 2025-08-14 13.53.02.excalidraw.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4/방탈출.md",
@@ -291,7 +312,6 @@
     "3. Resource(정보 저장소)/정보처리기사/실기 개념정리.md",
     "3. Resource(정보 저장소)/건강/영양제.md",
     "3. Resource(정보 저장소)/정보처리기사/필기 기출 풀이.md",
-    "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "3. Resource(정보 저장소)/건강",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/C4",
     "2. Area(지속적 관리)/Swift/개념 노트",

@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "메모장",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
+    },
+    {
+      "basename": "각종 정보",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md"
+    },
+    {
+      "basename": "방탈출 개발",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
+    },
+    {
+      "basename": "방탈출",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md"
+    },
+    {
       "basename": "아이디어",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
     },
@@ -27,10 +43,6 @@
     {
       "basename": "Swift 개념",
       "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
-      "basename": "방탈출",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md"
     },
     {
       "basename": "MIT 알고리즘 강의",
@@ -85,14 +97,6 @@
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 4/나의 이야기.md"
     },
     {
-      "basename": "방탈출 개발",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
-    },
-    {
-      "basename": "각종 정보",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md"
-    },
-    {
       "basename": "필기 개념정리",
       "path": "3. Resource(정보 저장소)/정보처리기사/필기 개념정리.md"
     },
@@ -119,10 +123,6 @@
     {
       "basename": "인코딩&디코딩(Encoding&Decoding)",
       "path": "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md"
-    },
-    {
-      "basename": "메모장",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
     },
     {
       "basename": "세션 내용 기록",

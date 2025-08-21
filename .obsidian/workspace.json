@@ -63,7 +63,8 @@
               "title": "방탈출"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -245,10 +246,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d3faf366e1561e5d",
+  "active": "a99321fb5131a36d",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 계획.md",
     "Pasted image 20250820164754.png",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md",

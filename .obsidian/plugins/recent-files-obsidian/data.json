@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "C5 학습 노트",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
+      "basename": "Bridge5",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5.md"
     },
     {
       "basename": "C5 계획",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 계획.md"
+    },
+    {
+      "basename": "영양제",
+      "path": "3. Resource(정보 저장소)/건강/영양제.md"
+    },
+    {
+      "basename": "C5 학습 노트",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
     },
     {
       "basename": "아이디어",
@@ -105,10 +113,6 @@
       "path": "3. Resource(정보 저장소)/정보처리기사/실기 개념정리.md"
     },
     {
-      "basename": "영양제",
-      "path": "3. Resource(정보 저장소)/건강/영양제.md"
-    },
-    {
       "basename": "필기 기출 풀이",
       "path": "3. Resource(정보 저장소)/정보처리기사/필기 기출 풀이.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "프로토콜 (Protocol)",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/SSG 스터디_T4/개념/프로토콜 (Protocol).md"
-    },
-    {
-      "basename": "Challenge 2",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge 2.md"
     }
   ],
   "omittedPaths": [],

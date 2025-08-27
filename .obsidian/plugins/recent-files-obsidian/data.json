@@ -1,8 +1,24 @@
 {
   "recentFiles": [
     {
+      "basename": "아이디어",
+      "path": "2. Area(지속적 관리)/블로그/아이디어.md"
+    },
+    {
+      "basename": "C5 학습 노트",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
+    },
+    {
+      "basename": "visionOS 기술 공부",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/visionOS 기술 공부.md"
+    },
+    {
       "basename": "현대 개발자 4인 강연",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/현대 개발자 4인 강연.md"
+    },
+    {
+      "basename": "Bridge5",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/Bridge5.md"
     },
     {
       "basename": "해외 취업 강연",
@@ -11,14 +27,6 @@
     {
       "basename": "주주(2기 창업) 강연",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/주주(2기 창업) 강연.md"
-    },
-    {
-      "basename": "C5 학습 노트",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
-    },
-    {
-      "basename": "Bridge5",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/Bridge5.md"
     },
     {
       "basename": "C5 계획",
@@ -67,10 +75,6 @@
     {
       "basename": "MIT 알고리즘 강의",
       "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
-    },
-    {
-      "basename": "visionOS 기술 공부",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/visionOS 기술 공부.md"
     },
     {
       "basename": "Drawing 2025-08-14 01.27.14.excalidraw",
@@ -195,10 +199,6 @@
     {
       "basename": "개발 관련",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge3/개발 관련.md"
-    },
-    {
-      "basename": "리서치 정리",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge3/리서치 정리.md"
     }
   ],
   "omittedPaths": [],

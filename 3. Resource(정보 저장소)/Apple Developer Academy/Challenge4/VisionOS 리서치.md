@@ -111,38 +111,28 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 1. **Enterprise API 사용 불가** 
     https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis
     - 
-    - 카메라 피드, LiDAR 센서 데이터 등 하드웨어 저수준 접근은 **기업 계정 전용**입니다[1](https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/)[2](https://framesixty.com/apple-vision-pro-development-for-enterprise/). 개인 개발자는 다음 기능을 구현할 수 없습니다:
-        
-    - 실시간 카메라 데이터를 활용한 AR 오버레이
-        
-    - LiDAR를 이용한 정밀 공간 매핑
-        
-    - 화면 캡처 시 패스스루 영상 포함[2](https://framesixty.com/apple-vision-pro-development-for-enterprise/)
-        
+    - 카메라 피드, LiDAR 센서 데이터 등 하드웨어 저수준 접근은 **기업 계정 전용**이다.[출처1](https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/)[출처2](https://framesixty.com/apple-vision-pro-development-for-enterprise/).
+    - 개인 개발자는 다음 기능을 구현할 수 없음.
+        - 실시간 카메라 데이터를 활용한 AR 오버레이
+        - LiDAR를 이용한 정밀 공간 매핑
+        - 화면 캡처 시 패스스루 영상 포함[출처3](https://framesixty.com/apple-vision-pro-development-for-enterprise/)
+		
 2. **상호작용 데이터 접근 제한**
-    
-    - 시선 추적, 정교한 손동작 인식 데이터는 **'꼬집기' 제스처 수준**으로 제한됩니다[3](https://www.rebel9.co.kr/kr/works/archive-exhibition/ae-research/apple-vision-pro-case-study/)[4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/):
-        
-    - 손 뼈대 정보 미제공 → 복잡한 제스처 구현 불가
-        
+      
     - 시선 위치 추적 불가 → 주의 집중도 분석 등 활용 제한
         
 3. **공간 고정 API 부재**
     
-    - 가상 오브젝트를 물리적 공간에 **영구 고정**할 수 없습니다[4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/):
-        
-    - "Magnetically Pinning" API 미구현 → 앱 재실행 시 위치 초기화
-        
-    - 가구/벽면에 UI 고정 불가 → 혼합현실 경험 제한적
+    - 가상 오브젝트를 물리적 공간에 **영구 고정**할 수 없음[출처4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/)
+      (서버에 좌표를 저장하여, 실행마다 해당 좌표를 불러오는 형식으로 우회해서 가능)
         
 4. **시각 효과 기술 한계**
     
-    - Shader Graph에서 **HLSL(고급 셰이더 언어) 미지원**[5](https://www.gianty.com/apple-vision-pro-app-development/):
+    - Shader Graph에서 **HLSL(고급 셰이더 언어) 미지원**[출처5](https://www.gianty.com/apple-vision-pro-app-development/):
         
     - 복잡한 머티리얼 효과 구현 어려움
         
     - 파티클 시스템 제한 → 화려한 VFX 구현 불가능
-        
 
 ### 개발이 특히 어려운 앱 유형
 

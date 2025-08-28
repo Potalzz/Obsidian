@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "방탈출 앱 개발",
+      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
+    },
+    {
       "basename": "아이디어",
       "path": "2. Area(지속적 관리)/블로그/아이디어.md"
     },
@@ -14,19 +18,19 @@
     },
     {
       "basename": "현대 개발자 4인 강연",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/현대 개발자 4인 강연.md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge5/현대 개발자 4인 강연.md"
     },
     {
       "basename": "Bridge5",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/Bridge5.md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge5/Bridge5.md"
     },
     {
       "basename": "해외 취업 강연",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/해외 취업 강연.md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge5/해외 취업 강연.md"
     },
     {
       "basename": "주주(2기 창업) 강연",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Bridge5/주주(2기 창업) 강연.md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge5/주주(2기 창업) 강연.md"
     },
     {
       "basename": "C5 계획",
@@ -74,7 +78,7 @@
     },
     {
       "basename": "MIT 알고리즘 강의",
-      "path": "3. Resource(정보 저장소)/알고리즘/MIT 알고리즘 강의.md"
+      "path": "4. Archive(자료 보관소)/알고리즘/MIT 알고리즘 강의.md"
     },
     {
       "basename": "Drawing 2025-08-14 01.27.14.excalidraw",
@@ -122,15 +126,15 @@
     },
     {
       "basename": "필기 개념정리",
-      "path": "3. Resource(정보 저장소)/정보처리기사/필기 개념정리.md"
+      "path": "4. Archive(자료 보관소)/정보처리기사/필기 개념정리.md"
     },
     {
       "basename": "실기 개념정리",
-      "path": "3. Resource(정보 저장소)/정보처리기사/실기 개념정리.md"
+      "path": "4. Archive(자료 보관소)/정보처리기사/실기 개념정리.md"
     },
     {
       "basename": "필기 기출 풀이",
-      "path": "3. Resource(정보 저장소)/정보처리기사/필기 기출 풀이.md"
+      "path": "4. Archive(자료 보관소)/정보처리기사/필기 기출 풀이.md"
     },
     {
       "basename": "CS 지식",
@@ -138,7 +142,7 @@
     },
     {
       "basename": "JS 코딩테스트",
-      "path": "3. Resource(정보 저장소)/알고리즘/JS 코딩테스트.md"
+      "path": "4. Archive(자료 보관소)/알고리즘/JS 코딩테스트.md"
     },
     {
       "basename": "인코딩&디코딩(Encoding&Decoding)",
@@ -195,10 +199,6 @@
     {
       "basename": "My Onething 발표",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge3/My Onething 발표.md"
-    },
-    {
-      "basename": "개발 관련",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge3/개발 관련.md"
     }
   ],
   "omittedPaths": [],

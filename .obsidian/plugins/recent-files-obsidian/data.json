@@ -5,6 +5,10 @@
       "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
     },
     {
+      "basename": "영양제",
+      "path": "3. Resource(정보 저장소)/건강/영양제.md"
+    },
+    {
       "basename": "Bridge5",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/Bridge5.md"
     },
@@ -39,10 +43,6 @@
     {
       "basename": "C5 계획",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 계획.md"
-    },
-    {
-      "basename": "영양제",
-      "path": "3. Resource(정보 저장소)/건강/영양제.md"
     },
     {
       "basename": "아이디어",
@@ -191,10 +191,6 @@
     {
       "basename": "모임 내용",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/SSG 스터디_T4/모임 내용.md"
-    },
-    {
-      "basename": "1",
-      "path": "1.md"
     },
     {
       "basename": "My Onething 발표",

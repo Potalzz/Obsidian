@@ -5,6 +5,22 @@
       "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
     },
     {
+      "basename": "화면 기록 2025-08-18 오후 1.30.06",
+      "path": "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov"
+    },
+    {
+      "basename": "Pasted image 20250820164754",
+      "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250820164754.png"
+    },
+    {
+      "basename": "선형변환",
+      "path": "첨부 파일 소스/이미지 파일 소스/선형변환.gif"
+    },
+    {
+      "basename": "Pasted image 20250529213938",
+      "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250529213938.png"
+    },
+    {
       "basename": "영양제",
       "path": "3. Resource(정보 저장소)/건강/영양제.md"
     },
@@ -66,7 +82,7 @@
     },
     {
       "basename": "Pasted image 20250814014223",
-      "path": "Pasted image 20250814014223.png"
+      "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250814014223.png"
     },
     {
       "basename": "Drawing 2025-08-14 17.15.41.excalidraw",
@@ -183,18 +199,6 @@
     {
       "basename": "코딩 테스트",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/코딩 테스트.md"
-    },
-    {
-      "basename": "Ai 기초지식",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Ai 기초지식.md"
-    },
-    {
-      "basename": "모임 내용",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/SSG 스터디_T4/모임 내용.md"
-    },
-    {
-      "basename": "My Onething 발표",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge3/My Onething 발표.md"
     }
   ],
   "omittedPaths": [],

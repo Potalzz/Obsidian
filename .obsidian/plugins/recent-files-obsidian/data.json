@@ -5,6 +5,14 @@
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
     },
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "Bridge5",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/Bridge5.md"
+    },
+    {
       "basename": "방탈출 개발",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
     },
@@ -19,10 +27,6 @@
     {
       "basename": "앱 시작점과 화면 전환 관련 개념",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
-    },
-    {
-      "basename": "Bridge5",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/Bridge5.md"
     },
     {
       "basename": "방탈출 앱 개발",
@@ -79,10 +83,6 @@
     {
       "basename": "아이디어",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "각종 정보",

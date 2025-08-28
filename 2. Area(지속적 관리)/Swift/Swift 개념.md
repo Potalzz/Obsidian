@@ -1483,7 +1483,6 @@ Task {
 3. Swift Runtime**은 Task를 꺼내어 실행 (적절한 순서, 쓰레드로)
 4. `@MainActor`는 **메인 스레드**에서 실행되도록 보장하는 **Serial Executor**
 
-
 #### SwiftUI에서 자주 쓰이는 패턴
 `.task` Modifier
 ```swift

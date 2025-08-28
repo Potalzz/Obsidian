@@ -111,11 +111,14 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
 1. **Enterprise API 사용 불가** 
     https://developer.apple.com/documentation/visionOS/building-spatial-experiences-for-business-apps-with-enterprise-apis
     - 
-    - 카메라 피드, LiDAR 센서 데이터 등 하드웨어 저수준 접근은 **기업 계정 전용**이다.[출처1](https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/)[출처2](https://framesixty.com/apple-vision-pro-development-for-enterprise/).
+    - 카메라 피드, LiDAR 센서 데이터 등 하드웨어 저수준 접근은 **기업 계정 전용**이다.
+      https://www.reddit.com/r/VisionPro/comments/1fdhlh3/what_can_we_as_devs_not_do_yet/
+    - https://framesixty.com/apple-vision-pro-development-for-enterprise/
     - 개인 개발자는 다음 기능을 구현할 수 없음.
         - 실시간 카메라 데이터를 활용한 AR 오버레이
         - LiDAR를 이용한 정밀 공간 매핑
-        - 화면 캡처 시 패스스루 영상 포함[출처3](https://framesixty.com/apple-vision-pro-development-for-enterprise/)
+        - 화면 캡처 시 패스스루 영상 포함
+        - https://framesixty.com/apple-vision-pro-development-for-enterprise/
 		
 2. **상호작용 데이터 접근 제한**
       
@@ -123,12 +126,14 @@ https://www.pcmag.com/picks/the-best-apple-vision-pro-apps
         
 3. **공간 고정 API 부재**
     
-    - 가상 오브젝트를 물리적 공간에 **영구 고정**할 수 없음[출처4](https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/)
+    - 가상 오브젝트를 물리적 공간에 **영구 고정**할 수 없음
+    - https://www.fline.dev/why-i-stopped-building-for-visionos-and-what-could-bring-me-back/
       (서버에 좌표를 저장하여, 실행마다 해당 좌표를 불러오는 형식으로 우회해서 가능)
         
 4. **시각 효과 기술 한계**
     
-    - Shader Graph에서 **HLSL(고급 셰이더 언어) 미지원**[출처5](https://www.gianty.com/apple-vision-pro-app-development/):
+    - Shader Graph에서 **HLSL(고급 셰이더 언어) 미지원**
+    - https://www.gianty.com/apple-vision-pro-app-development/
         
     - 복잡한 머티리얼 효과 구현 어려움
         

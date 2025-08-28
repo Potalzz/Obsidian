@@ -1,8 +1,8 @@
 {
   "recentFiles": [
     {
-      "basename": "방탈출 앱 개발",
-      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
+      "basename": "VisionOS 리서치",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
     },
     {
       "basename": "방탈출 개발",
@@ -13,12 +13,20 @@
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md"
     },
     {
-      "basename": "VisionOS 리서치",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
-    },
-    {
       "basename": "메모장",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
+    },
+    {
+      "basename": "앱 시작점과 화면 전환 관련 개념",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
+    },
+    {
+      "basename": "Bridge5",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/Bridge5.md"
+    },
+    {
+      "basename": "방탈출 앱 개발",
+      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
     },
     {
       "basename": "화면 기록 2025-08-18 오후 1.30.06",
@@ -39,10 +47,6 @@
     {
       "basename": "영양제",
       "path": "3. Resource(정보 저장소)/건강/영양제.md"
-    },
-    {
-      "basename": "Bridge5",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/Bridge5.md"
     },
     {
       "basename": "현대 개발자 4인 강연",
@@ -123,10 +127,6 @@
     {
       "basename": "Swift 실전편 스터디",
       "path": "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/Swift 실전편 스터디.md"
-    },
-    {
-      "basename": "앱 시작점과 화면 전환 관련 개념",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
     },
     {
       "basename": "멘토링 목표",

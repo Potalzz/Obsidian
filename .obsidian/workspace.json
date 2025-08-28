@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md",
+                "file": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "방탈출"
+              "title": "VisionOS 리서치"
             }
           },
           {
@@ -77,7 +77,8 @@
               "title": "방탈출"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -260,18 +261,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d3faf366e1561e5d",
+  "active": "3acc4a93323d1259",
   "lastOpenFiles": [
+    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md",
+    "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md",
+    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md",
     "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov",
     "첨부 파일 소스/이미지 파일 소스/Pasted image 20250820164754.png",
     "첨부 파일 소스/이미지 파일 소스/선형변환.gif",
     "첨부 파일 소스/이미지 파일 소스/Pasted image 20250529213938.png",
-    "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md",
     "무제.canvas",
     "1.md",
     "3. Resource(정보 저장소)/건강/영양제.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/Bridge5.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/현대 개발자 4인 강연.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 기술 공부.md",
     "2. Area(지속적 관리)/Swift/visionOS",
@@ -286,7 +288,6 @@
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6",
     "첨부 파일 소스/이미지 파일 소스/Pasted image 20250819205008.png",
     "첨부 파일 소스/이미지 파일 소스/Pasted image 20250819175423.png",

@@ -266,10 +266,27 @@ let result = transform * point // 자동 계산
 ## Spatial Computing을 위한 SwiftUI
 https://developer.apple.com/documentation/visionOS/World
 
-**공간 컴퓨팅**의 장면은 `Window`, `Volume`, `FullSpace` 총 3가지로 이루어져 있다.
+**공간 컴퓨팅**에서 **Scene** 레벨은  `Window`, `Volume`, `FullSpace` 총 3가지로 이루어져 있다.
 이 화면은 모두 `SwiftUI`로 구성되어 있다.
 
-`Window`와 `Volume`은 여러 앱들에서 동시에 띄울 수 있고, `FullSpace`는 실행되면 하나의 앱이 전체 화면을 제어한다.
+이 세 가지 **Scene**은 **Space**개념으로 나뉘는데, 
+**Shared Space**에는 `Window Scene`, `Volume Scene`두 가지가 위치한다.
+**Full Space**에는 `Immersion Style`에 따라서 세 단계로 나뉜다.
+
+``` swift
+visionOS
+ ├── Shared Space
+ │     ├── Window Scene (2D UI, UIKit/SwiftUI)
+ │     └── Volume Scene (3D UI, RealityKit/SceneKit)
+ │
+ └── Full Space
+       └── Immersive Scene
+             ├── .mixed (현실 + 가상)
+             ├── .progressive (현실 → 가상 전환)
+             └── .full (100% 가상)
+```
+**Shared Space**는 여러 앱들에서 동시에 띄울 수 있고, **Full Space**는 실행되면 하나의 앱이 전체 화면을 제어한다.
+
 
 ### Window
 윈도우에서는 `SwiftUI`에 있는 제스쳐를 사용할 수 있다.

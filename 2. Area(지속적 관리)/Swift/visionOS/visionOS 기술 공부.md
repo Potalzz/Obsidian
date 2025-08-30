@@ -308,20 +308,6 @@ https://developer.apple.com/documentation/visionOS/World
 - **Full Space**에는 `Immersive Space`가 위치해 있고, 이는 `Immersion Style`에 따라서 각기 다른 성질을 가진다.
 
 ``` swift
-visionOS
- ├── Shared Space
- │     ├── Window Scene (2D UI, UIKit/SwiftUI)
- │     └── Volume Scene (3D UI, RealityKit/SceneKit)
- │
- └── Full Space
-       └── Immersive Scene
-             ├── .mixed (현실 + 가상)
-             ├── .progressive (현실 → 가상 전환)
-             └── .full (100% 가상)
-```
-**Shared Space**는 여러 앱들에서 동시에 띄울 수 있고, **Full Space**는 실행되면 하나의 앱이 전체 화면을 제어한다.
-
-``` swift
 App (프로세스)
 └─ Scenes (앱이 선언한 여러 Scene)
    ├─ Shared Space 관련 Scenes

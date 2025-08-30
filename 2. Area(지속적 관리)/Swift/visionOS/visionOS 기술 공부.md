@@ -278,16 +278,32 @@ https://developer.apple.com/documentation/visionOS/World
 ![[Pasted image 20250830200947.png]]
 (Shared Space 공간)
 
-앱에서 **Immersive Space**씬이 표시되면, 앱은 **Full Space** 공간으로 들어감.
+앱에서 `Immersive Space`씬이 표시되면, 앱은 **Full Space** 공간으로 들어감.
 그러면 **Shared Space**를 벗어나므로, 해당 공간에 위치한 다른 **Scene**들은 보이지 않게 된다.
-**Immersive Space**를 표시한 해당 앱은 사용자가 볼 수 있는 **유일한 앱**이 된다.
+`Immersive Space`를 표시한 해당 앱은 사용자가 볼 수 있는 **유일한 앱**이 된다.
 
 ![[Pasted image 20250830201038.png]]
-(Immersive Space)
+(Immersive Space를 보여줘 Full Space공간으로 들어간다)
 
-하나의 앱은 여러 개의 **Scene**들을 가지며 각각의 **Scene**에 해당 **Scene**의 인스턴스를 담고있는 **Group**으로 가지고 있다.
+이 쯤에서 Full Space와 Immerisve Space의 용어가 헷갈릴 수 있기에 짚고 넘어가자면,
+**Full Space**는 **개념적인 용어**이고(Shared Space또한 마찬가지)
+`Immersive Space`는 **Full Space**개념을 코드로 제어하는 방식이다.
 
-즉 앱 하나는 여러 개의 Scene과, 해당 **Scene**에서 **Shared Space**인 경우 여러 개의 **Group**, 그리고 **Group**내부에는 여러 개의 인스턴스로 이루어져 있다. **Full Space**는 **Shared Space**가 아니라 **Full Space**자체이며 하나 만 띄울 수 있어 **Group**으로 구성되지 않는다.
+각각의 자세한 내용은 다음과 같다.
+
+- **Full Space (개념)**
+    - 사용자의 현실 공간(Shared Space)을 넘어서 **앱이 방 전체를 무대**로 삼아 환경을 완전히 제어하는 모드.
+    - 사용자 주변 전체(360°)를 앱이 가상 콘텐츠로 채우거나, 현실을 부분 또는 완전히 차단해서 보여준다.
+    - 몰입 수준(완전 몰입, 부분 몰입 등)에 따라 세부 스타일을 적용한다(예: mixed/progressive/full).
+        
+- **ImmersiveSpace (API/Scene)**
+    - SwiftUI에서 `ImmersiveSpace`로 선언하는 **Scene** 타입. 이것이 바로 개발자가 Full Space 경험을 정의하고 제공하는 방식.
+    - `ImmersiveSpace` 안에서 뷰/RealityKit 컨텐츠를 작성하고, `immersionStyle` 같은 속성으로 `.mixed`, `.progressive`, `.full` 등을 지정한다.
+    - 런타임에서 `openImmersiveSpace(id:)` 같은 API로 진입/퇴장하게 된다.
+
+
+정리하자면, 앱 하나는 여러 개의 Scene을 가지고 있음.
+하나의 **Scene**에는 **Shared Space**인 경우 여러 개의 **Group**, 그리고 **Group**내부에는 여러 개의 인스턴스로 이루어져 있다. **Full Space**는 **Shared Space**가 아니라 **Full Space**자체이며 하나 만 띄울 수 있어 **Group**으로 구성되지 않는다.
 
 
 

@@ -290,6 +290,6 @@ https://developer.apple.com/documentation/visionOS/World
 
 ### FullSpace
 `FullSpace`에는 총 3개의 `Immersion Style`이 있다.
-- `Full`: 화면 전체를 에워싸는 몰입형 환경
-- `Mixed`: 현실 위에 
-- `Progressive`
+- `.full`: 100%가상 환경만 보여주는 화면 전체를 에워싸는 몰입형 환경
+- `.mixed`: 현실 세계와 가상 컨텐츠가 함께 보이는 모드
+- `.progressive`: 기본 상태는 `.mixed`이지만, 몰입도를 단계적으로 `.full`까지 조절할 수 있음.

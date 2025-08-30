@@ -379,5 +379,8 @@ App (프로세스)
 ![[Pasted image 20250830210115.png]]
 다시 `ImmersiveSpace`로 돌아가서 가상 손을 추가해주면 된다.
 
+![[Pasted image 20250830210244.png]]
+실제 손이 가상 글러브로 바뀐 모습
+
 
 

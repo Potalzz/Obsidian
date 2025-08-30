@@ -303,9 +303,9 @@ https://developer.apple.com/documentation/visionOS/World
 
 
 정리하자면, 앱 하나는 여러 개의 Scene을 가지고 있음.
-하나의 **Scene**에는 **Shared Space**인 경우 여러 개의 **Group**, 그리고 **Group**내부에는 여러 개의 인스턴스로 이루어져 있다. **Full Space**는 **Shared Space**가 아니라 **Full Space**자체이며 하나 만 띄울 수 있어 **Group**으로 구성되지 않는다.
-
-
+**Scene**들은 각각 **Shared Space**와 **Full Space**에 위치해 있다.
+- **Shared Space**에는 `window`와 `volume`이 **Group**으로 이루어져 있고, **Group**내부에 각 **Scene**의 인스턴스들이 포함되어 있다.
+- **Full Space**에는 `Immersive Space`가 위치해 있고, 이는 `Immersion Style`에 따라서 각기 다른 성질을 가진다.
 
 ``` swift
 visionOS

@@ -263,10 +263,17 @@ let result = transform * point // 자동 계산
 
 
 
+## Spatial Computing을 위한 SwiftUI
 
+**공간 컴퓨팅**의 장면은 `Window`, `Volume`, `FullSpace` 총 3가지로 이루어져 있다.
+이 화면은 모두 `SwiftUI`로 구성되어 있다.
 
+`Window`와 `Volume`은 여러 앱들에서 동시에 띄울 수 있고, `FullSpace`는 실행되면 하나의 앱이 전체 화면을 제어한다.
 
-
+### Window
+윈도우에서는 `SwiftUI`에 있는 제스쳐를 사용할 수 있다.
+추가로 3D 환경에서의 상호작용을 위해 추가된 제스쳐들도 있다.
+![[Pasted image 20250830185400.png]]
 
 
 

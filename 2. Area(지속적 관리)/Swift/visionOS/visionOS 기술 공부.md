@@ -270,12 +270,26 @@ https://developer.apple.com/documentation/visionOS/World
 이 화면은 모두 `SwiftUI`로 구성되어 있다.
 
 이 세 가지 **Scene**은 **Space**개념으로 나뉘는데, 
-**Shared Space**에는 `Window Scene`, `Volume Scene`두 가지가 위치한다.
+**Shared Space**에는 `Window Scene`, `Volume Scene`두 가지가 포함된다.
 **Full Space**에는 `Immersion Style`에 따라서 세 단계로 나뉜다.
 
-하나의 앱은 여러 개의 **Scene**들을 가지며 각각의 Scene에 해당 Scene의 인스턴스를 담고있는 Group으로 가지고 있다.
+여러 개의 앱을 실행시키면 모두 같은 공간에 위치하는데 이 공간이 **Shared Space**.
+
+![[Pasted image 20250830200947.png]]
+(Shared Space 공간)
+
+앱에서 **Immersive Space**씬이 표시되면, 앱은 **Full Space** 공간으로 들어감.
+그러면 **Shared Space**를 벗어나므로, 해당 공간에 위치한 다른 **Scene**들은 보이지 않게 된다.
+**Immersive Space**를 표시한 해당 앱은 사용자가 볼 수 있는 **유일한 앱**이 된다.
+
+![[Pasted image 20250830201038.png]]
+(Immersive Space)
+
+하나의 앱은 여러 개의 **Scene**들을 가지며 각각의 **Scene**에 해당 **Scene**의 인스턴스를 담고있는 **Group**으로 가지고 있다.
 
 즉 앱 하나는 여러 개의 Scene과, 해당 **Scene**에서 **Shared Space**인 경우 여러 개의 **Group**, 그리고 **Group**내부에는 여러 개의 인스턴스로 이루어져 있다. **Full Space**는 **Shared Space**가 아니라 **Full Space**자체이며 하나 만 띄울 수 있어 **Group**으로 구성되지 않는다.
+
+
 
 ``` swift
 visionOS

@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
+      "basename": "C5 학습 노트",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
+    },
+    {
+      "basename": "C5 계획",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 계획.md"
+    },
+    {
+      "basename": "방탈출 앱 개발",
+      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
+    },
+    {
       "basename": "발표",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md"
     },
@@ -21,10 +41,6 @@
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
     },
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
       "basename": "방탈출 개발",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
     },
@@ -39,10 +55,6 @@
     {
       "basename": "앱 시작점과 화면 전환 관련 개념",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
-    },
-    {
-      "basename": "방탈출 앱 개발",
-      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
     },
     {
       "basename": "화면 기록 2025-08-18 오후 1.30.06",
@@ -73,20 +85,12 @@
       "path": "2. Area(지속적 관리)/블로그/아이디어.md"
     },
     {
-      "basename": "C5 학습 노트",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
-    },
-    {
       "basename": "해외 취업 강연",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/해외 취업 강연.md"
     },
     {
       "basename": "주주(2기 창업) 강연",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/주주(2기 창업) 강연.md"
-    },
-    {
-      "basename": "C5 계획",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 계획.md"
     },
     {
       "basename": "각종 정보",
@@ -135,10 +139,6 @@
     {
       "basename": "멘토링 목표",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 4/멘토링 목표.md"
-    },
-    {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
       "basename": "나의 이야기",

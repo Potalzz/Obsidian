@@ -273,6 +273,10 @@ https://developer.apple.com/documentation/visionOS/World
 **Shared Space**에는 `Window Scene`, `Volume Scene`두 가지가 위치한다.
 **Full Space**에는 `Immersion Style`에 따라서 세 단계로 나뉜다.
 
+하나의 앱은 여러 개의 **Scene**들을 가지며 각각의 Scene에 해당 Scene의 인스턴스를 담고있는 Group으로 가지고 있다.
+
+즉 앱 하나는 여러 개의 Scene과, 해당 **Scene**에서 **Shared Space**인 경우 여러 개의 **Group**, 그리고 **Group**내부에는 여러 개의 인스턴스로 이루어져 있다. **Full Space**는 **Shared Space**가 아니라 **Full Space**자체이며 하나 만 띄울 수 있어 **Group**으로 구성되지 않는다.
+
 ``` swift
 visionOS
  ├── Shared Space
@@ -286,6 +290,21 @@ visionOS
              └── .full (100% 가상)
 ```
 **Shared Space**는 여러 앱들에서 동시에 띄울 수 있고, **Full Space**는 실행되면 하나의 앱이 전체 화면을 제어한다.
+
+``` swift
+App (프로세스)
+└─ Scenes (앱이 선언한 여러 Scene)
+   ├─ Shared Space 관련 Scenes
+   │  ├─ WindowGroup (Scene)
+   │  │   └─ Window 인스턴스들 (유저/시스템이 여러 개 생성 가능)
+   │  └─ VolumeGroup (Scene)
+   │      └─ Volume 인스턴스들 (유저/시스템이 여러 개 배치 가능)
+   │
+   └─ Full Space 관련 Scenes
+      └─ ImmersiveSpace (Scene)  ← (여러 ImmersiveSpace 선언 가능, 보통 동시에 활성화는 1개)
+          └─ ImmersionStyle: .mixed / .progressive / .full
+
+```
 
 
 ### Window

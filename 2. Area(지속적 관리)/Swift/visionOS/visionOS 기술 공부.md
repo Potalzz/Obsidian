@@ -287,3 +287,9 @@ https://developer.apple.com/documentation/visionOS/World
 ![[Pasted image 20250830185901.png]]
 `Model3D`는 또 다른 `SwiftUI` 이므로, `.padding3D()`를 통해서 Z축으로 패딩을 줄 수 있다.
 
+
+### FullSpace
+`FullSpace`에는 총 3개의 `Immersion Style`이 있다.
+- `Full`: 화면 전체를 에워싸는 몰입형 환경
+- `Mixed`: 현실 위에 
+- `Progressive`

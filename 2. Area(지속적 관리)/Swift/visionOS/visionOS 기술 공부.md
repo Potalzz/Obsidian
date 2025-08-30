@@ -264,6 +264,7 @@ let result = transform * point // 자동 계산
 
 
 ## Spatial Computing을 위한 SwiftUI
+https://developer.apple.com/documentation/visionOS/World
 
 **공간 컴퓨팅**의 장면은 `Window`, `Volume`, `FullSpace` 총 3가지로 이루어져 있다.
 이 화면은 모두 `SwiftUI`로 구성되어 있다.
@@ -276,5 +277,13 @@ let result = transform * point // 자동 계산
 ![[Pasted image 20250830185400.png]]
 
 
+### Volume
+`Model3D`를 통해서 앱에서 3D 콘텐츠를 간단하게 추가할 수 있다.
+![[Pasted image 20250830185611.png]]
 
+`Model3D`는 로딩하는데 시간이 걸리기 때문에 이미지와 달리 비동기적으로 작동한다.
+
+
+![[Pasted image 20250830185901.png]]
+`Model3D`는 또 다른 `SwiftUI` 이므로, `.padding3D()`를 통해서 Z축으로 패딩을 줄 수 있다.
 

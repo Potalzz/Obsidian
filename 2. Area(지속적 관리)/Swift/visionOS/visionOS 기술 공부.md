@@ -322,6 +322,18 @@ App (프로세스)
 
 ```
 
+앱을 실행하면 기본적으로 **Shared Space**로 실행되기 때문에, `window`가 나오게 된다.
+
+>앱 실행과 동시에 `Immersive Space`가 나오게 할 수는 없을까 ?
+
+![[Pasted image 20250830205002.png]]
+([wwdc23 Go beyond the window with SwiftUI](https://www.youtube.com/watch?v=U97XS91blI4&ab_channel=AppleDeveloper) 내용 참고)
+
+앱에 대한 Scene 매니페스트를 설정하면 가능하다.
+
+또한 사용자가 `Immersive Space`를 종료하면 앱이 `window`로 돌아가도록 할 수도 있다.
+
+
 
 ### Window
 윈도우에서는 `SwiftUI`에 있는 제스쳐를 사용할 수 있다.
@@ -345,3 +357,17 @@ App (프로세스)
 - `.full`: 100%가상 환경만 보여주는 화면 전체를 에워싸는 몰입형 환경
 - `.mixed`: 현실 세계와 가상 컨텐츠가 함께 보이는 모드
 - `.progressive`: 기본 상태는 `.mixed`이지만, 몰입도를 단계적으로 `.full`까지 조절할 수 있음.
+
+![[Pasted image 20250830205210.png]]
+`passthrough`를 어둡게 설정하여 공간 콘텐츠에 더 집중되도록 만들 수 있다.
+
+`Immersive Space`에서 현실 손을 비활성화하고 가상 손을 띄울 수 있다.
+
+![[Pasted image 20250830205350.png]]
+(현실 손을 비활성화 한다)
+
+![[Pasted image 20250830205445.png]]
+(가상 손을 불러오고 루트의 자식으로 추가해준다)
+
+
+

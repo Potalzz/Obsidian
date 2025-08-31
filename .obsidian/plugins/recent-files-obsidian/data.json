@@ -1,6 +1,18 @@
 {
   "recentFiles": [
     {
+      "basename": "앱 홍보글",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/앱 홍보글.md"
+    },
+    {
+      "basename": "방탈출",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md"
+    },
+    {
+      "basename": "방탈출 개발",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
+    },
+    {
       "basename": "visionOS 기술 공부",
       "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 기술 공부.md"
     },
@@ -43,14 +55,6 @@
     {
       "basename": "VisionOS 리서치",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
-    },
-    {
-      "basename": "방탈출 개발",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
-    },
-    {
-      "basename": "방탈출",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md"
     },
     {
       "basename": "메모장",
@@ -195,10 +199,6 @@
     {
       "basename": "생각",
       "path": "4. Archive(자료 보관소)/잡/생각.md"
-    },
-    {
-      "basename": "공부 방향",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/관련 단어/공부 방향.md"
     }
   ],
   "omittedPaths": [],

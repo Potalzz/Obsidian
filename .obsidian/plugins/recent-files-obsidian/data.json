@@ -1,6 +1,22 @@
 {
   "recentFiles": [
     {
+      "basename": "Desk Research",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Desk Research.md"
+    },
+    {
+      "basename": "아이디어",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
+    },
+    {
+      "basename": "C5 계획",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5/C5 계획.md"
+    },
+    {
+      "basename": "C5 학습 노트",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5/C5 학습 노트.md"
+    },
+    {
       "basename": "앱 홍보글",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/앱 홍보글.md"
     },
@@ -29,14 +45,6 @@
       "path": "2. Area(지속적 관리)/Swift/단축키.md"
     },
     {
-      "basename": "C5 학습 노트",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 학습 노트.md"
-    },
-    {
-      "basename": "C5 계획",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge5/C5 계획.md"
-    },
-    {
       "basename": "방탈출 앱 개발",
       "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
     },
@@ -51,10 +59,6 @@
     {
       "basename": "현대 개발자 4인 강연",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/현대 개발자 4인 강연.md"
-    },
-    {
-      "basename": "아이디어",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
     },
     {
       "basename": "VisionOS 리서치",
@@ -178,11 +182,11 @@
     },
     {
       "basename": "Week 2 \"Closure\"",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/SSG 스터디_T4/Week 2 \"Closure\".md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md"
     },
     {
       "basename": "Week 1 \" Protocol\"",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/SSG 스터디_T4/Week 1 \" Protocol\".md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md"
     },
     {
       "basename": "Main_딥러닝",
@@ -190,15 +194,11 @@
     },
     {
       "basename": "VisionOS 알아보기",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/SSG 스터디_T4/VisionOS 알아보기.md"
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
     },
     {
       "basename": "Git",
       "path": "3. Resource(정보 저장소)/프로그래밍/Git.md"
-    },
-    {
-      "basename": "생각",
-      "path": "4. Archive(자료 보관소)/잡/생각.md"
     }
   ],
   "omittedPaths": [],

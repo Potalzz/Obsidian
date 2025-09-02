@@ -49,8 +49,7 @@
               "title": "Swift 개념"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,8 +232,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "d3faf366e1561e5d",
   "lastOpenFiles": [
+    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/앱 홍보글.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md",
@@ -259,7 +259,6 @@
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/현대 개발자 4인 강연.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov",
     "무제.canvas",

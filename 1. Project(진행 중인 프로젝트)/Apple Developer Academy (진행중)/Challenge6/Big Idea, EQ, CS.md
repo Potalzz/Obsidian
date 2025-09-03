@@ -40,3 +40,6 @@ Big Idea, EQ(Essential  Question), CS(Challenge statement) 세 가지는
 하다가 안되면 다른 주제로 넘어가면 됨.
 결국 가장 중요한 것은 공감대.
 
+>현재 어떠한 어려움이 있는지 거시적으로 바라보고 멘토에게 도움 요청
+
+

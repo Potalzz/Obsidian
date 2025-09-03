@@ -29,4 +29,3 @@ Big Idea, EQ(Essential  Question), CS(Challenge statement) 세 가지는
 ### 어떤 GQ를 던져야 할까 ?
 우리가 지금 모르는 것(알아야 하는 것)에 대해서 질문을 던짐.
 
-

@@ -414,5 +414,7 @@ extension VerticalAlignment {
 }
 ```
 
+`NavigationStack`을 통해 네비게이션 컨트롤하고, 자동으로 배경에 **corner rounded glassEffect Background**가 생긴다.
+
 ### alignmentGuide가 무엇인가
 

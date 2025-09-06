@@ -384,3 +384,35 @@ App (프로세스)
 
 
 
+## Hello World 클론 코드
+https://developer.apple.com/documentation/visionos/world
+해당 프로젝트를 따라 만들어보면서 정리한 내용
+
+window의 정렬은 `alignmentGuide`를 통해서 커스텀 하여 정렬.
+
+```swift
+VStack {
+...
+메인 텍스트
+...
+}
+.alignmentGuide(.earthGuide) { context in
+	context[VerticalAlignment.top]
+}
+
+extension VerticalAlignment {
+    /// A custom alignment that pins the background image to the title.
+	private struct EarthAlignment: AlignmentID {
+		static func defaultValue(in context: ViewDimensions) -> CGFloat {
+			context[VerticalAlignment.top]
+        }
+    }
+    /// A custom alignment guide that pins the background image to the title.
+	fileprivate static let earthGuide = VerticalAlignment(
+		EarthAlignment.self
+    )
+}
+```
+
+### alignmentGuide가 무엇인가
+

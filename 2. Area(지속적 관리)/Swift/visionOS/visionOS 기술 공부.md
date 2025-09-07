@@ -419,4 +419,14 @@ extension VerticalAlignment {
 ### alignmentGuide
 >자신의 어떤 지점을 기준으로 정렬에 참여할 지 재정의하는 모디파이어
 
+- `HStack(alignment: .bottom)`을 '바닥에 그어진 긴 흰색 선'이라고 상상해 본다면,
+- HStack은 그 안에 있는 모든 뷰(자식 뷰)들을 가져와서 "각자의 맨 아래(bottom)를 이 흰색 선에 맞추세요"라고 명령한다.
+- 이때, 특정 뷰(예: `Circle()`)가 **`.alignmentGuide(.bottom) { ... }`** 를 사용하면, 이 원은 HStack에게 이렇게 말하는 것과 같다.
+- "잠시만요, 저는 제 맨 아래(bottom)를 흰색 선에 맞추고 싶지 않아요. 대신 **제 중심(center)을 그 흰색 선에 맞춰주세요**."
+
+**사용 방법**
+우선 alignmentGuide는 `Stack`의 마지막에 붙이는 `modifier`이다.
+1. 해당 컨테이너가 사용하는 정렬 기준과 일치하는 가이드를 지정한다.
+2. 새로운 기준점을 지정해준다.
+
 

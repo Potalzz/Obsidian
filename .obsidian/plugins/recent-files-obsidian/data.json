@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "visionOS 기술 공부",
-      "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 기술 공부.md"
+      "basename": "메모",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모.md"
+    },
+    {
+      "basename": "아이디어",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
     },
     {
       "basename": "Big Idea, EQ, CS",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Big Idea, EQ, CS.md"
     },
     {
-      "basename": "메모장",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
+      "basename": "visionOS 기술 공부",
+      "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 기술 공부.md"
     },
     {
-      "basename": "아이디어",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
+      "basename": "메모장",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
     },
     {
       "basename": "C5 계획",
@@ -195,10 +199,6 @@
     {
       "basename": "VisionOS 알아보기",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
-    },
-    {
-      "basename": "Git",
-      "path": "3. Resource(정보 저장소)/프로그래밍/Git.md"
     }
   ],
   "omittedPaths": [],

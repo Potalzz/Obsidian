@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "메모장",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md"
+    },
+    {
       "basename": "아이디어",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Main_딥러닝",
       "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝.md"
-    },
-    {
-      "basename": "VisionOS 알아보기",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md"
     }
   ],
   "omittedPaths": [],

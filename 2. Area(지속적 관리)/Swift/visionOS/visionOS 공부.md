@@ -390,6 +390,30 @@ App (프로세스)
 https://developer.apple.com/documentation/visionos/world
 해당 프로젝트를 따라 만들어보면서 정리한 내용
 
+### 아키텍처
+#### 1. 전체 구조: 기능 중심 아키텍처 (Feature-Based Architecture)
+
+가장 상위 레벨에서는 앱의 구조를 **기능(Feature) 중심**으로 구성했다.
+**모듈러 아키텍처**라는 큰 개념을 **기능 중심 폴더 구조**라는 특정한 방식으로 구현한 것.
+`Globe`, `Orbit`처럼 기능별로 폴더를 나누고 `Entities`, `Systems`처럼 여러 기능이 공유하는 기술 계층(Layer)으로 분리하는 방식이다.
+이는 프로젝트가 커져도 특정 기능을 찾고 수정하기 쉽게 만들어주는 매우 현대적이고 실용적인 구성 방식이다.
+
+---
+
+#### 2. UI 계층: MVVM (Model-View-ViewModel)
+
+사용자에게 보여지는 화면과 상호작용을 처리하는 부분은 **MVVM 패턴**을 따른다.
+`ViewModel`의 존재가 이를 증명하며, 이는 SwiftUI 앱에서 UI 로직과 상태를 데이터 로직과 분리하기 위한 표준적인 방식임.
+
+---
+
+#### 3. 3D/시뮬레이션 계층: ECS (Entity Component System)
+
+3D 그래픽 객체를 처리하고 시뮬레이션을 구동하는 핵심적인 부분은 **ECS 패턴**을 사용.
+`Entities`와 `Systems` 폴더는 이 패턴을 사용했다는 명백한 증거이며, 이는 RealityKit과 같은 프레임워크에서 성능과 데이터 관리를 최적화하기 위한 최고의 선택.
+
+---
+
 window의 정렬은 `alignmentGuide`를 통해서 커스텀 하여 정렬.
 
 ```swift

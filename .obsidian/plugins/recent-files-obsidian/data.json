@@ -5,6 +5,22 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md"
     },
     {
+      "basename": "무제",
+      "path": "무제.base"
+    },
+    {
+      "basename": "무제 1",
+      "path": "무제 1.base"
+    },
+    {
+      "basename": "무제",
+      "path": "무제.canvas"
+    },
+    {
+      "basename": "무제 2",
+      "path": "무제 2.base"
+    },
+    {
       "basename": "visionOS 공부",
       "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "인코딩&디코딩(Encoding&Decoding)",
       "path": "2. Area(지속적 관리)/Swift/개념 노트/인코딩&디코딩(Encoding&Decoding).md"
-    },
-    {
-      "basename": "세션 내용 기록",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge3/세션 내용 기록.md"
-    },
-    {
-      "basename": "Week 2 \"Closure\"",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/Week 2 \"Closure\".md"
-    },
-    {
-      "basename": "Week 1 \" Protocol\"",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/Week 1 \" Protocol\".md"
-    },
-    {
-      "basename": "Main_딥러닝",
-      "path": "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝.md"
     }
   ],
   "omittedPaths": [],

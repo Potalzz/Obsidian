@@ -5,6 +5,10 @@
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md"
     },
     {
+      "basename": "visionOS 공부",
+      "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
+    },
+    {
       "basename": "무제",
       "path": "무제.base"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "무제 2",
       "path": "무제 2.base"
-    },
-    {
-      "basename": "visionOS 공부",
-      "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
     },
     {
       "basename": "Big Idea, EQ, CS",

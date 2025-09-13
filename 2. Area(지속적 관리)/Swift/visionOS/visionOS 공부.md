@@ -575,7 +575,16 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 **skeleton**
 >스켈레톤을 구성하는 건 이름으로 쿼리될 수 있는 **joint**들이다.
 
-**joint**에 포함되는 건 각각 부모 joint, 이름 및 부모 joint에 대한 `localTransform`과 뿌리 관절에 대한 `rootTransform`이다. 마지막으로 각 관절은 **isTracked**에서 `bool`값을 통해 
+**joint**에 포함되는 건 각각 부모 joint, 이름 및 부모 joint에 대한 `localTransform`과 뿌리 관절에 대한 `rootTransform`이다. 마지막으로 각 관절은 **isTracked**에서 `bool`값을 통해 추적 여부를 판단한다.
+
+![[Pasted image 20250914033007.png]]
+root joint는 `.handWrist`에서부터 시작한다.
+다음 관절은 `.handWrist`를 parent joint로 가지며, 1이 2의 parent가 되는 식으로 나아간다.
+
+
+
+
+
 
 
 

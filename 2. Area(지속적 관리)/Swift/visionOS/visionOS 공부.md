@@ -461,3 +461,36 @@ extension VerticalAlignment {
 
 
 
+## BounceBall Project
+
+### 평면 인식하기
+ARKit Planedetection Provider로 주변 평면 인식 후, RealityKit으로 보이지 않는 재질(`OcclusionMaterial`)을 입혀서 인식한 현실 공간의 평면 위치에 가상 평면을 렌더링하여 설치함.
+
+#### ARKit 관련
+[WWDC 공간 컴퓨팅을 위한 ARKit 알아보기](https://www.youtube.com/watch?v=XHqANANYTyg&ab_channel=AppleDeveloper)
+
+ARKit은 세 종류의 블록으로 구성되어 있다.
+
+**Session**, **DataProvider**, **Anchor**
+
+**Anchor**
+현실의 위치와 방향을 나타낸다.
+모든 앵커는 고유 `UUID`와, `Transform`을 지닌다.
+어떤 유형의 앵커는 추적이 가능하다.
+추적 가능한 앵커가 추적이 되지 않는다면, 해당 앵커로 앵커링한 가상 콘텐츠를 숨겨야한다.
+
+**DataProvider**
+데이터 공급자는 개별 ARKit기능을 나타낸다.
+
+
+
+**ARKit에서 카메라로 얻은 데이터는 접근할 수 없다.**
+![[Pasted image 20250913184015.png]]
+
+Camera로 얻은 데이터의 경우 ARKit daemon으로 전송되고, Apple 자체 알고리즘으로 변환시켜 clients단에 제공된다. 그렇기 때문에 가공된 데이터만을 받아서 사용할 수 있다.
+
+ARKit에 접근하기 위한 조건.
+1. 앱이 반드시 Full Space에 진입해야 한다.
+2. 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.
+	1. ![[Pasted image 20250913184205.png]]
+3. 

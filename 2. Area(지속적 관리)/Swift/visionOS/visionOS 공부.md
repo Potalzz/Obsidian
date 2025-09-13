@@ -560,11 +560,11 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 **HandTracking**이 제공하는 **앵커**에는 손 각각의 스켈레톤 데이터가 들어있다.
 
 **HandTracking**에 쓰이는 **DataProvider 타입**은 `HandTrackingProvider`
-감지된 손은 **HandAnchor**의 형태로 제공된다.
+감지된 손은 `HandAnchor`의 형태로 제공된다.
 
 ![[Pasted image 20250914003706.png]]
-**HandAnchor**는 `TrackableAnchor`이다.
-**HandAnchor**를 구성하고 있는 요소들에 대해서 살펴보자
+`HandAnchor`는 `TrackableAnchor`이다.
+`HandAnchor`를 구성하고 있는 요소들에 대해서 살펴보자
 
 **chirality**
 - 왼손, 오른손을 구별하는데 사용된다.
@@ -581,7 +581,11 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 root joint는 `.handWrist`에서부터 시작한다.
 다음 관절은 `.handWrist`를 parent joint로 가지며, 1이 2의 parent가 되는 식으로 나아간다.
 
+손 기준으로 콘텐츠를 배치하거나, 사용자 지정 제스처를 감지할 때 `HandAnchor`를 사용할 수 있다.
+`HandAnchor`는 두 가지 방법으로 받을 수 있다.
+Poll for lates `HandAnchors` or receive `HandAnchors` when updates are available.
 
+업데이트를 폴링하거나 사용가능할 때 앵커를 비동기적으로 받는다.
 
 
 

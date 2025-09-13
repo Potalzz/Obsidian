@@ -585,7 +585,7 @@ root joint는 `.handWrist`에서부터 시작한다.
 `HandAnchor`는 두 가지 방법으로 받을 수 있다.
 Poll for lates `HandAnchors` or receive `HandAnchors` when updates are available.
 
-업데이트를 폴링하거나 사용가능할 때 앵커를 비동기적으로 받는다.
+
 
 
 

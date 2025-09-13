@@ -582,7 +582,10 @@ root joint는 `.handWrist`에서부터 시작한다.
 다음 관절은 `.handWrist`를 parent joint로 가지며, 1이 2의 parent가 되는 식으로 나아간다.
 
 손 기준으로 콘텐츠를 배치하거나, 사용자 지정 제스처를 감지할 때 `HandAnchor`를 사용할 수 있다.
-Poll for lates `HandAnchors` or receive `HandAnchors` when updates are available.
+`HandAnchor`는 두 가지 방법으로 가져올 수 있다.
+1. 필요한 시점에 최신 손 위치 및 상태(HandAnchors) 데이터를 **요청**하여 가져오는 방식
+2. 데이터가 업데이트될 때마다 **HandTrackingProvider**가 데이터를 자동으로 **푸시**해주는 방식
+
 
 
 

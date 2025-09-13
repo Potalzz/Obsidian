@@ -537,7 +537,7 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 **Image Tracking**
 >현실의 2D 이미지를 감지
 
-이미지 추적에 쓰이는 DataProvider 타입은 `ImageTrackingProvider`
+이미지 추적에 쓰이는 **DataProvider 타입**은 `ImageTrackingProvider`
 `ImageTrackingProvider`는 감지하려는 **ReferenceImage**의 집합으로 설정한다.
 
 **ReferenceImage**를 생성하는 방법에는 몇 가지가 있다.
@@ -557,7 +557,26 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 
 #### HandTracking
 ![[Pasted image 20250914003330.png]]
-`HandTracking`이 제공하는 `Anchor`에는 
+**HandTracking**이 제공하는 **앵커**에는 손 각각의 스켈레톤 데이터가 들어있다.
+
+**HandTracking**에 쓰이는 **DataProvider 타입**은 `HandTrackingProvider`
+감지된 손은 **HandAnchor**의 형태로 제공된다.
+
+![[Pasted image 20250914003706.png]]
+**HandAnchor**는 `TrackableAnchor`이다.
+**HandAnchor**를 구성하고 있는 요소들에 대해서 살펴보자
+
+**chirality**
+- 왼손, 오른손을 구별하는데 사용된다.
+
+**transform**
+- 앱 원점에 대한 손목의 위치.
+
+**skeleton**
+>스켈레톤을 구성하는 건 이름으로 쿼리될 수 있는 **joint**들이다.
+
+**joint**에 포함되는 건 각각 부모 joint, 이름 및 부모 joint에 대한 `localTransform`과 뿌리 관절에 대한 `rootTransform`이다. 마지막으로 각 관절은 `Bool`
+
 
 
 

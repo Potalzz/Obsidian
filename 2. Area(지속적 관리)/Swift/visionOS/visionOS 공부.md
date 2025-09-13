@@ -503,4 +503,27 @@ ARKit에 접근하기 위한 조건.
 2. 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.
    - ![[Pasted image 20250913184205.png]]
 
-****
+**Scene understanding**
+
+**Plane detection**
+주변 환경에서 평면을 감지하고, 감지된 평면은 `PlaneAnchor`의 형태로 제공된다.
+`PlaneAnchor`는 컨텐츠를 원할히 배치하는데 사용된다.(ex. 가상 객체를 탁자 위에 배치)
+또한, 물리 시뮬레이션에도 사용이 가능하다.
+
+Plane의 종류에 따라서 분류한다.
+![[Pasted image 20250913200221.png]]
+[표면의 종류] 
+
+
+
+**Scene geometry**
+![[Pasted image 20250913200341.png]]
+[Scene geometry 인식]
+
+Scene geometry는 현실의 모양을 추정하는 다각형 메시가 있는 앵커를 제공한다.
+
+Scene geometry가 쓰는 DataProvider타입은 `SceneReconstructionProvider`이다.
+
+
+
+

@@ -520,9 +520,12 @@ Plane의 종류에 따라서 분류한다.
 ![[Pasted image 20250913200341.png]]
 [Scene geometry 인식]
 
-Scene geometry는 현실의 모양을 추정하는 다각형 메시가 있는 앵커를 제공한다.
+Scene geometry는 현실의 모양을 추정하는 다각형 메시가 있는 앵커를 제공하는데,
+제공하는 DataProvider타입은 `SceneReconstructionProvider`이다.
 
-Scene geometry가 쓰는 DataProvider타입은 `SceneReconstructionProvider`이다.
+ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재구성되어 `MeshAnchor`의 형태로 제공된다.
+`MeshAnchor`역시 `PlaneAnchor`와 같이 원활한 콘텐츠 배치에 사용될 수 있다.
+가상 콘텐츠가 단순한 평면이 아닌 객체와 상호 작용해야 하는 상황에서 물리 시뮬레이션의 
 
 
 

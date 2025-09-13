@@ -540,7 +540,12 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 이미지 추적에 쓰이는 DataProvider 타입은 `ImageTrackingProvider`
 `ImageTrackingProvider`는 감지하려는 **ReferenceImage**의 집합으로 설정한다.
 
-ReferenceImage를 생성하는 방법에는 몇 가지가 있다.
+**ReferenceImage**를 생성하는 방법에는 몇 가지가 있다.
+
+프로젝트 에셋 카탈로그의 AR 리소스 그룹에서 로드하기.
+
+CVPixelBuffer나 CGImage를 제공하여 **ReferenceImage**를 직접 초기화.
+
 
 
 

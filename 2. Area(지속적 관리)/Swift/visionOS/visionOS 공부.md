@@ -501,5 +501,6 @@ Camera로 얻은 데이터의 경우 ARKit daemon으로 전송되고, Apple 자�
 ARKit에 접근하기 위한 조건.
 1. 앱이 반드시 Full Space에 진입해야 한다.
 2. 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.
-	1. ![[Pasted image 20250913184205.png]]
-3. 
+   - ![[Pasted image 20250913184205.png]]
+
+****

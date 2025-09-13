@@ -275,7 +275,7 @@ https://developer.apple.com/documentation/visionOS/World
 **Shared Space**에는 `Window Scene`, `Volume Scene`두 가지가 포함된다.
 **Full Space**에는 `Immersion Style`에 따라서 세 단계로 나뉜다.
 
-여러 개의 앱을 실행시키면 모두 같은 공간에 위치하는데 이 공간이 **Shared Space**.
+여러 개의 앱을 실행시키면 모두 같은 공간에 위치하는데  이 공간이 **Shared Space**.
 
 ![[Pasted image 20250830200947.png]]
 (Shared Space 공간)

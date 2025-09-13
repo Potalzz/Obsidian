@@ -503,7 +503,7 @@ ARKit에 접근하기 위한 조건.
 2. 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.
    - ![[Pasted image 20250913184205.png]]
 
-**Scene understanding**
+#### Scene understanding
 
 **Plane detection**
 주변 환경에서 평면을 감지하고, 감지된 평면은 `PlaneAnchor`의 형태로 제공된다.
@@ -544,8 +544,20 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 
 프로젝트 에셋 카탈로그의 AR 리소스 그룹에서 로드하기.
 
-CVPixelBuffer나 CGImage를 제공하여 **ReferenceImage**를 직접 초기화.
+`CVPixelBuffer`나 `CGImage`를 제공하여 **ReferenceImage**를 직접 초기화.
 
+이미지가 감지되면 `ARKit`는 `ImageAnchor`를 제공한다.
+`ImageAnchor`는 알려진 정적으로 배치된 이미지에 배치할 때 유용하다.
+	Ex.영화 포스터 이미지 옆에 영화 정보를 보여 줄 때.
+
+![[Pasted image 20250914003111.png]]
+[ImageAnchor]
+
+`ImageAnchor`는 스케일 팩터를 포함하는데, 감지된 이미지의 크기가 지정한 물리적 크기 및 앵커가 상응하는 **ReferenceImage**와 비교했을 때 어떤지를 나타낸다.
+
+#### HandTracking
+![[Pasted image 20250914003330.png]]
+`HandTracking`이 제공하는 `Anchor`에는 
 
 
 

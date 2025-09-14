@@ -517,7 +517,7 @@ Plane의 종류에 따라서 분류한다.
 
 
 
-**Scene geometry**
+#### Scene geometry
 ![[Pasted image 20250913200341.png]]
 [Scene geometry 인식]
 
@@ -535,7 +535,7 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 ![[Pasted image 20250913210856.png]]
 [Mesh의 분류 종류]
 
-**Image Tracking**
+#### Image Tracking
 >현실의 2D 이미지를 감지
 
 이미지 추적에 쓰이는 **DataProvider 타입**은 `ImageTrackingProvider`
@@ -556,7 +556,7 @@ ARKit가 주변 환경을 스캔하면, 주변 환경은 세분화 매시로 재
 
 `ImageAnchor`는 스케일 팩터를 포함하는데, 감지된 이미지의 크기가 지정한 물리적 크기 및 앵커가 상응하는 **ReferenceImage**와 비교했을 때 어떤지를 나타낸다.
 
-#### HandTracking
+### HandTracking
 ![[Pasted image 20250914003330.png]]
 **HandTracking**이 제공하는 **앵커**에는 손 각각의 스켈레톤 데이터가 들어있다.
 

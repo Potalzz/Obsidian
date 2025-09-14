@@ -19,9 +19,9 @@
 - 시간의 흐름에 따라 컴포넌트가 붙은 Entity를 어떻게 업데이트할지 결정
 
 ## ECS(Entity-Component-System) 패턴
-> 행위(Behavior)와 데이터(Data)를 분리하는 구조
+>행위(Behavior)와 데이터(Data)를 분리하는 구조
 
-**ECS 패턴**는 게임 엔진과 실시간 그래픽 환경(예: RealityKit, Unity DOTS 등)에서 자주 사용되는 구조로써, 전통적인 OOP(객체지향 프로그래밍)와는 **전혀 다른 방식**으로 시스템을 구성한다.
+**ECS 패턴**은 게임 엔진과 실시간 그래픽 환경(예: RealityKit, Unity DOTS 등)에서 자주 사용되는 구조로써, 전통적인 OOP(객체지향 프로그래밍)와는 **전혀 다른 방식**으로 시스템을 구성한다.
 
 ![[Pasted image 20250830180401.png]]
 ECS의 전체적인 구조
@@ -498,11 +498,9 @@ ARKit은 세 종류의 블록으로 구성되어 있다.
 
 Camera로 얻은 데이터의 경우 ARKit daemon으로 전송되고, Apple 자체 알고리즘으로 변환시켜 clients단에 제공된다. 그렇기 때문에 가공된 데이터만을 받아서 사용할 수 있다.
 
-ARKit에 접근하기 위한 조건.
-1. 앱이 반드시 Full Space에 진입해야 한다.
-	1. 그렇기 때문에 Shared Space에서는 주변 환경에 물체를 고정할 수 없다.
-2. 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.
-   - ![[Pasted image 20250913184205.png]]
+**ARKit에 접근하기 위한 조건**
+- 앱이 반드시 Full Space에 진입해야 한다.
+- 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.![[Pasted image 20250913184205.png]]
 
 ### Scene understanding
 주변 환경을 이해하는 데에는 **Plane detection**, **Scene geometry**, **Image tracking** 총 3가지 방법이 있음
@@ -515,7 +513,6 @@ ARKit에 접근하기 위한 조건.
 Plane의 종류에 따라서 분류한다.
 ![[Pasted image 20250913200221.png]]
 [표면의 종류] 
-
 
 
 #### Scene geometry
@@ -590,15 +587,9 @@ root joint는 `.handWrist`에서부터 시작한다.
 
 
 
+## RealityKit
+**RealityView**는 기존 **SwiftUI**기반 UI와 제스쳐를 사용과 RealityKit의 3D환경을 둘 다 결합해 사용하기 위한 새로 만들어진 공간이다.
 
-
-
-
-
-
-
-
-
-
+**RealityKit**에서는 `AnchorEntity`를 통해서 주변 사물에 물체를 고정할 수 있는데, 이는 **Full Space**에서만 가능하다.
 
 

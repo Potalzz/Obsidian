@@ -466,24 +466,24 @@ extension VerticalAlignment {
 ### 평면 인식하기
 ARKit Planedetection Provider로 주변 평면 인식 후, RealityKit으로 보이지 않는 재질(`OcclusionMaterial`)을 입혀서 인식한 현실 공간의 평면 위치에 가상 평면을 렌더링하여 설치함.
 
-#### ARKit 관련
+## ARKit 관련
 [WWDC 공간 컴퓨팅을 위한 ARKit 알아보기](https://www.youtube.com/watch?v=XHqANANYTyg&ab_channel=AppleDeveloper)
 
 ARKit은 세 종류의 블록으로 구성되어 있다.
 
 **Session**, **DataProvider**, **Anchor**
 
-**Anchor**
+#### Anchor
 현실의 위치와 방향을 나타낸다.
 모든 앵커는 고유 `UUID`와, `Transform`을 지닌다.
 어떤 유형의 앵커는 추적이 가능하다.
 추적 가능한 앵커가 추적이 되지 않는다면, 해당 앵커로 앵커링한 가상 콘텐츠를 숨겨야한다.
 
-**DataProvider**
+#### DataProvider
 데이터 공급자는 개별 ARKit기능을 나타낸다.
 데이터 공급자의 유형에 따라 제공하는 데이터 유형이 달라진다.
 
-**Session**
+#### Session
 세션은 ARKit 기능이 결합된 집합을 나타낸다.
 
 세션을 실행하려면 데이터 공급자 집합을 제공한다.
@@ -493,7 +493,7 @@ ARKit은 세 종류의 블록으로 구성되어 있다.
 업데이트는 데이터 유형에 따라 다른 주파수에서 비동기적으로 들어온다.
 
 
-**ARKit에서 카메라로 얻은 데이터는 접근할 수 없다.**
+### ARKit에서 카메라로 얻은 데이터는 접근할 수 없다.
 ![[Pasted image 20250913184015.png]]
 
 Camera로 얻은 데이터의 경우 ARKit daemon으로 전송되고, Apple 자체 알고리즘으로 변환시켜 clients단에 제공된다. 그렇기 때문에 가공된 데이터만을 받아서 사용할 수 있다.
@@ -503,9 +503,10 @@ ARKit에 접근하기 위한 조건.
 2. 일부 유형의 ARKit 데이터는 접근 권한을 요구한다.
    - ![[Pasted image 20250913184205.png]]
 
-#### Scene understanding
+### Scene understanding
+주변 환경을 이해하는 데에는 **Plane detection**, **Scene geometry**, **Image tracking** 총 3가지 방법이 있음
 
-**Plane detection**
+#### Plane detection
 주변 환경에서 평면을 감지하고, 감지된 평면은 `PlaneAnchor`의 형태로 제공된다.
 `PlaneAnchor`는 컨텐츠를 원할히 배치하는데 사용된다.(ex. 가상 객체를 탁자 위에 배치)
 또한, 물리 시뮬레이션에도 사용이 가능하다.

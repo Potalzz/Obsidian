@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
+                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모장"
+              "title": "Swift 개념"
             }
           },
           {
@@ -45,8 +45,7 @@
               "title": "새 탭"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,8 +112,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -230,8 +228,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5fa6106fcb43eca6",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
+    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "4. Archive(자료 보관소)/잡/날짜별 기록/2월 23일 2.md",
     "4. Archive(자료 보관소)/잡/날짜별 기록/2월 17일 2.md",
     "4. Archive(자료 보관소)/잡/날짜별 기록/2월 14일 2.md",
@@ -243,9 +244,6 @@
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학 2.canvas",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝 2.md",
     "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Ai 기초지식 2.md",
-    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
     "Pasted image 20250914033007.png",
     "Pasted image 20250914003706.png",

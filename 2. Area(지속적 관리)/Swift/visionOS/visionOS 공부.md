@@ -330,6 +330,8 @@ App (프로세스)
 
 ![[Pasted image 20250830205002.png]]
 ([wwdc23 Go beyond the window with SwiftUI](https://www.youtube.com/watch?v=U97XS91blI4&ab_channel=AppleDeveloper) 내용 참고)
+`UIApplicationPreferredDafaultSceneSessionRole`
+`UISceneSessionRoleImmersiveSpaceApplication`
 
 앱에 대한 Scene 매니페스트를 설정하면 가능하다.
 

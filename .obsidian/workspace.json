@@ -59,7 +59,8 @@
               "title": "새 탭"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -242,11 +243,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e201ea70c2481a0b",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
     "4. Archive(자료 보관소)/잡/날짜별 기록/2월 23일 2.md",
     "4. Archive(자료 보관소)/잡/날짜별 기록/2월 17일 2.md",
     "4. Archive(자료 보관소)/잡/날짜별 기록/2월 14일 2.md",

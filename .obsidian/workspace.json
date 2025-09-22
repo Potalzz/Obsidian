@@ -59,8 +59,7 @@
               "title": "새 탭"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -243,8 +242,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "e201ea70c2481a0b",
   "lastOpenFiles": [
+    "ㅜㅐ샤ㅐ.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
@@ -285,7 +285,6 @@
     "2. Area(지속적 관리)/Swift/단축키.md",
     "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/포트폴리오 작성 팁.md",
     "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov",
     "2. Area(지속적 관리)/Swift/visionOS",
     "2. Area(지속적 관리)/블로그",

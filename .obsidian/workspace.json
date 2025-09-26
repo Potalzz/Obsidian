@@ -8,6 +8,20 @@
         "type": "tabs",
         "children": [
           {
+            "id": "e201ea70c2481a0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "메모장"
+            }
+          },
+          {
             "id": "9ae748fed9357960",
             "type": "leaf",
             "state": {
@@ -27,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
+                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모장"
+              "title": "Swift 개념"
             }
           },
           {
@@ -45,8 +59,7 @@
               "title": "새 탭"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -230,13 +243,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5fa6106fcb43eca6",
+  "active": "e201ea70c2481a0b",
   "lastOpenFiles": [
-    "ㅜㅐ샤ㅐ.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
+    "ㅜㅐ샤ㅐ.md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "4. Archive(자료 보관소)/잡/날짜별 기록/2월 23일 2.md",
+    "4. Archive(자료 보관소)/잡/날짜별 기록/2월 17일 2.md",
+    "4. Archive(자료 보관소)/잡/날짜별 기록/2월 14일 2.md",
+    "4. Archive(자료 보관소)/대학교/졸준위/졸준위 2.md",
+    "4. Archive(자료 보관소)/기타/날짜별 기록/2월 23일 2.md",
+    "4. Archive(자료 보관소)/기타/날짜별 기록/2월 17일 2.md",
+    "4. Archive(자료 보관소)/기타/날짜별 기록/2월 16일 2.md",
+    "4. Archive(자료 보관소)/기타/날짜별 기록/2월 14일 2.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/선형대수학 2.canvas",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Main_딥러닝 2.md",
+    "4. Archive(자료 보관소)/Python/Ai Tech 딥러닝 공부/Ai 기초지식 2.md",
     "Pasted image 20250914033007.png",
     "Pasted image 20250914003706.png",
     "Pasted image 20250914003330.png",
@@ -262,20 +286,10 @@
     "2. Area(지속적 관리)/Swift/단축키.md",
     "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/포트폴리오 작성 팁.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/현대 개발자 4인 강연.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md",
     "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov",
-    "1.md",
-    "3. Resource(정보 저장소)/건강/영양제.md",
     "2. Area(지속적 관리)/Swift/visionOS",
-    "2. Area(지속적 관리)/블로그/아이디어.md",
     "2. Area(지속적 관리)/블로그",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/해외 취업 강연.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/주주(2기 창업) 강연.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5",
-    "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6",
     "2. Area(지속적 관리)/학습",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5",

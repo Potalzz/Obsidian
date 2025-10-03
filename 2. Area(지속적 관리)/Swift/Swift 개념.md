@@ -1573,8 +1573,3 @@ await MainActor.run {
 ### Actor
 > 액터란 Race Condition을 방지하기 위해 작업들의 순서를 지정해주는 역할을 한다.
 
-ㅁㄴㅇㄹ
-ㅁㄴㅇㄹㅁㄴㅇㄹ
-
-ㅁㄴㅇㄹ
-ㅁㄴㅁㄹ

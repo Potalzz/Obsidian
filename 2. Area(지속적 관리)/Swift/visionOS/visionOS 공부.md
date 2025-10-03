@@ -594,4 +594,29 @@ root joint는 `.handWrist`에서부터 시작한다.
 
 **RealityKit**에서는 `AnchorEntity`를 통해서 주변 사물에 물체를 고정할 수 있는데, 이는 **Full Space**에서만 가능하다.
 
+## visionOS 26 New Features
+[what's new in visionOS 26](https://www.youtube.com/watch?v=81bsjbTN88g)
 
+![[Pasted image 20250927005512.png]]
+volume위나 내부에 sheet나 popover띄우기
+
+[visionOS에서 swiftUI로 장면 설정하기](https://www.youtube.com/watch?v=Xkz8gdFOF1o_)
+
+
+
+![[Pasted image 20250927005953.png]]
+앱 렌더링 영역 설정하여 벗어나는 경우 자연스럽게 사라지는 효과 구현
+
+![[Pasted image 20250927010009.png]]
+
+
+![[Pasted image 20250927010222.png]]
+RealityView내에서 SwiftUIView 추가 가능.
+
+기존에는 RealityView에 후행 closure로 일일이 `attachment`시켜줘야 해서 코드가 지저분해졌지만, 내부에서 추가를 할 수 있다.
+
+자세한 내용은 아래 내용 참고
+[what's new in realitykit](https://www.youtube.com/watch?v=BiOQZWY6K8s)
+[better together: swiftUI and realitykit](https://www.youtube.com/watch?v=VtenPKrvPOU)
+
+[visionOS26 RealityKit기능을 적용한 샘플코드](https://developer.apple.com/documentation/visionos/petite-asteroids-building-a-volumetric-visionos-game)

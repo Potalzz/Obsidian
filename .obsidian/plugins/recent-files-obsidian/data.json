@@ -1,12 +1,36 @@
 {
   "recentFiles": [
     {
-      "basename": "메모장",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md"
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "C5 학습 노트",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5/C5 학습 노트.md"
     },
     {
       "basename": "visionOS 공부",
       "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
+    },
+    {
+      "basename": "JS 프로젝트 정리",
+      "path": "4. Archive(자료 보관소)/JS 프로젝트/JS 프로젝트 정리.md"
+    },
+    {
+      "basename": "자바스크립트 프로젝트 40",
+      "path": "4. Archive(자료 보관소)/JS 프로젝트/자바스크립트 프로젝트 40.md"
+    },
+    {
+      "basename": "자바스크립트",
+      "path": "4. Archive(자료 보관소)/JS 프로젝트/JavaScript/자바스크립트.md"
+    },
+    {
+      "basename": "우아한 테크코스",
+      "path": "4. Archive(자료 보관소)/지원서/우아한 테크코스.md"
+    },
+    {
+      "basename": "메모장",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md"
     },
     {
       "basename": "아이디어",
@@ -15,10 +39,6 @@
     {
       "basename": "ㅜㅐ샤ㅐ",
       "path": "ㅜㅐ샤ㅐ.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "무제",
@@ -51,10 +71,6 @@
     {
       "basename": "C5 계획",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5/C5 계획.md"
-    },
-    {
-      "basename": "C5 학습 노트",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5/C5 학습 노트.md"
     },
     {
       "basename": "앱 홍보글",
@@ -183,22 +199,6 @@
     {
       "basename": "필기 개념정리",
       "path": "4. Archive(자료 보관소)/정보처리기사/필기 개념정리.md"
-    },
-    {
-      "basename": "실기 개념정리",
-      "path": "4. Archive(자료 보관소)/정보처리기사/실기 개념정리.md"
-    },
-    {
-      "basename": "필기 기출 풀이",
-      "path": "4. Archive(자료 보관소)/정보처리기사/필기 기출 풀이.md"
-    },
-    {
-      "basename": "CS 지식",
-      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
-    },
-    {
-      "basename": "JS 코딩테스트",
-      "path": "4. Archive(자료 보관소)/알고리즘/JS 코딩테스트.md"
     }
   ],
   "omittedPaths": [],

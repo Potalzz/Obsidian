@@ -1,5 +1,5 @@
 
-### 타입
+## 타입
 Double과 CGFloat는 모두 소수점이 있는 숫자를 의미하지만, 기본적으로는 똑같이 인식된다. Double형의 변수에 CGFloat형 변수를 대입해도 문제가 없다.
 하지만 사용 목적에 따라서 나뉜다. Double은 수학적 계산에서 사용되고,
 CGFloat는 UI에서 사용된다.(예: 픽셀 계산)
@@ -26,7 +26,7 @@ arr.insert(10, at:1) // 1번 인덱스에 10추가
 arr.append(contentsOf: arr2) // 배열에 다른 배열 추가
 swift에서 let으로 선언된 배열에는 값을 추가할 수 없다.
 
-### Udemy 강의
+## Udemy 강의
 
 Main 스토리보드의 요소들은 모두 소스 코드에 코드 형태로 저장된다.
 
@@ -87,7 +87,7 @@ Inspectors : command + option + 0
 
 아이폰 화면에서 navigator추가: 스토리보드 파일에서 상단 Editor -> Embedded In -> Navigator Contoroller
 
-### Swift Class
+## Swift Class
 
 스위프트에서 클래스와 구조체의 차이점은, 상속 기능이다.
 Class는 super(부모) class를 `class son: parent`형태로 상속받을 수 있으며,
@@ -127,7 +127,7 @@ performSegue(withIdentifier:)가 실행될 때 **자동으로 실행됨.**
 
   
 
-### 프로토콜(Protocol)
+## 프로토콜(Protocol)
 
 프로토콜은 일종의 약속과도 같다.
 해당 프로토콜을 참조하는 경우에 프로토콜 내부에서 지정한 속성이나 기능들이 모두 구현되어야 한다.
@@ -137,7 +137,7 @@ performSegue(withIdentifier:)가 실행될 때 **자동으로 실행됨.**
 
 다만 저장 형태에서 프로퍼티를 선언할 때 {get set}을 사용하는 경우 반드시 var로 선언하여야 하며, 구현하는 쪽에서도 var로 선언하여야 한다.
 
-### Delegate 패턴
+## Delegate 패턴
 
 객체의 동작을 다른 객체에 위임하여 사용하기 위한 패턴
 Ex) A가 B의 기능을 사용하고 싶을 때 직접 구현하지 않고 C에게 위임(delegate)하여 구현하는 방법. 이를 통해서 A와 B간의 결합도를 낮출 수 있다.
@@ -212,7 +212,7 @@ delegate패턴을 왜 사용하나 ?
 
 보통 mvc같은 큰 아키텍쳐를 구성하기 위한 행동 패턴으로 활용된다.
 
-### 클로저(Closure) [[클로저(Closure)]]
+## 클로저(Closure) [[클로저(Closure)]]
 
 #### 클로저란 ?
 
@@ -323,7 +323,7 @@ UIView.animate(withDuration: TimeInterval(0.15) ) {
 
 일반적인 함수는 함수가 종료되면 메모리에서 삭제되기 때문에, var 사용이나 메모리 부분에서 걱정할 부분이 적지만 클로저는 외부 변수를 캡처하기 때문에 함수 종료 후에도 메모리에 남아 있어 메모리 누수가 발생할 수 있다. 이를 방지하려면 `[weak self]` 또는 `[unowned self]`를 사용하여 메모리에서 해제될 수 있도록 관리해야 한다.
 
-### 매개 변수
+## 매개 변수
 
 매개 변수의 이름을 입력할 때, 호출할 때 각각 두 가지로 이름을 설정할 수 있다.
 
@@ -345,7 +345,7 @@ func myFunc(_  eman: Type) {
 ```
   
 
-### Swift Life Cycle(생명주기)
+## Swift Life Cycle(생명주기)
 
 swift의 생명 주기 순서는
 
@@ -401,7 +401,7 @@ VC1 viewDidDisappear()
 
 각 단계에서 view의 생명주기와 그에 해당하는 생명주기 메서드가 호출되는 시점은 동일하므로 해당 메서드가 호출되는 시점이 해당 view의 생명주기 상태라고 봐도 무방하다.
 
-### 캐스팅
+## 캐스팅
 
 업 캐스팅: 하위 클래스 -> 상위 클래스
 다운 캐스팅: 상위 클래스 -> 하위 클래스
@@ -446,7 +446,7 @@ let forceDog: Animal = as! Dog
 ```
   
 
-### swift UI
+## swift UI
 
 스위프트 UI는 기존 storyboard형식에서 요소를 가져오면 코드로 생성되고, 이를 코드를 통해 편집을 간편하게 하고 내용을 한 눈에 볼 수 있도록 개선한 것이다.
 
@@ -454,7 +454,7 @@ let forceDog: Animal = as! Dog
 
 Swift ui 에서는 변경되는 변수 앞에 @state를 붙여줘야 한다. @state를 붙여줘야 변경되는 값 추적 확인 리스트에 추가가 되고, 값이 변경되면 해당 값이 어디에 있는지 찾아서 view에 반영하기 때문이다.
 
-### 싱글톤 패턴(Singleton Pattern)
+## 싱글톤 패턴(Singleton Pattern)
 
 싱글톤 패턴이란, 특정 용도로 객체를 하나만 생성하여 공용으로 사용하고 싶을 때 사용하는 디자인 패턴.
 
@@ -554,7 +554,7 @@ Entity - Attribute - 우측 Inspectors에서 Class - Module을 “Current Produc
 
 작은 데이터(Ex. 볼륨 on/off)를 저장할 때는 UserDefault를 사용할 수 있지만 문자열 등의 데이터를 저장할 때는 NSCoder를 사용하는 것이 좋다.
 
-### URLSession
+## URLSession
 
 `class URLSession: NSObject`
 		`ㄴ> // Type이 아니라 NSObject를 상속받음.`
@@ -586,7 +586,7 @@ Entity - Attribute - 우측 Inspectors에서 Class - Module을 “Current Produc
 | `URLSessionDataDelegate`     | 데이터 작업의 이벤트를 처리              |
 | `URLSessionDownloadDelegate` | 다운로드 작업의 이벤트를 처리             |
 
-### Binding(바인딩)
+## Binding(바인딩)
 >**Binding이란 ?**
 >- 상위뷰의 데이터를 하위 데이터로 연결해서 하위 뷰가 직접 상위 뷰의 데이터를 읽고 쓸 수 있게 해주는 **연결 통로**.
 >	
@@ -621,7 +621,7 @@ struct ButtonView? View {
 **Binding은 원본의 데이터가 가리키는 동일한 메모리 주소를 가리켜 값을 참조한다고 보면 된다.**
 
 
-### 열거형(Enumeration)
+## 열거형(Enumeration)
 **열거형이란 ?**
 - 같은 주제로 **연관된 데이터들**을 멤버로 구성하여 나타내는 **자료형**
 
@@ -702,7 +702,7 @@ var operator2 = CalculatorOperator(rawValue: "x")
 만약, 없는 **Raw Value**값을 대입할 경우 반환되는 열거형은 **옵셔널 타입**이다.
 
 
-### if let과 guard let의 차이
+## if let과 guard let의 차이
 
 `if let`은 조건이 실패하면 다른 대체 로직을 실행할 수 있는 반면에,
 `guard let`은 조건을 만족하지 않으면 `return`, `throw`, `fatalError()`등의 탈출 문이 필요하다.
@@ -710,7 +710,7 @@ var operator2 = CalculatorOperator(rawValue: "x")
 `if let`은 값이 존재할 때만 특정 로직을 실행하는 경우에 적합.
 `guard let`은 값이 없으면 더 이상 진행할 수 없는 경우에 적합.
 
-### MVVM 아키텍처 패턴
+## MVVM 아키텍처 패턴
 
 #### MVVM이란 ?
 앱을 3가지 주요 구성 요소로 나누어 관리하는 패턴이다.
@@ -782,7 +782,7 @@ Contoller == ViewModel이 아닌, VC를 View, ViewModel 두 개로 나누어 준
 
 
 
-### Override(재정의)
+## Override(재정의)
 
 
 ==**🔥 override 란?**==
@@ -878,11 +878,11 @@ Contoller == ViewModel이 아닌, VC를 View, ViewModel 두 개로 나누어 준
 - `final`이 붙어 있으면 `override` 불가능
 
 
-### Standard Font
+## Standard Font
 
 `.headline` 등으로 폰트를 지정해주는 경우, 기기의 폰트 사이즈에 따라서 반응형으로 폰트 사이즈가 자동으로 조정된다.
 
-### Navigation
+## Navigation
 
 네비게이션은 주로 두 가지 패러다임을 사용한다.
 
@@ -978,7 +978,7 @@ struct ContentView: View {
 ```
 
 
-### Swift Data
+## Swift Data
 
 Swift Data의 큰 틀 정리
 
@@ -996,7 +996,7 @@ Swift Data의 큰 틀 정리
 
 
 
-### @ 속성(프로퍼티)래퍼
+## @ 속성(프로퍼티)래퍼
 
 #### @State
 >**뷰 내부에서 사용하는 로컬 상태값을 저장**하고, 해당 값이 바뀌면 **자동으로 뷰를 다시 그리게 하는 역할**
@@ -1096,9 +1096,9 @@ struct ChildView: View {
 |`@EnvironmentObject`|글로벌 공유|앱 전체에서 공유되는 상태 관리|여러 View 간 공유|
 |`@Environment`|시스템 제공|시스템 설정에 접근|어디서든 사용|
 
-### [[프로토콜 (Protocol)]]
+## [[프로토콜 (Protocol)]]
 
-### 제네릭(Generic)
+## 제네릭(Generic)
 >제네릭이란 타입에 의존하지 않는 범용 코드를 작성할 때 사용한다.
 >제네릭을 사용하면 중복을 피하고, 코드를 유연하게 작성할 수 있다.
 
@@ -1252,7 +1252,7 @@ func drive<T: 운전면허있는사람>(_ person: T) {
 이런 조건을 건 것 !!
 
 
-### Combine Framework
+## Combine Framework
 >비동기 이벤트를 핸들링할 수 있게 하는 Apple의 순정 Framework
 
 **Combine**은 시간에 따른 비동기 이벤트들을 처리하는 Swift API를 제공한다.
@@ -1333,7 +1333,7 @@ $showError
 
 
 
-### ARKit
+## ARKit
 ARKit은 데이터 보안이 철저하게 구성되어있다.
 
 카메라 프레임처럼 이런 센서로 얻은 데이터는 클라이언트 공간으로 절대 전송되지 않는다. 센서의 데이터는 대신 ARKit demon으로 전송되어 Apple의 알고리즘으로 안전하게 처리된다. 알고리즘으로 생성된 데이터는 큐레이션된 후 앱에서 데이터를 요청하는 클라이언트로 전달된다.
@@ -1367,7 +1367,8 @@ ARKit은 데이터 보안이 철저하게 구성되어있다.
 앵커링 예시 [이미지 출처](https://developer.apple.com/videos/)
 
 
-### 쓰레드(Thread)
+## Swift Concurrency(Thread, Task, Actor)
+### Thread
 >프로세스 내에서 실행되는 작업의 최소 단위.
 >하나의 프로그램(프로세스) 안에서 동시에 여러 작업을 수행할 수 있도록 도와주는 실행 흐름.
 
@@ -1419,7 +1420,8 @@ UIKit / SwiftUI 모두 메인 쓰레드에서만 UI를 안전하게 수정할 �
 -  **메인 쓰레드는 UI만 담당**해야 함. 무거운 작업 넣으면 앱이 멈추거나 튕긴다.
 - 여러 쓰레드가 **같은 변수나 리소스를 동시에 변경**하면 충돌이 발생할 수 있음 → **Race Condition(경쟁 조건)**이라 부름.
 
-### Swift Concurrency - Task
+
+### Task
 >Swfit 5.5부터 도입된 **Swift Concourrency시스템의 핵심**
 
 #### Task는 Swift 동시성 시스템 내에서 어떤 역할을 할까 ?
@@ -1567,3 +1569,12 @@ await MainActor.run {
 	vm.updateUI()
 }
 ```
+
+### Actor
+> 액터란 Race Condition을 방지하기 위해 작업들의 순서를 지정해주는 역할을 한다.
+
+ㅁㄴㅇㄹ
+ㅁㄴㅇㄹㅁㄴㅇㄹ
+
+ㅁㄴㅇㄹ
+ㅁㄴㅁㄹ

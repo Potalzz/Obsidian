@@ -996,7 +996,7 @@ Swift Data의 큰 틀 정리
 
 
 
-## @ 속성(프로퍼티)래퍼
+## @ 속성 래퍼(Property Wrapper)
 
 #### @State
 >**뷰 내부에서 사용하는 로컬 상태값을 저장**하고, 해당 값이 바뀌면 **자동으로 뷰를 다시 그리게 하는 역할**
@@ -1095,6 +1095,55 @@ struct ChildView: View {
 |`@StateObject`|View 내부 생성|모델 객체를 직접 생성·관리|주요 화면 View|
 |`@EnvironmentObject`|글로벌 공유|앱 전체에서 공유되는 상태 관리|여러 View 간 공유|
 |`@Environment`|시스템 제공|시스템 설정에 접근|어디서든 사용|
+
+### @FocusState
+SwiftUI Scene내에 포커스 배치가 변경될 때 SwiftUI가 업데이트하는 값을 읽고 쓸 수 있는 프로퍼티
+
+#### 활용 방안
+`TextField`에서 포커스를 변경 또는 해지하거나 키보드를 내릴 때 사용할 수 있음
+
+#### 샘플코드
+``` swift
+struct LoginForm {
+    enum Field: Hashable {
+        case username
+        case password
+    }
+	
+    @State private var username = ""
+    @State private var password = ""
+    @FocusState private var focusedField: Field?
+	
+    var body: some View {
+        Form {
+            TextField("Username", text: $username)
+                .focused($focusedField, equals: .username)
+				
+            SecureField("Password", text: $password)
+                .focused($focusedField, equals: .password)
+				
+            Button("Sign In") {
+                if username.isEmpty {
+                    focusedField = .username
+                } else if password.isEmpty {
+                    focusedField = .password
+                } else {
+                    handleLogin(username, password)
+                }
+            }
+        }
+    }
+}
+```
+
+`focused( :equals:)` 및 `focused( :)`와 함께 사용하여 해당 `field`가 포커스되는 조건을 지정할 수 있다.
+`equals`에는 `focusedField`가 가진 타입의 값을 지정한다.
+
+위의 예제 코드에서는 이름 칸이 비어있는 경우 이름을 포커스하고 이름을 입력한 경우 비밀번호로 포커스가 넘어가게 된다.
+
+포커스가 뷰에서 나가면 속성의 래핑된 값이 `nil`이나 `false`로 재설정된다.
+그러므로 포커스가 사라지는 상황을 대비하여 래핑된 값은 **옵셔널** 또는 **bool**값이어야 한다.
+바인딩된 모든 필드에서 포커스를 제거하기 위해서는 `nil` 또는 `false`로 적절하게 설정해야 한다.
 
 ## [[프로토콜 (Protocol)]]
 

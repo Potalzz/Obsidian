@@ -123,9 +123,6 @@ segue.destination을 사용하여 **다음 화면(ViewController)에 데이터�
 
 performSegue(withIdentifier:)가 실행될 때 **자동으로 실행됨.**
 
-  
-
-  
 
 ## 프로토콜(Protocol)
 

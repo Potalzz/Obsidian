@@ -994,6 +994,7 @@ Swift Data의 큰 틀 정리
 
 
 ## @ 속성 래퍼(Property Wrapper)
+속성 래퍼는 변수(프로퍼티)에 추가적인 기능을 캡슐화하여 코드 중복을 줄이고 가독성을 높이는 Swift의 기능.
 
 #### @State
 >**뷰 내부에서 사용하는 로컬 상태값을 저장**하고, 해당 값이 바뀌면 **자동으로 뷰를 다시 그리게 하는 역할**
@@ -1016,11 +1017,117 @@ Swift Data의 큰 틀 정리
 ---
 
 #### @Environment
-> SwiftUI가 제공하는 시스템 정보(예: 색상 모드, 접근성 등)를 가져옴
+**뷰 계층 구조를 통해 데이터를 주입**
+
+일반적으로 부모 뷰에서 자식 뷰로 데이터를 전달하려면 `init`을 통해서 직접 값을 넘겨줘야 한다. 하지만 뷰 계층이 점점 깊어지다 보면 여러 단계를 거쳐 데이터를 전달해야 하는 번거로움이 발생한다.
+
+이러한 상황에서 `@Environment`를 통해 문제를 해결할 수 있다.
+
+상위 뷰에서 `.environment()` 수정자를 사용해 데이터를 해당 파일의 **환경에 설정**해두면, 하위에 있는 어떤 뷰라도 `@Environment`를 사용해 데이터를 **주입 받아** 사용할 수 있다.
+
+**중간에 있는 뷰들은 그 데이터의 존재조차 알 필요가 없어진다.!!**
+
+##### `@Environment`의 작동 방식
+
+1. **제공 (Provide)**: 상위 뷰(보통 `App`이나 최상단 뷰)에서 `.environment()` 수정자를 사용해 공유할 객체를 환경에 한다.
+``` swift
+// App 최상단에서 AppSceneState 객체를 환경에 제공
+ProjectListView()
+    .environment(appSceneState)
+```
+
+2. **구독 (Subscribe)**: 데이터를 필요로 하는 하위 뷰는 `@Environment` 속성 래퍼를 사용해 해당 타입의 객체를 읽어온다.
+``` swift
+// ProjectListView는 환경에 등록된 AppSceneState를 가져옴
+struct ProjectListView: View {
+    @Environment(AppSceneState.self) private var sceneState
+    // ...
+}
+```
+
+3. **자동 업데이트 :**  환경에 제공된 객체가 `Observable`일 경우, 그 객체의 데이터가 변경되면 해당 데이터를 구독하는 모든 뷰가 자동으로 다시 렌더링됨.
+
+
+##### 왜 사용할까 ?
+**그냥 싱글톤 쓰면 되는거 아님 ?**
+만약 여러 파일에서 같은 클래스를 사용하고 싶은 경우, `class`를 싱글톤으로 선언하여 사용하는 곳에서 각각 불러와야 한다.
 
 ```swift
-@Environment(\.colorScheme) var colorScheme  Text(colorScheme == .dark ? "다크 모드" : "라이트 모드")
+// 싱글톤 패턴 예시
+class AppSettings {
+    static let shared = AppSettings() // 전역적으로 접근 가능한 단일 인스턴스
+    private init() {} // 다른 곳에서 인스턴스 생성을 막음
+
+    var username: String = "Guest"
+}
+
+// 사용하는 곳
+struct SomeView: View {
+    var body: some View {
+        // AppSettings.shared를 통해 어디서든 직접 접근한다.
+        Text("Welcome, \(AppSettings.shared.username)")
+    }
+}
 ```
+
+싱글톤을 남발하게되면 다음과 같은 문제점이 발생한다.
+
+**전역 상태 (Global State)**
+싱글톤은 앱 전체에 걸친 **전역 상태**를 만든다.
+앱의 어느 부분이든 `AppSettings.shared`에 접근하여 값을 수정할 수 있기 때문에 데이터의 흐름을 추적하기 어렵게 만들고, 예상치 못한 곳에서 값이 변경되어 버그를 유발하는 원인이 될 수 있다.
+   
+**강한 결합 (Tight Coupling)**
+싱글톤을 사용하는 뷰는 `AppSettings`라는 구체적인 클래스와 **강하게 결합**된다.
+나중에 `AppSettings`를 다른 클래스로 교체하거나, 다른 설정 객체를 사용하고 싶을 때 싱글톤을 직접 참조하는 모든 코드를 수정해야 함...
+   
+**테스트의 어려움**
+싱글톤은 테스트를 매우 어렵게 만든다.
+테스트 환경에서는 실제 객체 대신 **Mock 객체**를 사용하는 경우가 많은데, 전역적으로 고정된 `shared` 인스턴스 때문에 Mock 객체를 주입하기가 매우 까다로워진다.
+
+`@Environment` 사용했을 때의 상황을 살펴보자.
+```swift
+// 공유할 데이터 모델 (@Observable 사용)
+@Observable
+class AppSettings {
+    var username: String = "Guest"
+}
+
+// 최상위 뷰에서 객체를 환경에 설정한다.
+struct MyApp: App {
+    @State private var settings = AppSettings()
+
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environment(settings) // 하위 모든 뷰에 settings 객체를 제공
+        }
+    }
+}
+
+// 사용하는 뷰
+struct SomeView: View {
+    // 환경으로부터 AppSettings 타입의 객체를 주입받는다.
+    @Environment(AppSettings.self) private var settings
+
+    var body: some View {
+        Text("Welcome, \(settings.username)")
+    }
+}
+```
+
+**명시적인 의존성**
+뷰는 자신이 `AppSettings` 타입의 객체를 필요로 한다는 사실을 `@Environment`를 통해 **명시적으로 선언**한다. 이는 싱글톤처럼 숨겨진 의존성이 아니므로 코드의 의도를 파악하기 쉽다.
+
+**유연성과 테스트 용이성**
+`@Environment`는 의존성 주입을 기반으로 하므로 **테스트가 매우 용이**하다. 뷰를 테스트할 때 실제 `AppSettings` 객체 대신 Mock 객체를 `.environment()` 수정자로 쉽게 주입할 수 있다.
+
+**의존성 분리 (Decoupling)**
+뷰들이 서로 직접적인 데이터 전달 관계를 가질 필요가 없어진다.
+이는 코드의 결합도를 낮춰 훨씬 유연하고 재사용 가능한 뷰를 만들 수 있게 해준다.
+
+**코드 간결성**
+여러 뷰를 거쳐 데이터를 전달하는 지저분한 코드가 사라지고, 각 뷰는 필요한 데이터를 직접 환경에서 가져오므로 코드가 매우 깔끔해진다.
+
 
 ---
 
@@ -1142,8 +1249,8 @@ struct LoginForm {
 그러므로 포커스가 사라지는 상황을 대비하여 래핑된 값은 **옵셔널** 또는 **bool**값이어야 한다.
 바인딩된 모든 필드에서 포커스를 제거하기 위해서는 `nil` 또는 `false`로 적절하게 설정해야 한다.
 
-## [[프로토콜 (Protocol)]]
-
+## 프로토콜 (Protocol)
+[[프로토콜 (Protocol)]]
 ## 제네릭(Generic)
 >제네릭이란 타입에 의존하지 않는 범용 코드를 작성할 때 사용한다.
 >제네릭을 사용하면 중복을 피하고, 코드를 유연하게 작성할 수 있다.

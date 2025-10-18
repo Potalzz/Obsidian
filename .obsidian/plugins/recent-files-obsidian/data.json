@@ -1,12 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "메모장",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md"
-    },
-    {
       "basename": "노트",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md"
+    },
+    {
+      "basename": "낙서장",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
+    },
+    {
+      "basename": "멘토링 기록",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
+    },
+    {
+      "basename": "아이디어",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
     },
     {
       "basename": "Swift 개념",
@@ -51,10 +59,6 @@
     {
       "basename": "우아한 테크코스",
       "path": "4. Archive(자료 보관소)/지원서/우아한 테크코스.md"
-    },
-    {
-      "basename": "아이디어",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
     },
     {
       "basename": "ㅜㅐ샤ㅐ",
@@ -195,10 +199,6 @@
     {
       "basename": "문법",
       "path": "2. Area(지속적 관리)/Swift/문법.md"
-    },
-    {
-      "basename": "Swift 실전편 스터디",
-      "path": "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/Swift 실전편 스터디.md"
     }
   ],
   "omittedPaths": [],

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "노트"
+              "title": "낙서장"
             }
           },
           {
@@ -63,8 +63,7 @@
               "title": "CS 지식"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -247,17 +246,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "db50d323ba92f32d",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
-    "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/개념/프로토콜 (Protocol).md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "2. Area(지속적 관리)/Swift/단축키.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md",
     "그림_가로 1.png",
     "20230128_150508.jpg",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",

@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "낙서장",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
+      "basename": "클로저(Closure)",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/개념/클로저(Closure).md"
     },
     {
-      "basename": "ERD",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "노트",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md"
     },
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+      "basename": "낙서장",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
+    },
+    {
+      "basename": "ERD",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
     },
     {
       "basename": "프로토콜 (Protocol)",
@@ -195,10 +199,6 @@
     {
       "basename": "메모",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/메모.md"
-    },
-    {
-      "basename": "프로젝트 연습",
-      "path": "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/프로젝트 연습.md"
     }
   ],
   "omittedPaths": [],

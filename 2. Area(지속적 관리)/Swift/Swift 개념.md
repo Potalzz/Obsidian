@@ -999,6 +999,18 @@ Swift Data의 큰 틀 정리
 #### @State
 >**뷰 내부에서 사용하는 로컬 상태값을 저장**하고, 해당 값이 바뀌면 **자동으로 뷰를 다시 그리게 하는 역할**
 
+**@State 선언**
+뷰 내부에 `@State`를 사용하여 변수를 선언하면, SwiftUI는 이 변수를 "이 뷰의 상태를 결정하는 원천 데이터(Source of Truth)"로 인식하고 특별한 메모리 공간에 저장하여 관리한다.
+
+**body 재계산**
+SwiftUI 스케줄러는 무효화된 뷰의 `body` 프로퍼티를 다시 호출한다.
+`body`는 새로운 `@State` 값을 기반으로 뷰의 구조를 설명하는 새로운 결과물을 반환한다.
+
+**차이점 비교 및 렌더링 (Diffing)**
+SwiftUI는 `body`가 새로 반환한 뷰 계층 구조를 이전의 것과 비교한다.
+그리고 **실제로 변경된 부분만**을 효율적으로 찾아내어 화면에 다시 그린다.
+전체 뷰를 무조건 처음부터 다시 로드하는 것이 아니라, 변경점만 지능적으로 반영하기 때문에 성능이 뛰어남.
+
 ---
 
 #### @Binding
@@ -1726,3 +1738,167 @@ await MainActor.run {
 ### Actor
 > 액터란 Race Condition을 방지하기 위해 작업들의 순서를 지정해주는 역할을 한다.
 
+
+## RealityView
+
+#### RealityView의 핵심 역할
+- SwiftUI 뷰 계층 구조 내에서 RealityKit의 3D 씬(Scene)을 렌더링하고 관리하는 컨테이너 뷰
+    
+- SwiftUI의 선언적 구문과 RealityKit의 강력한 3D 렌더링 엔진을 연결하는 다리 역할을 수행
+    
+- 3D 모델과 같은 RealityKit 콘텐츠(`Entity`)와 2D SwiftUI 뷰를 같은 공간에 통합하여 풍부한 몰입형 경험을 제작할 수 있게 함
+
+#### 핵심 구성 요소: `content`와 `attachments` 클로저
+
+`RealityView`는 기본적으로 두 개의 주요 후행 클로저(Trailing Closures)를 통해 3D 콘텐츠와 2D UI를 구성한다.
+
+이해를 쉽게 하기 위해 클로저를 사용하지 않은 형태의 RealityView를 보고가자.
+
+후행 클로저 사용 (우리가 흔히 보는 코드)
+```swift
+struct MyContentView: View {
+    var body: some View {
+        RealityView { content, attachments in
+            // MAKE 클로저의 내용
+            if let model = try? await ModelEntity(named: "myStar") {
+                content.add(model)
+            }
+        } update: { content, attachments in
+            // UPDATE 클로저의 내용
+            // 상태 변화에 따라 모델의 속성을 변경
+        } attachments: {
+            // ATTACHMENTS 클로저의 내용
+            Text("Star Info").tag("info")
+        }
+    }
+}
+```
+
+원본 `init` 호출 형태 (생략하지 않은 코드)
+```swift
+struct MyContentView: View {
+    var body: some View {
+        RealityView(
+            // 1. make 파라미터
+            make: { (content: RealityViewContent, attachments: RealityViewAttachments) in
+                // MAKE 클로저의 내용
+                if let model = try? await ModelEntity(named: "myStar") {
+                    content.add(model)
+                }
+            },
+            // 2. update 파라미터
+            update: { (content: RealityViewContent, attachments: RealityViewAttachments) in
+                // UPDATE 클로저의 내용
+                // 상태 변화에 따라 모델의 속성을 변경
+            },
+            // 3. attachments 파라미터
+            attachments: {
+                // ATTACHMENTS 클로저의 내용
+                Text("Star Info").tag("info")
+            }
+        )
+    }
+}
+```
+
+Swift의 여러 후행 클로저 문법이 적용되어, 첫 클로저는 레이블이 생략되고 두 번째부터는 레이블(`attachments:`)이 명시된다.
+make 파라미터에서 받아오는 content는 사실 `RealityViewContent`라는 struct이다.
+`RealityViewContent`는 `RealityViewContentProtocol`을 준수하고 있어 `add`와 `remove` 함수를 제공하여 평소에 RealityView내부에서 `content.add(root)`와 같이 추가와 삭제를 마음껏 할 수 있다.
+
+각 클로저에 대해서도 자세하게 살펴보자.
+
+##### content 클로저
+
+- **역할**: RealityKit의 `Entity`(3D 모델, 조명, 카메라 등)를 3D 씬에 추가하고, 상태 변화에 따라 업데이트하는 로직을 담당함. 3D 공간의 실질적인 내용을 구성하는 곳임.
+    
+- **파라미터**:
+    - `content` (`RealityViewContent`): 3D 씬에 대한 안전한 접근 창구. `content.add(_:)` 메서드를 통해 엔티티를 씬에 추가함.
+        
+    - `attachments` (`RealityViewAttachments`): `attachments` 클로저에서 정의된 SwiftUI 뷰에 접근할 수 있게 해줌. `attachments.entity(for:)` 메서드로 SwiftUI 뷰를 3D 공간에 배치 가능한 `Entity`로 변환함.
+        
+
+##### attachments 클로저
+
+- **역할**: 3D 공간 내의 특정 `Entity`에 부착될 SwiftUI 뷰를 정의함. 정보 패널, 버튼, 라벨 등 2D UI 요소를 선언하는 공간임.
+    
+- **특징**:
+    - `@ViewBuilder` 속성을 가져 여러 뷰를 나열할 수 있음.
+        
+    - 각 뷰는 `.tag()` 수정자를 통해 고유한 식별자를 가져야 함. 이 태그는 `content` 클로저에서 해당 뷰를 `Entity`로 찾아오는 '키(key)'로 사용됨.
+
+#### 생명주기(Lifecycle) 관리: `make`와 `update`
+
+- `RealityView`는 초기화 방식에 따라 3D 콘텐츠의 생성과 업데이트를 효율적으로 관리함.
+    
+- 어떤 초기화 구문(`init`)을 사용했는지는 `update:` 레이블의 유무로 결정됨.
+
+##### 단순 `content` 클로저 방식
+
+- **호출 시점**: `update:` 레이블 없이 `RealityView { ... }` 만 사용했을 때 선택되는 초기화 구문.
+    
+- **동작**: 이 클로저는 `RealityView`가 처음 생성될 때와, `@State` 변수 변경 등으로 뷰가 업데이트될 때 **매번 전체 코드가 다시 실행됨.**
+    
+- **문제점**: 3D 모델 로딩과 같이 무거운 작업을 업데이트 시마다 반복하게 되어 비효율적임.
+    
+
+```Swift
+// State 변수 'scale'이 변할 때마다 ModelEntity 로딩을 반복함
+RealityView { content in
+    if let model = try? await ModelEntity(named: "MyModel") {
+        model.transform.scale = [scale, scale, scale]
+        content.add(model)
+    }
+}
+```
+
+##### `make` 와 `update` 분리 방식
+
+- **호출 시점**: `RealityView { ... } update: { ... }` 와 같이 `update:` 레이블을 명시했을 때 선택되는 초기화 구문.
+    
+- **동작**:
+    
+    - **`make` 클로저 (첫 번째 `{...}` 블록)**: `RealityView`가 화면에 처음 나타날 때 **단 한 번만 실행됨.** 무거운 리소스(3D 모델 등)를 로딩하고, 변하지 않는 초기 씬을 구성하는 데 적합함.
+        
+    - **`update` 클로저 (`update: {...}` 블록)**: `make` 실행 직후 최초 한 번 실행되고, 이후 뷰가 업데이트될 때마다 **반복적으로 실행됨.** `make`에서 생성된 엔티티를 찾아 상태 변화에 따른 속성(위치, 크기, 색상 등)만 변경하는 가벼운 작업을 수행함.
+        
+
+
+```swift
+RealityView { content in
+    // 'make' 클로저: 최초 1회만 실행
+    if let model = try? await ModelEntity(named: "MyModel") {
+        content.add(model)
+    }
+} update: { content in
+    // 'update' 클로저: 'scale'이 변할 때마다 실행
+    if let model = content.entities.first {
+        model.transform.scale = [scale, scale, scale]
+    }
+}
+```
+
+####  `@State` 와 뷰의 재렌더링
+
+SwiftUI 뷰 내부에 `@State`로 선언된 변수의 값이 변경되면, SwiftUI는 해당 변수를 사용하는 뷰가 유효하지 않다고 판단함.
+    
+그 결과, 뷰의 `body` 프로퍼티가 다시 계산되며, 이는 `RealityView`의 `update` 클로저 (또는 단순 `content` 클로저)가 다시 실행됨
+    
+SwiftUI는 이전 뷰와 새로운 뷰의 차이점만 효율적으로 비교하여 화면을 업데이트함.
+
+하지만, 단순 content 클로저를 사용하더라도 Entity들이 비효율적으로 렌더링되는 현상을 막을 수 있는 방법은 존재한다.
+
+`.id()`를 RealityView에 추가해주면 해당 id가 변하지 않는 이상 RealityView를 재렌더링하지 않는다.
+
+```swift
+RealityView { content in
+	setupScene(content: content)
+}
+.id(viewModel.getActiveProjectID())
+```
+
+위의 예제 코드에서는 활성화된 projectID가 변하지 않는 이상 설정해둔 Scene을 계속해서 띄워놓는다.
+
+#### 결론
+- `RealityView`를 사용하는 것은 단순히 뷰를 선언하는 행위를 넘어, Swift의 후행 클로저 문법을 통해 특정 **초기화 구문(`init`)을 호출**하는 것
+    
+- 효율적인 visionOS 앱 개발을 위해서는 리소스 로딩과 상태 업데이트 로직을 분리하는 **`make`와 `update` 클로저 방식을 사용하자**

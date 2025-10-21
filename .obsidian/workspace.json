@@ -77,7 +77,8 @@
               "title": "CS 지식"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -260,13 +261,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "db50d323ba92f32d",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/Swift/개념 노트/RealityView.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md",
     "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md",
     "2. Area(지속적 관리)/Swift/개념 노트/프로토콜 (Protocol).md",

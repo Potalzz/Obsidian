@@ -1950,11 +1950,6 @@ SwiftUI에서 `RealityView`를 사용할 때 흔히 사용하는 구조는 사�
 다양한 초기화 함수 중에서 가장 많이 쓰이는 `make`, `update` 형태를 살펴보자.
 
 ```swift
-public init(
-	make: @escaping (inout RealityViewContent) -> Void,
-	update: @escaping (inout RealityViewContent) -> Void? = nil
-)
-
 nonisolated
 public init(
 	make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void,

@@ -1804,7 +1804,7 @@ struct MyContentView: View {
 }
 ```
 
-후행 클로저에서는 마지막 인자의  문법이 적용되어, 첫 클로저는 레이블이 생략되고 두 번째부터는 레이블(`attachments:`)이 명시된다.
+후행 클로저에서는 마지막 파라미터의 인자를 클로저로  문법이 적용되어, 첫 클로저는 레이블이 생략되고 두 번째부터는 레이블(`attachments:`)이 명시된다.
 
 make 파라미터에서 받아오는 content는 `RealityViewContent`라는 struct이다.
 

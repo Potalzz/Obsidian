@@ -991,6 +991,9 @@ Swift Data의 큰 틀 정리
 
 `@Model`을 붙여 Class로 **스키마**를 정의 -> App 진입점에 모델 컨테이너 설정 -> 데이터를 추가(Create), 수정 (Update), 삭제 (Delete) 할 때는 모델 컨텍스트를 활용해서 수행 -> 데이터를 읽을 때 (Read)는 쿼리를 사용
 
+### @Model(모델 정의)
+
+
 
 
 ## @ 속성 래퍼(Property Wrapper)
@@ -1744,7 +1747,7 @@ await MainActor.run {
 #### RealityView의 핵심 역할
 - SwiftUI 뷰 계층 구조 내에서 RealityKit의 3D 씬(Scene)을 렌더링하고 관리하는 컨테이너 뷰
     
-- SwiftUI의 선언적 구문과 RealityKit의 강력한 3D 렌더링 엔진을 연결하는 다리 역할을 수행
+- SwiftUI의 선언적 구문과 RealityKit의 강력한 3D 렌더링 엔진을 연결하는 역할을 수행
     
 - 3D 모델과 같은 RealityKit 콘텐츠(`Entity`)와 2D SwiftUI 뷰를 같은 공간에 통합하여 풍부한 몰입형 경험을 제작할 수 있게 함
 
@@ -1802,8 +1805,12 @@ struct MyContentView: View {
 ```
 
 Swift의 여러 후행 클로저 문법이 적용되어, 첫 클로저는 레이블이 생략되고 두 번째부터는 레이블(`attachments:`)이 명시된다.
-make 파라미터에서 받아오는 content는 사실 `RealityViewContent`라는 struct이다.
+make 파라미터에서 받아오는 content는 `RealityViewContent`라는 struct이다.
+
 `RealityViewContent`는 `RealityViewContentProtocol`을 준수하고 있어 `add`와 `remove` 함수를 제공하여 평소에 RealityView내부에서 `content.add(root)`와 같이 추가와 삭제를 마음껏 할 수 있다.
+
+![[Pasted image 20251023012751.png]]
+
 
 각 클로저에 대해서도 자세하게 살펴보자.
 

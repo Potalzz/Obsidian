@@ -1752,6 +1752,7 @@ await MainActor.run {
 - 3D 모델과 같은 RealityKit 콘텐츠(Entity)와 2D SwiftUI 뷰를 같은 공간에 통합하여 풍부한 몰입형 경험을 제작할 수 있게 함
 
 #### RealityView와 클로저
+>클로저는 사실 init을 호출하는거고 까고 들어가보면 여러 형태의 init호출이 있음. 어떤 걸 호출할지 선택하는거
 
 **RealityView**는 기본적으로 두 개의 주요 후행 클로저(Trailing Closures)를 통해 3D 콘텐츠와 2D UI를 구성한다.
 

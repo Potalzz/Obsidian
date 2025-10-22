@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -248,12 +248,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d02fbdb43a802614",
+  "active": "d31ba8d43b580cce",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "Pasted image 20251023012751.png",
-    "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
     "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md",

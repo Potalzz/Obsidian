@@ -1961,17 +1961,38 @@ RealityView { content in
 
 이 `init`함수는 `make`와 `update`라는 두 개의 함수를 받고, 두 파라미터의 타입은 모두 **클로저(함수**)이다.
 
-`where`절을 자세하게 살펴보기 전에 `init`함수 내부 파라미터를 먼저 살펴보자.
+`where`절을 살펴보면 **Content**는 자동으로 `RealityViewContent.Body<RealityViewDefaultPlaceholder>`로 결정된다는 사실을 알 수 있다.
+
+`RealityViewContent`에 대해 더욱 자세하게 알아보기 위해 선언부로 이동해보자.
+
+![[Pasted image 20251023064612.png]]
+"이 유형은 사용자가 직접 만들지 않고, `RealityView`가 값을 자동으로 생성합니다."라고 주석이 쓰여있고,
+`RealityView`가 값을 어떻게 생성하는지는 내부적으로 구현 되어있기 떄문에 코드를 확인할 수는 없다.
+
+
+![[Pasted image 20251023064107.png]]
+
+다만, `RealityViewContent`는 `RealityViewContentProtocol`을 준수하고 있어 `content.add(entity)`로 Entity를 추가할 수 있고 추가된 Entity는 `content.entities` 컬렉션에 담긴다.
+
+>결과적으로 **Content**는 `RealityViewContent`타입의 **3D 엔티티 컨테이너**라는 사실을 알 수 있다.
+
+이제 **Content**가 무엇인지 알았으니 나머지 이니셜라이저의 파라미터(make, update)를 살펴보자
+
+![[Pasted image 20251023051524.png]]
 
 각 파라미터에 대한 설명은 다음과 같다.
 
 **make 파라미터**
->새로운 `Reality View` 의 초기 콘텐츠를 구성하는 비동기 클로저입니다. 이 클로저는 콘텐츠를 로드하여 이 뷰를 채우는 동안 앱 UI의 반응성을 유지하기 위해 비동기적으로 작동합니다.
+>새로운 `Reality View` 의 초기 콘텐츠를 구성하는 비동기 클로저.
+>이 클로저는 콘텐츠를 로드하여 이 뷰를 채우는 동안 앱 UI의 반응성을 유지하기 위해 비동기적으로 작동한다.
 
 **update 파라미터**
->뷰의 상태가 변경됨에 따라 `Reality View` 인스턴스의 콘텐츠를 업데이트하는 선택적 클로저입니다.
+>뷰의 상태가 변경됨에 따라 `Reality View` 인스턴스의 콘텐츠를 업데이트하는 선택적 클로저이다.
 
-또한 두 개의 파라미터는 모두 클로저 타입이기 때문에, 후행 클로저(Trailing Closure)문법에 따라서 **마지막 파라미터 여러 개가 연속으로 클로저**일 경우, **첫 번째 후행 클로저는 파라미터 이름을 생략**하고, 두 번째 후행 클로저부터는 **파라미터 이름을 레이블처럼 붙여서 작성**할 수 있다.
+**왜 inout으로 전달되어야 할까 ?**
+위에서 보았듯이 `RealityViewContent`타입의 **Content**에 직접 값을 수정해야 하기 때문에 `inout`으로 전달되어야 한다.
+
+또한 두 개의 파라미터는 모두 클로저 타입이기 때문에, 후행 클로저(Trailing Closure)문법에 따라서 **마지막 파라미터 여러 개가 연속으로 클로저**일 경우, **첫 번째 후행 클로저는 파라미터 이름을 생략**하고, **두 번째 후행 클로저부터는** 파라미터 이름을 **레이블처럼 붙여서 작성**할 수 있다.
 
 **변환 과정**
 
@@ -1994,6 +2015,15 @@ RealityView { content in
 
 이렇게 변환 과정을 거쳐 우리가 자주 사용하는 구조가 만들어지게 된다.
 
-이제  `where`절을 살펴보면 **Content**는 자동으로 `RealityViewContent.Body<RealityViewDefaultPlaceholder>`로 결정된다는 사실을 알 수 있다.
 
-`RealityViewContent`는 앱에 표시할 콘텐츠를 담는 **struct**이며, 내부에 `Body` sturct는 `View` 프로토콜을 준
+
+
+
+
+
+
+
+
+
+
+

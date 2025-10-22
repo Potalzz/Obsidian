@@ -1962,7 +1962,7 @@ public init(
 
 각 파라미터의 함수 타입을 풀어서 분석해보자.
 
-1. `make` 파라미터
+1. **make 파라미터**
 	
 - **함수 타입**: `@escaping (inout RealityViewContent) -> Void`
 
@@ -1974,7 +1974,7 @@ public init(
 
 - **의미**: "`RealityViewContent`를 받아서, 그것을 직접 수정(add, remove 등)하는 작업을 하고, 끝내는 함수"이다. 해당 함수는 이니셜라이저이므로 뷰가 처음 생성될 때 단 한 번 호출된다.
 
-1. `update` 파라미터
+2. **update 파라미터**
 	
 - **함수 타입**: `@escaping (inout RealityViewContent) -> Void`
 
@@ -1986,6 +1986,8 @@ public init(
 
 - **의미**: "RealityViewContent를 받아서, 그것을 수정하는 작업을 하고, 끝내는 함수"이다.
   이 함수는 뷰가 **업데이트될 때마다** (예: SwiftUI의 `@State`가 변경될 때) 반복적으로 호출된다.
+
+`update`파라미터는 옵셔널
 
 우리가 자주 보는 구조를 풀어서 보면 아래와 같다.
 ```swift

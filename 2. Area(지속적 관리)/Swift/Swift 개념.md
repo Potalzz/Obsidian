@@ -1915,5 +1915,5 @@ RealityView { content in
 
 
 ### RealityView가 무엇인가 ?
-Reality Composer Pro에서 작성한 콘텐츠를 포함하여 앱에 풍부한 3D RealityKit 콘텐츠를 표시할 수 있습니다.  Reality View Content Protocol(https://developer.apple.com/documentation/realitykit/realityviewcontentprotocol) 준수하는 구조체를 `make` 및 `update` 클로저에 전달하며, 이를 사용하여 뷰에 RealityKit 엔터티를 추가하고 제거할 수 있습니다
+Reality Composer Pro에서 작성한 콘텐츠를 포함하여 앱에 풍부한 3D RealityKit 콘텐츠를 표시할 수 있습니다. Reality View Content Protocol 준수하는 구조체를 make 및 update 클로저에 전달하며, 이를 사용하여 뷰에 RealityKit 엔터티를 추가하고 제거할 수 있습니다
 

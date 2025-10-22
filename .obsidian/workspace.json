@@ -13,58 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
+                "file": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "노트"
+              "title": "visionOS 공부"
             }
           },
           {
             "id": "db50d323ba92f32d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "할 일"
-            }
-          },
-          {
-            "id": "d31ba8d43b580cce",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Swift 개념"
-            }
-          },
-          {
-            "id": "d02fbdb43a802614",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "클로저(Closure)"
+              "title": "새 탭"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -131,8 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -248,34 +214,33 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d31ba8d43b580cce",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
+    "Pasted image 20251023033500.png",
+    "Pasted image 20251023033443.png",
+    "Pasted image 20251023033427.png",
     "Pasted image 20251023012751.png",
     "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md",
     "2. Area(지속적 관리)/Swift/개념 노트/RealityView.md",
-    "3. Resource(정보 저장소)/Apple Developer Academy/SSG 스터디_T4/VisionOS 알아보기.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
     "2. Area(지속적 관리)/Swift/개념 노트/프로토콜 (Protocol).md",
+    "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
-    "2. Area(지속적 관리)/Swift/단축키.md",
     "그림_가로 1.png",
     "20230128_150508.jpg",
-    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발",
     "Pasted image 20250927011634.png",
     "Pasted image 20250927005511.png",
     "Pasted image 20250927010222.png",
     "Pasted image 20250927010009.png",
     "Pasted image 20250927005512.png",
-    "Pasted image 20250927005953.png",
     "ㅜㅐ샤ㅐ.md",
-    "Pasted image 20250914033007.png",
+    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md",
     "무제.base",
     "무제 1.base",
     "무제.canvas",
@@ -288,8 +253,10 @@
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/앱 홍보글.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md",
+    "2. Area(지속적 관리)/Swift/단축키.md",
     "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md",
+    "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/포트폴리오 작성 팁.md",
     "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov",
     "2. Area(지속적 관리)/Swift/visionOS",
     "2. Area(지속적 관리)/블로그",

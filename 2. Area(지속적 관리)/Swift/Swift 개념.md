@@ -1915,5 +1915,111 @@ RealityView { content in
 
 
 ### RealityView가 무엇인가 ?
-Reality Composer Pro에서 작성한 콘텐츠를 포함하여 앱에 풍부한 3D RealityKit 콘텐츠를 표시할 수 있습니다. Reality View Content Protocol 준수하는 구조체를 make 및 update 클로저에 전달하며, 이를 사용하여 뷰에 RealityKit 엔터티를 추가하고 제거할 수 있습니다
+>Reality Composer Pro에서 작성한 콘텐츠를 포함하여 앱에 풍부한 3D RealityKit 콘텐츠를 표시할 수 있습니다. Reality View Content Protocol 준수하는 구조체를 make 및 update 클로저에 전달하며, 이를 사용하여 뷰에 RealityKit 엔터티를 추가하고 제거할 수 있습니다.
+
+공식문서에는 위와 같이 나와있다.
+
+RealityKit이 내부적으로 어떻게 구성되어 있고, 3D 콘텐츠를 어떻게 표시할 수 있는지 차근차근 살펴보자.
+
+```swift
+RealityView { content in
+	if let robot = try? await ModelEntity(named: "robot") {   
+		content.add(robot)
+	}
+} update : { content in
+	// ... update 클로저 내용
+}
+```
+>코드에서 자주 마주하는 RealityView의 형태
+
+처음 `RealityView`를 보고 든 생각은 다음과 같다.
+
+**"죄다 클로저로 되어있는데 대체 무슨 의미인거지...??"**
+
+한 번 의문이 들기 시작하니 여러 궁금증이 생겨났다.
+- RealityView는 strcut인데 어떻게 클로저를 사용하는 것이지 ?
+- 클로저 내부는 어떻게 구성되어 있지 ?
+- content는 어디서 받아오는 거지 ?
+
+SwiftUI에서 `RealityView`를 사용할 때 흔히 보이는 위 구조는 사실 `RealityView` 구조체의 `init`함수를 특별한 문법으로 **호출하는 것이다**.
+
+```swift
+public init(
+	make: @escaping (inout RealityViewContent) -> Void,
+	update: @escaping (inout RealityViewContent) -> Void
+)
+
+nonisolated
+public init(
+	make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void,
+	update: (@MainActor (inout RealityViewContent) -> Void)? = nil)
+	where Content == RealityViewContent.Body<RealityViewDefaultPlaceholder>
+```
+>RealityView의 실제 이니셜라이저(초기화 함수)
+
+이 `init`함수는 `make`와 `update`라는 두 개의 함수를 받고, 두 파라미터의 타입은 모두 **클로저(함수**)이다.
+
+각 파라미터의 함수 타입을 풀어서 분석해보자.
+
+1. `make` 파라미터
+	
+- **함수 타입**: `@escaping (inout RealityViewContent) -> Void`
+
+- **입력 (Input)**: `(inout RealityViewContent)`
+	- `RealityViewContent`라는 타입의 값을 **입력 및 수정 가능(`inout`)** 한 상태로 받는다.
+
+- **출력 (Output)**: `Void`
+	- 아무것도 반환하지 않고 **작업만 수행한다.**
+
+- **의미**: "`RealityViewContent`를 받아서, 그것을 직접 수정(add, remove 등)하는 작업을 하고, 끝내는 함수"이다. 해당 함수는 이니셜라이저이므로 뷰가 처음 생성될 때 단 한 번 호출된다.
+
+1. `update` 파라미터
+	
+- **함수 타입**: `@escaping (inout RealityViewContent) -> Void`
+
+- **입력 (Input)**: `(inout RealityViewContent)`
+    - `make`와 동일하게, `RealityViewContent`를 **입력 및 수정 가능(`inout`)** 한 상태로 받는다.
+
+- **출력 (Output)**: `Void`
+    - 아무것도 반환하지 않고 **작업만 수행한다.**
+
+- **의미**: "RealityViewContent를 받아서, 그것을 수정하는 작업을 하고, 끝내는 함수"이다.
+  이 함수는 뷰가 **업데이트될 때마다** (예: SwiftUI의 `@State`가 변경될 때) 반복적으로 호출된다.
+
+우리가 자주 보는 구조를 풀어서 보면 아래와 같다.
+```swift
+RealityView { content in
+	if let robot = try? await ModelEntity(named: "robot") {   
+		content.add(robot)
+	}
+} update : { content in
+	// ... update 클로저 내용
+}
+```
+
+```swift
+RealityView(
+            // 1. make 파라미터
+            make: { (content: RealityViewContent) in
+                // MAKE 클로저의 내용
+                if let model = try? await ModelEntity(named: "myStar") {
+                    content.add(model)
+                }
+            },
+            // 2. update 파라미터
+            update: { (content: RealityViewContent) in
+                // UPDATE 클로저의 내용
+                // 상태 변화에 따라 모델의 속성을 변경
+            }
+        )
+```
+
+
+
+![[Pasted image 20251023033500.png]]
+
+RealityView는 다른 view와 같이 struct로 구성되어있다.
+
+
+
 

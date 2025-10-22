@@ -1911,3 +1911,7 @@ RealityView { content in
 - `RealityView`를 사용하는 것은 단순히 뷰를 선언하는 행위를 넘어, Swift의 후행 클로저 문법을 통해 특정 **초기화 구문(`init`)을 호출**하는 것
     
 - 효율적인 visionOS 앱 개발을 위해서는 리소스 로딩과 상태 업데이트 로직을 분리하는 **`make`와 `update` 클로저 방식을 사용하자**
+
+
+
+### RealityView가 무엇인가 ?

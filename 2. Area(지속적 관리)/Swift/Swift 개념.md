@@ -1749,15 +1749,15 @@ await MainActor.run {
     
 - SwiftUI의 선언적 구문과 RealityKit의 강력한 3D 렌더링 엔진을 연결하는 역할을 수행
     
-- 3D 모델과 같은 RealityKit 콘텐츠(`Entity`)와 2D SwiftUI 뷰를 같은 공간에 통합하여 풍부한 몰입형 경험을 제작할 수 있게 함
+- 3D 모델과 같은 RealityKit 콘텐츠(Entity)와 2D SwiftUI 뷰를 같은 공간에 통합하여 풍부한 몰입형 경험을 제작할 수 있게 함
 
-#### 핵심 구성 요소: `content`와 `attachments` 클로저
+#### RealityView와 클로저
 
-`RealityView`는 기본적으로 두 개의 주요 후행 클로저(Trailing Closures)를 통해 3D 콘텐츠와 2D UI를 구성한다.
+**RealityView**는 기본적으로 두 개의 주요 후행 클로저(Trailing Closures)를 통해 3D 콘텐츠와 2D UI를 구성한다.
 
-이해를 쉽게 하기 위해 클로저를 사용하지 않은 형태의 RealityView를 보고가자.
+이해를 쉽게 하기 위해 두 가지의 예제를 통해 클로저 안에 어떤 것들이 생략되어있는지 살펴보자.
 
-후행 클로저 사용 (우리가 흔히 보는 코드)
+**후행 클로저 사용** (흔히 보는 코드)
 ```swift
 struct MyContentView: View {
     var body: some View {

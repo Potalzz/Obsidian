@@ -1941,12 +1941,18 @@ RealityView { content in
 - 클로저 내부는 어떻게 구성되어 있지 ?
 - content는 어디서 받아오는 거지 ?
 
-SwiftUI에서 `RealityView`를 사용할 때 흔히 보이는 위 구조는 사실 `RealityView` 구조체의 `init`함수를 특별한 문법으로 **호출하는 것이다**.
+`RealityView`가 선언된 위치로 이동해 코드를 살펴보면, 다양한 종류의 초기화 함수가 존재하는 것을 볼 수 있다.
+![[Pasted image 20251023041252.png]]
+![[Pasted image 20251023041320.png]]
+
+SwiftUI에서 `RealityView`를 사용할 때 흔히 사용하는 구조는 사실 `RealityView` 구조체의 `init`함수를 특별한 문법으로 **호출하는 것이다**.
+
+다양한 초기화 함수 중에서 가장 많이 쓰이는 `make`, `update` 형태를 살펴보자.
 
 ```swift
 public init(
 	make: @escaping (inout RealityViewContent) -> Void,
-	update: @escaping (inout RealityViewContent) -> Void
+	update: @escaping (inout RealityViewContent) -> Void? = nil
 )
 
 nonisolated

@@ -1919,7 +1919,7 @@ RealityView { content in
 
 공식문서에는 위와 같이 나와있다.
 
-RealityKit이 내부적으로 어떻게 구성되어 있고, 3D 콘텐츠를 어떻게 표시할 수 있는지 차근차근 살펴보자.
+RealityKit이 내부적으로 어떻게 구성되어 있고, 3D 콘텐츠를 어떻게 표시할 수 있는지 차근차근 살펴보자.
 
 ```swift
 RealityView { content in
@@ -1935,96 +1935,65 @@ RealityView { content in
 처음 `RealityView`를 보고 든 생각은 다음과 같다.
 
 **"죄다 클로저로 되어있는데 대체 무슨 의미인거지...??"**
+- **"RealityView는 strcut인데 어떻게 클로저를 사용하는 것이지 ?**
+	- **"클로저 내부는 어떻게 구성되어 있지 ?"**
+		- **"content는 어디서 받아오는 거지 ?"**
 
-한 번 의문이 들기 시작하니 여러 궁금증이 생겨났다.
-- RealityView는 strcut인데 어떻게 클로저를 사용하는 것이지 ?
-- 클로저 내부는 어떻게 구성되어 있지 ?
-- content는 어디서 받아오는 거지 ?
+지피지기면 백전백승이란 말이 있지 않은가.
+다시 공식 문서로 돌아가 `RealityView`의 형태를 살펴보자.
 
-`RealityView`가 선언된 위치로 이동해 코드를 살펴보면, 다양한 종류의 초기화 함수가 존재하는 것을 볼 수 있다.
-![[Pasted image 20251023041252.png]]
-![[Pasted image 20251023041320.png]]
+![[Pasted image 20251023045940.png]]
+`RealityView`의 선언을 쉽게 풀어쓰면 다음과 같다.
 
-SwiftUI에서 `RealityView`를 사용할 때 흔히 사용하는 구조는 사실 `RealityView` 구조체의 `init`함수를 특별한 문법으로 **호출하는 것이다**.
+**`RealityView`는 메인 스레드에서 동작하고 동시성에 안전한(`@MainActor @preconcurrency`) 구조체(struct)이다.**
+
+> 이 구조체는 **Content**라는 제네릭 타입(`<Content>`)을 가지는데, 이 **Content** 타입은 **반드시 `View` 프로토콜을 따르는 뷰**(`where Content : View`)여야 한다.
+
+`<Content>` 제네릭 타입은 **직접 명시하는 것이 아니라**, 각 이니셜라이저의 `where` 절에서 **자동으로 결정**되므로, 이니셜라이저가 있는 부분을 살펴보자.
+
+![[Pasted image 20251023051409.png]]
+[`RealityView`에는 다양한 종류의 초기화 함수가 존재하는 것을 볼 수 있다.]
 
 다양한 초기화 함수 중에서 가장 많이 쓰이는 `make`, `update` 형태를 살펴보자.
 
-```swift
-nonisolated
-public init(
-	make: @escaping @MainActor @Sendable (inout RealityViewContent) async -> Void,
-	update: (@MainActor (inout RealityViewContent) -> Void)? = nil)
-	where Content == RealityViewContent.Body<RealityViewDefaultPlaceholder>
-```
->RealityView의 실제 이니셜라이저(초기화 함수)
+![[Pasted image 20251023051524.png]]
+>선택적 업데이트 클로저를 통해 visionOS에 대한 새로운 RealityView를 만든다.
 
 이 `init`함수는 `make`와 `update`라는 두 개의 함수를 받고, 두 파라미터의 타입은 모두 **클로저(함수**)이다.
 
-각 파라미터의 함수 타입을 풀어서 분석해보자.
+`where`절을 자세하게 살펴보기 전에 `init`함수 내부 파라미터를 먼저 살펴보자.
 
-1. **make 파라미터**
-	
-- **함수 타입**: `@escaping (inout RealityViewContent) -> Void`
+각 파라미터에 대한 설명은 다음과 같다.
 
-- **입력 (Input)**: `(inout RealityViewContent)`
-	- `RealityViewContent`라는 타입의 값을 **입력 및 수정 가능(`inout`)** 한 상태로 받는다.
+**make 파라미터**
+>새로운 `Reality View` 의 초기 콘텐츠를 구성하는 비동기 클로저입니다. 이 클로저는 콘텐츠를 로드하여 이 뷰를 채우는 동안 앱 UI의 반응성을 유지하기 위해 비동기적으로 작동합니다.
 
-- **출력 (Output)**: `Void`
-	- 아무것도 반환하지 않고 **작업만 수행한다.**
+**update 파라미터**
+>뷰의 상태가 변경됨에 따라 `Reality View` 인스턴스의 콘텐츠를 업데이트하는 선택적 클로저입니다.
 
-- **의미**: "`RealityViewContent`를 받아서, 그것을 직접 수정(add, remove 등)하는 작업을 하고, 끝내는 함수"이다. 해당 함수는 이니셜라이저이므로 뷰가 처음 생성될 때 단 한 번 호출된다.
+또한 두 개의 파라미터는 모두 클로저 타입이기 때문에, 후행 클로저(Trailing Closure)문법에 따라서 **마지막 파라미터 여러 개가 연속으로 클로저**일 경우, **첫 번째 후행 클로저는 파라미터 이름을 생략**하고, 두 번째 후행 클로저부터는 **파라미터 이름을 레이블처럼 붙여서 작성**할 수 있다.
 
-2. **update 파라미터**
-	
-- **함수 타입**: `@escaping (inout RealityViewContent) -> Void`
+**변환 과정**
 
-- **입력 (Input)**: `(inout RealityViewContent)`
-    - `make`와 동일하게, `RealityViewContent`를 **입력 및 수정 가능(`inout`)** 한 상태로 받는다.
+1. **기본 함수 호출**
+```swift
+RealityView(
+	make: { (content: RealityViewContent) in /* ... make 코드 ... */ },
+	update: { (content: RealityViewContent) in /* ... update 코드 ... */ }
+)
+```
 
-- **출력 (Output)**: `Void`
-    - 아무것도 반환하지 않고 **작업만 수행한다.**
-
-- **의미**: "RealityViewContent를 받아서, 그것을 수정하는 작업을 하고, 끝내는 함수"이다.
-  이 함수는 뷰가 **업데이트될 때마다** (예: SwiftUI의 `@State`가 변경될 때) 반복적으로 호출된다.
-
-`update`파라미터는 옵셔널이므로 지정하지 않으면 `make` 파라미터만 사용하여 `RealityView`를 실행한다.
-
-
-
-우리가 자주 보는 구조를 풀어서 보면 아래와 같다.
+2. **후행 클로저 적용**
 ```swift
 RealityView { content in
-	if let robot = try? await ModelEntity(named: "robot") {   
-		content.add(robot)
-	}
-} update : { content in
-	// ... update 클로저 내용
+	// 이 블록이 'make' 파라미터에 전달됨
+} update: { content in
+	// 이 블록이 'update' 파라미터에 전달됨
 }
 ```
 
-```swift
-RealityView(
-            // 1. make 파라미터
-            make: { (content: RealityViewContent) in
-                // MAKE 클로저의 내용
-                if let model = try? await ModelEntity(named: "myStar") {
-                    content.add(model)
-                }
-            },
-            // 2. update 파라미터
-            update: { (content: RealityViewContent) in
-                // UPDATE 클로저의 내용
-                // 상태 변화에 따라 모델의 속성을 변경
-            }
-        )
-```
+이렇게 변환 과정을 거쳐 우리가 자주 사용하는 구조가 만들어지게 된다.
 
+이제  `where`절을 살펴보면 **Content**는 자동으로 `RealityViewContent.Body<RealityViewDefaultPlaceholder>`로 결정된다는 사실을 알 수 있다.
 
-
-![[Pasted image 20251023033500.png]]
-
-RealityView는 다른 view와 같이 struct로 구성되어있다.
-
-
-
-
+`RealityViewContent`는 앱에 표시할 콘텐츠를 담는 **struct**이며, 내부에 `Body` sturct는 `View` 프로토콜을 준

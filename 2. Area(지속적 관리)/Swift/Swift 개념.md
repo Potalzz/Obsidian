@@ -2006,7 +2006,8 @@ RealityView(
 
 2. **후행 클로저 적용**
 ```swift
-RealityView { content in
+
+RealityView { content in // "content"는 RealityView의 전용 3D 씬이자 엔티티들을 담는 컨테이너 역할
 	// 이 블록이 'make' 파라미터에 전달됨
 } update: { content in
 	// 이 블록이 'update' 파라미터에 전달됨
@@ -2014,6 +2015,8 @@ RealityView { content in
 ```
 
 이렇게 변환 과정을 거쳐 우리가 자주 사용하는 구조가 만들어지게 된다.
+
+
 
 
 

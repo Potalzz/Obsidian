@@ -1824,7 +1824,7 @@ RealityView { content in
 
 **make**와 **update**는 `init`함수가 종료된 이후에 호출되어야 하므로, `init`의 범위를 탈출(escape)하기 위해 `@escaping`이 필수이다.
 
-하지만 위에 얘기했듯이 **update**는 옵셔널이기 때문에 옵셔널인 클 때문에 `@escaping`으로 동작한다.
+하지만 위에 얘기했듯이 **update**는 옵셔널이기 때문에 옵셔널이 붙으면 타입이 옵셔널로 감싸지고 클로저는  때문에 `@escaping`으로 동작한다.
 
 **왜 inout으로 전달되어야 할까 ?**
 위에서 보았듯이 `RealityViewContent`타입의 **Content**에 직접 값을 수정해야 하기 때문에 `inout`으로 전달되어야 한다.

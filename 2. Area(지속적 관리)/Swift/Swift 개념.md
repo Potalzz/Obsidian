@@ -1744,9 +1744,7 @@ await MainActor.run {
 
 ## RealityView
 ### RealityView가 무엇인가 ?
->Reality Composer Pro에서 작성한 콘텐츠를 포함하여 앱에 풍부한 3D RealityKit 콘텐츠를 표시할 수 있습니다. Reality View Content Protocol 준수하는 구조체를 make 및 update 클로저에 전달하며, 이를 사용하여 뷰에 RealityKit 엔터티를 추가하고 제거할 수 있습니다.
-
-공식문서에 나와있는 설명만 봐서는 이해하기 어렵다.
+>Reality Composer Pro에서 작성한 콘텐츠를 포함하여 앱에 풍부한 3D RealityKit 콘텐츠를 표시할 수 있습니다. Reality View Content Protocol 준수하는 구조체를 make 및 update 클로저에 전달하며, 이를 사용하여 뷰에 RealityKit 엔터티를 추가하고 제거할 수 있습니다. - 공식문서에 나와있는 설명
 
 RealityKit이 내부적으로 어떻게 구성되어 있고, 3D 콘텐츠를 어떻게 표시할 수 있는지 차근차근 살펴보자.
 

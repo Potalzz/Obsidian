@@ -9,16 +9,20 @@
       "path": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md"
     },
     {
-      "basename": "CS 지식",
-      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
+      "basename": "노트",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md"
     },
     {
       "basename": "할 일",
       "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
     },
     {
-      "basename": "노트",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md"
+      "basename": "멘토링 기록",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
+    },
+    {
+      "basename": "CS 지식",
+      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
     },
     {
       "basename": "ERD",
@@ -27,10 +31,6 @@
     {
       "basename": "낙서장",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
-    },
-    {
-      "basename": "멘토링 기록",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
     },
     {
       "basename": "아이디어",

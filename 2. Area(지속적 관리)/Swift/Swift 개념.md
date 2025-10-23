@@ -1825,7 +1825,7 @@ RealityView { content in
 **make**와 **update**는 `init`함수가 종료된 이후에 호출되어야 하므로, `init`의 범위를 탈출(escape)하기 위해 `@escaping`이 필수이다.
 
 하지만 위에 얘기했듯이 **update**은 **옵셔널**이다.
-클로저에 **옵셔널**이 붙으면 타입이 **옵셔널타입**으로 감싸지고, 옵셔널인 클로저는  `@escaping`으로 동작하기 때문에 `@escaping`을 추가하지 않아도 된다.(추가하면 중복 선언으로 에러가 난다..)
+클로저에 **옵셔널**이 붙으면 타입이 **옵셔널타입**으로 감싸지고, 옵셔널인 클로저는 `@escaping`으로 동작하기 때문에 `@escaping`을 추가하지 않아도 된다.(추가하면 중복 선언으로 에러가 난다..)
 
 **왜 inout으로 전달되어야 할까 ?**
 위에서 보았듯이 `RealityViewContent`타입의 **Content**에 직접 값을 수정해야 하기 때문에 `inout`으로 전달되어야 한다.
@@ -1901,10 +1901,13 @@ struct ContentView: View {
 `make`파라미터만 있는 경우 view가 업데이트되면 entity를 다시 생성하여 비효율적이지만, `update`파라미터는 `make`와 같은 **content 원본을 참조**하고, `update`클로저 내부 코드만 실행하기 떄문에 효율적으로 Scene을 업데이트할 수 있다.
 
 
+**Attachment**
 
+![[Pasted image 20251024044519.png]]
+attachments 클로저에 선언된 Entity들은 `AttachmentContent`타입으로 반환되고, 반환된 것들을 **make**클로저에서 받아와서 사용할 수 있다.
 
-
-
+![[Pasted image 20251024044646.png]]
+`(make, update, attachments)`이니셜라이저를 공식문서에서 보면, attachments는 `AttachmentContent`타입을 반환하는 것을 볼 수 있다.
 
 
 

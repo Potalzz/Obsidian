@@ -1,20 +1,24 @@
 {
   "recentFiles": [
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
-      "basename": "클로저(Closure)",
-      "path": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md"
-    },
-    {
       "basename": "노트",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/노트.md"
     },
     {
       "basename": "할 일",
       "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
+    },
+    {
+      "basename": "Claude Code",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/Claude Code.md"
+    },
+    {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "클로저(Closure)",
+      "path": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md"
     },
     {
       "basename": "멘토링 기록",
@@ -195,10 +199,6 @@
     {
       "basename": "Drawing 2025-08-14 00.45.46.excalidraw",
       "path": "Excalidraw/Drawing 2025-08-14 00.45.46.excalidraw.md"
-    },
-    {
-      "basename": "메모",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/메모.md"
     }
   ],
   "omittedPaths": [],

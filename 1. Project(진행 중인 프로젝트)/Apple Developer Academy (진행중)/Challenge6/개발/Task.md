@@ -1,5 +1,5 @@
 ## Task
-### 협업
+### 공통
 - [ ] 공통 사용되는 것들 공용 함수화
 	Entity 생성
 	customHoverEffect
@@ -28,7 +28,7 @@
 - [ ] 생성 스텝 Ui 변경
 - [ ] 예시 이미지 String -> 이미지 에셋으로
 
-### 볼륨
+### 공간 관련
 #### 초기 볼륨 객체
 - [x] 초기 대지 생성
 - [x] 대지(volume) 회전
@@ -57,23 +57,6 @@ Image load하는 함수
 현재 구조에서 이미지 적용을 진행하려면 ?
 - view에서 viewModel 호출
  - 활성화된 프로젝트 찾기
-
-#### volume 벽면 제거
-- [x] 벽면 생성 코드 삭제
-- [x] Opacity적용 코드 삭제
-
-#### 볼륨 Rotation 및 Scale 조절
-- [ ] 볼륨 대지 Builder에서 로테이션 및 스케일 조정하는 방식에서, 추가되기 전에 전체 scale조정하는 방식으로 조절.
-- **RealityKit volumetric window entity size limit 1.0 meter constraint visionOS 2025**
-- [ ] 볼륨 하단 indicator 위치 조정(바닥을 볼륨 영역의 최하단으로 이동 ?)
-- [ ] 바닥이 content에 추가되는 것이 아니라 anchor에 추가되도록 구현
-
-**어차피 사이즈 받아오는 단계가 사라지는데, volume과 immersive마다 크기를 저장하고 반환해주는 방식이 나을듯 ?**
-
-#### volume 바닥에 이미지 머티리얼 적용 기능 구현
-- [ ] 이미지 추가하는 버튼 구현
-- [ ] 버튼 클릭하면 이미지 추가하는 ui 띄우기
-- [ ] 이미지 선택하면, 구현해놓은 함수로 바닥에 material 적용
 
 
 ## 개발 메모장
@@ -108,10 +91,3 @@ wwdc영상 보고 코드 정리해서 블로그에 글 업로드하기.
 
 
 
-## 이슈
-### Navigation 배경 중복
-`Navigation`을 통해 화면을 이동하면, window가 navigationBar영역에서 겹쳐보이는 현상.
-navigation방식이 문제가 아니라, 각 화면마다 `glassBackgroundEffect()`를 추가하여 배경이 겹치게 나오는 현상이였음...
-
-### RealityKit Volume Entity 크기 제한
-**RealityKit volumetric window entity size limit 1.0 meter constraint visionOS 2025**

@@ -1902,12 +1902,12 @@ struct ContentView: View {
 
 
 **Attachment**
+![[Pasted image 20251024044646.png]]
+`(make, update, attachments)`이니셜라이저를 공식문서에서 보면, attachments는 `AttachmentContent`타입을 반환하는 것을 볼 수 있다.
 
 ![[Pasted image 20251024044519.png]]
 attachments 클로저에 선언된 Entity들은 `AttachmentContent`타입으로 반환되고, 반환된 것들을 **make**클로저에서 받아와서 사용할 수 있다.
 
-![[Pasted image 20251024044646.png]]
-`(make, update, attachments)`이니셜라이저를 공식문서에서 보면, attachments는 `AttachmentContent`타입을 반환하는 것을 볼 수 있다.
 
 
 

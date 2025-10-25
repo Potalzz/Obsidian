@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Claude Code",
-      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
-    },
-    {
       "basename": "개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
+    },
+    {
+      "basename": "할 일",
+      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
+    },
+    {
+      "basename": "Claude Code",
+      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
     },
     {
       "basename": "Swift 개념",
@@ -15,10 +19,6 @@
     {
       "basename": "ERD",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
-    },
-    {
-      "basename": "할 일",
-      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
     },
     {
       "basename": "클로저(Closure)",

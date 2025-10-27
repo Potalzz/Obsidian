@@ -63,8 +63,7 @@
               "title": "Claude Code"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -247,13 +246,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "213d71fc46306323",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
     "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md",
     "2. Area(지속적 관리)/학습/Claude Code.md",
     "2. Area(지속적 관리)/Swift/단축키.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/이슈.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/Volume 벽면 제거.md",

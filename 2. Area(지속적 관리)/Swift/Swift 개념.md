@@ -1910,6 +1910,125 @@ attachments 클로저에 선언된 Entity들은 `AttachmentContent`타입으로 
 
 
 
+## Clean Architecture + MVVM
+### Actor
+클린 아키텍처에서 **Actor**는 두 가지 주요 의미로 사용된다.
+
+1. **SOLID 원칙 (SRP)에서의 Actor** : 소프트웨어를 변경하도록 요청하는 주체
+2. **Use Case 다이어그램에서의 Actor** : 시스템과 상호작용하는 외부 사용자 또는 시스템
+
+두 가지 **Actor**의 개념에 대해서 각각 살펴보자.
+
+#### Actor: 단일 책임 원칙 (SRP)의 핵심
+엉클 밥은 **하나의 모듈**은 오직 **하나의 액터**에 대해서만 책임을 져야 한다고 **단일 책임 원칙(SRP)** 을 재정의함.
+
+**여기서 Actor란 ?**
+- 시스템의 변경을 요구하는 **이해관계자 그룹**을 의미한다.
+- 예를 들어, '재무팀', '인사팀', '운영팀' 등이 각각의 Actor가 될 수 있다.
+
+**왜 이것이 중요한가?**
+- **"하나의 모듈은 오직 하나의 변경 이유만을 가져야 한다"**는 기존 SRP 정의를 더 명확하게 만든다.
+    
+- 만약 하나의 클래스(모듈)가 **서로 다른 Actor**(예: 재무팀과 인사팀)를 위한 코드를 동시에 담고 있다면, 심각한 문제가 발생할 수 있다.
+    
+- **예시:** `Employee`라는 클래스에 `calculatePay()` (재무팀 Actor) 메서드와 `reportHours()` (인사팀 Actor) 메서드가 있다고 가정해보자.
+    
+    - 만약 재무팀의 요구로 급여 계산 방식을 바꾸기 위해 `calculatePay()`가 의존하는 내부 로직을 수정했는데, 이 로직을 `reportHours()`도 공유하고 있었다면, 인사팀의 기능이 의도치 않게 망가질 수 있습니다.
+        
+- **결론:** SRP를 'Actor' 관점에서 지킨다는 것은, **서로 다른 이유(서로 다른 Actor)로 변경될 코드를 명확히 분리**하는 것을 의미한다.
+
+아키텍처를 설계하는 것은 마치 하나의 회사를 만드는 것과 같다.
+필요한 기능들을 정리하고, 해당 기능을 수행할 부서를 만든다.
+해당 부서에는 부서의 성격에 맞는 기능들만 배정한다.
+
+#### Actor: 유스케이스(Use Case)의 주체
+
+이것은 UML(통합 모델링 언어) 다이어그램에서 유래한, 더 전통적인 의미의 Actor이다.
+
+- **여기서 Actor란?**
+    
+    - 시스템 **외부**에서 시스템과 상호작용하는 모든 것을 의미한다.
+        
+    - **Primary Actor (주 액터):** 시스템을 사용하는 주체 (예: 앱 사용자, 관리자)
+        
+    - **Secondary Actor (보조 액터):** 시스템이 상호작용해야 하는 대상 (예: 외부 데이터베이스, 결제 API, 이메일 서버)
+        
+    - 클린 아키텍처의 **유스케이스(Use Case) 계층**은 바로 이 Actor들이 시스템을 통해 달성하려는 목표(예: "사용자가 로그인을 한다")를 정의한다.
 
 
+#### Swift Concurrency의 Actor와는 다른 개념이다
+- **Swift의 Actor**:
+    
+    - 이것은 프로그래밍 **언어 차원에서 제공하는 기능(키워드)**
+        
+    - 여러 스레드에서 데이터에 동시에 접근할 때 발생하는 문제(Data Race)를 막기 위한 **동시성(Concurrency) 관리 모델**
+        
+    - `actor` 내의 데이터는 격리되어 외부에서 안전하게 접근할 수 있도록 보장한다.
+        
+- **Clean Architecture의 Actor**:
+    
+    - 이것은 소프트웨어 설계를 위한 **추상적인 '개념' 또는 '패턴'**.  (SRP의 주체, 유스케이스의 사용자)
+
+
+### Entity
+- Actor가 필요로 하는 데이터의 모델을 의미
+- 특정 도메인에서 사용되는 Struct 모델
+
+
+
+### UseCase
+**서비스를 사용하는 사용자(User)가 해당 서비스를 통해 하고자 하는 것을 의미.**
+
+> 블로그라는 서비스가 있다고 가정해보자.. 사용자는 블로그에 들어와서 보고싶은 게시글을 "검색"할 수 있고, "댓글"을 남기거나, "공유" 를 하는등 다양한 행동을 수행할 수 있다. 이러한 사용자가 서비스에서 수행하고자 하는 것들이 UseCase라고 할 수 있다.
+
+또는 
+
+> Actor가 Entity를 원하는데, 이 값은 계산되거나 특정 로직에 의해서 얻어지므로 Actor가 원하는 Entity를 얻어내는 "로직"?  
+> ex) Actor가 원하는 Entity인 MoviePage를 얻기 위해서 필요한 "로직"
+
+
+**핵심 비즈니스 로직을 처리**
+
+
+
+### Domain
+도메인은 엔티티와 Usecase를 포함하는 영역.
+
+![[Pasted image 20251101183447.png]]
+
+
+
+### Repositories
+ Clean Architecture에서 Repositories는 외부 데이터 소스 또는 데이터 저장소와의 인터페이스를 제공하는 인터페이스이다. Repositories는 도메인 레이어에 속하며, 애플리케이션의 데이터 접근과 관련된 기능을 추상화한다.
+
+Repositories는 데이터의 CRUD 작업을 정의하게되고, UseCase나 도메인 객체들은 Repositories를 통해 데이터에 접근하여 필요한 작업을 수행하게 된다.
+
+ 아래는 구현 예시를 들어보자면 아래와 같다.
+
+예를 들어 영화 검색 앱을 만들고 있다고 가정해보자. 사용자는 특정 키워드로 영화를 검색할 수 있고 검색 결과를 화면에 표시하게 될 것이다.
+
+이 때 영화 데이터를 어떤 방식으로 가져오고 저장할지는 앱 개발자에게 달려있다.
+
+```swift
+protocol MoviesRepository {
+    func searchMovies(withKeyword keyword: String, completion: @escaping (Result<[Movie], Error>) -> Void)
+    func saveMovie(_ movie: Movie, completion: @escaping (Result<Void, Error>) -> Void)
+}
+```
+
+여기서 중요한건 이런 프로토콜 정의까지가 Domain레이어에 속한다는 것이다.
+
+만약 Domain내부에 DataRepository가 존재해서 Damain이 Data Repository를 활용해 데이터를 가져오게 된다면,
+
+의존성 방향이 Domain레이어 ➡️ Data Repository레이어 가 될 것이다.
+
+이런 의존성 방향을 전환하기 위해 Data Repository가 Domain을 활용한다면  Domain레이어 ⬅️ Data Repository 레이어가 될 것이다. 
+
+### Presenter
+
+- Entity 데이터를 표현(present) 하는데 필요한 계층
+    - Coordinator
+    - View
+    - ViewModel
+    - Behaviors: 특정 View의 event에 관해 적용되는 UI
 

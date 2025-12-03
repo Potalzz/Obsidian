@@ -191,7 +191,7 @@ extension View {
 
 현재 프로젝트에서는 appState를 중앙화하여 관리하고, 해당 값을 바꾸는 함수를 다른 곳에서 호출함으로써 앱 상태를 관리하고 있다.
 
-또한, Coordinator 패턴을 사용하여 앱 상태가 변경되면 앱 메인에서 onChange를 통해 appState 변화를 추적하고, open/dismiss window를 호출하는 형식을 통해 띄우고 지워야 할 scene들을 컨트롤하고 있었다.
+또한, Coordinator 패턴을 사용하여 앱 상태가 변경되면 앱 메인에서 onChange를 통해 appState 변화를 추적하고, open/dismiss window를 호출하는 형식을 통해 띄우고 지워야 할 scene들을 컨트롤하고 있다.
 
 **실제 프로젝트에서 사용 예시**
 ```swift

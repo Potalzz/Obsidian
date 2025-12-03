@@ -167,9 +167,6 @@ struct MainWindowView: View {
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.openWindow) private var openWindow
 
-    @Bindable var appStateManager: AppStateManager
-    @State private var windowCoordinator: WindowCoordinator
-
     var body: some View {
 	    LibraryView()
         .onBackground {

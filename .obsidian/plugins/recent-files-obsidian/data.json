@@ -1,56 +1,80 @@
 {
   "recentFiles": [
     {
-      "basename": "할 일",
-      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
+      "basename": "visionOS view계층 정복",
+      "path": "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md"
     },
     {
-      "basename": "개발",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
+      "basename": "Glayer 프로젝트 정리",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md"
     },
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
-      "basename": "낙서장",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
-    },
-    {
-      "basename": "Claude Code",
-      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
-    },
-    {
-      "basename": "단축키",
-      "path": "2. Area(지속적 관리)/Swift/단축키.md"
-    },
-    {
-      "basename": "ERD",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
-    },
-    {
-      "basename": "클로저(Closure)",
-      "path": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md"
-    },
-    {
-      "basename": "멘토링 기록",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
-    },
-    {
-      "basename": "CS 지식",
-      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
-    },
-    {
-      "basename": "아이디어",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/아이디어.md"
+      "basename": "Ai Video",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/Ai Video.md"
     },
     {
       "basename": "visionOS 공부",
       "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
     },
     {
+      "basename": "개발",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
+    },
+    {
+      "basename": "아이디어",
+      "path": "2. Area(지속적 관리)/블로그/아이디어.md"
+    },
+    {
+      "basename": "방탈출 앱 개발",
+      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
+    },
+    {
+      "basename": "Claude Code",
+      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
+    },
+    {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
+      "basename": "멘토링 기록",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
+    },
+    {
+      "basename": "낙서장",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
+    },
+    {
+      "basename": "아이디어",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/아이디어.md"
+    },
+    {
+      "basename": "Big Idea, EQ, CS",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/Big Idea, EQ, CS.md"
+    },
+    {
       "basename": "CBL",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/CBL.md"
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/CBL.md"
+    },
+    {
+      "basename": "ERD",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
+    },
+    {
+      "basename": "할 일",
+      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
+    },
+    {
+      "basename": "단축키",
+      "path": "2. Area(지속적 관리)/Swift/단축키.md"
+    },
+    {
+      "basename": "클로저(Closure)",
+      "path": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md"
+    },
+    {
+      "basename": "CS 지식",
+      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
     },
     {
       "basename": "C5 학습 노트",
@@ -93,10 +117,6 @@
       "path": "무제 2.base"
     },
     {
-      "basename": "Big Idea, EQ, CS",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Big Idea, EQ, CS.md"
-    },
-    {
       "basename": "메모장",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
     },
@@ -115,10 +135,6 @@
     {
       "basename": "방탈출 개발",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
-    },
-    {
-      "basename": "방탈출 앱 개발",
-      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
     },
     {
       "basename": "발표",
@@ -159,10 +175,6 @@
     {
       "basename": "영양제",
       "path": "3. Resource(정보 저장소)/건강/영양제.md"
-    },
-    {
-      "basename": "아이디어",
-      "path": "2. Area(지속적 관리)/블로그/아이디어.md"
     },
     {
       "basename": "해외 취업 강연",

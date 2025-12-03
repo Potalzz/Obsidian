@@ -588,7 +588,6 @@ root joint는 `.handWrist`에서부터 시작한다.
 2. 데이터가 업데이트될 때마다 **HandTrackingProvider**가 데이터를 자동으로 **푸시**해주는 방식
 
 
-
 ## RealityKit
 **RealityView**는 기존 **SwiftUI**기반 UI와 제스쳐를 사용과 RealityKit의 3D환경을 둘 다 결합해 사용하기 위한 새로 만들어진 공간이다.
 
@@ -620,3 +619,17 @@ RealityView내에서 SwiftUIView 추가 가능.
 [better together: swiftUI and realitykit](https://www.youtube.com/watch?v=VtenPKrvPOU)
 
 [visionOS26 RealityKit기능을 적용한 샘플코드](https://developer.apple.com/documentation/visionos/petite-asteroids-building-a-volumetric-visionos-game)
+
+
+## visionOS에서 window
+visionOS에서 window를 여는 방법은 `openWindow`, `pushWindow` 총 두 가지 방법이 있다.
+
+**pushWindow**
+>visionOS에서 사용하는 navigation개념
+
+기존 window위에 화면을 올리는 형식이다. 기존 화면은 사라지고 새로운 화면이 stack에 push되어 나타나며, dismiss를 할 경우 해당 화면이 사라지고 이전 화면이 나타난다.
+
+
+**openWindow**
+window를 아예 새로운 창으로 연다. 기존에 어떤 화면이 떠있는지는 관계없이 새로 화면이 열림.
+

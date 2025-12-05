@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -247,13 +247,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c8c06911561c1762",
+  "active": "213d71fc46306323",
   "lastOpenFiles": [
+    "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/Cream CTO.md",
     "6F685F40-7C16-438E-A016-CACB21EC2574_1_102_a.jpeg",
     "C72F0752-3A97-481E-94B0-713EDE7C259C_1_102_a.jpeg",
     "ACBD98A5-E093-446D-A798-D7EEE9682D4D_1_102_a.jpeg",
     "E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c.jpeg",
-    "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/Cream CTO.md",
     "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/유용하 이사, Kakao.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
@@ -286,7 +286,6 @@
     "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
     "Pasted image 20251023065225.png",
     "Pasted image 20251023065045.png",
-    "Pasted image 20251023064612.png",
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발",
     "무제.base",

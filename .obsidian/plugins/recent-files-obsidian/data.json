@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "창업",
+      "path": "1. Project(진행 중인 프로젝트)/창업.md"
+    },
+    {
       "basename": "visionOS view계층 정복",
       "path": "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "각종 정보",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md"
-    },
-    {
-      "basename": "Pasted image 20250814014223",
-      "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250814014223.png"
     }
   ],
   "omittedPaths": [],

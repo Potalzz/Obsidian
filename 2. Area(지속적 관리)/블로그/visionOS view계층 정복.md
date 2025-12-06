@@ -89,13 +89,15 @@ SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거�
 
 # **따라서, Window 닫힘을 감지하려면 ScenePhase를 사용해야 한다**
 
-ScenePhase 변화는 visionOS에서 가장 정확하게 감지할 수 있는 상태 변화다.
-(View의 생명주기를 신뢰하지 말자...)
+visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것이다.
+그렇기 때문에 view의 생명주기가 아닌 scene의 생명주기를 감지해야 한다.
 
 특히:
 - Window를 닫을 때 → .background
 - 창이 다시 열릴 때 → .active
 - 시스템 알림 등 일시적 비활성 → .inactive
+
+공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
 
 그래서 나는 아래와 같이 **ScenePhaseChangeModifier**를 만들어 사용했다.
 

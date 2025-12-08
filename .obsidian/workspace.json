@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
+                "file": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Swift 개념"
+              "title": "Glayer 프로젝트 정리"
             }
           },
           {
@@ -63,7 +63,8 @@
               "title": "Swift 개념"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,7 +131,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -246,9 +248,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "d920af07358d42a7",
   "lastOpenFiles": [
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md",
@@ -257,7 +260,6 @@
     "3. Resource(정보 저장소)/프로그래밍/CS 지식.md",
     "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/Airbnb Clone Tutorial.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/Cream CTO.md",
     "1. Project(진행 중인 프로젝트)/창업/곰민 멘토링.md",
     "1. Project(진행 중인 프로젝트)/창업",

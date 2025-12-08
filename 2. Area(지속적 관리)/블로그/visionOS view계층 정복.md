@@ -63,7 +63,7 @@ SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거�
 - X 버튼을 누르면 Window → Background 상태로 전환된다
 - 이 시점에서 ScenePhase는 반드시 .background를 거친다
 
-따라서 우리는 **ScenePhase 기반으로 X 버튼 닫힘과 거의 동일한 효과를 구현**할 수 있다.
+따라서 **ScenePhase 기반으로 X 버튼 클릭을 트리거**할 수 있다.
 (아래에 바로 사용할 수 있는 커스텀 modifier코드를 첨부해두었다.)
 
 ---

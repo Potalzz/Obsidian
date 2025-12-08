@@ -2032,3 +2032,10 @@ protocol MoviesRepository {
     - ViewModel
     - Behaviors: 특정 View의 event에 관해 적용되는 UI
 
+
+
+## 메모리 관리 ARC(Automatic Reference Counting)
+
+https://babbab2.tistory.com/26
+
+

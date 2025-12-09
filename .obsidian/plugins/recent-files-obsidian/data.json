@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
       "basename": "visionOS 공부",
       "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
     },
@@ -15,10 +19,6 @@
     {
       "basename": "할 일",
       "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "멘토링 기록",

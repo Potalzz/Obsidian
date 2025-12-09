@@ -13,12 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
+                "file": "2. Area(지속적 관리)/Swift/Swift 개념.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "visionOS 공부"
+              "title": "Swift 개념"
+            }
+          },
+          {
+            "id": "c3d9c11d4bd694b6",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.10.3"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.10.3"
             }
           },
           {
@@ -31,7 +43,8 @@
               "title": "새 탭"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -214,8 +227,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "c3d9c11d4bd694b6",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/아이디어.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/CBL.md",
@@ -257,7 +271,6 @@
     "2. Area(지속적 관리)/Swift/개념 노트/프로토콜 (Protocol).md",
     "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/메모장.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발",
     "무제.base",
     "무제 1.base",

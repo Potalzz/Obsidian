@@ -1,96 +1,40 @@
 {
   "recentFiles": [
     {
-      "basename": "visionOS view계층 정복",
-      "path": "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md"
-    },
-    {
-      "basename": "Glayer 프로젝트 정리",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md"
-    },
-    {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
       "basename": "visionOS 공부",
       "path": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md"
-    },
-    {
-      "basename": "할 일",
-      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
-    },
-    {
-      "basename": "MIT 알고리즘 강의",
-      "path": "4. Archive(자료 보관소)/알고리즘/MIT 알고리즘 강의.md"
-    },
-    {
-      "basename": "JS 코딩테스트",
-      "path": "4. Archive(자료 보관소)/알고리즘/JS 코딩테스트.md"
-    },
-    {
-      "basename": "CS 지식",
-      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
-    },
-    {
-      "basename": "Airbnb Clone Tutorial",
-      "path": "3. Resource(정보 저장소)/프로그래밍/Swift 프로젝트/Airbnb Clone Tutorial.md"
     },
     {
       "basename": "개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
     },
     {
-      "basename": "Cream CTO",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/Cream CTO.md"
+      "basename": "ERD",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
     },
     {
-      "basename": "곰민 멘토링",
-      "path": "1. Project(진행 중인 프로젝트)/창업/곰민 멘토링.md"
+      "basename": "할 일",
+      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
     },
     {
-      "basename": "유용하 이사, Kakao",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/유용하 이사, Kakao.md"
-    },
-    {
-      "basename": "Ai Video",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록/Ai Video.md"
-    },
-    {
-      "basename": "아이디어",
-      "path": "2. Area(지속적 관리)/블로그/아이디어.md"
-    },
-    {
-      "basename": "방탈출 앱 개발",
-      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
-    },
-    {
-      "basename": "Claude Code",
-      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
     },
     {
       "basename": "멘토링 기록",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
     },
     {
+      "basename": "아이디어",
+      "path": "2. Area(지속적 관리)/블로그/아이디어.md"
+    },
+    {
+      "basename": "Claude Code",
+      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
+    },
+    {
       "basename": "낙서장",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md"
-    },
-    {
-      "basename": "아이디어",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/아이디어.md"
-    },
-    {
-      "basename": "Big Idea, EQ, CS",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/Big Idea, EQ, CS.md"
-    },
-    {
-      "basename": "CBL",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/CBL.md"
-    },
-    {
-      "basename": "ERD",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
     },
     {
       "basename": "단축키",
@@ -99,6 +43,10 @@
     {
       "basename": "클로저(Closure)",
       "path": "2. Area(지속적 관리)/Swift/개념 노트/클로저(Closure).md"
+    },
+    {
+      "basename": "CS 지식",
+      "path": "3. Resource(정보 저장소)/프로그래밍/CS 지식.md"
     },
     {
       "basename": "C5 학습 노트",
@@ -161,6 +109,10 @@
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
     },
     {
+      "basename": "방탈출 앱 개발",
+      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
+    },
+    {
       "basename": "발표",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md"
     },
@@ -199,6 +151,30 @@
     {
       "basename": "영양제",
       "path": "3. Resource(정보 저장소)/건강/영양제.md"
+    },
+    {
+      "basename": "해외 취업 강연",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/해외 취업 강연.md"
+    },
+    {
+      "basename": "주주(2기 창업) 강연",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/주주(2기 창업) 강연.md"
+    },
+    {
+      "basename": "각종 정보",
+      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md"
+    },
+    {
+      "basename": "Pasted image 20250814014223",
+      "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250814014223.png"
+    },
+    {
+      "basename": "Drawing 2025-08-14 17.15.41.excalidraw",
+      "path": "Excalidraw/Drawing 2025-08-14 17.15.41.excalidraw.md"
+    },
+    {
+      "basename": "Drawing 2025-08-14 13.53.02.excalidraw",
+      "path": "Excalidraw/Drawing 2025-08-14 13.53.02.excalidraw.md"
     }
   ],
   "omittedPaths": [],

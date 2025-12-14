@@ -66,12 +66,12 @@ view의 생명주기가 아닌 scene의 생명주기를 감지해야 한다.
 [공식문서 scenePhase감지]
 
 
-# View 라이프사이클 vs Scene 라이프사이클
+# View Lifecycle vs Scene Lifecycle
 
 [아래 문구를 이전 섹션 마지막에 배치할지 여기 배치할지 고민해보기]
 여기서 헷갈릴 수 있는 View와 Scene의 라이프사이클을 짚고 넘어가자.
 
-
+**View Lifecycle(뷰의 생명주기)** 과 **Scene Lifecycle(씬의 생명주기)** 은 앱의 상태를 관리하는 두 가지 핵심 축이다.
 
 아래는 visionOS에서 Window가 나타났다 사라지기까지의 내부 상태 흐름이다.
 

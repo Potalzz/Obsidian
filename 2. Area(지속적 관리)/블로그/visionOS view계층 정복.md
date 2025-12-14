@@ -54,29 +54,19 @@ SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거�
 (해당 부분을 GPT 포함 AI들에게 여러 번 물었지만 동일한 답변을 받았다.)
 [AI 답변 이미지]
 
-하지만 실제 visionOS 앱 동작을 관찰해보면,
-**UIScenePhase 변화가 매우 명확하게 발생**한다.
+하지만 위에서 설명했듯이 **UIScenePhase 변화가 명확하게 발생**한다.
 
-즉,
-- X 버튼을 누르면 Window의 ScenePhase가 → Background 상태로 전환된다
-- 이 시점에서 ScenePhase는 반드시 .background를 거친다
+visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것이므로,
+view의 생명주기가 아닌 scene의 생명주기를 감지해야 한다.
 
 따라서 **ScenePhase 기반으로 X 버튼 클릭을 트리거**할 수 있다.
-
-visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것이다.
-그렇기 때문에 view의 생명주기가 아닌 scene의 생명주기를 감지해야 한다.
-
-특히:
-- Window를 닫을 때 → .background
-- 창이 다시 열릴 때 → .active
-- 시스템 알림 등 일시적 비활성 → .inactive
 
 공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
 
 [공식문서 scenePhase감지]
 
 
-# visionOS Window View 계층 동작 정리
+# view
 
 [아래 문구를 이전 섹션 마지막에 배치할지 여기 배치할지 고민해보기]
 여기서 헷갈릴 수 있는 View의 개념과 Scene의 개념을 짚고 넘어가자.

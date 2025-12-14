@@ -91,7 +91,7 @@ struct ChildView: View {
 }
 ```
 
-**동작 원리:**
+**동작 원리**
 1. 사용자가 탭을 하여 `isShow`가 `false`로 바뀐다.
 2. SwiftUI는 `ParentView`의 `body`를 다시 그린다(Re-evaluation).
 3. `if isShow` 조건이 거짓이 되므로, **`ChildView`는 더 이상 `ParentView`의 자식 계층에 포함되지 않는다.**

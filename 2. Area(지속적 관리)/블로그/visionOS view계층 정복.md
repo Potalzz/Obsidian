@@ -65,8 +65,7 @@ visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단�
 
 # View Lifecycle vs Scene Lifecycle
 
-[아래 문구를 이전 섹션 마지막에 배치할지 여기 배치할지 고민해보기]
-여기서 헷갈릴 수 있는 View와 Scene의 라이프사이클을 짚고 넘어가자.
+사실 View Lifecycle과 Scene Lifecycle에 대한 이해가 짚고 넘어가자.
 
 **View Lifecycle(뷰의 생명주기)** 과 **Scene Lifecycle(씬의 생명주기)** 은 앱의 상태를 관리하는 두 가지 핵심 축이다.
 

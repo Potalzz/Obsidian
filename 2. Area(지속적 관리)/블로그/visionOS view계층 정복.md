@@ -51,7 +51,7 @@ SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거�
 
 > 그래서 view와 scene이 뭐가 다른데 ?
 
-visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰의 생명주기 뿐만 아니라 씬의 생명주기에 대한 이해도 필요하므로 정리하고 넘어가보자.
+visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰의 씬에 대한 생명주기의 이해가 필요하다.
 
 **View Lifecycle(뷰의 생명주기)** 과 **Scene Lifecycle(씬의 생명주기)** 은 앱의 상태를 관리하는 두 가지 핵심 축이다.
 
@@ -102,18 +102,41 @@ View 계층 구조의 과정과 view가 메모리에 언제 등록되고, 해제
 
 하지만 문제는 visionOS의 윈도우 관리 방식에 있다. 사용자가 'X' 버튼을 눌러 윈도우를 닫는 행위는 뷰를 계층 구조에서 **제거**하는 것이 아니라, 윈도우 전체를 **숨기는** 것에 가깝다. 뷰 자체는 메모리에 살아있고 계층 구조에도 남아있으므로 `onDisappear`는 호출되지 않는 것이다.
 
+그럼 씬은 어떻게 변경될까 ?
+
 ### 2. Scene Lifecycle (씬의 생명주기)
 
 **"이 앱(윈도우)이 시스템에서 어떤 상태인가?" (OS 시스템 관점)**
 
-Scene Lifecycle은 **앱의 윈도우(Scene)가 시스템 상에서 어떤 상태에 있는지**를 관리한다. visionOS(그리고 iOS)는 `ScenePhase`라는 환경 변수를 통해 현재 씬의 상태를 3가지로 구분한다.
+Scene Lifecycle은 **앱의 윈도우(Scene)가 시스템 상에서 어떤 상태에 있는지**를 `ScenePhase`라는 환경 변수를 통해 3가지로 구분한다.
 
 - **Active**: 씬이 전면에 있고 사용자와 상호작용 가능한 상태 (현재 보고 있는 윈도우).
     
-- **Inactive**: 씬이 화면에는 보이지만 상호작용은 불가능한 상태 (시스템 제어 센터를 내리거나, 다른 윈도우로 포커스가 넘어가는 과도기).
+- **Inactive**: 씬이 화면에는 보이지만 상호작용은 불가능한 상태 (시스템 제어 센터를 내리거나, 다른 윈도우로 포커스가 넘어가는 순간).
     
-- **Background**: 씬이 사용자 눈에 보이지 않는 상태. **'X' 버튼을 누르거나 디지털 크라운을 눌러 홈으로 나갔을 때가 바로 이 상태다.**
-    
+- **Background**: 씬이 사용자 눈에 보이지 않는 상태. **'X' 버튼을 누르거나 디지털 크라운을 눌러 홈으로 나갔을 때**
+
+실제 'x' 버튼을 클릭했을 때 `ScenePhase`가 어떻게 변경되는지 아래 예제를 통해 살펴보자.
+
+```swift
+@main
+struct VisionProApp: App {
+    // 시스템이 관리하는 앱의 상태 (Active, Inactive, Background)
+    @Environment(\.scenePhase) private var scenePhase
+
+    var body: some Scene {
+        WindowGroup {
+            ParentView() // 위에서 만든 그 뷰
+                .onChange(of: scenePhase) { oldPhase, newPhase in
+                    if newPhase == .background {
+                        print("Window: X 버튼 눌림 (Background 진입)")
+                        // 하지만 ParentView 내부의 isShow는 여전히 'true'임
+                    }
+                }
+        }
+    }
+}
+```
 
 ---
 

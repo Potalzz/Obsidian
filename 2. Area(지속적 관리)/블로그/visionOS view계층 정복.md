@@ -59,8 +59,47 @@ visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해�
 
 **"사용자에게 이 뷰가 보이는가?" (UI 계층 관점)**
 
-View Lifecycle은 말 그대로 **개별 뷰가 화면의 계층 구조(Hierarchy)에 추가되거나 제거되는 과정**을 의미한다. 우리가 흔히 사용하는 `onAppear`와 `onDisappear`가 바로 이 생명주기를 감지하는 modifier다.
+View Lifecycle은 말 그대로 **개별 뷰가 View 계층 구조에 추가되거나 제거되는 과정**을 의미한다.
+우리가 흔히 사용하는 `onAppear`와 `onDisappear`가 바로 이 생명주기를 감지하는 modifier다.
 
+아래 예제를 통해 쉽게 이해해보자.
+```swift
+struct ParentView: View {
+    @State private var isShow = true
+
+    var body: some View {
+        VStack {
+            // [A] 조건부 렌더링
+            if isShow {
+                ChildView() // 뷰 계층에 존재함
+            }
+        }
+        .onTapGesture {
+            // [B] 상태 변경 -> 렌더 트리 갱신 유발
+            isShow = false
+        }
+    }
+}
+
+struct ChildView: View {
+    var body: some View {
+        Text("I am here")
+            .onDisappear {
+                print("ChildView: onDisappear (메모리 해제)")
+            }
+    }
+}
+```
+
+**동작 원리:**
+1. 사용자가 탭을 하여 `isShow`가 `false`로 바뀐다.
+2. SwiftUI는 `ParentView`의 `body`를 다시 그린다(Re-evaluation).
+3. `if isShow` 조건이 거짓이 되므로, **`ChildView`는 더 이상 `ParentView`의 자식 계층에 포함되지 않는다.**
+4. SwiftUI 엔진은 `ChildView`를 **렌더 트리에서 제거(Deallocation)하고 폐기**합니다.
+5. **이 시점에 `onDisappear`가 호출됩니다.**
+    
+
+즉, View Lifecycle의 종료는 **코드 로직에 의해 뷰가 구조적으로 탈락할 때** 발생합니다.
 
 
 문제는 visionOS의 윈도우 관리 방식에 있다. 사용자가 'X' 버튼을 눌러 윈도우를 닫는 행위는 뷰를 계층 구조에서 **제거(Remove)**하는 것이 아니라, 윈도우 전체를 **숨기는(Hide)** 것에 가깝다. 뷰 자체는 메모리에 살아있고 계층 구조에도 남아있으므로 `onDisappear`는 호출되지 않는 것이다.

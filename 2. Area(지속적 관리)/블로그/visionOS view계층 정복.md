@@ -93,16 +93,14 @@ struct ChildView: View {
 
 **동작 원리**
 1. 사용자가 탭을 하여 `isShow`가 `false`로 바뀐다.
-2. SwiftUI는 `ParentView`의 `body`를 다시 그린다(Re-evaluation).
-3. `if isShow` 조건이 거짓이 되므로, **`ChildView`는 더 이상 `ParentView`의 자식 계층에 포함되지 않는다.**
-4. SwiftUI 엔진은 `ChildView`를 **렌더 트리에서 제거(Deallocation)하고 폐기**합니다.
-5. **이 시점에 `onDisappear`가 호출됩니다.**
-    
+2. SwiftUI는 `ParentView`의 `body`를 다시 그린다.
+3. `if isShow` 조건이 거짓이 되므로, **`ParentView`의 자식 목록(계층)에서 `ChildView`가 제거된다.**
+4. SwiftUI 엔진이 이를 감지하고, 메모리에 있던 `ChildView`를 **폐기**한다.
+5. 폐기되는 순간 `onDisappear`가 호출된다.
 
-즉, View Lifecycle의 종료는 **코드 로직에 의해 뷰가 구조적으로 탈락할 때** 발생합니다.
+View 계층 구조의 과정과 view가 메모리에 언제 등록되고, 해제되는지 알아보았다.
 
-
-문제는 visionOS의 윈도우 관리 방식에 있다. 사용자가 'X' 버튼을 눌러 윈도우를 닫는 행위는 뷰를 계층 구조에서 **제거(Remove)**하는 것이 아니라, 윈도우 전체를 **숨기는(Hide)** 것에 가깝다. 뷰 자체는 메모리에 살아있고 계층 구조에도 남아있으므로 `onDisappear`는 호출되지 않는 것이다.
+하지만 문제는 visionOS의 윈도우 관리 방식에 있다. 사용자가 'X' 버튼을 눌러 윈도우를 닫는 행위는 뷰를 계층 구조에서 **제거**하는 것이 아니라, 윈도우 전체를 **숨기는** 것에 가깝다. 뷰 자체는 메모리에 살아있고 계층 구조에도 남아있으므로 `onDisappear`는 호출되지 않는 것이다.
 
 ### 2. Scene Lifecycle (씬의 생명주기)
 

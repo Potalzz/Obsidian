@@ -1,4 +1,4 @@
-# **visionOS Lifecycle**
+# visionOS Lifecycle
 
 
 Vision Pro 앱을 개발하며 당황했던 지점 중 하나는 **View가 사라지는 시점이 명확하게 감지되지 않는다**는 점이었다.
@@ -13,7 +13,7 @@ Glayer프로젝트를 진행하며, 엣지 케이스를 처리하는 과정에�
 
 ---
 
-# **visionOS에서 X 버튼은 ‘닫기’가 아니라 ‘최소화’이다**  
+# visionOS에서 X 버튼은 ‘닫기’가 아니라 ‘최소화’이다
 
 [x버튼 이미지]
 visionOS의 윈도우 하단 인디케이터 왼쪽에 있는 ‘X’ 버튼은
@@ -75,6 +75,7 @@ TV의 전원이 꺼지지 않고 대기 상태로 돌아가는 것이 사용자�
 
 ---
 
+# 그래서 X버튼을 어떻게 감지하는데 ?
 
 애플 공식 포럼 및 문서 기준으로
 **“X 버튼이 눌렸다는 이벤트를 직접 감지하는 API는 존재하지 않는다.”**
@@ -93,21 +94,21 @@ TV의 전원이 꺼지지 않고 대기 상태로 돌아가는 것이 사용자�
 
 ---
 
-# **visionOS Window View 계층 동작 정리**
+# visionOS Window View 계층 동작 정리
 
 [아래 문구를 이전 섹션 마지막에 배치할지 여기 배치할지 고민해보기]
 여기서 헷갈릴 수 있는 View의 개념과 Scene의 개념을 짚고 넘어가자.
 
 아래는 visionOS에서 Window가 나타났다 사라지기까지의 내부 상태 흐름이다.
 
-### **Window가 나타날 때**
+### Window가 나타날 때
 1. Scene 생성
 2. ScenePhase: .inactive → .active
 3. Window가 사용자 앞에 실제로 표시됨
 4. SwiftUI View 렌더링
 5. onAppear 호출
 
-### **X 버튼을 눌러 Window를 닫을 때**
+### X 버튼을 눌러 Window를 닫을 때
 1. Window가 ‘사라짐’ (시각적으로만)
 2. ScenePhase: .active → .inactive → .background
 3. SwiftUI View는 계층에서 제거되지 않음
@@ -115,7 +116,7 @@ TV의 전원이 꺼지지 않고 대기 상태로 돌아가는 것이 사용자�
 5. 앱은 background에 남아 있음
 6. 메모리 압박이 발생하면 → 시스템이 앱 kill
 
-# **따라서, Window 닫힘을 감지하려면 ScenePhase를 사용해야 한다**
+# 따라서, Window 닫힘을 감지하려면 ScenePhase를 사용해야 한다
 
 visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것이다.
 그렇기 때문에 view의 생명주기가 아닌 scene의 생명주기를 감지해야 한다.
@@ -131,7 +132,7 @@ visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단�
 
 ---
 
-# **ScenePhase 감지용 Modifier 전체 코드**
+# ScenePhase 감지용 Modifier 전체 코드
 
 ```swift
 import SwiftUI  
@@ -172,7 +173,7 @@ extension View {
 
 해당 코드를 통해 원하는 view에 modifier를 추가하는 형식으로 `.active`, `.inactive`, `.background`를 트리거할 수 있다.
 
-# **ScenePhase로 Window 닫힘(X 버튼) 감지하기 – 실제 사용 예제**
+# ScenePhase로 Window 닫힘(X 버튼) 감지하기 – 실제 사용 예제
 
 현재 개발중인 visionOS 앱에서 사용자가 volume이나 window를 x버튼을 통해 닫는 상황에서 발생하는 예기치 못한 상황을 방지하기 위해 닫힘 버튼을 감지할 필요가 있었다.
 
@@ -230,13 +231,13 @@ struct MainWindowView: View {
 ---
 
 
-# **해당 방식으로 디지털 크라운 클릭도 감지할 수 있다**
+# 해당 방식으로 디지털 크라운 클릭도 감지할 수 있다
 
 [디지털 크라운 버튼 이미지]
 visionOS에서는 **디지털 크라운 클릭** 시,
 **Immersive 상태인지 여부에 따라 전혀 다른 동작이 발생한다.**
 
-### **1. Shared Space 상태에서의 디지털 크라운 동작**
+## 1. Shared Space 상태에서의 디지털 크라운 동작
 
 Immersive가 아닐 때 디지털 크라운을 누르면
 현재 시야에 떠 있는 모든 Window(Volume 포함)가 **일괄적으로 .inactive 상태**로 전환된다.
@@ -246,7 +247,7 @@ iOS로 예시를 들면, 알림 센터가 살짝 내려왔을 때
 
 ---
 
-### **2. Full Space 상태에서의 디지털 크라운 동작**
+## 2. Full Space 상태에서의 디지털 크라운 동작
 
 반면 Full Space 즉, Immersive가 활성화된 상태에서는 동작이 달라진다.
 
@@ -259,7 +260,7 @@ iOS로 예시를 들면, 알림 센터가 살짝 내려왔을 때
 
 ---
 
-## **3. 왜 차이가 발생하는가? (onDisappear가 불리지 않는 이유)**
+## 3. 왜 차이가 발생하는가? (onDisappear가 불리지 않는 이유)
 
 일반적으로 우리가 `dismissImmersiveSpace()`를 직접 호출하면:
 - 앱은 여전히 .active 상태를 유지하고
@@ -282,7 +283,7 @@ iOS로 예시를 들면, 알림 센터가 살짝 내려왔을 때
 
 ---
 
-## **4. 따라서 디지털 크라운 클릭은 View의 라이프사이클로 감지할 수 없다**
+## 4. 따라서 디지털 크라운 클릭은 View의 라이프사이클로 감지할 수 없다
 
 디지털 크라운 클릭은:
 - View 계층이 사라지는 이벤트가 아니고
@@ -294,7 +295,7 @@ iOS로 예시를 들면, 알림 센터가 살짝 내려왔을 때
 
 ---
 
-## **5. ImmersiveSpace의 .inactive 전환을 감지하면 디지털 크라운 클릭을 추적할 수 있다**
+## 5. ImmersiveSpace의 .inactive 전환을 감지하면 디지털 크라운 클릭을 추적할 수 있다
 
 디지털 크라운 클릭 → ImmersiveSpace가 .inactive → 종료
 
@@ -314,19 +315,19 @@ ImmersiveSpace가 .inactive로 바뀌는 지점을 캐치하면
 
 등 원하는 후처리를 안정적으로 수행할 수 있다.
 
-# **visionOS 개발 시 알아두어야 할 중요한 포인트**
+# visionOS 개발 시 알아두어야 할 중요한 포인트
 
-### **1) window가 닫혀도 View는 메모리에서 제거되지 않는다**
+### 1) window가 닫혀도 View는 메모리에서 제거되지 않는다
 → onDisappear 대신 ScenePhase 사용 필수
 
-### **2) background로 옮겨진 순간, 시스템은 언제든 kill할 수 있다**
+### 2) background로 옮겨진 순간, 시스템은 언제든 kill할 수 있다
 → 저장 작업은 빠르게 처리해야 함
 
-### **3) view 계층을 직접 제어하는 것이 아니라 ‘Scene 단위 라이프사이클’을 기반으로 관리해야 한다**
+### 3) view 계층을 직접 제어하는 것이 아니라 ‘Scene 단위 라이프사이클’을 기반으로 관리해야 한다
 
 ---
 
-# **마무리**
+# 마무리
 visionOS는 iOS, macOS와 닮은 듯 완전히 다른 **Scene 중심의 UI/UX 구조**를 갖고 있다.
 특히 Window하단 인디케이터의 **X**버튼을 클릭했을 때, Window가 ‘완전히 사라지지 않는다는 점’은 visionOS 개발을 진행하며 많이 겪는 혼란 지점이다.
 

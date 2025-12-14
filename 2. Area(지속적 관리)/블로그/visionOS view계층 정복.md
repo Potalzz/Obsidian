@@ -47,27 +47,16 @@ SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거�
 
 ---
 
-# 그래서 X버튼을 어떻게 감지하는데 ?
-
-애플 공식 포럼 및 문서를 찾아보거나 Ai에게 물어보면 
-**“X 버튼이 눌렸다는 이벤트를 직접 감지하는 API는 존재하지 않는다.”**
-는 답변을 볼 수 있다.
-[AI 답변 이미지]
-
-하지만 위에서 설명했듯이 **UIScenePhase 변화가 명확하게 발생**하므로, ScenePhase 기반으로 트리거할 수 있다.
-
-visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것임!!
-
-공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
-
-[공식문서 scenePhase감지]
-
-
 # View Lifecycle vs Scene Lifecycle
 
-visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰의 생명주기 뿐만 아니라 씬의 생명주기에 대한 이해도 필요하므로 한 번 정리하고 넘어가보자.
+> 그래서 view와 scene이 뭐가 다른데 ?
+
+visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰의 생명주기 뿐만 아니라 씬의 생명주기에 대한 이해도 필요하므로 정리하고 넘어가보자.
 
 **View Lifecycle(뷰의 생명주기)** 과 **Scene Lifecycle(씬의 생명주기)** 은 앱의 상태를 관리하는 두 가지 핵심 축이다.
+
+
+
 
 아래는 visionOS에서 Window가 나타났다 사라지기까지의 내부 상태 흐름이다.
 
@@ -87,51 +76,28 @@ visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해�
 6. 메모리 압박이 발생하면 → 시스템이 앱 kill
 
 
+# X버튼을 감지해보자
+
+애플 공식 포럼 및 문서를 찾아보거나 Ai에게 물어보면 
+**“X 버튼이 눌렸다는 이벤트를 직접 감지하는 API는 존재하지 않는다.”**
+는 답변을 볼 수 있다.
+[AI 답변 이미지]
+
+하지만 위에서 설명했듯이 **UIScenePhase 변화가 명확하게 발생**하므로, ScenePhase 기반으로 트리거할 수 있다.
+
+visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것임!!
+
+공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
+
+[공식문서 scenePhase감지]
+
+
+
+
 
 ---
 
-# ScenePhase 감지용 Modifier 전체 코드
-
-```swift
-import SwiftUI  
-
-struct ScenePhaseChangeModifier: ViewModifier {
-
-    let targetPhase: ScenePhase
-
-    let action: () -> Void
-
-    @Environment(\.scenePhase) private var scenePhase
-
-    func body(content: Content) -> some View {
-        content
-            .onChange(of: scenePhase) { oldPhase, newPhase in
-                if newPhase == targetPhase {
-                    action()
-                }
-            }
-    }
-}
-
-extension View {
-
-    func onActive(perform action: @escaping () -> Void) -> some View {
-        self.modifier(ScenePhaseChangeModifier(targetPhase: .active, action: action))
-    }
-
-    func onInactive(perform action: @escaping () -> Void) -> some View {
-        self.modifier(ScenePhaseChangeModifier(targetPhase: .inactive, action: action))
-    }
-
-    func onBackground(perform action: @escaping () -> Void) -> some View {
-        self.modifier(ScenePhaseChangeModifier(targetPhase: .background, action: action))
-    }
-}
-```
-
-해당 코드를 통해 원하는 view에 modifier를 추가하는 형식으로 `.active`, `.inactive`, `.background`를 트리거할 수 있다.
-
-# ScenePhase로 Window 닫힘(X 버튼) 감지하기 – 실제 사용 예제
+# ScenePhase로 X 버튼 감지하기 – 실제 사용 예제
 
 현재 개발중인 visionOS 앱에서 사용자가 volume이나 window를 x버튼을 통해 닫는 상황에서 발생하는 예기치 못한 상황을 방지하기 위해 닫힘 버튼을 감지할 필요가 있었다.
 

@@ -58,13 +58,10 @@ SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거�
 **UIScenePhase 변화가 매우 명확하게 발생**한다.
 
 즉,
-- X 버튼을 누르면 Window → Background 상태로 전환된다
+- X 버튼을 누르면 Window의 ScenePhase가 → Background 상태로 전환된다
 - 이 시점에서 ScenePhase는 반드시 .background를 거친다
 
 따라서 **ScenePhase 기반으로 X 버튼 클릭을 트리거**할 수 있다.
-
----
-# 따라서, Window 닫힘을 감지하려면 ScenePhase를 사용해야 한다
 
 visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것이다.
 그렇기 때문에 view의 생명주기가 아닌 scene의 생명주기를 감지해야 한다.

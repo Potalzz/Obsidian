@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/블로그/visionOS에서 닫기 버튼이 닫기가 아닌 이유 + Lifecycle.md",
+                "file": "2. Area(지속적 관리)/블로그/visionOS  닫기 버튼이 닫기 기능을 하지 않는 이유 + Lifecycle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "visionOS에서 닫기 버튼이 닫기가 아닌 이유 + Lifecycle"
+              "title": "visionOS  닫기 버튼이 닫기 기능을 하지 않는 이유 + Lifecycle"
             }
           },
           {
@@ -244,7 +244,7 @@
   "active": "7e67c6773d9e0f71",
   "lastOpenFiles": [
     "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md",
-    "2. Area(지속적 관리)/블로그/visionOS에서 닫기 버튼이 닫기가 아닌 이유 + Lifecycle.md",
+    "2. Area(지속적 관리)/블로그/visionOS  닫기 버튼이 닫기 기능을 하지 않는 이유 + Lifecycle.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",

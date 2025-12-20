@@ -1,3 +1,4 @@
+**12/20 gpt와 gemini에 있는 설명 기반으로, x버튼이 왜 종료가 아닌지에 대한 고찰과 visionOS의 lifecycle 및 view 계층 설명 적기**
 
 visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 인디케이터에 있는 "X" 버튼이 닫기 기능을 하지 않는 것이였다.
 

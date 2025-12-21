@@ -138,42 +138,19 @@ struct VisionProApp: App {
 }
 ```
 
+시뮬레이터에서 값을 확인해보면..
+
+
+[시뮬레이터 로그]
+오잉..? scenePhase의 변화는 없고 view가 해제된 것을 볼 수 있다.
+
+하지만 실제 기기에서 테스트해보면 다른 결과가 나온다.
+
+scenePhase만 `.background`로 전환되기 때문에 `ChildView`의 `.onDisappear`는 호출되지 않는 것을 볼 수 있다.
+
+이러한 문제들로 인해 visionOS 개발을 할 때 실 기기가 필수적으로 필요하다고 생각한다.
+
 ---
-
-### 정리: 무대와 배우의 비유
-
-이 차이를 쉽게 이해하기 위해 **연극 무대**에 비유해 볼 수 있다.
-
-- **View (배우):** 무대 위에서 연기를 하는 요소
-    
-- **Scene (무대 커튼):** 관객에게 무대를 보여줄지 말지 결정하는 시스템
-    
-
-visionOS에서 'X' 버튼을 누르는 건 **"배우를 퇴장시키는 것(View Remove)"**이 아니라, **"무대의 커튼만 내리는 것(Scene Background)"**이다.
-
-커튼이 내려가서 관객(사용자) 눈에는 안 보이지만, 배우(View)는 여전히 무대 위에 서 있다. 그렇기 때문에 배우가 퇴장할 때 발생하는 이벤트인 `onDisappear`는 발생하지 않는 것이다.
-
-따라서 우리가 원하는 **"윈도우가 닫히는 시점"**을 정확히 잡으려면, 배우의 퇴장이 아니라 **커튼이 내려가는 순간(ScenePhase의 변화)**을 감지해야 한다.
-
-
-
-아래는 visionOS에서 Window가 나타났다 사라지기까지의 내부 상태 흐름이다.
-
-### Window가 나타날 때
-1. Scene 생성
-2. ScenePhase: .inactive → .active
-3. Window가 사용자 앞에 실제로 표시됨
-4. SwiftUI View 렌더링
-5. onAppear 호출
-
-### X 버튼을 눌러 Window를 닫을 때
-1. Window가 ‘사라짐’ (시각적으로만)
-2. ScenePhase: .active → .inactive → .background
-3. SwiftUI View는 계층에서 제거되지 않음
-4. onDisappear **호출되지 않음**
-5. 앱은 background에 남아 있음
-6. 메모리 압박이 발생하면 → 시스템이 앱 kill
-
 
 # X버튼을 감지해보자
 

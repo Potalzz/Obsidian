@@ -1,16 +1,13 @@
 **12/20 gpt와 gemini에 있는 설명 기반으로, x버튼이 왜 종료가 아닌지에 대한 고찰과 visionOS의 lifecycle 및 view 계층 설명 적기**
 
-visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 인디케이터에 있는 "X" 버튼이 닫기 기능을 하지 않는 것이였다.
+visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 인디케이터에 있는 "X" 버튼을 트리거 할 수 없다는 사실이였다.
 
 [x 버튼 이미지]
 (요게 바로 x 버튼)
 
-이게 무슨 소리인가 싶겠지만 visionOS에서 "X" 버튼은 해당 view를 view계층에서 제거하는 것이 아니라 해당 view가 속한 Scene 자체의 상태를 `.background`로 전환시킨다.
+Ai에게 물어봐도 공식적으로 감지할 수 없는 답변만 제공받았으나, 진행하던 프로젝트에서 필수적으로 필요한 기능이였기 때문에 반드시 트리거해야할 필요가 있었다.
 
-그렇기 때문에, view에서 onDisappear를 아무리 추가해도 "X"버튼 클릭 지점을 트리거할 수 없다.
-
-해당 글에서는 visionOS의 Lifecycle과 view계층에 대해서 알아보고
-추가로 "X" 버튼과 디지털 크라운 버튼을 감지하는 방법을 설명하고자 한다.
+때문에, X버튼이 클릭되었을 때 view와 Scene이 어떻게 변하는지 일일이 확인해가며 알아낸 방법을 공유하고 visionOS의 Lifecycle과 view계층에 대해서 알아보고자 한다.
 
 ---
 
@@ -20,6 +17,10 @@ visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 
 visionOS의 윈도우 하단 인디케이터 왼쪽에 있는 ‘X’ 버튼은
 우리가 직관적으로 생각하는 “뷰 제거”가 아니라,
 해당 scene을 background로 전환시키는 동작을 한다.
+
+이게 무슨 소리인가 싶겠지만 visionOS에서 "X" 버튼은 해당 view를 view계층에서 제거하는 것이 아니라 해당 view가 속한 Scene 자체의 상태를 `.background`로 전환시킨다.
+
+그렇기 때문에, view에서 onDisappear를 아무리 추가해도 "X"버튼 클릭 지점을 트리거할 수 없다.
 
 즉,
 **❌ View 계층에서 remove → onDisappear 호출 → 메모리 정리**

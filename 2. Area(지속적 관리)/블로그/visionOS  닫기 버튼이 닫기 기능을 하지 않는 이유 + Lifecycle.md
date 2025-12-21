@@ -19,20 +19,19 @@ visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 
 [x버튼 이미지]
 visionOS의 윈도우 하단 인디케이터 왼쪽에 있는 ‘X’ 버튼은
 우리가 직관적으로 생각하는 “뷰 제거”가 아니라,
-macOS의 ‘노란색 최소화’ 버튼과 동일한 동작을 한다.
+background로 전환시키는 동작을 한다.
 
 즉,
 **❌ View 계층에서 remove → onDisappear 호출 → 메모리 정리**
-**⭕ Window가 해당 Scene을 background로 전환 → 메모리는 유지**
+**⭕ 해당 Scene을 background로 전환 → 메모리는 유지**
 
 사용자가 닫은 것처럼 보이는 화면이 실제로는 완전히 종료되지 않고 **Background Scene**으로 전환될 뿐이다.
 
-onDisappear를 통해서 'X' 버튼을 감지할 수 없는 이유도 이와 같다.
+`.onDisappear`를 통해서 'X' 버튼을 감지할 수 없는 이유도 이와 같다.
 
-SwiftUI에서 onDisappear는 **뷰가 고유한 부모 뷰 계층에서 제거될 때만** 호출되는데, visionOS에서 X 버튼을 누르면 아래 흐름으로 동작하기 때문이다.
+SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제거될 때만** 호출되는데, visionOS에서 X 버튼을 누르면 아래 흐름으로 동작하기 때문이다.
 
 **X 버튼 → 실제 동작 순서**
-
 1. Window가 사용자 시야에서 사라짐
 2. SwiftUI View는 **그대로 유지**
 3. ScenePhase가 .active → .inactive → .background 로 이동

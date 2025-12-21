@@ -50,7 +50,7 @@ SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제�
 
 # View Lifecycle vs Scene Lifecycle
 
-> 그래서 view와 scene이 뭐가 다른데 ?
+> 그래서 view와 scene이 정확히 무엇을 의미하는데 ?
 
 visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰와 씬에 대한 생명주기의 이해가 필요하다.
 
@@ -148,35 +148,23 @@ struct VisionProApp: App {
 하지만 실제 기기에서 테스트해보면 다른 결과가 나온다.
 
 scenePhase만 `.background`로 전환되기 때문에 `ChildView`의 `.onDisappear`는 호출되지 않는 것을 볼 수 있다.
+(이러한 문제들로 인해 visionOS 개발을 할 때 실 기기가 필수적으로 필요하다고 생각한다...)
 
-이러한 문제들로 인해 visionOS 개발을 할 때 실 기기가 필수적으로 필요하다고 생각한다.
-
----
-
-# X버튼을 감지해보자
-
-애플 공식 포럼 및 문서를 찾아보거나 Ai에게 물어보면 
-**“X 버튼이 눌렸다는 이벤트를 직접 감지하는 API는 존재하지 않는다.”**
-는 답변을 볼 수 있다.
-[AI 답변 이미지]
-
-하지만 위에서 설명했듯이 **UIScenePhase 변화가 명확하게 발생**하므로, ScenePhase 기반으로 트리거할 수 있다.
-
-visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단위를 조작하는 것임!!
-
-공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
-
-[공식문서 scenePhase감지]
-
-
-
-
+결과적으로 scenePhase의 변화를 통해서 x 버튼 클릭을 감지할 수 있다.
 
 ---
 
 # ScenePhase로 X 버튼 감지하기 – 실제 사용 예제
 
-현재 개발중인 visionOS 앱에서 사용자가 volume이나 window를 x버튼을 통해 닫는 상황에서 발생하는 예기치 못한 상황을 방지하기 위해 닫힘 버튼을 감지할 필요가 있었다.
+공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
+
+[공식문서 scenePhase감지]
+
+scenePhase만 감지하기 위해서는 위와 같이 간단하게 scenePhase의 변화를 감지하고 실행하고자 하는 코드를 추가하면 된다.
+
+추가로 현재 진행중인 프로젝트에서 이를 어떻게 활용하는지 소개하고자 한다.
+
+사용자가 volume이나 window를 x버튼을 통해 닫는 상황에서 발생하는 예기치 못한 상황을 방지하기 위해 닫힘 버튼을 감지할 필요가 있었다.
 
 커버해야 할 case는 아래와 같다.
 **volume과 window가 동시에 떠있는 상태**
@@ -188,7 +176,7 @@ visionOS의 'X'버튼은 view단위를 조작하는 것이 아니라, scene단�
 
 현재 프로젝트에서는 appState를 중앙화하여 관리하고, 해당 값을 바꾸는 함수를 다른 곳에서 호출함으로써 앱 상태를 관리하고 있다.
 
-또한, Coordinator 패턴을 사용하여 앱 상태가 변경되면 앱 메인에서 onChange를 통해 appState 변화를 추적하고, open/dismiss window를 호출하는 형식을 통해 띄우고 지워야 할 scene들을 컨트롤하고 있다.
+또한, Coordinator 패턴을 통해 앱 상태가 변경되면 앱 메인에서 onChange를 통해 appState 변화를 추적하고, open/dismiss window를 호출하는 형식을 통해 띄우고 지워야 할 scene들을 컨트롤하고 있다.
 
 **실제 프로젝트에서 사용 예시**
 ```swift
@@ -232,13 +220,15 @@ struct MainWindowView: View {
 ---
 
 
-# 해당 방식으로 디지털 크라운 클릭도 감지할 수 있다
+# + 해당 방식으로 디지털 크라운 클릭도 감지할 수 있다
 
 [디지털 크라운 버튼 이미지]
 visionOS에서는 **디지털 크라운 클릭** 시,
 **Immersive 상태인지 여부에 따라 전혀 다른 동작이 발생한다.**
 
 ## 1. Shared Space 상태에서의 디지털 크라운 동작
+
+(Shared Space와 Full Space의 개념에 대해서 잘 모른다면 아래 WWDC영상을 먼저 보고오자)
 
 Immersive가 아닐 때 디지털 크라운을 누르면
 현재 시야에 떠 있는 모든 Window(Volume 포함)가 **일괄적으로 .inactive 상태**로 전환된다.

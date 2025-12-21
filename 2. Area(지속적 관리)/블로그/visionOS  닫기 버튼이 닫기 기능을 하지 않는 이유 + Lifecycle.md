@@ -14,12 +14,12 @@ visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 
 
 ---
 
-# visionOS에서 X 버튼은 ‘닫기’가 아니라 ‘최소화’이다
+# X 버튼의 실제 동작 과정
 
 [x버튼 이미지]
 visionOS의 윈도우 하단 인디케이터 왼쪽에 있는 ‘X’ 버튼은
 우리가 직관적으로 생각하는 “뷰 제거”가 아니라,
-background로 전환시키는 동작을 한다.
+해당 scene을 background로 전환시키는 동작을 한다.
 
 즉,
 **❌ View 계층에서 remove → onDisappear 호출 → 메모리 정리**
@@ -51,16 +51,16 @@ SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제�
 
 > 그래서 view와 scene이 뭐가 다른데 ?
 
-visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰의 씬에 대한 생명주기의 이해가 필요하다.
+visionOS에서 view가 나타나고 사라지는 과정을 이해하기 위해서는 뷰와 씬에 대한 생명주기의 이해가 필요하다.
 
 **View Lifecycle(뷰의 생명주기)** 과 **Scene Lifecycle(씬의 생명주기)** 은 앱의 상태를 관리하는 두 가지 핵심 축이다.
 
-### 1. View Lifecycle (뷰의 생명주기)
+### View Lifecycle (뷰의 생명주기)
 
 **"사용자에게 이 뷰가 보이는가?" (UI 계층 관점)**
 
 View Lifecycle은 말 그대로 **개별 뷰가 View 계층 구조에 추가되거나 제거되는 과정**을 의미한다.
-우리가 흔히 사용하는 `onAppear`와 `onDisappear`가 바로 이 생명주기를 감지하는 modifier다.
+우리가 흔히 사용하는 `.onAppear`와 `.onDisappear`가 바로 이 생명주기를 감지하는 modifier다.
 
 아래 예제를 통해 쉽게 이해해보자.
 ```swift
@@ -104,7 +104,7 @@ View 계층 구조의 과정과 view가 메모리에 언제 등록되고, 해제
 
 그럼 씬은 어떻게 변경될까 ?
 
-### 2. Scene Lifecycle (씬의 생명주기)
+### Scene Lifecycle (씬의 생명주기)
 
 **"이 앱(윈도우)이 시스템에서 어떤 상태인가?" (OS 시스템 관점)**
 

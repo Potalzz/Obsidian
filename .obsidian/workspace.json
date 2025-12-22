@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -233,10 +233,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e67c6773d9e0f71",
+  "active": "db50d323ba92f32d",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "2. Area(지속적 관리)/블로그/visionOS   X버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",
+    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",

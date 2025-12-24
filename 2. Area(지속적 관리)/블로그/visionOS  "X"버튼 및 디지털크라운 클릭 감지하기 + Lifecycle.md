@@ -70,6 +70,7 @@ visionOS는 iOS와 동일하게 **SwiftUI App Life Cycle**을 사용하지만, 
 
 
 
+
 ### View Lifecycle (뷰의 생명주기)
 
 **"사용자에게 이 뷰가 보이는가?" (UI 계층 관점)**

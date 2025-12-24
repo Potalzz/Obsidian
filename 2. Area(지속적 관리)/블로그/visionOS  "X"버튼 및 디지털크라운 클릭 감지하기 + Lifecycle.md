@@ -18,37 +18,35 @@ Glayer 프로젝트를 진행하면서 Immersive Space상태에서 2D Window를 
 
 visionOS의 윈도우 하단 인디케이터 왼쪽에 있는 ‘X’ 버튼은
 우리가 직관적으로 생각하는 “뷰 제거”가 아니라,
-해당 scene을 background로 전환시키는 동작을 한다.
+해당 scene을 `.background`로 전환시키는 동작을 한다.
 
 이게 무슨 소리인가 싶겠지만 visionOS에서 "X" 버튼은 해당 view를 view계층에서 제거하는 것이 아니라 해당 view가 속한 Scene 자체의 상태를 `.background`로 전환시킨다.
 
 (마치 macOS의 "최소화"버튼처럼 느껴지기도 하지만.. 엄밀히 말하면 둘은 완전히 다르게 동작한다.)
 
-그렇기 때문에, view에서 onDisappear를 아무리 추가해도 닫기 버튼 클릭 지점을 트리거할 수 없다.
+view에 `.onDisappear`를 아무리 추가해도 사용자가 "X"버튼을 클릭하는 지점을 트리거할 수 없다.
 
-사용자가 닫은 것처럼 보이는 화면이 실제로는 완전히 종료되지 않고 **Background Scene**으로 전환될 뿐이다.
+사용자가 닫은 것처럼 보이는 화면이 실제로는 완전히 종료되지 않고 **Background Scene**으로 전환되기 때문이다.
 
 SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제거될 때만** 호출되는데, visionOS에서 X 버튼을 누르면 아래 흐름으로 동작하기 때문이다.
 
 **X 버튼 → 실제 동작 순서**
 1. Window가 사용자 시야에서 사라짐
 2. SwiftUI View는 **그대로 유지**
-3. ScenePhase가 .active → .inactive → .background 로 이동
+3. ScenePhase가 .active → .inactive → .background 로 전환
 4. 앱 메모리는 그대로 잡혀 있음
-5. 일정 시간이 지나거나 메모리가 부족하면 시스템이 앱을 종료(kill)
+5. 일정 시간이 지나거나 메모리가 부족하면 시스템이 앱을 종료
 
 [scenePhase 변화 로그 GIF]
 
 즉,
-**뷰가 사라진 것이 아니라 Scene이 background로 이동했기 때문에**
-**SwiftUI는 ‘뷰가 사라졌다(onDisappear)’고 판단하지 않기 때문에 onDisappear가 호출되지 않는다.**
+뷰가 사라진 것이 아니라 Scene이 background로 이동하고, view는 메모리에 그대로 잡혀있기 때문에
+SwiftUI는 ‘뷰가 사라졌다(onDisappear)’고 판단하지 않는다.
 
 
 ---
 
 # visionOS Lifecycle
-
-> 그래서 view와 scene이 정확히 무엇을 의미하는데 ?
 
 visionOS에서 view가 나타나고 사라지는 과정을 더 깊게 이해하기 위해서는 visionOS의 Lifecycle에 대해 더욱 알아야할 필요가 있다.
 

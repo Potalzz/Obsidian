@@ -99,7 +99,6 @@ SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제�
 4. 앱 메모리는 그대로 잡혀 있음
 5. 일정 시간이 지나거나 메모리가 부족하면 시스템이 앱을 종료
 
-[scenePhase 변화 로그 GIF]
 
 즉,
 뷰가 사라진 것이 아니라 Scene이 background로 이동하고, view는 메모리에 그대로 잡혀있기 때문에
@@ -108,7 +107,7 @@ SwiftUI는 ‘뷰가 사라졌다(onDisappear)’고 판단하지 않는다.
 
 ---
 
-# ScenePhase로 X 버튼 감지하기 – 실제 사용 예제
+# ScenePhase로 X 버튼 감지하기
 
 공식 문서에서는 scenePhase 감지에 대한 예제를 아래와 같이 사용하고 있다.
 
@@ -116,80 +115,24 @@ SwiftUI는 ‘뷰가 사라졌다(onDisappear)’고 판단하지 않는다.
 
 scenePhase만 감지하기 위해서는 위와 같이 간단하게 scenePhase의 변화를 감지하고 실행하고자 하는 코드를 추가하면 된다.
 
-추가로 현재 진행중인 프로젝트에서 이를 어떻게 활용하는지 소개하고자 한다.
-
-사용자가 volume이나 window를 x버튼을 통해 닫는 상황에서 발생하는 예기치 못한 상황을 방지하기 위해 닫힘 버튼을 감지할 필요가 있었다.
-
-커버해야 할 case는 아래와 같다.
-**volume과 window가 동시에 떠있는 상태**
-- volume을 닫으면 메인 window가 이전 화면으로 돌아가야 한다.
-- window를 닫으면 volume도 자동으로 닫히고 앱이 종료되어야 한다.
-
-**ImmersiveSpace에서 메인 윈도우가 떠있는 상태**
-- window를 닫으면 Immersive Space가 해제되고 volume과 window가 떠있는 상태로 돌아가야 한다.
-
-현재 프로젝트에서는 appState를 중앙화하여 관리하고, 해당 값을 바꾸는 함수를 다른 곳에서 호출함으로써 앱 상태를 관리하고 있다.
-
-또한, Coordinator 패턴을 통해 앱 상태가 변경되면 앱 메인에서 onChange를 통해 appState 변화를 추적하고, open/dismiss window를 호출하는 형식을 통해 띄우고 지워야 할 scene들을 컨트롤하고 있다.
-
-**실제 프로젝트에서 사용 예시**
-```swift
-struct MainWindowView: View {
-	@Environment(\.dismissWindow) private var dismissWindow
-    @Environment(\.openImmersiveSpace) private var openImmersiveSpace
-    @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
-    @Environment(\.openWindow) private var openWindow
-
-    var body: some View {
-	    LibraryView()
-        .onBackground {
-	        if appStateManager.appState.isImmersiveOpen {
-		        appStateManager.closeProject() // 이전 window화면으로 이동
-		    } else {
-			    appStateManager.closeApp() // 앱 종료하기
-			}
-		}
-		.onChange(of: appStateManager.appState) { oldState, newState in
-            Task { @MainActor in
-                await windowCoordinator?.handleStateChange(
-                    from: oldState,
-                    to: newState,
-                    openWindow: { id in openWindow(id: id) },
-                    dismissWindow: { id in dismissWindow(id: id) },
-                    openImmersiveSpace: { id in await openImmersiveSpace(id: id) },
-                    dismissImmersiveSpace: { await dismissImmersiveSpace() }
-                )
-            }
-        }
-	}
-}
-```
-
-이 방식의 장점:
-- X 버튼을 누르는 순간 인터셉트 가능
-- immersive → volume 이동 같은 로직 처리 가능
-- SwiftData 저장/정리, RealityView 리소스 해제 모두 처리 가능
-- 뷰 계층과 정합성 문제 X
+하지만 위에 얘기했듯이, window가 `.background`로 전환되는 순간은 "X" 버튼 클릭 외에도 여러 상황이 있으므로, 이를 고려해서 설계해야한다.
 
 ---
 
-
 # + 해당 방식으로 디지털 크라운 클릭도 감지할 수 있다
 
-[디지털 크라운 버튼 이미지]
+![[Pasted image 20251225062921.png]]
 visionOS에서는 **디지털 크라운 클릭** 시,
 **Immersive 상태인지 여부에 따라 전혀 다른 동작이 발생한다.**
 
 ## Shared Space 상태에서의 디지털 크라운 동작
 
 (Shared Space와 Full Space의 개념에 대해서 잘 모른다면 아래 글에 정리해놓았으니 보고오자)
-[Spatial Computing을 위한 SwiftUI를 정리한 내용 블로그 글]
+[visionOS 공간 개념 정리](https://medium.com/@tprhkd1607/visionos-%EA%B3%B5%EA%B0%84-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC-f0fe476285de)
 
 Immersive가 아닐 때 디지털 크라운을 누르면
 현재 시야에 떠 있는 모든 Window(Volume 포함)가 **일괄적으로 .inactive 상태**로 전환된다.
-iOS로 예시를 들면, 알림 센터가 살짝 내려왔을 때 
 
-즉, 디지털 크라운 클릭 = 화면에 보이는 모든 Window의 일시적 비활성화
 
 ---
 
@@ -209,9 +152,9 @@ iOS로 예시를 들면, 알림 센터가 살짝 내려왔을 때
 ## 왜 차이가 발생하는가?
 
 일반적으로 우리가 `dismissImmersiveSpace()`를 직접 호출하면:
-- 앱은 여전히 .active 상태를 유지하고
+- 앱은 여전히 `.active` 상태를 유지하고
 - Immersive 레이어만 제거되기 때문에
-- SwiftUI View의 onDisappear가 정상적으로 실행된다.
+- SwiftUI View의 `.onDisappear`가 정상적으로 실행된다.
 
 그러나 **디지털 크라운을 클릭해 Immersive가 종료될 때는 상황이 다르다.**
 
@@ -292,8 +235,6 @@ visionOS는 iOS, macOS와 닮은 듯 완전히 다른 **Scene 중심의 UI/UX �
 
 x 버튼이 macOS의 최소화 버튼과 같은 동작을 하는 것 같아 보여도 내부적으로는 전혀 다른 동작을 한다.
 (visionOS와 macOS의 차이점에 대해서는 추후 글을 작성 후 블로그에 업로드 하고자 한다.)
-
-[닮은 듯 다른 visionOS와 macOS]
 
 특히 Window하단 인디케이터의 **X**버튼을 클릭했을 때, Window가 ‘완전히 사라지지 않는다는 점’은 visionOS 개발을 진행하며 많이 겪는 혼란 지점이다.
 

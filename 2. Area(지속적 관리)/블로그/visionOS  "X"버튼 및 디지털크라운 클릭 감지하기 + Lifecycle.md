@@ -10,7 +10,7 @@ Glayer 프로젝트를 진행하면서 Immersive Space상태에서 2D Window를 
 
 ![[Pasted image 20251224181834.png]]
 
-때문에, window가 닫힐 때 실제로 어떤 변화가 일어나는지 visionOS의 Lifecycle과 view계층의 관점에서 알아보고 방법을 공유하고자 한다.
+때문에, window가 닫힐 때 실제로 어떤 변화가 일어나는지 visionOS의 Lifecycle 관점에서 알아보고 방법을 공유하고자 한다.
 
 ---
 

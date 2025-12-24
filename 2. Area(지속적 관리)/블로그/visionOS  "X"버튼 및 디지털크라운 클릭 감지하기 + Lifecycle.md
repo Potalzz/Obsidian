@@ -52,7 +52,7 @@ SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제�
 
 visionOS에서 view가 나타나고 사라지는 과정을 더 깊게 이해하기 위해서는 visionOS의 라이프사이클에 대해 더욱 알아야할 필요가 있다.
 
-## visionOS와 iOS의 차이점 
+## visionOS와 iOS Lifecycle 차이점 
 
 visionOS는 iOS와 동일하게 **SwiftUI App Life Cycle**을 사용하지만, 근본적인 설계에서 차이점이 존재한다.
 

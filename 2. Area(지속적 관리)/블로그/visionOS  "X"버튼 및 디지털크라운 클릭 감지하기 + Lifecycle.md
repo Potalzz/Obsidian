@@ -20,6 +20,35 @@ visionOS에서 view가 나타나고 사라지는 과정을 더 깊게 이해하�
 
 visionOS는 iOS와 동일하게 **SwiftUI의 `App` 프로토콜과 `ScenePhase`** 를 기반으로 작동하지만, **"단일 윈도우(iOS)" vs "다중 윈도우(visionOS)"** 라는 환경 차이로 인해 생명주기를 다루는 전략이 완전히 다르다.
 
+visionOS에서 앱 메인을 보면 아래와 같이 각 window마다 개별로 선언하는 것을 볼 수 있다.
+```swift
+var body: some Scene {
+	// 2D Window Scene
+	WindowGroup {
+		MainWindowView()
+	}
+	.windowStyle(.plain)
+	
+	// Volume Scene
+	WindowGroup {
+		VolumeView()
+	}
+	.windowStyle(.volumetric)
+	
+	// Immersive Scene
+	ImmersiveSpace {
+		ImmersiveView()
+	}
+	.immersiveStyle()
+}
+```
+
+공식문서에서 `WindowGroup`를 확인해보면
+`A scene that presents a group of identically structured windows.`
+**"구조가 동일한 window들이 모인 Scene"** 이라는 설명을 확인할 수 있다.
+
+결국 하나의 `WindowGroup`에 속한 `view`들은 모두 하나의 `Scene`에 속해 있다는 사실을 알 수 있다.
+
 visionOS의 Lifecycle이 어떻게 구성되어 있는지, 좀 더 친숙한 iOS와 비교를 통해 알아보자.
 
 ### 구조적 차이: 기기 중심 vs 씬(Scene) 중심
@@ -44,103 +73,9 @@ visionOS의 Lifecycle이 어떻게 구성되어 있는지, 좀 더 친숙한 iOS
 | **Active**     | **[Foregound + Input]**<br><br>  <br><br>앱이 화면에 있고 사용자의 터치를 받을 수 있음.                | **[Focus]**<br><br>  <br><br>사용자의 시선이 머물고 있거나 인터랙션 중인 **특정 윈도우**.                                    |
 | **Inactive**   | **[Transition]**<br><br>  <br><br>알림 센터를 내리거나 앱 전환기로 들어가는 **찰나의 순간**. 사용자 입력을 못 받음. | **[Shared Space / No Focus]**<br><br>  <br><br>앱이 공간에 **보이지만**, 사용자가 다른 앱을 보고 있음. **일상적이고 장기적인 상태.** |
 | **Background** | **[Invisible]**<br><br>  <br><br>홈으로 나가서 화면에서 사라짐. 곧 Suspended(동결)됨.                | **[Invisible / Closed]**<br><br>  <br><br>사용자가 윈도우를 닫거나, 다른 앱이 'Full Space'를 점유하여 가려짐.               |
+위에서 "하나의 `WindowGroup`에 속한 `view`들은 모두 하나의 `Scene`에 속해 있다"고 하였다.
+그렇다면, 내부에 있는 view들의 `ScenePhase`는 모두 같은 값을 가리킨다는 사실을 기억하고 있자.
 
-
-
-### View Lifecycle (뷰의 생명주기)
-
-**"사용자에게 이 뷰가 보이는가?" (UI 계층 관점)**
-
-View Lifecycle은 말 그대로 **개별 뷰가 View 계층 구조에 추가되거나 제거되는 과정**을 의미한다.
-우리가 흔히 사용하는 `.onAppear`와 `.onDisappear`가 바로 이 생명주기를 감지하는 modifier다.
-
-아래 예제를 통해 쉽게 이해해보자.
-```swift
-struct ParentView: View {
-    @State private var isShow = true
-
-    var body: some View {
-        VStack {
-            // [A] 조건부 렌더링
-            if isShow {
-                ChildView() // 뷰 계층에 존재함
-            }
-        }
-        .onTapGesture {
-            // [B] 상태 변경 -> 렌더 트리 갱신 유발
-            isShow = false
-        }
-    }
-}
-
-struct ChildView: View {
-    var body: some View {
-        Text("I am here")
-            .onDisappear {
-                print("ChildView: onDisappear (메모리 해제)")
-            }
-    }
-}
-```
-
-**동작 원리**
-1. 사용자가 탭을 하여 `isShow`가 `false`로 바뀐다.
-2. SwiftUI는 `ParentView`의 `body`를 다시 그린다.
-3. `if isShow` 조건이 거짓이 되므로, **`ParentView`의 자식 목록(계층)에서 `ChildView`가 제거된다.**
-4. SwiftUI 엔진이 이를 감지하고, 메모리에 있던 `ChildView`를 **폐기**한다.
-5. 폐기되는 순간 `onDisappear`가 호출된다.
-
-View 계층 구조의 과정과 view가 메모리에 언제 등록되고, 해제되는지 알아보았다.
-
-하지만 문제는 visionOS의 윈도우 관리 방식에 있다. 사용자가 'X' 버튼을 눌러 윈도우(또는 볼륨)를 닫는 행위는 뷰를 계층 구조에서 **제거**하는 것이 아니라, 해당 view가 속한 scene 전체를 background로 전환시킨다.
-뷰 자체는 메모리에 살아있고 계층 구조에도 남아있으므로 `onDisappear`는 호출되지 않는 것이다.
-
-### Scene Lifecycle (씬의 생명주기)
-
-**"이 윈도우가 시스템에서 어떤 상태인가?" (OS 시스템 관점)**
-
-Scene Lifecycle은 **Scene이 시스템 상에서 어떤 상태에 있는지**를 `ScenePhase`를 통해 3가지로 구분한다.
-
-- **Active**: 씬이 전면에 있고 사용자와 상호작용 가능한 상태 (현재 보고 있는 윈도우).
-    
-- **Inactive**: 씬이 화면에는 보이지만 상호작용은 불가능한 상태 (시스템 제어 센터를 내리거나, 다른 윈도우로 포커스가 넘어가는 순간).
-    
-- **Background**: 씬이 사용자 눈에 보이지 않는 상태. **'X' 버튼을 누르거나 디지털 크라운을 눌러 홈으로 나갔을 때**
-
-실제 'x' 버튼을 클릭했을 때 `ScenePhase`가 어떻게 변경되는지 아래 예제를 통해 살펴보자.
-
-```swift
-@main
-struct VisionProApp: App {
-    // 시스템이 관리하는 앱의 상태 (Active, Inactive, Background)
-    @Environment(\.scenePhase) private var scenePhase
-
-    var body: some Scene {
-        WindowGroup {
-            ParentView() // 위에서 만든 그 뷰
-                .onChange(of: scenePhase) { oldPhase, newPhase in
-                    if newPhase == .background {
-                        print("Window: X 버튼 눌림 (Background 진입)")
-                        // 하지만 ParentView 내부의 isShow는 여전히 'true'임
-                    }
-                }
-        }
-    }
-}
-```
-
-시뮬레이터에서 값을 확인해보면..
-
-
-[시뮬레이터 로그]
-오잉..? scenePhase의 변화는 없고 view가 해제된 것을 볼 수 있다.
-
-하지만 실제 기기에서 테스트해보면 다른 결과가 나온다.
-
-scenePhase만 `.background`로 전환되기 때문에 `ChildView`의 `.onDisappear`는 호출되지 않는 것을 볼 수 있다.
-(이러한 문제들로 인해 visionOS 개발을 할 때 실 기기가 필수적으로 필요하다고 생각한다...)
-
-결과적으로 scenePhase의 변화를 통해서 x 버튼 클릭을 감지할 수 있다.
 
 ---
 

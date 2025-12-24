@@ -110,9 +110,9 @@ SwiftUI는 ‘뷰가 사라졌다(onDisappear)’고 판단하지 않는다.
 
 # ScenePhase로 X 버튼 감지하기 – 실제 사용 예제
 
-공식 문서에서는 scenePhase의 감지에 대한 예제를 아래와 같이 사용하고 있다.
+공식 문서에서는 scenePhase 감지에 대한 예제를 아래와 같이 사용하고 있다.
 
-[공식문서 scenePhase감지]
+![[Pasted image 20251225052133.png]]
 
 scenePhase만 감지하기 위해서는 위와 같이 간단하게 scenePhase의 변화를 감지하고 실행하고자 하는 코드를 추가하면 된다.
 

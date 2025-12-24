@@ -54,12 +54,11 @@ visionOS에서 view가 나타나고 사라지는 과정을 더 깊게 이해하�
 
 ## visionOS 근본적인 특징
 
-visionOS는 **SwiftUI App Life Cycle**을 사용하지만, 다음과 같은 본질적인 차이를 가진다.
+visionOS는 iOS와 동일하게 **SwiftUI App Life Cycle**을 사용하지만, 다음과 같은 본질적인 차이를 가진다.
 
 - 화면 중심 UI가 아니다
 - 앱은 **공간(spatial environment)** 에 존재한다
 - 하나의 앱이 **여러 개의 Scene**을 동시에 가질 수 있다
-- View 계층과 RealityKit 기반 3D 콘텐츠가 자연스럽게 결합된다
 
 따라서 visionOS에서는 **라이프 사이클 = Scene 단위**, **UI 구조 = View + Space** 로 이해하는 것이 중요하다.
 

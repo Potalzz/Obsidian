@@ -3,7 +3,7 @@
 Glayer 프로젝트를 진행하면서 Immersive Space상태에서 2D Window를 "X"버튼을 클릭하여 닫으면 Immersive Space만 존재하고 아무 동작도 할 수 없는 문제가 발생했다.
 
 
-[x 버튼 이미지]
+![[Pasted image 20251225063410.png]]
 (요게 바로 x 버튼)
 
 `onDisappear`를 통해서 window가 닫히는 순간을 감지하려 했지만 아무 동작도 하지 않았고, 닫기 버튼을 직접 트리거할 수 있는 API는 존재하지 않았다.

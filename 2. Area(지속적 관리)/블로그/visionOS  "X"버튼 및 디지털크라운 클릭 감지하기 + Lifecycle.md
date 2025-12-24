@@ -50,24 +50,28 @@ SwiftUI에서 `.onDisappear`는 **뷰가 고유한 부모 뷰 계층에서 제�
 
 > 그래서 view와 scene이 정확히 무엇을 의미하는데 ?
 
-visionOS에서 view가 나타나고 사라지는 과정을 더 깊게 이해하기 위해서는 visionOS의 라이프사이클에 대해 더욱 알아야할 필요가 있다.
+visionOS에서 view가 나타나고 사라지는 과정을 더 깊게 이해하기 위해서는 visionOS의 Lifecycle에 대해 더욱 알아야할 필요가 있다.
 
-## visionOS와 iOS Lifecycle 차이점 
+visionOS는 iOS와 동일하게 **SwiftUI의 `App` 프로토콜과 `ScenePhase`** 를 기반으로 작동하지만, **"단일 윈도우(iOS)" vs "다중 윈도우(visionOS)"** 라는 환경 차이로 인해 생명주기를 다루는 전략이 완전히 다르다.
 
-visionOS는 iOS와 동일하게 **SwiftUI App Life Cycle**을 사용하지만, 근본적인 설계에서 차이점이 존재한다.
+visionOS의 Lifecycle이 어떻게 구성되어 있는지, 좀 더 친숙한 iOS와 비교를 통해 알아보자.
 
-**iOS**
-- **터치 중심 2D UI**
-- 하나의 앱이 **하나의 포그라운드 경험**을 독점
-- 시스템이 앱의 생명주기를 **강하게 통제**
-- 리소스 절약과 배터리 관리가 최우선
+### 구조적 차이: 기기 중심 vs 씬(Scene) 중심
 
-**visionOS**
-- **공간 중심(spatial) 컴퓨팅**
-- 하나의 앱이 **여러 공간(Scene)을 동시에 유지**
-- 앱은 "항상 존재"하는 객체에 가까움
-- 사용자의 물리적 이동과 시선이 lifecycle에 직접적인 영향
+**iOS (기기 중심)**
+- 대부분의 경우 `App Lifecycle` $\approx$ `Scene Lifecycle`
+- 앱이 활성화된다는 것은 기기 화면 전체를 차지한다는 의미
 
+**visionOS (씬 중심)**
+- `App Lifecycle`과 `Scene Lifecycle`이 **분리**됨
+- 앱 하나가 여러 개의 윈도우를 띄울 수 있음
+- 앱 자체는 실행 중이지만, **A 윈도우는 Active, B 윈도우는 Inactive**일 수 있다. 따라서 각 `WindowGroup`의 `ScenePhase`를 개별적으로 관리해야 한다
+
+| **상태 (State)** | **iOS**                                                                             | **visionOS**                                                                                         |
+| -------------- | ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Active**     | **[Foregound + Input]**<br><br>  <br><br>앱이 화면에 있고 사용자의 터치를 받을 수 있음.                | **[Focus]**<br><br>  <br><br>사용자의 시선이 머물고 있거나 인터랙션 중인 **특정 윈도우**.                                    |
+| **Inactive**   | **[Transition]**<br><br>  <br><br>알림 센터를 내리거나 앱 전환기로 들어가는 **찰나의 순간**. 사용자 입력을 못 받음. | **[Shared Space / No Focus]**<br><br>  <br><br>앱이 공간에 **보이지만**, 사용자가 다른 앱을 보고 있음. **일상적이고 장기적인 상태.** |
+| **Background** | **[Invisible]**<br><br>  <br><br>홈으로 나가서 화면에서 사라짐. 곧 Suspended(동결)됨.                | **[Invisible / Closed]**<br><br>  <br><br>사용자가 윈도우를 닫거나, 다른 앱이 'Full Space'를 점유하여 가려짐.               |
 
 
 

@@ -1,5 +1,7 @@
 **12/20 gpt와 gemini에 있는 설명 기반으로, x버튼이 왜 종료가 아닌지에 대한 고찰과 visionOS의 lifecycle 및 view 계층 설명 적기**
 
+Glayer 프로젝트를 진행하면서 Immersive Space상태에서 2D Window를 닫으면 Immersive가 해제되고 plain window가 이전으로 돌아가도록 구현해야했다. `onDisappear`를 통해서 window가 닫히는 순간을 감지하려 했지만, 
+
 visionOS 앱을 개발하며 당황했던 지점 중 하나는 window 하단의 인디케이터에 있는 "X" 버튼을 트리거 할 수 없다는 사실이였다.
 
 [x 버튼 이미지]

@@ -32,6 +32,9 @@
 - Matterport는 실제 건물이나 실내 공간을 촬영해 웹·모바일에서 돌아다닐 수 있는 3D 가상 투어(디지털 트윈)를 만들어 주는 공간 데이터/3D 스캔 플랫폼 겸 장비·클라우드 서비스
 - ‘하드웨어(전용 카메라) + 클라우드 구독형 소프트웨어’ 모델로, 촬영 횟수·활성 공간 수·기능에 따라 다양한 요금제를 제공하는 SaaS 플랫폼 형태
 
+**Matterport**의 한국 총판 기업. 기업이나 관공서 대상으로 제품 납품
+[소방서에 카메라 납품 - 대표 LinkedIn](https://www.linkedin.com/posts/youngjin-choi-ba96302a8_%EB%8C%80%EA%B5%AC%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EB%B3%B8%EB%B6%80-xrleader%EB%A1%9C%EB%B6%80%ED%84%B0-matterport-pro3-activity-7336314073103376385-OpUn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE12hlsBn1XSCYwcni5jtvV2DoTwLS0eOQc)
+
 [사업자 정보](https://bizno.net/article/5328603094)
 - 기업 규모: 중소기업(법인)
 - 업태: 도매 및 소매업
@@ -49,5 +52,6 @@
 	- 입사자 평균 - 3,517만원
 	- 평균 연봉 - 4,683만원
 - [26년 박람회 참여 관련 정보](https://fireexpo.co.kr/kor/enter/directory.asp?idx=5014&yy=2025&gotoPage=6)
+
 
 

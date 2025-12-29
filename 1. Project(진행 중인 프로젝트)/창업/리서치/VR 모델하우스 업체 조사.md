@@ -48,6 +48,6 @@
 - **연봉**
 	- 입사자 평균 - 3,517만원
 	- 평균 연봉 - 4,683만원
-
+- [26년 박람회 참여 관련 정보](https://fireexpo.co.kr/kor/enter/directory.asp?idx=5014&yy=2025&gotoPage=6)
 
 

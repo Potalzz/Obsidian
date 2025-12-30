@@ -33,7 +33,7 @@
 - ‘하드웨어(전용 카메라) + 클라우드 구독형 소프트웨어’ 모델로, 촬영 횟수·활성 공간 수·기능에 따라 다양한 요금제를 제공하는 SaaS 플랫폼 형태
 
 **Matterport**의 한국 총판 기업. 기업이나 관공서 대상으로 제품 납품
-[소방서에 카메라 납품 - 대표 LinkedIn](https://www.linkedin.com/posts/youngjin-choi-ba96302a8_%EB%8C%80%EA%B5%AC%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EB%B3%B8%EB%B6%80-xrleader%EB%A1%9C%EB%B6%80%ED%84%B0-matterport-pro3-activity-7336314073103376385-OpUn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE12hlsBn1XSCYwcni5jtvV2DoTwLS0eOQc)
+[소방서에 카메라 납품도 진행 - 대표 LinkedIn](https://www.linkedin.com/posts/youngjin-choi-ba96302a8_%EB%8C%80%EA%B5%AC%EC%86%8C%EB%B0%A9%EC%95%88%EC%A0%84%EB%B3%B8%EB%B6%80-xrleader%EB%A1%9C%EB%B6%80%ED%84%B0-matterport-pro3-activity-7336314073103376385-OpUn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAE12hlsBn1XSCYwcni5jtvV2DoTwLS0eOQc)
 
 [사업자 정보](https://bizno.net/article/5328603094)
 - 기업 규모: 중소기업(법인)

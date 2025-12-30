@@ -49,8 +49,7 @@
               "title": "visionOS 공부"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -233,10 +232,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e67c6773d9e0f71",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/창업/아이템 고민.md",
     "1. Project(진행 중인 프로젝트)/창업/리서치/VR 모델하우스 업체 조사.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템 고민.md",
     "1. Project(진행 중인 프로젝트)/창업/리서치/장비 대여.md",
     "Pasted image 20251230085117.png",
     "2. Area(지속적 관리)/블로그/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",

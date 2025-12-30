@@ -54,4 +54,14 @@
 - [26년 박람회 참여 관련 정보](https://fireexpo.co.kr/kor/enter/directory.asp?idx=5014&yy=2025&gotoPage=6)
 
 
+## **[현투시도](https://www.hyuntoosido.com/%EC%82%AC%EC%9D%B4%EB%B2%84%EB%AA%A8%EB%8D%B8%ED%95%98%EC%9A%B0%EC%8A%A4)**
+브이알 전시 및 콘텐츠 위주
 
+[사업자 정보](https://bizno.net/article/8071300847)
+- 기업 규모: 중소기업
+- 업태: 전문, 과학 및 기술 서비스업
+- 과세 유형: 부가가치세 일반과세자
+- 설립 연도: 2011
+- 법인 형태: 개인과세업자
+- 사업자 번호: 131-28-20115
+- 종업원: 비공개

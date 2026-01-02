@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "빌딩 입주자 대상",
+      "path": "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md"
+    },
+    {
       "basename": "인테리어",
       "path": "1. Project(진행 중인 프로젝트)/창업/아이템/인테리어.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "주주(2기 창업) 강연",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/주주(2기 창업) 강연.md"
-    },
-    {
-      "basename": "각종 정보",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/각종 정보.md"
     }
   ],
   "omittedPaths": [],

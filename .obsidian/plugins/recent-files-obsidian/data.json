@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "개발",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
+    },
+    {
+      "basename": "Swift 개념",
+      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
+    },
+    {
       "basename": "빌딩 입주자 대상",
       "path": "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md"
     },
@@ -29,10 +37,6 @@
       "path": "1. Project(진행 중인 프로젝트)/창업/리서치/VR 모델하우스 업체 조사.md"
     },
     {
-      "basename": "Swift 개념",
-      "path": "2. Area(지속적 관리)/Swift/Swift 개념.md"
-    },
-    {
       "basename": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle",
       "path": "2. Area(지속적 관리)/블로그/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
     },
@@ -47,10 +51,6 @@
     {
       "basename": "Glayer 프로젝트 정리",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md"
-    },
-    {
-      "basename": "개발",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
     },
     {
       "basename": "ERD",

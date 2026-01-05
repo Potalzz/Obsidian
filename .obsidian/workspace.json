@@ -41,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
+                "file": "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "visionOS 공부"
+              "title": "빌딩 입주자 대상"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -232,17 +233,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "db50d323ba92f32d",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/인테리어.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/온라인 쇼핑 플랫폼.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스, 재건축 관련.md",
     "1. Project(진행 중인 프로젝트)/창업/아이템/고민.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템",
-    "1. Project(진행 중인 프로젝트)/창업/리서치/장비 대여.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스, 재건축 관련.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/온라인 쇼핑 플랫폼.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/인테리어.md",
     "1. Project(진행 중인 프로젝트)/창업/리서치/VR 모델하우스 업체 조사.md",
+    "1. Project(진행 중인 프로젝트)/창업/리서치/장비 대여.md",
+    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
+    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
+    "2. Area(지속적 관리)/Swift/Swift 개념.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템",
     "Pasted image 20251230085117.png",
     "2. Area(지속적 관리)/블로그/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",
     "1. Project(진행 중인 프로젝트)/창업/리서치",
@@ -251,7 +254,6 @@
     "Pasted image 20251225062921.png",
     "Pasted image 20251225052133.png",
     "Pasted image 20251224181834.png",
-    "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/아이디어.md",
@@ -269,7 +271,6 @@
     "C72F0752-3A97-481E-94B0-713EDE7C259C_1_102_a.jpeg",
     "Pasted image 20251119210811.png",
     "E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c.jpeg",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/Volume 벽면 제거.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/Volume 바닥에 이미지 적용.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/이슈.md",

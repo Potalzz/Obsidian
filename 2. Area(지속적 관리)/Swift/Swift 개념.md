@@ -1064,9 +1064,17 @@ objectWillChange.send()가 호출되어,
 해당 객체를 관찰 중인 View 전체가 다시 그려지는 구조였다.
 이로 인해 불필요한 View 업데이트가 발생하는 비효율성이 있었다.
 
+```swift
+@ObservedObject var model: UserViewModel
+```
+이렇게 구독하고 있는 View 전체를 다시 그린다.
+
 그래서 나온 것이 `@Observable`
 
+---
+
 **@Observable (Observation 프레임워크)**
+
 ```swift
 import Observation
 

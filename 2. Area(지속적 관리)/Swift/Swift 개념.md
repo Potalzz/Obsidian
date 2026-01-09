@@ -1026,8 +1026,52 @@ SwiftUI는 `body`가 새로 반환한 뷰 계층 구조를 이전의 것과 비�
 
 ---
 
-### @ObservedObject
-> 외부에서 옵저빙 가능한 객체를 받아서 그 객체의 상태 변화를 추적
+### @Observable
+> 특정 객체 값의 변화를 다른 view에 알리고 싶을 때 사용
+
+**기존 Combine + ObservableObject 사용방식**
+
+```swift
+class UserViewModel {
+    var name: String
+    var cache: Image
+    var internalCounter: Int
+}
+```
+
+해당 viewModel 내부에서 name값이 변경되는 경우가 있다고 가정하자.
+값이 변경되어도 view에서는 UserViewModel을 값으로 가지고 있기 때문에 변경되어도 모른다. 그렇기 때문에 name이 변경되면 view에 변경 사항을 알려주고 view를 다시 업데이트 하게 해주어야 한다.
+
+```swift
+import Combine
+
+class UserViewModel: ObservableObject {
+    @Published var name: String
+    var cache: Image
+    var internalCounter: Int
+}
+```
+
+Combine프레임워크를 사용하여 변경되었을 경우 알리고 싶은 값에 `@Published`를 추가하게 되면, 해당 값이 변경되었을 경우에 내부에서 `objectWillChange.send()`를 실행하여 해당 class를 사용하는 view에 변경 사항을 알려준다.
+하지만 변경 여부만 알려줄 뿐 어떠한 값이 변경되었는지는 알려주지 않기 때문에 해당 class를 채택한 모든 view를 다시 그리는 비효율적인 일이 발생했다.
+
+그래서 나온 것이 `@Observable`
+
+```swift
+import Observation
+
+@Observable
+class UserViewModel {
+	var name: String
+	var cache: Image
+	var internalCounter: Int
+}
+```
+
+`@Observable`을 사용하게 되면, SwiftUI가 View가 실제로 읽은 프로퍼티를 기록해두고, 그 기록을 기준으로 변경 영향을 계산한다.
+view에 반영되는 특정 값이 변경되면 해당 값을 사용하는 view만 자동으로 다시 그리도록 하게 해준다. 이를 통해 일일이 `@Published`를 사용하지 않아도 되어 간결하고, 필요한 view만 다시 그리는 효율적인 관찰 시스템이다.
+
+
 
 ---
 

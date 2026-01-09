@@ -1027,7 +1027,8 @@ SwiftUI는 `body`가 새로 반환한 뷰 계층 구조를 이전의 것과 비�
 ---
 
 ### @Observable
-> 특정 객체 값의 변화를 다른 view에 알리고 싶을 때 사용
+> 객체의 상태 변화를 SwiftUI가 자동으로 추적하고,
+> 변경된 값에 의존하는 View만 선택적으로 다시 그리기 위해 사용한다.
 
 **기존 Combine + ObservableObject 사용방식**
 
@@ -1039,8 +1040,11 @@ class UserViewModel {
 }
 ```
 
-해당 viewModel 내부에서 name값이 변경되는 경우가 있다고 가정하자.
-값이 변경되어도 view에서는 UserViewModel을 값으로 가지고 있기 때문에 변경되어도 모른다. 그렇기 때문에 name이 변경되면 view에 변경 사항을 알려주고 view를 다시 업데이트 하게 해주어야 한다.
+View가 UserViewModel을 참조하고 있더라도,
+SwiftUI는 **참조 타입 내부의 프로퍼티 변경을 자동으로 감지하지 못한다**.
+따라서 name 값이 변경되더라도 View는 이를 인식하지 못하고, 화면이 갱신되지 않는다.
+
+이를 해결하기 위해 Combine의 ObservableObject와 @Published를 사용했다.
 
 ```swift
 import Combine
@@ -1052,11 +1056,17 @@ class UserViewModel: ObservableObject {
 }
 ```
 
-Combine프레임워크를 사용하여 변경되었을 경우 알리고 싶은 값에 `@Published`를 추가하게 되면, 해당 값이 변경되었을 경우에 내부에서 `objectWillChange.send()`를 실행하여 해당 class를 사용하는 view에 변경 사항을 알려준다.
-하지만 변경 여부만 알려줄 뿐 어떠한 값이 변경되었는지는 알려주지 않기 때문에 해당 class를 채택한 모든 view를 다시 그리는 비효율적인 일이 발생했다.
+@Published가 붙은 프로퍼티가 변경되면 내부적으로
+objectWillChange.send()가 호출되어,
+해당 ObservableObject 인스턴스를 **관찰하고 있는 View들에게 변경 사실을 알린다.
+
+하지만 objectWillChange는 **어떤 프로퍼티가 변경되었는지에 대한 정보는 포함하지 않기 때문에**,
+해당 객체를 관찰 중인 View 전체가 다시 그려지는 구조였다.
+이로 인해 불필요한 View 업데이트가 발생하는 비효율성이 있었다.
 
 그래서 나온 것이 `@Observable`
 
+**@Observable (Observation 프레임워크)**
 ```swift
 import Observation
 
@@ -1068,8 +1078,30 @@ class UserViewModel {
 }
 ```
 
-`@Observable`을 사용하게 되면, SwiftUI가 View가 실제로 읽은 프로퍼티를 기록해두고, 그 기록을 기준으로 변경 영향을 계산한다.
-view에 반영되는 특정 값이 변경되면 해당 값을 사용하는 view만 자동으로 다시 그리도록 하게 해준다. 이를 통해 일일이 `@Published`를 사용하지 않아도 되어 간결하고, 필요한 view만 다시 그리는 효율적인 관찰 시스템이다.
+@Observable은 **View가 실제로 읽은 프로퍼티를 기준으로 의존성을 자동 추적**한다.
+View가 렌더링 과정에서 특정 프로퍼티를 읽으면,
+SwiftUI는 해당 View와 프로퍼티 간의 관계를 기록해둔다.
+
+이후 프로퍼티 값이 변경되면,
+그 값을 실제로 사용한 View만 선택적으로 다시 그려지게 된다.
+
+이를 통해:
+- @Published를 일일이 선언할 필요가 없고
+    
+- 불필요한 View 업데이트를 줄일 수 있으며
+    
+- 더 간결하고 효율적인 상태 관리를 할 수 있다
+
+
+**요약**
+
+|**구분**|**ObservableObject (기존)**|**@Observable (신규)**|
+|---|---|---|
+|**프레임워크**|Combine|Observation|
+|**선언 방식**|`class 모델: ObservableObject`|`@Observable class 모델`|
+|**프로퍼티 지정**|`@Published` 명시 필요|필요 없음 (자동 추적)|
+|**뷰 업데이트 단위**|**객체(Object)** 단위 (하나만 바뀌어도 전체 알림)|**프로퍼티(Field)** 단위 (읽은 값만 알림)|
+|**뷰 선언 키워드**|`@StateObject`, `@ObservedObject`|`@State`, `@Bindable`, `Environment`|
 
 
 

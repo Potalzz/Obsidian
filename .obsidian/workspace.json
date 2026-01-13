@@ -53,12 +53,14 @@
             "id": "2309cd900b0d1b97",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.11.4"
+                "file": "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-book-up",
-              "title": "릴리즈 노트 1.11.4"
+              "icon": "lucide-file",
+              "title": "모델하우스 관련"
             }
           }
         ],
@@ -247,19 +249,20 @@
   },
   "active": "2309cd900b0d1b97",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/창업/아이템/온라인 쇼핑 플랫폼.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/인테리어.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/고민.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스, 재건축 관련.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/부동산 서비스.md",
+    "1. Project(진행 중인 프로젝트)/창업/리서치/VR 모델하우스 업체 조사.md",
     "1. Project(진행 중인 프로젝트)/창업/곰민 멘토링.md",
     "1. Project(진행 중인 프로젝트)/창업/MVP/기존 모델 데이터 활용해서  비전 프로로 확인하기.md",
     "1. Project(진행 중인 프로젝트)/창업/MVP",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/부동산 서비스.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
     "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/고민.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스, 재건축 관련.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/온라인 쇼핑 플랫폼.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/인테리어.md",
-    "1. Project(진행 중인 프로젝트)/창업/리서치/VR 모델하우스 업체 조사.md",
     "1. Project(진행 중인 프로젝트)/창업/리서치/장비 대여.md",
     "2. Area(지속적 관리)/Swift/visionOS/visionOS 공부.md",
     "1. Project(진행 중인 프로젝트)/창업/아이템",
@@ -288,7 +291,6 @@
     "Pasted image 20251119210811.png",
     "E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c.jpeg",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/Volume 벽면 제거.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별/Volume 바닥에 이미지 적용.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/기능별 개발",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/무제",

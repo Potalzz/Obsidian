@@ -83,7 +83,7 @@ Apple Developer Academy @POSTECH에서 진행한 마지막 프로젝트인 Chall
 - 본인이 맡은 역할(기획/Frontend/Backend/풀스택 등)과 팀 구성.
 - 기간, 사용하는 기술 스택, 협업 도구(Jira, Figma, Slack 등).
 
-#### 구현한 기능 목록
+#### 구현한 기능 목록을 바탕으로 정돈된 글로 제공해주세요.
 **프로젝트 CRUD**
 - 정렬
 - 복제

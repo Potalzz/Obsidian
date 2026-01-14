@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Kai 지원서",
+      "path": "2. Area(지속적 관리)/이력서/Kai 지원서.md"
+    },
+    {
       "basename": "Glayer 프로젝트 정리",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Pasted image 20250820164754",
       "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250820164754.png"
-    },
-    {
-      "basename": "선형변환",
-      "path": "첨부 파일 소스/이미지 파일 소스/선형변환.gif"
     }
   ],
   "omittedPaths": [],

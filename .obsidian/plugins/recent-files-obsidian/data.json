@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "수업에 필요한 자료",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md"
+    },
+    {
       "basename": "Create immersive media experiences for visionOS 세션 정리",
       "path": "2. Area(지속적 관리)/블로그/원고/Create immersive media experiences for visionOS 세션 정리.md"
     },
@@ -191,14 +195,6 @@
     {
       "basename": "VisionOS 리서치",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
-    },
-    {
-      "basename": "앱 시작점과 화면 전환 관련 개념",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/기술 공부/앱 시작점과 화면 전환 관련 개념.md"
-    },
-    {
-      "basename": "화면 기록 2025-08-18 오후 1.30.06",
-      "path": "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov"
     }
   ],
   "omittedPaths": [],

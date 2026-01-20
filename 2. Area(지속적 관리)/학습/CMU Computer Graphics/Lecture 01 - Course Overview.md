@@ -12,7 +12,15 @@
 ACM SIGGRAPH 컨퍼런스
 - 컴퓨터 그래픽 분야 연구 결과 및 논문 매년 발표
 
- 
+ **ACTIVITY**
+ 목표: 사실적인 큐브 그리기
+ Key questions
+ - Modeling: 큐브를 어떻게 설명할 것인가 ?
+ - Rendering: 큐브 모델을 어떻게 시각화할 수 있을까 ?
+
+
+
+
 
 
 

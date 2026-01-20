@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Create immersive media experiences for visionOS 세션 정리",
+      "path": "2. Area(지속적 관리)/블로그/원고/Create immersive media experiences for visionOS 세션 정리.md"
+    },
+    {
       "basename": "아이디어",
       "path": "2. Area(지속적 관리)/블로그/아이디어.md"
     },
@@ -26,11 +30,11 @@
     },
     {
       "basename": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle",
-      "path": "2. Area(지속적 관리)/블로그/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
+      "path": "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
     },
     {
       "basename": "visionOS view계층 정복",
-      "path": "2. Area(지속적 관리)/블로그/visionOS view계층 정복.md"
+      "path": "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md"
     },
     {
       "basename": "기존 모델 데이터 활용해서  비전 프로로 확인하기",
@@ -195,10 +199,6 @@
     {
       "basename": "화면 기록 2025-08-18 오후 1.30.06",
       "path": "첨부 파일 소스/이미지 파일 소스/화면 기록 2025-08-18 오후 1.30.06.mov"
-    },
-    {
-      "basename": "Pasted image 20250820164754",
-      "path": "첨부 파일 소스/이미지 파일 소스/Pasted image 20250820164754.png"
     }
   ],
   "omittedPaths": [],

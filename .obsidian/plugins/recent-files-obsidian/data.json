@@ -1,8 +1,16 @@
 {
   "recentFiles": [
     {
-      "basename": "Lecture 01 - Course Overview",
-      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Course Overview.md"
+      "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
+    },
+    {
+      "basename": "Lecture 01 - Introduction to Computer Graphics",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md"
+    },
+    {
+      "basename": "수업에 필요한 자료",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md"
     },
     {
       "basename": "모델하우스 관련",
@@ -11,10 +19,6 @@
     {
       "basename": "빌딩 입주자 대상",
       "path": "1. Project(진행 중인 프로젝트)/창업/아이템/빌딩 입주자 대상.md"
-    },
-    {
-      "basename": "수업에 필요한 자료",
-      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md"
     },
     {
       "basename": "Create immersive media experiences for visionOS 세션 정리",
@@ -195,10 +199,6 @@
     {
       "basename": "현대 개발자 4인 강연",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/현대 개발자 4인 강연.md"
-    },
-    {
-      "basename": "VisionOS 리서치",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/VisionOS 리서치.md"
     }
   ],
   "omittedPaths": [],

@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Course Overview.md",
+                "file": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 01 - Course Overview"
+              "title": "Lecture 02 - Math Review Part I - Linear Algebra"
             }
           }
         ],
@@ -117,8 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -236,7 +235,9 @@
   },
   "active": "2309cd900b0d1b97",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Course Overview.md",
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md",
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md",
     "Pasted image 20260121180003.png",
     "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md",
     "Pasted image 20260121171151.png",
@@ -249,7 +250,6 @@
     "Pasted image 20260120195049.png",
     "Pasted image 20260120194940.png",
     "Pasted image 20260120194000.png",
-    "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md",
     "15462.courses.cs.cmu.edu.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics",
     "2. Area(지속적 관리)/블로그/원고/Create immersive media experiences for visionOS 세션 정리.md",

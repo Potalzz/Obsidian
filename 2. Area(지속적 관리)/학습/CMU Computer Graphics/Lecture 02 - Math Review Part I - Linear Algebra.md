@@ -70,17 +70,40 @@ https://15462.courses.cs.cmu.edu/fall2020/home
 
 기본적으로 두 가지 중류의 작업이 있다.
 
-**1 - Add**
+**1 - Addition**
 ![[Pasted image 20260122174423.png]]
-위의 그림에서 보듯이, `u + v`의 의미는 u 방향으로 가다가 v방향으로 가라는 의미이다.
-결과적으로 `u + v = v + u` 통해 벡터의 덧셈은 **교환 법칙이 성립**된다는 사실을 알 수 있다.
+위의 그림에서 보듯이, $u + v$의 의미는 u 방향으로 가다가 v방향으로 가라는 의미인데, 덧셈의 순서와 상관 없이 같은 결과가 나오므로 벡터의 덧셈은 **교환 법칙이 성립**된다는 사실을 알 수 있다.
+
+$u + v = v + u$
 
 **2 - Scaling**
+![[Pasted image 20260122174839.png]]
+벡터 u에 대해 스칼라 a배를 하고, 스칼라 b배를 해주던지, 스칼라 ab를 먼저 곱하고 벡터 u에 곱해주던지 결과가 같다는 사실을 알 수 있다.
+
+$a(bu) = (ab)u$
+
+벡터의 덧셈과 곱셉 두 가지에 대해 알아보았으니,
+두 가지를 함께 적용해보자.
+![[Pasted image 20260122175126.png]]
+좌측과 같이 벡터를 먼저 더하고, 스칼라 곱을 적용하던,
+우측과 같이 각각의 벡터에 스칼라 곱을 적용하고 두 벡터를 더하던 같은 결과가 나온다.
+
+$a(u + v) = au + av$
 
 
+이러한 기하학적 원리를 통해 위에서 나온 **벡터의 규칙**이 어떻게 성립되는지 이해할 수 있다.
+
+- $\mathbf{u} + \mathbf{v} = \mathbf{v} + \mathbf{u}$
+- $\mathbf{u} + (\mathbf{v} + \mathbf{w}) = (\mathbf{u} + \mathbf{v}) + \mathbf{w}$
+- There exists a _zero vector_ "$\mathbf{0}$" such that $\mathbf{v} + \mathbf{0} = \mathbf{0} + \mathbf{v} = \mathbf{v}$
+- For every $\mathbf{v}$ there is a vector "$-\mathbf{v}$" such that $\mathbf{v} + (-\mathbf{v}) = \mathbf{0}$
+- $1\mathbf{v} = \mathbf{v}$
+- $a(b\mathbf{v}) = (ab)\mathbf{v}$
+- $a(\mathbf{u} + \mathbf{v}) = a\mathbf{u} + a\mathbf{v}$
+- $(a + b)\mathbf{v} = a\mathbf{v} + b\mathbf{v}$
 
 
-
+이러한 모든 속성을 만족하는 객체들의 집합을 **벡터 공간**이라고 부른다.
 
 
 

@@ -48,6 +48,18 @@
               "icon": "lucide-file",
               "title": "Lecture 02 - Math Review Part I - Linear Algebra"
             }
+          },
+          {
+            "id": "cf8cb6ba28ae5e18",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-01-22 16.39.38.excalidraw"
+            }
           }
         ],
         "currentTab": 2
@@ -235,8 +247,10 @@
   },
   "active": "2309cd900b0d1b97",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md",
+    "Pasted image 20260122164358.png",
+    "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md",
     "Pasted image 20260121180003.png",
     "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md",
@@ -273,8 +287,6 @@
     "1. Project(진행 중인 프로젝트)/창업/곰민 멘토링.md",
     "1. Project(진행 중인 프로젝트)/창업/MVP",
     "2. Area(지속적 관리)/Swift/Swift 개념.md",
-    "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/낙서장.md",
-    "1. Project(진행 중인 프로젝트)/창업/리서치/장비 대여.md",
     "1. Project(진행 중인 프로젝트)/창업/아이템",
     "1. Project(진행 중인 프로젝트)/창업/리서치",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획",

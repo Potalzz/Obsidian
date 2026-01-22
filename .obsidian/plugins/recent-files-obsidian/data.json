@@ -5,6 +5,10 @@
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
     {
+      "basename": "Drawing 2026-01-22 16.39.38.excalidraw",
+      "path": "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md"
+    },
+    {
       "basename": "Lecture 01 - Introduction to Computer Graphics",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "포트폴리오 작성 팁",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/포트폴리오 작성 팁.md"
-    },
-    {
-      "basename": "현대 개발자 4인 강연",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/현대 개발자 4인 강연.md"
     }
   ],
   "omittedPaths": [],

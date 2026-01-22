@@ -1,5 +1,10 @@
-This post is a personal study note based on CMU 15-462 (Computer Graphics) lectures.
-All original lecture slides and videos are copyrighted by the instructors.
+>This post is a personal study note based on CMU 15-462 (Computer Graphics) lectures.
+>All original lecture slides and videos are copyrighted by the instructors.
+
+강의에 대한 정보와 슬라이드 노트는 아래 홈페이지에서 확인할 수 있습니다.
+https://15462.courses.cs.cmu.edu/fall2020/home
+
+---
 
 컴퓨터 그래픽스 두 가지 주요 분야에 대한 설명
 1. 컴퓨터 그래픽스에 대해 폭 넓게 이해하기. 

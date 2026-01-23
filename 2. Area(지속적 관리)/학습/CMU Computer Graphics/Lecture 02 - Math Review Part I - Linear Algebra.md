@@ -254,3 +254,7 @@ $$<2v, u> \space = \space 2<v,u>$$
 - $\langle au, v \rangle = a\langle u, v \rangle$
 - $\langle u+v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$
 
+강의에서 
+
+
+![[Pasted image 20260123160606.png]]

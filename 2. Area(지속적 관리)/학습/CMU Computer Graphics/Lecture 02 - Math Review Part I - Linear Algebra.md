@@ -236,5 +236,6 @@ $$<u,v> (u \cdot v)로 \space 표기하기도 \space 함.$$
 u와 v가 정렬된 정도와 v가 u와 정렬된 정도는 같으므로 순서는 중요하지 않다.
 $$<u,v> \space = \space <v, u>$$
 
+**Inner Product - Projection & Scaling**
 
  

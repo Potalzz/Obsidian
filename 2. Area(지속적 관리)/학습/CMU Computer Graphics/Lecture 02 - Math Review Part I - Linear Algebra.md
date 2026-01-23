@@ -288,3 +288,12 @@ $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 ![[Pasted image 20260123164301.png]]
 
 
+**Measuring Images, Other Signals ?**
+노름이나 내적의 값을 측정은 많은 방법이 있다.
+
+응용 분야에 따라 내적의 선택이 달라진다.
+
+![[Pasted image 20260123165211.png]]
+미분의 노름을 측정하여 위와 같이 흥미로운 이미지를 찾는 알고리즘을 만들 수도 있다.
+
+### Linear Maps

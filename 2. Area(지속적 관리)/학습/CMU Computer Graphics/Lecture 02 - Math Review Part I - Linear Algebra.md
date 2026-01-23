@@ -275,10 +275,15 @@ $$<2v, u> \space = \space 2<v,u>$$
 최종적으로 막대기들의 크기를 비교해보면 $\langle u+v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$라는 결과를 얻을 수 있다.
 
 **Inner Product in Cartesian Coordinates**
-
 표준 내적은 소위 **유클리드 내적**으로, n-벡터 쌍에 대해 다음과 같이 계산한다.
 $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 위 그림에 값을 대입해 계산해보면 같은 결과가 나온다는 것을 알 수 있다.
 
 ![[Pasted image 20260123163906.png]]
+
+
+**L2 Inner Project of Functions**
+함수의 노름처럼, 두 함수가 얼마나 잘 정렬되어 있는지 측정하는 내적도 정의할 수 있다.
+
+![[Pasted image 20260123164301.png]]
 

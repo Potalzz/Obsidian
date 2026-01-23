@@ -297,3 +297,10 @@ $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 미분의 노름을 측정하여 위와 같이 흥미로운 이미지를 찾는 알고리즘을 만들 수도 있다.
 
 ### Linear Maps
+
+
+
+### Bisis
+
+
+**정규 직교 기저(Orthonormal Basis)**

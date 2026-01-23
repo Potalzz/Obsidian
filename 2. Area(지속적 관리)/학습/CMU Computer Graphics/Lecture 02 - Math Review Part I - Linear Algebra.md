@@ -238,4 +238,7 @@ $$<u,v> \space = \space <v, u>$$
 
 **Inner Product - Projection & Scaling**
 
- 
+ 단위 벡터($|u|=|v|=1$)의 경우, 내적은 한 벡터가 다른 벡터의 방향을 따라 얼마나 뻗어 있는지를 측정한다.
+![[Pasted image 20260123145920.png]]
+
+

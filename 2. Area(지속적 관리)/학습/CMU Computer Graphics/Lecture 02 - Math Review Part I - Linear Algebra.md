@@ -287,3 +287,4 @@ $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 
 ![[Pasted image 20260123164301.png]]
 
+

@@ -246,5 +246,11 @@ $$<2v, u> \space = \space 2<v,u>$$
 
 순수하게 방향(취향)만 비교하기 위해 내적 값을 앞서 측정한 각 벡터의 크기로 나누어 주는데, 이것을 코사인 유사도 (Cosine Similarity)라고 한다.
 
-**내적의 양수성**
+**내적의 형식적 정의**
+내적은 두 벡터 u,v에 숫자 $<u, v>$를 할당하고 다음 속성을 만족하는 함수이다.
+- $\langle u, v \rangle = \langle v, u \rangle$
+- $\langle u, u \rangle \ge 0$
+- $\langle u, u \rangle = 0 \iff u=0$
+- $\langle au, v \rangle = a\langle u, v \rangle$
+- $\langle u+v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$
 

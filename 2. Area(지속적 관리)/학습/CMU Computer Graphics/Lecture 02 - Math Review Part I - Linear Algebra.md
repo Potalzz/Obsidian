@@ -212,9 +212,11 @@ $$\lvert \mathbf{u} \rvert = \lvert (u_1, \dots, u_n) \rvert := \sqrt{\sum_{i=1}
 L2노름은 다음과 같이 정의된다.
 $$\|f\| := \sqrt{\int_{0}^{1} f(x)^2 \, dx}$$
  위에서 정의한 유클리드 노름과 개념적으로 크게 다르지 않다.
- 
 
+![[Pasted image 20260123142614.png]]
+해당 그래프의 $L^2$노름 값을 구해보자.
 
+우선 
 
 
 

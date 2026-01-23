@@ -203,7 +203,11 @@ $$\lvert \mathbf{u} \rvert = \lvert (u_1, \dots, u_n) \rvert := \sqrt{\sum_{i=1}
 
 
 
+### L2 Norm of Functions
+함수의 가장 기본적인 노름 중 하나는 L2노름이다.
+함수의 크기를 가늠하는데 도움이 됨.
 
+단위 구간 0 1에 걸쳐 실수값는 함수들을 생각해보자.
 
 
 

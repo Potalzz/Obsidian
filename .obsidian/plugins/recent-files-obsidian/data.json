@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Drawing 2026-01-23 15.52.09.excalidraw",
+      "path": "Excalidraw/Drawing 2026-01-23 15.52.09.excalidraw.md"
+    },
+    {
       "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "발표",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md"
-    },
-    {
-      "basename": "포트폴리오 작성 팁",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/포트폴리오 작성 팁.md"
     }
   ],
   "omittedPaths": [],

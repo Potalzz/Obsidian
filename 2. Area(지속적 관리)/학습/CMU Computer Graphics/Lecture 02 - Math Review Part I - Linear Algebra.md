@@ -327,10 +327,15 @@ $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 **Linear Maps in Coordinates**
 $\mathbb{R}^m$에서 $\mathbb{R}^n$으로 가는 선형 사상의 경우 더 명확한 정의가 가능하다.
 	ex) 2차원 -> 3차원으로의 선형 변환
+
 벡터 $u$에 대해서 선형 사상 $f$를 적용했을 때 $u$의 성분들에 대한 합으로 나타낼 수 있다면 선형이다.
 $$
 f(u_1, ..., u_m) = \sum_{i=1}^{m} u_i a_i
 $$
+즉, 고정된 벡터 집합 $a_i$들의 선형 결합(linear combination)인 경우.
+
+쉽게 얘기해보면, 선형 사상(Linear Maps)는 선형성을 만족하는 **함수**라고 하였다.
+
 
 
 

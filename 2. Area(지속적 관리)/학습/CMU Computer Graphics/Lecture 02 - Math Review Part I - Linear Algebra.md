@@ -254,7 +254,8 @@ $$<2v, u> \space = \space 2<v,u>$$
 - $\langle au, v \rangle = a\langle u, v \rangle$
 - $\langle u+v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$
 
-강의에서 위 4가지에 대해서는 기하학적으로 살펴 보았지만, 마지막 속성에 대해서는 왜 그럽게 성립되는지에 대한 질문을 던지고 있다.
+![[Pasted image 20260124171149.png]]
+강의에서 위 4가지에 대해서는 기하학적으로 살펴 보았지만, 마지막 속성에 대해서는 왜 그럽게 성립되는지에 대한 질문을 던진다.
 
 **직접 그림을 그려서 $\langle u+v, w \rangle = \langle u, w \rangle + \langle v, w \rangle$가 왜 성립되는지 살펴보자.**
 

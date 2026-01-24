@@ -319,6 +319,9 @@ $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 **스칼라 곱 보존**
 - $f(au) = a f(u)$
 
+![[Pasted image 20260124173337.png]]
+
+ 
 
 
  

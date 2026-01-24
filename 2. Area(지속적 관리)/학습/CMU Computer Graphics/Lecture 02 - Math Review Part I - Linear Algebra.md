@@ -321,7 +321,13 @@ $$\langle u, v \rangle := \sum_{i=1}^{n} u_i v_i$$
 
 ![[Pasted image 20260124173337.png]]
 
- 
+
+**Linear Maps in Coordinates**
+벡터 $u$에 대해서 선형 사상 f를 적용했을 때 $u$의 성분들에 대한 합으로 나타낼 수 있다면 선형이다.
+$$
+f(u_1, ..., u_m) = \sum_{i=1}^{m} u_i a_i
+$$
+
 
 
  

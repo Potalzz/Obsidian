@@ -36,6 +36,18 @@
             }
           },
           {
+            "id": "aaa2ae51c99fcbed",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-01-23 15.52.09.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-01-23 15.52.09.excalidraw"
+            }
+          },
+          {
             "id": "2309cd900b0d1b97",
             "type": "leaf",
             "state": {
@@ -47,18 +59,6 @@
               },
               "icon": "lucide-file",
               "title": "Lecture 02 - Math Review Part I - Linear Algebra"
-            }
-          },
-          {
-            "id": "aaa2ae51c99fcbed",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2026-01-23 15.52.09.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2026-01-23 15.52.09.excalidraw"
             }
           },
           {
@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -260,6 +260,8 @@
   },
   "active": "2309cd900b0d1b97",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2026-01-23 15.52.09.excalidraw.md",
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "Pasted image 20260125150836.png",
     "Pasted image 20260125150823.png",
     "Pasted image 20260125144714.png",
@@ -270,9 +272,6 @@
     "Pasted image 20260124171149.png",
     "Pasted image 20260123183321.png",
     "Pasted image 20260123165211.png",
-    "Pasted image 20260123164301.png",
-    "Excalidraw/Drawing 2026-01-23 15.52.09.excalidraw.md",
-    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md",
     "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md",

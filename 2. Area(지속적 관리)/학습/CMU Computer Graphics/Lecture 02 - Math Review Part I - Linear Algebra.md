@@ -489,6 +489,25 @@ $$f(u) = u_1 a_1 + u_2 a_2$$
 
 함수 공간에도 **정규 직교 기저가 존재하며** 대표적인 기저가 $\sin(nx), \cos(nx)$이다.
 
+선형대수에서 정규 직교 기저와, 함수 공간에서의 정규 직교 기저와 같은 구조를 띈다.
+
+
+**벡터 공간에서 정규 직교 기저**
+$$\mathbf{v} = \sum_i c_i \mathbf{e}_i$$
+
+- $\mathbf{e}_i$: 정규 직교 기저
+- $c_i = \langle \mathbf{v}, \mathbf{e}_i \rangle$
+
+
+**함수 공간에서 정규 직교 기저**
+$$f(x) = \sum_n a_n \cos(nx) + b_n \sin(nx)$$
+- 기저: $\sin, \cos$
+- 계수: $a_n = \langle f, \cos(nx) \rangle$
+
+  
+
+👉 **완전히 같은 구조다**
+
 이것이 **푸리에 변환의 기본 개념**이다.
 
 ![[Pasted image 20260126183421.png]]

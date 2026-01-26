@@ -5,16 +5,20 @@
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
     {
+      "basename": "Drawing 2026-01-22 16.39.38.excalidraw",
+      "path": "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md"
+    },
+    {
+      "basename": "무제",
+      "path": "무제.md"
+    },
+    {
       "basename": "Drawing 2026-01-23 15.52.09.excalidraw",
       "path": "Excalidraw/Drawing 2026-01-23 15.52.09.excalidraw.md"
     },
     {
       "basename": "개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
-    },
-    {
-      "basename": "Drawing 2026-01-22 16.39.38.excalidraw",
-      "path": "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md"
     },
     {
       "basename": "Lecture 01 - Introduction to Computer Graphics",
@@ -195,10 +199,6 @@
     {
       "basename": "방탈출 개발",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/방탈출 개발.md"
-    },
-    {
-      "basename": "발표",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Bridge 5/발표.md"
     }
   ],
   "omittedPaths": [],

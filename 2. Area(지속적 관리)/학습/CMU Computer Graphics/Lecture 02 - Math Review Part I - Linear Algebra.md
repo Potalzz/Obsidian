@@ -569,3 +569,22 @@ $$A = \begin{bmatrix} | & | \\ \mathbf{a}_1 & \mathbf{a}_2 \\ | & | \end{bmatrix
 - **첫 번째 열:** 벡터 $\mathbf{a}_1$의 x, y, z 성분
 - **두 번째 열:** 벡터 $\mathbf{a}_2$의 x, y, z 성분
 
+이제 행렬 A와 벡터u의 계산 과정을 단계별로 살펴보자.
+
+$$\begin{bmatrix} a_{1,x} & a_{2,x} \\ a_{1,y} & a_{2,y} \\ a_{1,z} & a_{2,z} \end{bmatrix} \begin{bmatrix} u_1 \\ u_2 \end{bmatrix}
+=
+\begin{bmatrix} a_{1,x}u_1 + a_{2,x}u_2 \\ a_{1,y}u_1 + a_{2,y}u_2 \\ a_{1,z}u_1 + a_{2,z}u_2 \end{bmatrix}
+=
+{ \begin{bmatrix} a_{1,x}u_1 \\ a_{1,y}u_1 \\ a_{1,z}u_1 \end{bmatrix} }+ { \begin{bmatrix} a_{2,x}u_2 \\ a_{2,y}u_2 \\ a_{2,z}u_2 \end{bmatrix} }
+$$
+행렬과 벡터를 곱하여 나온 결과를 벡터의 덧셈 규칙에 따라 두 개의 벡터로 나눌 수 있다.
+
+$$= \space u_1 \begin{bmatrix} a_{1,x} \\ a_{1,y} \\ a_{1,z} \end{bmatrix} + u_2 \begin{bmatrix} a_{2,x} \\ a_{2,y} \\ a_{2,z} \end{bmatrix} = \space
+u_1\mathbf{a}_1 + u_2\mathbf{a}_2
+$$
+
+각 벡터에서 공통된 $u_1$과 $u_2$를 벡터 밖으로 빼고 나면, 원래 정의로 되돌릴 수 있다.
+
+---
+
+행렬 연산을 할 때마다 기하학적으로 무엇을 의미하는지, 선형대수학적 관점에서 실제로 무엇을 하고 있는지 항상 고민을 해야한다.

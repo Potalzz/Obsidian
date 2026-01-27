@@ -1,7 +1,7 @@
 >This post is a personal study note based on CMU 15-462 (Computer Graphics) lectures.
 >All original lecture slides and videos are copyrighted by the instructors.
 
-강의에 대한 정보와 슬라이드 노트는 아래 홈페이지에서 확인할 수 있습니다.
+강의에 대한 정보와 자료는 아래 홈페이지에서 확인할 수 있습니다.
 https://15462.courses.cs.cmu.edu/fall2020/home
 
 ---
@@ -584,7 +584,5 @@ u_1\mathbf{a}_1 + u_2\mathbf{a}_2
 $$
 
 각 벡터에서 공통된 $u_1$과 $u_2$를 벡터 밖으로 빼고 나면, 원래 정의로 되돌릴 수 있다.
-
----
 
 행렬 연산을 할 때마다 기하학적으로 무엇을 의미하는지, 선형대수학적 관점에서 실제로 무엇을 하고 있는지 항상 고민을 해야한다.

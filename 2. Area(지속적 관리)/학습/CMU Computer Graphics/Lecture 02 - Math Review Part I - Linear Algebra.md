@@ -564,3 +564,8 @@ $$
 ![[Pasted image 20260127135536.png]]
 위 이미지의 선형 사상을 행렬로 어떻게 인코딩할 수 있을까 ?
 
+$a$벡터를 세워서 행렬로 만들면 행렬 A는 다음과 같이 만들어진다.
+$$A = \begin{bmatrix} | & | \\ \mathbf{a}_1 & \mathbf{a}_2 \\ | & | \end{bmatrix} = \begin{bmatrix} a_{1,x} & a_{2,x} \\ a_{1,y} & a_{2,y} \\ a_{1,z} & a_{2,z} \end{bmatrix}$$
+- **첫 번째 열:** 벡터 $\mathbf{a}_1$의 x, y, z 성분
+- **두 번째 열:** 벡터 $\mathbf{a}_2$의 x, y, z 성분
+

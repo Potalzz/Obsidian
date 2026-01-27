@@ -540,3 +540,7 @@ x + 2y = 3, \\
 4x + 5y = 6
 \end{align}
 $$
+미지수는 DOFs(degrees of freedom), 방정식은 제약조건(constraints)라고도 한다.
+
+**목표:** 제약조건을 동시에 만족하는 DOFs를 찾는 것.
+

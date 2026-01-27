@@ -543,4 +543,7 @@ $$
 미지수는 DOFs(degrees of freedom), 방정식은 제약조건(constraints)라고도 한다.
 
 **목표:** 제약조건을 동시에 만족하는 DOFs를 찾는 것.
+![[Pasted image 20260127131046.png]]
+[간단하게 해결할 수 있다]
 
+**Linear System을 푼다는 것은 무엇을 의미할까 ?**

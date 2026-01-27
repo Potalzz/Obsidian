@@ -188,7 +188,7 @@ $$\lvert \mathbf{u} \rvert = \lvert (u_1, \dots, u_n) \rvert := \sqrt{\sum_{i=1}
     → n차원 벡터
     
 - $|\mathbf{u}|$
-    → 벡터 \mathbf{u}의 **길이(length, magnitude)**
+    → 벡터 $\mathbf{u}$의 **길이(length, magnitude)**
     
 - $\sum_{i=1}^{n} u_i^2$
     → 각 성분을 **제곱해서 전부 더함**
@@ -530,3 +530,13 @@ $n,m$ 값이 **커질수록** **높은 주파수의 진동**처럼 보인다.
 ![[Pasted image 20260126191426.png]]
 이미지 처리, 렌더링, 기하학, 물리 시뮬레이션 등 모든 종류의 신호에 적용할 수 있다.
 
+
+### 선형 연립방정식(System of Linear Equations)
+> 좌변이 선형 함수이고, 우변이 상수인 방정식들의 모임.
+
+**E.g**
+$$ \begin{align}
+x + 2y = 3, \\
+4x + 5y = 6
+\end{align}
+$$

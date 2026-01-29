@@ -15,10 +15,9 @@ https://15462.courses.cs.cmu.edu/fall2020/home
 
 
 ### 유클리드 노름(Euclidean Norm)
+> 유클리드 노름은 공간의 회전/이동/반사에 의해 보존되는 길이의 개념.
 
-유클리드 노름은 공간의 회전/이동/반사에 의해 보존되는 길이의 개념.
-
-정규 직교(orthonormal) 좌표계에서
+정규 직교(orthonormal) 좌표계에서의 **유클리드 노름**
 $$|u|:=\sqrt{u_{1}^{2}+\cdot\cdot\cdot+u_{n}^{2}}$$
 **주의해야 할 부분**
 위 표현식은 벡터가 정규 직교 기저로 인코딩되지 않는 한 기하학적 길이를 인코딩하지 않는다.
@@ -26,5 +25,12 @@ $$|u|:=\sqrt{u_{1}^{2}+\cdot\cdot\cdot+u_{n}^{2}}$$
 
 
 ### 유클리드 내적(Euclidean Inner Product / Dot Product)
+
+![[Pasted image 20260129172436.png]]
+n차원 벡터에 대해, 유클리드 내적은 다음과 같이 정의된다.
+$$\langle u,v\rangle:=|u||v|cos(\theta)$$
+
+
+
 
 

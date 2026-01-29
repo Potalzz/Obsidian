@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "1월29일 과기대 멘토링",
+      "path": "1. Project(진행 중인 프로젝트)/창업/멘토링/1월29일 과기대 멘토링.md"
+    },
+    {
+      "basename": "멘토링 기록",
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
+    },
+    {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
     },
@@ -102,7 +110,7 @@
     },
     {
       "basename": "곰민 멘토링",
-      "path": "1. Project(진행 중인 프로젝트)/창업/곰민 멘토링.md"
+      "path": "1. Project(진행 중인 프로젝트)/창업/멘토링/곰민 멘토링.md"
     },
     {
       "basename": "Swift 개념",
@@ -122,15 +130,11 @@
     },
     {
       "basename": "ERD",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/ERD.md"
+      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획/ERD.md"
     },
     {
       "basename": "할 일",
       "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
-    },
-    {
-      "basename": "멘토링 기록",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md"
     },
     {
       "basename": "Claude Code",
@@ -195,10 +199,6 @@
     {
       "basename": "C5 계획",
       "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge5/C5 계획.md"
-    },
-    {
-      "basename": "앱 홍보글",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/앱 홍보글.md"
     }
   ],
   "omittedPaths": [],

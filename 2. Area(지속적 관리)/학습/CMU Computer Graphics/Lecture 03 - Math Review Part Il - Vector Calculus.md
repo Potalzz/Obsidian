@@ -20,3 +20,11 @@ https://15462.courses.cs.cmu.edu/fall2020/home
 
 정규 직교(orthonormal) 좌표계에서
 $$|u|:=\sqrt{u_{1}^{2}+\cdot\cdot\cdot+u_{n}^{2}}$$
+**주의해야 할 부분**
+위 표현식은 벡터가 정규 직교 기저로 인코딩되지 않는 한 기하학적 길이를 인코딩하지 않는다.
+`(버그의 흔한 원인)`
+
+
+### 유클리드 내적(Euclidean Inner Product / Dot Product)
+
+

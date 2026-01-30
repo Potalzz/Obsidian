@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/창업/아이템/열한시.md",
+                "file": "1. Project(진행 중인 프로젝트)/창업/아이템/무인 매장 관련.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "열한시"
+              "title": "무인 매장 관련"
             }
           },
           {
@@ -116,8 +116,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -235,8 +234,10 @@
   },
   "active": "9ae748fed9357960",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/창업/인터뷰/열한시.md",
+    "1. Project(진행 중인 프로젝트)/창업/아이템/무인 매장 관련.md",
+    "1. Project(진행 중인 프로젝트)/창업/인터뷰",
     "1. Project(진행 중인 프로젝트)/창업/멘토링/1월29일 과기대 멘토링.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/열한시.md",
     "IMG_3881.jpg",
     "IMG_3881.heic",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/멘토링 기록.md",
@@ -275,12 +276,10 @@
     "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",
     "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md",
     "1. Project(진행 중인 프로젝트)/창업/아이템/온라인 쇼핑 플랫폼.md",
-    "1. Project(진행 중인 프로젝트)/창업/아이템/인테리어.md",
     "1. Project(진행 중인 프로젝트)/창업/MVP",
     "1. Project(진행 중인 프로젝트)/창업/아이템",
     "1. Project(진행 중인 프로젝트)/창업/리서치",
     "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/기획",
-    "3. Resource(정보 저장소)/Apple Developer Academy/강연 기록",
     "무제.canvas",
     "무제 2.canvas",
     "무제 1.canvas",

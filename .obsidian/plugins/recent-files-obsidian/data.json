@@ -1,8 +1,12 @@
 {
   "recentFiles": [
     {
+      "basename": "무인 매장 관련",
+      "path": "1. Project(진행 중인 프로젝트)/창업/아이템/무인 매장 관련.md"
+    },
+    {
       "basename": "열한시",
-      "path": "1. Project(진행 중인 프로젝트)/창업/아이템/열한시.md"
+      "path": "1. Project(진행 중인 프로젝트)/창업/인터뷰/열한시.md"
     },
     {
       "basename": "1월29일 과기대 멘토링",
@@ -195,10 +199,6 @@
     {
       "basename": "무제 2",
       "path": "무제 2.base"
-    },
-    {
-      "basename": "메모장",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge4/메모장.md"
     }
   ],
   "omittedPaths": [],

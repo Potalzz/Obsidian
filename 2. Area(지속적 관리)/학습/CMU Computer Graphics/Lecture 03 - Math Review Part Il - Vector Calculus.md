@@ -89,4 +89,6 @@ $$\mathbf{u}' = \mathbf{u}(\cos \theta) + (\mathbf{N} \times \mathbf{u})(\sin \t
 **점곱을 행렬 곱을 통한 표현**
 $$u\cdot v=u^{T}v=[\begin{matrix}u_{1}&\cdot\cdot\cdot&u_{n}\end{matrix}][\begin{matrix}v_{1}\\ \vdots\\ v_{n}\end{matrix}]=\sum_{i=1}^{n}u_{i}v_{i}$$
 
-****
+**다른 내적에 대해선 어떻게 표현할까 ?**
+E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
+

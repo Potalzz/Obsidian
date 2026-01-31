@@ -212,6 +212,13 @@ $v \times u = -u \times v$임을 알면 유용하다.
 따라서, $v$와 $u$를 교차하여 사용하려면 전치하는 방법이 있다.
 $$v\times u=-\hat{u}v=\hat{u}^{T}v$$
 
-### 행렬식
-#### Q. 행렬의 행렬식은 어떻게 계산할까 ?
+### 행렬식, 부피와 삼중곱(Determinant, Volume and Triple Product)
+![[Pasted image 20260131203852.png]]
+위와 같은 행렬의 행렬식에 대해서 기하학적 관점에서 살펴보자.
+
+
+
+
+
+
 

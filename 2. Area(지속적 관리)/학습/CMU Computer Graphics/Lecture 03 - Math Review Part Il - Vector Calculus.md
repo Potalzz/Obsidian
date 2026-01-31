@@ -97,3 +97,8 @@ E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
 
 
 ### 외적의 행렬 표현
+
+**행렬 곱셈을 통해 외적을 표현할 수도 있다.**
+$$u:=(u_{1},u_{2},u_{3}) \Rightarrow \hat{u}:=[\begin{matrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{matrix}]$$
+
+$$u\times v=\hat{u}v=[\begin{matrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{matrix}][\begin{matrix}v_{1}\\ v_{2}\\ v_{3}\end{matrix}]$$

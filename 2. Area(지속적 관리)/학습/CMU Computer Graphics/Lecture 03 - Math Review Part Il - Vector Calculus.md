@@ -163,5 +163,7 @@ E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
 
 **행렬 곱셈을 통해 외적을 표현할 수도 있다.**
 $$u:=(u_{1},u_{2},u_{3}) \Rightarrow \hat{u}:=\begin{bmatrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{bmatrix}$$
+- 성분 $(u_1, u_2, u_3)$를 가지는 3차원상의 벡터 $u$를 3 X 3 행렬에 넣는다.
+
 
 $$u\times v=\hat{u}v=\begin{bmatrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{bmatrix}\begin{bmatrix}v_{1}\\ v_{2}\\ v_{3}\end{bmatrix}$$

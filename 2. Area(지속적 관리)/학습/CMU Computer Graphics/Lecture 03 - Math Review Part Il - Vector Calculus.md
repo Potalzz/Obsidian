@@ -83,5 +83,6 @@ $$\mathbf{u}' = \mathbf{u}(\cos \theta) + (\mathbf{N} \times \mathbf{u})(\sin \t
 ![[Pasted image 20260131180039.png]]
 [공식이 성립되는 이유]
 
-### 외적의 행렬 표현
+### 내적의 행렬 표현
 행렬 곱셈을 통해 외적을 표현할 수 있다.
+

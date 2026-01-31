@@ -63,4 +63,8 @@ $$\sqrt{det(u,v,u\times v)}=|u||v|sin(\theta)$$
 [더욱 정확한 정의(손이 필요 없는)]
 - $\theta$는 u와 v 사이의 각도
 - "det"는 세 열 벡터의 행렬식
+- 좌표 공식을 고유하게 결정한다
+	- ![[Pasted image 20260131165713.png]]
+
+
 

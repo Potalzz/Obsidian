@@ -1,10 +1,10 @@
->This post is a personal study note based on CMU 15-462 (Computer Graphics) lectures.
+>This post is a personal study note based on CMU 15-462 (Computer Graphics) 2020/fall lectures.
 >All original lecture slides and videos are copyrighted by the instructors.
 
 강의에 대한 정보와 자료는 아래 홈페이지에서 확인할 수 있습니다.
 https://15462.courses.cs.cmu.edu/fall2020/home
 
-본 포스팅은 강의 내용을 바탕으로 하되, 이해를 돕기 위해 별도의 자료 조사와 개념 정리를 덧붙여 작성했습니다. 따라서 원 강의 내용과 100% 일치하지 않을 수 있으며, 개인적인 학습 내용이 포함되어 있습니다.
+본 포스팅은 강의 내용을 바탕으로 하되, 이해를 돕기 위해 별도의 자료 조사와 개념 정리를 덧붙여 작성했습니다. 따라서 원 강의 내용을 기반으로 추가적인 학습 자료가 다수 포함되어 있습니다.
 
 ---
 
@@ -66,8 +66,7 @@ $$\sqrt{det(u,v,u\times v)}=|u||v|sin(\theta)$$
 - 좌표 공식을 고유하게 결정한다
 	- ![[Pasted image 20260131165713.png]]
 
-#### 왜 $u \times v = (u_1i, u2_j, u3_k) \times (v_1i, v_2j, v_3k)$식이 위의 수식이 될까 ?
-
+#### Q. 왜 $u \times v = (u_1i, u2_j, u3_k) \times (v_1i, v_2j, v_3k)$식이 위의 수식이 될까 ?
 
 **3차원 벡터 $u = (u_1, u_2, u_3)$는 사실 세 개의 화살표를 더한 것이다.**
 - $x$축 방향 1칸: **$i$**
@@ -165,7 +164,7 @@ E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
 $$u:=(u_{1},u_{2},u_{3}) \Rightarrow \hat{u}:=\begin{bmatrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{bmatrix}$$
 성분 $(u_1, u_2, u_3)$를 가지는 3차원상의 벡터 $u$를 3 X 3 행렬로 변환한다.
 
-**왜 행렬로 바꿀까 ?**
+**Q. 왜 행렬로 바꿀까 ?**
 
 
 

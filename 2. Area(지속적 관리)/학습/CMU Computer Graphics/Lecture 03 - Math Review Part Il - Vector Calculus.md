@@ -75,3 +75,11 @@ $$\sqrt{det(u,v,u\times v)}=|u||v|sin(\theta)$$
 단위벡터 N과의 외적은 법선이 N인 평면에서의 90도 회전과 동일하다.
 $$n \times u$$
 평면 위 벡터를 90도 회전시키기 위한 목적이라면 복잡하게 회전 행렬을 사용하지  않고, 축과의 외적을 통해 간단하게 구할 수 있다.
+
+![[Pasted image 20260131175729.png]]
+위 질문에 대해서, $\theta$만큼 회전한 벡터 $\mathbf{u}'$를 구하는 공식은 다음과 같다.
+$$\mathbf{u}' = \mathbf{u}(\cos \theta) + (\mathbf{N} \times \mathbf{u})(\sin \theta)$$
+
+![[Pasted image 20260131180039.png]]
+[공식이 성립되는 이유]
+

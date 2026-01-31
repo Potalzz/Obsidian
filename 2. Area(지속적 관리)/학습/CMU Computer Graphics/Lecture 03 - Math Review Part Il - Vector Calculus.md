@@ -126,7 +126,7 @@ $$u \times v = (u_1 i + u_2 j + u_3 k) \times (v_1 i + v_2 j + v_3 k)$$
 
 **결론**
 이들을 모두 합쳐서 벡터 형태로 다시 쓰면 위의 공식이 나온다.
-$$u \times v = \begin{pmatrix} u_2 v_3 - u_3 v_2 \\ u_3 v_1 - u_1 v_3 \\ u_1 v_2 - u_2 v_1 \end{pmatrix}$$
+$$u \times v = \begin{bmatrix} u_2 v_3 - u_3 v_2 \\ u_3 v_1 - u_1 v_3 \\ u_1 v_2 - u_2 v_1 \end{bmatrix}$$
 
 
 ![[Pasted image 20260131171308.png]]
@@ -149,7 +149,7 @@ $$\mathbf{u}' = \mathbf{u}(\cos \theta) + (\mathbf{N} \times \mathbf{u})(\sin \t
 ### 내적의 행렬 표현
 
 **점곱을 행렬 곱을 통한 표현**
-$$u\cdot v=u^{T}v=[\begin{matrix}u_{1}&\cdot\cdot\cdot&u_{n}\end{matrix}][\begin{matrix}v_{1}\\ \vdots\\ v_{n}\end{matrix}]=\sum_{i=1}^{n}u_{i}v_{i}$$
+$$u\cdot v=u^{T}v=[\begin{matrix}u_{1}&\cdot\cdot\cdot&u_{n}\end{matrix}][\begin{bmatrix}v_{1}\\ \vdots\\ v_{n}\end{bmatrix}]=\sum_{i=1}^{n}u_{i}v_{i}$$
 
 **다른 내적에 대해선 어떻게 표현할까 ?**
 E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
@@ -162,6 +162,6 @@ E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
 ### 외적의 행렬 표현
 
 **행렬 곱셈을 통해 외적을 표현할 수도 있다.**
-$$u:=(u_{1},u_{2},u_{3}) \Rightarrow \hat{u}:=[\begin{matrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{matrix}]$$
+$$u:=(u_{1},u_{2},u_{3}) \Rightarrow \hat{u}:=\begin{bmatrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{bmatrix}$$
 
-$$u\times v=\hat{u}v=[\begin{matrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{matrix}][\begin{matrix}v_{1}\\ v_{2}\\ v_{3}\end{matrix}]$$
+$$u\times v=\hat{u}v=\begin{bmatrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{bmatrix}\begin{bmatrix}v_{1}\\ v_{2}\\ v_{3}\end{bmatrix}$$

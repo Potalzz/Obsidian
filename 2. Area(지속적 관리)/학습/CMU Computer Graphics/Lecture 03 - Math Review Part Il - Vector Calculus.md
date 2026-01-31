@@ -84,5 +84,9 @@ $$\mathbf{u}' = \mathbf{u}(\cos \theta) + (\mathbf{N} \times \mathbf{u})(\sin \t
 [공식이 성립되는 이유]
 
 ### 내적의 행렬 표현
-행렬 곱셈을 통해 외적을 표현할 수 있다.
+>행렬 곱셈을 통해 외적을 표현할 수 있다.
 
+**점곱을 행렬 곱을 통한 표현**
+$$u\cdot v=u^{T}v=[\begin{matrix}u_{1}&\cdot\cdot\cdot&u_{n}\end{matrix}][\begin{matrix}v_{1}\\ \vdots\\ v_{n}\end{matrix}]=\sum_{i=1}^{n}u_{i}v_{i}$$
+
+****

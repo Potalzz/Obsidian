@@ -49,7 +49,8 @@
               "title": "1월28일 생숙, 공유 숙박업 리서치"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,10 +234,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "7e67c6773d9e0f71",
   "lastOpenFiles": [
-    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "Pasted image 20260201184653.png",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md",
     "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md",

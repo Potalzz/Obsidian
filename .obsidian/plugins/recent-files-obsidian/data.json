@@ -1,6 +1,14 @@
 {
   "recentFiles": [
     {
+      "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
+      "path": "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md"
+    },
+    {
+      "basename": "1월28일 생숙, 공유 숙박업 리서치",
+      "path": "1. Project(진행 중인 프로젝트)/창업/리서치/1월28일 생숙, 공유 숙박업 리서치.md"
+    },
+    {
       "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
@@ -35,10 +43,6 @@
     {
       "basename": "개발",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/개발/개발.md"
-    },
-    {
-      "basename": "1월28일 생숙, 공유 숙박업 리서치",
-      "path": "1. Project(진행 중인 프로젝트)/창업/리서치/1월28일 생숙, 공유 숙박업 리서치.md"
     },
     {
       "basename": "Drawing 2026-01-22 16.39.38.excalidraw",
@@ -195,10 +199,6 @@
     {
       "basename": "무제",
       "path": "무제.canvas"
-    },
-    {
-      "basename": "무제 2",
-      "path": "무제 2.base"
     }
   ],
   "omittedPaths": [],

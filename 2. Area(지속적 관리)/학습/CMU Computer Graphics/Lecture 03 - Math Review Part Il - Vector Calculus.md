@@ -238,10 +238,11 @@ $det(u,v,w)$는 모서리 벡터가 u, v, w인 평행육면체의 부피를 가�
 
 $$
 \begin{align}
-det(u,v,w)=(u\times v)\cdot w\\
-=(v\times w)\cdot u \\
+det(u,v,w)=(u\times v)\cdot w
+=(v\times w)\cdot u
 =(w\times u)\cdot v
 \end{align}
 $$
-
+두 벡터의 외적은 해당 평행사변형의 면적을 담고있고, 외적인 벡터와 나머지 모서리 벡터를 내적하면 밑 면의 넓이와 해당 밑 면의 수직인 방향으로의 모서리 벡터의 길이 즉, 높이를 곱한 값이 나오므로 부피를 얻을 수 있다.
+결과적으로 어떤 면을 밑 면으로 정하든 간에 모두 같은 결과를 반환한다.
 

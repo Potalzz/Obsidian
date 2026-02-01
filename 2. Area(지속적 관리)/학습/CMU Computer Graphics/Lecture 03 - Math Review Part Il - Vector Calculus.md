@@ -42,6 +42,8 @@ $$u\cdot v:=u_{1}v_{1}+\cdot\cdot\cdot+u_{n}v_{n}$$
 3D에서 외적은 **두 벡터가 만드는 새로운 공간의 축은 어디인가**를 찾아내는 연산이며 "$u \times v$"로 쓴다.
 내적의 결과는 숫자(스칼라)이지만, 외적의 결과는 또 다른 벡터이다.
 
+두 벡터 $u, v$의 **외적의 크기**는 두 벡터가 만드는 **평행사변형의 넓이.**
+
 ![[Pasted image 20260129180022.png]]
 
 기하학적으로
@@ -146,7 +148,6 @@ $$\mathbf{u}' = \mathbf{u}(\cos \theta) + (\mathbf{N} \times \mathbf{u})(\sin \t
 [공식이 성립되는 이유]
 
 ### 내적의 행렬 표현
-
 **점곱을 행렬 곱을 통한 표현**
 $$u\cdot v=u^{T}v=[\begin{matrix}u_{1}&\cdot\cdot\cdot&u_{n}\end{matrix}][\begin{bmatrix}v_{1}\\ \vdots\\ v_{n}\end{bmatrix}]=\sum_{i=1}^{n}u_{i}v_{i}$$
 
@@ -159,7 +160,6 @@ E.g., $<u,v>:=2u_1v_1+u_1v_2+u_2v_1+3u_2v_2$
 
 
 ### 외적의 행렬 표현
-
 **행렬 곱셈을 통해 외적을 표현할 수도 있다.**
 $$u:=(u_{1},u_{2},u_{3}) \Rightarrow \hat{u}:=\begin{bmatrix}0&-u_{3}&u_{2}\\ u_{3}&0&-u_{1}\\ -u_{2}&u_{1}&0\end{bmatrix}$$
 성분 $(u_1, u_2, u_3)$를 가지는 3차원상의 벡터 $u$를 3 X 3 행렬로 변환한다.

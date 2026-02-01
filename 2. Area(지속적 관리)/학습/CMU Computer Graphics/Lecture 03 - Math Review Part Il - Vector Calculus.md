@@ -214,7 +214,8 @@ $$v\times u=-\hat{u}v=\hat{u}^{T}v$$
 
 ### 행렬식, 부피와 삼중곱(Determinant, Volume and Triple Product)
 **행렬식**
-- 
+행렬을 대표하는 **하나의 숫자**를 의미.
+
 
 ![[Pasted image 20260131203852.png]]
 위와 같은 행렬의 행렬식에 대해서 기하학적 관점에서 살펴보자.

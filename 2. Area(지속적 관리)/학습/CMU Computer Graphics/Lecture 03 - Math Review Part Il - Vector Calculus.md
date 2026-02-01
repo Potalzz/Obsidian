@@ -238,8 +238,8 @@ $det(u,v,w)$는 모서리 벡터가 u, v, w인 평행육면체의 부피를 인�
 
 $$
 \begin{align}
-det(u,v,w)=(u\times v)\cdot w
-=(v\times w)\cdot u
+det(u,v,w)=(u\times v)\cdot w \\
+=(v\times w)\cdot u \\
 =(w\times u)\cdot v
 \end{align}
 $$

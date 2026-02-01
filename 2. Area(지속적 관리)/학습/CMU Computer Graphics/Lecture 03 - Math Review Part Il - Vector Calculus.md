@@ -234,7 +234,7 @@ $$v\times u=-\hat{u}v=\hat{u}^{T}v$$
 
 
 ![[Pasted image 20260201184653.png]]
-$det(u,v,w)$는 모서리 벡터가 u, v, w인 평행육면체의 부피를 가진다.
+$det(u,v,w)$는 모서리 벡터가 u, v, w인 평행육면체의 부피를 인코딩한다.
 
 $$
 \begin{align}

@@ -249,3 +249,6 @@ $$
 
 
 
+### 행렬을 통한 선형 변환 표현(Representing Linear Maps via Matrices)
+
+

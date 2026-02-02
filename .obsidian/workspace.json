@@ -48,9 +48,21 @@
               "icon": "lucide-file",
               "title": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?"
             }
+          },
+          {
+            "id": "1a81fff9f8549130",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2026-02-02 18.54.44.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2026-02-02 18.54.44.excalidraw"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -117,7 +129,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -233,10 +246,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2309cd900b0d1b97",
+  "active": "1a81fff9f8549130",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/창업/리서치/1월28일 생숙, 공유 숙박업 리서치.md",
     "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md",
+    "Excalidraw/Drawing 2026-02-02 18.54.44.excalidraw.md",
+    "1. Project(진행 중인 프로젝트)/창업/리서치/1월28일 생숙, 공유 숙박업 리서치.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
     "Pasted image 20260201184653.png",
@@ -276,7 +290,6 @@
     "2. Area(지속적 관리)/이력서",
     "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md",
     "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",
-    "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md",
     "1. Project(진행 중인 프로젝트)/창업/MVP",
     "1. Project(진행 중인 프로젝트)/창업/아이템",
     "1. Project(진행 중인 프로젝트)/창업/리서치",

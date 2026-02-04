@@ -264,3 +264,13 @@ $$A:=\begin{bmatrix}|&|&|\\ a_{1}&a_{2}&a_{3}\\ |&|&|\end{bmatrix}=\begin{bmatri
 $$A\begin{bmatrix}u_{1}\\ u_{2}\\ u_{3}\end{bmatrix}=\begin{bmatrix}a_{1,x}u_{1}+a_{2,x}u_{2}+a_{3,x}u_{3}\\ a_{1,y}u_{1}+a_{2,y}u_{2}+a_{3,y}u_{3}\\ a_{1,2}u_{1}+a_{2,2}u_{2}+a_{3,z}u_{3}\end{bmatrix}=u_{1}a_{1}+u_{2}a_{2}+u_{3}a_{3}$$
 [행렬-벡터 곱셈이 원래 변환을 복원]
 
+
+### 다른 삼중곱들(Other Triple Products)
+![[Pasted image 20260204122943.png]]
+
+**외적에 대한 자코비 항등식(Jacobi identity)**
+$$u\times(v\times w)+ v\times(w\times u)+ w\times(u\times v)=0$$
+
+**라그랑주 항등식(Lagrange's identity)**
+$$u\times(v\times w)=v(u\cdot w)-w(u\cdot v)$$
+

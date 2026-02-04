@@ -251,4 +251,12 @@ $$
 
 ### 행렬을 통한 선형 변환 표현(Representing Linear Maps via Matrices)
 
+**선형 변환을 어떻게 행렬로 인코딩할 수 있을까 ?**
+
+$$f(u)=u_{1}a_{1}+u_{2}a_{2}+u_{3}a_{3}$$
+[선형 변환]
+
+$$A:=\begin{bmatrix}|&|&|\\ a_{1}&a_{2}&a_{3}\\ |&|&|\end{bmatrix}=\begin{bmatrix}a_{1,x}&a_{2,x}&a_{3,x}\\ a_{1,y}&a_{2,y}&a_{3,y}\\ a_{1,z}&a_{2,z}&a_{3,z}\end{bmatrix}$$
+['a'벡터들을 행렬의 열로 하여 행렬로 인코딩]
+
 

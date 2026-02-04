@@ -309,4 +309,8 @@ $$u\times(v\times w)=v(u\cdot w)-w(u\cdot v)$$
 ![[Pasted image 20260204154441.png]]
 $$f^{\prime}(x_{0}):=lim_{\epsilon\rightarrow0}\frac{f(x_{0}+\epsilon)-f(x_{0})}{\epsilon}$$
 
-$f^{+}=f^{-}$이면 $x_0$에서 미분 가능
+![[Pasted image 20260204155218.png]]
+위와 같이, 오른쪽에서 다가올 때와 왼쪽에서 다가올 때 기울기가 다르면 미분 불가능
+
+우미분계수 ($f^+(x_0)$) = 좌미분계수 ($f^-(x_0)$)이면 미분 가능
+

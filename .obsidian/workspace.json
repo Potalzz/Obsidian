@@ -48,23 +48,8 @@
               "icon": "lucide-file",
               "title": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?"
             }
-          },
-          {
-            "id": "97a658a60cb54bbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Main_딥러닝.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Main_딥러닝"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -247,16 +232,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "97a658a60cb54bbd",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
+    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
+    "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md",
+    "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Main_딥러닝.md",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Ai 기초지식.md",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/코딩 테스트.md",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/선형대수학.canvas",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Ai 기초지식 2.md",
-    "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Main_딥러닝.md",
-    "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
-    "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "Pasted image 20260204122943.png",
     "Pasted image 20260204122134.png",
     "Pasted image 20250830162853.png",

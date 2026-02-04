@@ -252,6 +252,7 @@ $$
 ### 행렬을 통한 선형 변환 표현(Representing Linear Maps via Matrices)
 
 **선형 변환을 어떻게 행렬로 인코딩할 수 있을까 ?**
+![[Pasted image 20260204122134.png]]
 
 $$f(u)=u_{1}a_{1}+u_{2}a_{2}+u_{3}a_{3}$$
 [선형 변환]
@@ -262,3 +263,4 @@ $$A:=\begin{bmatrix}|&|&|\\ a_{1}&a_{2}&a_{3}\\ |&|&|\end{bmatrix}=\begin{bmatri
 
 $$A\begin{bmatrix}u_{1}\\ u_{2}\\ u_{3}\end{bmatrix}=\begin{bmatrix}a_{1,x}u_{1}+a_{2,x}u_{2}+a_{3,x}u_{3}\\ a_{1,y}u_{1}+a_{2,y}u_{2}+a_{3,y}u_{3}\\ a_{1,2}u_{1}+a_{2,2}u_{2}+a_{3,z}u_{3}\end{bmatrix}=u_{1}a_{1}+u_{2}a_{2}+u_{3}a_{3}$$
 [행렬-벡터 곱셈이 원래 변환을 복원]
+

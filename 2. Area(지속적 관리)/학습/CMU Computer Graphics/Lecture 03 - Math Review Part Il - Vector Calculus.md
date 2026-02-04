@@ -266,9 +266,9 @@ $$A\begin{bmatrix}u_{1}\\ u_{2}\\ u_{3}\end{bmatrix}=\begin{bmatrix}a_{1,x}u_{1}
 
 
 ### 다른 삼중곱들(Other Triple Products)
-![[Pasted image 20260204122943.png]]
 
 **외적에 대한 자코비 항등식(Jacobi identity)**
+![[Pasted image 20260204122943.png]]
 $$u\times(v\times w)+ v\times(w\times u)+ w\times(u\times v)=0$$
 
 **라그랑주 항등식(Lagrange's identity)**

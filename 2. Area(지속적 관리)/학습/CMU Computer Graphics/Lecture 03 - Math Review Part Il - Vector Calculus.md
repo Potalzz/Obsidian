@@ -305,4 +305,4 @@ $$u\times(v\times w)=v(u\cdot w)-w(u\cdot v)$$
 ![[Pasted image 20260204152621.png]]
 
 
-### 기울기로서의 미분(Derivative as Slope)
+### 미분 (Derivative)

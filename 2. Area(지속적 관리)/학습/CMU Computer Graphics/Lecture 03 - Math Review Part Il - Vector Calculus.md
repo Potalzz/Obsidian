@@ -306,3 +306,7 @@ $$u\times(v\times w)=v(u\cdot w)-w(u\cdot v)$$
 
 
 ### 미분 (Derivative)
+![[Pasted image 20260204154441.png]]
+$$f^{\prime}(x_{0}):=lim_{\epsilon\rightarrow0}\frac{f(x_{0}+\epsilon)-f(x_{0})}{\epsilon}$$
+
+$f^{+}=f^{-}$이면 $x_0$에서 미분 가능

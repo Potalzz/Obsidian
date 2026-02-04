@@ -260,3 +260,5 @@ $$A:=\begin{bmatrix}|&|&|\\ a_{1}&a_{2}&a_{3}\\ |&|&|\end{bmatrix}=\begin{bmatri
 ['a'벡터들을 행렬의 열로 하여 행렬로 인코딩]
 
 
+$$A\begin{bmatrix}u_{1}\\ u_{2}\\ u_{3}\end{bmatrix}=\begin{bmatrix}a_{1,x}u_{1}+a_{2,x}u_{2}+a_{3,x}u_{3}\\ a_{1,y}u_{1}+a_{2,y}u_{2}+a_{3,y}u_{3}\\ a_{1,2}u_{1}+a_{2,2}u_{2}+a_{3,z}u_{3}\end{bmatrix}=u_{1}a_{1}+u_{2}a_{2}+u_{3}a_{3}$$
+[행렬-벡터 곱셈이 원래 변환을 복원]

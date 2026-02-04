@@ -1,6 +1,26 @@
 {
   "recentFiles": [
     {
+      "basename": "Main_딥러닝",
+      "path": "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Main_딥러닝.md"
+    },
+    {
+      "basename": "Ai 기초지식",
+      "path": "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Ai 기초지식.md"
+    },
+    {
+      "basename": "코딩 테스트",
+      "path": "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/코딩 테스트.md"
+    },
+    {
+      "basename": "선형대수학",
+      "path": "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/선형대수학.canvas"
+    },
+    {
+      "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
+      "path": "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md"
+    },
+    {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
     },
@@ -97,10 +117,6 @@
       "path": "Pasted image 20250830185611.png"
     },
     {
-      "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
-      "path": "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md"
-    },
-    {
       "basename": "Pasted image 20260131190149",
       "path": "Pasted image 20260131190149.png"
     },
@@ -183,22 +199,6 @@
     {
       "basename": "Glayer 프로젝트 정리",
       "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md"
-    },
-    {
-      "basename": "방탈출 앱 개발",
-      "path": "2. Area(지속적 관리)/블로그/방탈출 앱 개발.md"
-    },
-    {
-      "basename": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle",
-      "path": "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
-    },
-    {
-      "basename": "visionOS view계층 정복",
-      "path": "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md"
-    },
-    {
-      "basename": "온라인 쇼핑 플랫폼",
-      "path": "1. Project(진행 중인 프로젝트)/창업/아이템/온라인 쇼핑 플랫폼.md"
     }
   ],
   "omittedPaths": [],

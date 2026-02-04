@@ -274,3 +274,5 @@ $$u\times(v\times w)+ v\times(w\times u)+ w\times(u\times v)=0$$
 **라그랑주 항등식(Lagrange's identity)**
 $$u\times(v\times w)=v(u\cdot w)-w(u\cdot v)$$
 
+
+### 미분 연산자 (Differential Operators)

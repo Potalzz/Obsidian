@@ -372,3 +372,6 @@ $$\nabla f=\begin{bmatrix}\partial f/\partial x_{1}\\ \vdots\\ \partial f/\parti
 2. 유한한 좌표 리스트 $x_1, ..., x_n$이 없기 때문에, 함수들의 함수 $F(f)$를 미분할 방법이 없다.
 
 그럼에도, 기울기를 계산하는 매우 일반적인 방법이다.
+
+![[Pasted image 20260205161338.png]]
+

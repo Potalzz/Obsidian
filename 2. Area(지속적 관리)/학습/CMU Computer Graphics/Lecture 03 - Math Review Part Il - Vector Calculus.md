@@ -326,7 +326,7 @@ $$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\pri
 
 
 ### 방향 미분 (Directional Derivative)
-> 임의의 방향에 대한 기울기 값(스칼라)
+>임의의 방향에 대한 기울기 값(스칼라)
 
 ![[Pasted image 20260205151506.png]]
 
@@ -354,7 +354,7 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 따라서 방향 도함수는 **그라디언트($\nabla f$)를 내가 가고자 하는 방향 벡터($\mathbf{u}$)에 투영한 값**과 같다.
 
 ### 기울기 (Gradient)
-> 경사에 대한 모든 정보를 담고 있는 벡터
+>경사에 대한 모든 정보를 담고 있는 벡터
 
 ![[Pasted image 20260205152956.png]]
 다변수 함수 $f(x)$가 주어졌을 때, 그라디언트 $\nabla f(x)$는 각 지점에 벡터를 할당한다.
@@ -381,5 +381,4 @@ $$\nabla f=\begin{bmatrix}\partial f/\partial x_{1}\\ \vdots\\ \partial f/\parti
 편미분을 진행하는 동안에, 나머지 방향은 상수로 취급한다.
 ($x_1$에 대해서 미분을 할 때는 $x_2$는 상수로 취급)
 각각의 방향에 대해 편미분한 결과를 결합한다.
-
 $$\nabla f(x)=\begin{bmatrix}2x_{1}\\ 2x_{2}\end{bmatrix}=2x$$[최종적으로 위 결과를 얻을 수 있다.]

@@ -349,3 +349,6 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
     
 - **$f(\mathbf{x}_0)$**: 원래 서 있던 곳의 **높이**
 
+결과적으로 함수 f의 모든 가능한 방향 u에 따른 변화를 의미한다.
+
+### 기울기 (Gradient)

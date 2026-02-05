@@ -352,3 +352,8 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 결과적으로 함수 f의 모든 가능한 방향 u에 따른 변화를 의미한다.
 
 ### 기울기 (Gradient)
+> 가장 가파른 방향을 알려주는 기울기 벡터
+
+![[Pasted image 20260205152956.png]]
+다변수 함수 $f(x)$가 주어졌을 때, 그라디언트 $\nabla f(x)$는 각 지점에 벡터를 할당한다.
+

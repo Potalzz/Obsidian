@@ -357,3 +357,6 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 ![[Pasted image 20260205152956.png]]
 다변수 함수 $f(x)$가 주어졌을 때, 그라디언트 $\nabla f(x)$는 각 지점에 벡터를 할당한다.
 
+
+### 좌표계에서의 기울기 (Gradient in Coordinates)
+

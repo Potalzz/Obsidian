@@ -359,4 +359,5 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 
 
 ### 좌표계에서의 기울기 (Gradient in Coordinates)
+가장 친숙한 정의 : 편미분 들의 리스트
 

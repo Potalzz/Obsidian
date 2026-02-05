@@ -361,7 +361,7 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 
 
 ### 좌표계에서의 기울기 (Gradient in Coordinates)
-가장 친숙한 정의 : 편미분 들의 리스트
+가장 친숙한 정의 : **편미분**들의 리스트
 
 방향 미분은 특정 방향에 대한 1차원 미분을 제공.
 기울기(Gradient)는 단지 방향 미분을 리스트로 나타낸 것에 불과하다.

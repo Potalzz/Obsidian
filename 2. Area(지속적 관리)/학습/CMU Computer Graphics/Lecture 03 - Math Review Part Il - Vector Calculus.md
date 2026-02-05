@@ -365,8 +365,10 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 
 방향 미분은 특정 방향에 대한 1차원 미분을 제공.
 기울기(Gradient)는 단지 방향 미분을 리스트로 나타낸 것에 불과하다.
+$$\nabla f=\begin{bmatrix}\partial f/\partial x_{1}\\ \vdots\\ \partial f/\partial x_{n}\end{bmatrix}$$
 
 하지만 이렇게 생각하면 두 가지 문제점이 존재한다.
 1. 내적의 역할이 명확하지 않다.
 2. 유한한 좌표 리스트 $x_1, ..., x_n$이 없기 때문에, 함수들의 함수 $F(f)$를 미분할 방법이 없다.
 
+그럼에도, 기울기를 계산하는 매우 일반적인 방법이다.

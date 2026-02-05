@@ -317,3 +317,10 @@ $$f^{\prime}(x_{0}):=lim_{\epsilon\rightarrow0}\frac{f(x_{0}+\epsilon)-f(x_{0})}
 
 
 ### 최적 선형 근사 (Derivative as Best Linear Approximation)
+무한히 미분 가능한 함수 f(x)는 테일러 급수(Taylor series)로 표현될 수 있다.
+$$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\prime}(x_{0})+\cdot\cdot\cdot$$
+[상수항 + 선형항 + 이차항 ...]
+
+**테일러 급수**는 쉽게 말해 복잡한 함수를 다항식(더하기, 곱하기)으로 이루어진 가짜 함수로 대체하는 도구.
+그래픽스에서 계산 효율을 위해 곡선을 직선(1차)이나 포물선(2차)으로 단순화해서 처리할 때 사용한다.
+

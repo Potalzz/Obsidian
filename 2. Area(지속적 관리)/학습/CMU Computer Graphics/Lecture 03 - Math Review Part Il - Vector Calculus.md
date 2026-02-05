@@ -384,3 +384,5 @@ $$\nabla f(x)=\begin{bmatrix}2x_{1}\\ 2x_{2}\end{bmatrix}=2x$$[최종적으로 �
 
 해당 함수의 기울기를 구했으므로, 특정 벡터를 넣으면 해당 위치에서의 기울기를 얻을 수 있다.
 
+### 최적 선형 근사로서의 기울기 (Gradient as Best Linear Approximation)
+

@@ -314,3 +314,6 @@ $$f^{\prime}(x_{0}):=lim_{\epsilon\rightarrow0}\frac{f(x_{0}+\epsilon)-f(x_{0})}
 
 우미분계수 ($f^+(x_0)$) = 좌미분계수 ($f^-(x_0)$)이면 미분 가능
 
+
+
+### 최적 선형 근사 (Derivative as Best Linear Approximation)

@@ -603,4 +603,10 @@ $$(\nabla^{2}f)u:=D_{u}(\nabla f)$$
 
 함수 $f(x):R^{n}\rightarrow R$에 대해, 더 명시적으로 쓸 수 있다.
 $$\nabla^{2}f:=[\begin{matrix}\frac{\partial^{2}f}{\partial x_{1}\rho x_{1}}&...&\frac{\partial^{2}f}{\partial x_{1}\partial x_{a}}\\ .&...&.\\ .&...&.\\ \frac{\partial^{2}f}{\partial x_{i}\partial x_{1}}&...&\frac{\partial^{2}f}{\partial x_{i}\partial x_{i}}\end{matrix}]$$
- 헤시안 행렬은 항상 대칭이다.
+[헤시안 행렬은 항상 대칭이다.]
+
+헤시안을 사용하여, 이제 임의의 매끄러운 다변수 함수 $f(x)$의 $x_0$ 주변에서의 2차 근사를 쓸 수 있다.
+$$f(x)\approx f(x_{0})+\langle\nabla f(x_{0}),x-x_{0}\rangle+\langle\nabla^{2}f(x_{0})(x-x_{0}),x-x_{0}\rangle/2$$
+
+![[Pasted image 20260207032652.png]]
+

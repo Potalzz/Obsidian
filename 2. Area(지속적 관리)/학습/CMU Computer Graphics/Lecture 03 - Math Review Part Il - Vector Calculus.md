@@ -471,13 +471,20 @@ $\nabla F=g$
 
 
 #### 2. $F(f):=||f||^2$
+- 각 지점 $f_0$에서, 우리는 모든 함수 u에 대해 다음을 만족하는 함수 $\nabla F$를 원한다.
+  $$\langle\langle\nabla F(f_{0}),u\rangle\rangle=lim_{\epsilon\rightarrow0}\frac{F(f_{0}+\epsilon u)-F(f_{0})}{\epsilon}$$
+    
+- 분자의 첫 번째 항을 전개하면$$||f_{0}+\epsilon u||^{2}=||f_{0}||^{2}+\epsilon^{2}||u||^{2}+2\epsilon\langle\langle f_{0},u\rangle\rangle$$
+    
+- 따라서, 극한은 다음과 같이 된다.$$lim_{\epsilon\rightarrow0}(\epsilon||u||^{2}+2\langle\langle f_{0},u\rangle\rangle)=2\langle\langle f_{0},u\rangle\rangle$$
+    
+- 모든 u에 대해 $\langle\langle\nabla F(f_{0}),u\rangle\rangle=2\langle\langle f_{0},u\rangle\rangle$를 만족하는 유일한 해는
+    $$\nabla F(f_{0})=2f_{0}$$
 
+결과적으로 $x^2$ 미분하면 $2x$ 되는 거랑 크게 다르지 않다.
+$$\frac{d}{dx}x^{2}=2x$$
 
-
-결국에 $x^2$ 미분하면 $2x$ 되는 거랑 완전히 똑같다.
-
-- $F(f):=||f||^2$, $\nabla F(f0)=2f0$
-
+보기에는 복잡해보이는 식도, 결국에 잘게 쪼개보면 직관적인 미분 규칙이 통한다.
 
 
 

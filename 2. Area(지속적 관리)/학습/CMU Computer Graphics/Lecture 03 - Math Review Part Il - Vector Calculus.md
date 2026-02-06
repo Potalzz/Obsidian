@@ -480,32 +480,22 @@ $$\nabla F=g$$
 $$F(f) := \|f\|^2 = \langle\langle f, f \rangle\rangle$$
 이 경우 각 지점 $f_0$에서의 그라디언트 $\nabla F(f_0)$를 구해보자.
 
-1. **변화량 전개**
-    
-    분자의 첫 번째 항인 $|f_{0}+\epsilon u|^{2}$을 전개한다. (곱셈 공식 $(a+b)^2$와 유사)
-    $$\|f_{0}+\epsilon u\|^{2} = \|f_{0}\|^{2} + 2\epsilon\langle\langle f_{0}, u \rangle\rangle + \epsilon^{2}\|u\|^{2}$$
-    
-1. **극한 계산**
-    
-    정의식에 대입하여 $\epsilon$을 $0$으로 보낸다. $\epsilon^2$ 항은 사라짐.
-    $$\lim_{\epsilon\rightarrow0} \frac{(\|f_0\|^2 + 2\epsilon\langle\langle f_0, u \rangle\rangle + \epsilon^2\|u\|^2) - \|f_0\|^2}{\epsilon} = 2\langle\langle f_{0}, u \rangle\rangle$$
-    
-1. **매칭**
-    
-    모든 $u$에 대해 $\langle\langle \nabla F(f_{0}), u \rangle\rangle = 2\langle\langle f_{0}, u \rangle\rangle$를 만족해야 한다. 따라서 유일한 해는 다음과 같다.
-    
-    $$\nabla F(f_{0}) = 2f_{0}$$
+**변화량 전개**
+분자의 첫 번째 항인 $|f_{0}+\epsilon u|^{2}$을 전개한다. (곱셈 공식 $(a+b)^2$와 유사)$$\|f_{0}+\epsilon u\|^{2} = \|f_{0}\|^{2} + 2\epsilon\langle\langle f_{0}, u \rangle\rangle + \epsilon^{2}\|u\|^{2}$$
+  
+**극한 계산**
+정의식에 대입하여 $\epsilon$을 $0$으로 보낸다. $\epsilon^2$ 항은 사라짐.  $$\lim_{\epsilon\rightarrow0} \frac{(\|f_0\|^2 + 2\epsilon\langle\langle f_0, u \rangle\rangle + \epsilon^2\|u\|^2) - \|f_0\|^2}{\epsilon} = 2\langle\langle f_{0}, u \rangle\rangle$$
+**매칭**
+모든 $u$에 대해 $\langle\langle \nabla F(f_{0}), u \rangle\rangle = 2\langle\langle f_{0}, u \rangle\rangle$를 만족해야 한다. 따라서 유일한 해는 다음과 같다.$$\nabla F(f_{0}) = 2f_{0}$$
+각 지점 $f_0$에서, 우리는 모든 함수 u에 대해 다음을 만족하는 함수 $\nabla F$를 원한다.
+$$\langle\langle\nabla F(f_{0}),u\rangle\rangle=lim_{\epsilon\rightarrow0}\frac{F(f_{0}+\epsilon u)-F(f_{0})}{\epsilon}$$
 
+분자의 첫 번째 항을 전개하면$$||f_{0}+\epsilon u||^{2}=||f_{0}||^{2}+\epsilon^{2}||u||^{2}+2\epsilon\langle\langle f_{0},u\rangle\rangle$$
 
-- 각 지점 $f_0$에서, 우리는 모든 함수 u에 대해 다음을 만족하는 함수 $\nabla F$를 원한다.
-  $$\langle\langle\nabla F(f_{0}),u\rangle\rangle=lim_{\epsilon\rightarrow0}\frac{F(f_{0}+\epsilon u)-F(f_{0})}{\epsilon}$$
-    
-- 분자의 첫 번째 항을 전개하면$$||f_{0}+\epsilon u||^{2}=||f_{0}||^{2}+\epsilon^{2}||u||^{2}+2\epsilon\langle\langle f_{0},u\rangle\rangle$$
-    
-- 따라서, 극한은 다음과 같이 된다.$$lim_{\epsilon\rightarrow0}(\epsilon||u||^{2}+2\langle\langle f_{0},u\rangle\rangle)=2\langle\langle f_{0},u\rangle\rangle$$
-    
-- 모든 u에 대해 $\langle\langle\nabla F(f_{0}),u\rangle\rangle=2\langle\langle f_{0},u\rangle\rangle$를 만족하는 유일한 해는
-    $$\nabla F(f_{0})=2f_{0}$$
+따라서, 극한은 다음과 같이 된다.$$lim_{\epsilon\rightarrow0}(\epsilon||u||^{2}+2\langle\langle f_{0},u\rangle\rangle)=2\langle\langle f_{0},u\rangle\rangle$$
+
+모든 u에 대해 $\langle\langle\nabla F(f_{0}),u\rangle\rangle=2\langle\langle f_{0},u\rangle\rangle$를 만족하는 유일한 해는
+  $$\nabla F(f_{0})=2f_{0}$$
 
 결과적으로 $x^2$ 미분하면 $2x$ 되는 거랑 크게 다르지 않다.
 기존에 알고 있는 미분 공식과 일치 한다.

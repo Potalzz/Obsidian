@@ -586,7 +586,7 @@ $$\Delta f:=\Sigma_{i}\partial^{2}f/\partial x_{i}^{2}$$
 
 
 ### 헤시안 (Hessian)
-
+![[Pasted image 20260207032253.png]]
 헤시안은 복잡한 함수를 몇 가지 간단한 항으로 국소적으로(locally) 근사하는 데 도움을 준다.
 
 - 테일러 급수를 떠올려 보자.$$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\prime}(x_{0})+\cdot\cdot\cdot$$
@@ -603,4 +603,4 @@ $$(\nabla^{2}f)u:=D_{u}(\nabla f)$$
 
 함수 $f(x):R^{n}\rightarrow R$에 대해, 더 명시적으로 쓸 수 있다.
 $$\nabla^{2}f:=[\begin{matrix}\frac{\partial^{2}f}{\partial x_{1}\rho x_{1}}&...&\frac{\partial^{2}f}{\partial x_{1}\partial x_{a}}\\ .&...&.\\ .&...&.\\ \frac{\partial^{2}f}{\partial x_{i}\partial x_{1}}&...&\frac{\partial^{2}f}{\partial x_{i}\partial x_{i}}\end{matrix}]$$
- 
+ 헤시안 행렬은 항상 대칭이다.

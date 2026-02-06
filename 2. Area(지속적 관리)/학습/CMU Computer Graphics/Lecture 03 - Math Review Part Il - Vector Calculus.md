@@ -8,7 +8,7 @@ https://15462.courses.cs.cmu.edu/fall2020/home
 
 ---
 
-### Vector Calculus
+### 벡터 미적분학 (Vector Calculus)
 > 벡터 미적분학은 spatial relationships, transformations 등을 이야기하기 위한 기본 언어이다.
 
 현대 컴퓨터 그래픽스의 상당 부분이 편미분 방정식(PDEs)으로 공식화된다.

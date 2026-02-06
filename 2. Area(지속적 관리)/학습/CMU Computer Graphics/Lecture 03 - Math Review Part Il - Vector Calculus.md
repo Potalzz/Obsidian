@@ -440,37 +440,63 @@ $$\Rightarrow\nabla_{u}f=\begin{bmatrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{bmat
 
 
 ### $L^2$ Gradient (Advanced)
-$f$를 입력으로 받는 함수 $F(f)$에 대해 고려해보자.
+#### 문제 정의: 함수의 변화율 찾기
+$f$를 입력으로 받는 함수 $F(f)$가 있다고 하자.
+이떄, $F$의 값을 가장 빠르게 증가시키는 방향, 즉 그라디언트($\nabla F$) 는 무엇일까 ?
 
-$f$에 대한 $F$의 그라디언트는 무엇일까 ?
-$F$의 값을 가장 빨리 증가시키기 위한 $f$의 값을 찾아야 한다.
+일반적인 미분과 달리, 우리가 다루는 공간은 유한한 좌표계($x, y, z \dots$)가 아닌 **무한 차원의 함수 공간**이다.
+따라서 단순히 각 성분별로 편미분을 하는 방식으로는 해결할 수 없다.
 
-이러한 문제는 최적화(Optimization) 관련 문제에서 항상 등장하지만,
-사용할 수 있는 좌표 목록이 유한하지 않기 때문에
-단순히 편미분을 취하는 것만으로는 해결할 수 없다.
+#### 해결 도구: 방향 미분과 내적
+이 문제를 해결하기 위해 **그라디언트의 정의**를 내적을 통해 다시 정립한다.
+임의의 변화 함수 $u$에 대하여, 다음 관계를 만족하는 함수 $\nabla F$를 찾는 것이 목표이다.
+$$\langle\langle\nabla F, u \rangle\rangle = D_uF$$
+여기서 $D_uF$는 $u$방향으로의 방향 미분(Directional Derivative)이다.
 
-기울기의 다른 정의로 돌아가서, 
-모든 함수 u에 대해 $\langle\langle\nabla F, u \rangle\rangle = D_uF$를 만족하는 함수 $\nabla F$를 찾는다.
-
-참고로, "$\langle \langle$" 이 두 개짜리 꺽쇠는 **함수의 내적**을 의미한다.
+참고로, "$\langle \langle$" 이 두 개짜리 꺽쇠는 **함수의 내적**을 의미한다.공간이 벡터 공간 -> 함수 공간으로 확장됨에 따라 내적의 정의도 자연스럽게 확장된다.
 
 - **벡터의 내적:** 성분끼리 곱해서 더함($\sum$)$$\langle u, v \rangle = \sum u_i v_i$$
 - **함수의 내적:** 함수값끼리 곱해서 적분($\int$)$$\langle\langle f, g \rangle\rangle = \int_{\Omega} f(x)g(x) \, dx$$
-지금 다루는 공간은 유한한 벡터 공간이 아니라, **무한한 함수 공간**이기 때문에 위와 같이 함수의 내적으로 표기한다.
-하지만 본질적으로는 **두 대상이 얼마나 비슷한가?** 를 측정하는 것으로 동일하다.
+본질적으로 두 대상의 **유사도(Alignment)** 를 측정한다는 점은 동일함.
 
-문제를 해결하기 위해 이전의 방법으로 돌아가서 살펴보자.
+
+#### 그라디언트 유도 과정
+구체적인 계산을 위해서 방향 미분의 정의를 활용하자.
 $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
 $F$에 대해서 방향 미분을 한다고 이해하면 됨.
 
+이제 두 가지 예시를 통해 실제로 그라디언트를 구해보자.
+
 아래 예시를 살펴보자.
-#### 1. $F(f):=\langle\langle f,g\rangle\rangle$ (1차함수 형태)
+##### Case 1. 선형(Linear) 형태
+$$F(f) := \langle\langle f, g \rangle\rangle$$
+이 경우 그라디언트는 $g$이다
+$$\nabla F=g$$
 ![[Pasted image 20260207001716.png]]
-$\nabla F=g$
-- 어떤 함수($f$)와 목표($g$)의 유사도(내적)를 높이려면, 그 함수를 목표($g$)와 같은 모양으로 변화시켜야 함.
+해석: 내적은 두 함수의 유사도를 의미한다. $f$가 $g$와 가장 비슷해지는 방향으로 변해야 $F$값이 가장 빠르게 커진다.
+따라서 $f$에 더해주어야 할 가장 좋은 재료(방향)는 바로 $g$ 자신이다.
+
+##### Case 2. 이차(Quadratic) 형태
+$$F(f) := \|f\|^2 = \langle\langle f, f \rangle\rangle$$
+이 경우 각 지점 $f_0$에서의 그라디언트 $\nabla F(f_0)$를 구해보자.
+
+1. **변화량 전개**
+    
+    분자의 첫 번째 항인 $|f_{0}+\epsilon u|^{2}$을 전개한다. (곱셈 공식 $(a+b)^2$와 유사)
+    $$\|f_{0}+\epsilon u\|^{2} = \|f_{0}\|^{2} + 2\epsilon\langle\langle f_{0}, u \rangle\rangle + \epsilon^{2}\|u\|^{2}$$
+    
+1. **극한 계산**
+    
+    정의식에 대입하여 $\epsilon$을 $0$으로 보낸다. $\epsilon^2$ 항은 사라짐.
+    $$\lim_{\epsilon\rightarrow0} \frac{(\|f_0\|^2 + 2\epsilon\langle\langle f_0, u \rangle\rangle + \epsilon^2\|u\|^2) - \|f_0\|^2}{\epsilon} = 2\langle\langle f_{0}, u \rangle\rangle$$
+    
+1. **매칭**
+    
+    모든 $u$에 대해 $\langle\langle \nabla F(f_{0}), u \rangle\rangle = 2\langle\langle f_{0}, u \rangle\rangle$를 만족해야 한다. 따라서 유일한 해는 다음과 같다.
+    
+    $$\nabla F(f_{0}) = 2f_{0}$$
 
 
-#### 2. $F(f):=||f||^2$
 - 각 지점 $f_0$에서, 우리는 모든 함수 u에 대해 다음을 만족하는 함수 $\nabla F$를 원한다.
   $$\langle\langle\nabla F(f_{0}),u\rangle\rangle=lim_{\epsilon\rightarrow0}\frac{F(f_{0}+\epsilon u)-F(f_{0})}{\epsilon}$$
     
@@ -482,9 +508,14 @@ $\nabla F=g$
     $$\nabla F(f_{0})=2f_{0}$$
 
 결과적으로 $x^2$ 미분하면 $2x$ 되는 거랑 크게 다르지 않다.
+기존에 알고 있는 미분 공식과 일치 한다.
 $$\frac{d}{dx}x^{2}=2x$$
 
-보기에는 복잡해보이는 식도, 결국에 잘게 쪼개보면 직관적인 미분 규칙이 통한다.
+아무리 복잡해 보이는 함수 공간의 식이라도, 잘게 쪼개보면 우리가 알고 있는 직관적인 미분 규칙이 그대로 적용됨을 알 수 있다.
+
+
+### 벡터장 (Vector Fields)
+
 
 
 

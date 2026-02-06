@@ -465,6 +465,9 @@ $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
 
 ![[Pasted image 20260207001716.png]]
 - $F(f):=\langle\langle f,g\rangle\rangle$, $\nabla F=g$
+- 어떤 함수($f$)와 목표($g$)의 유사도(내적)를 높이려면, 그 함수를 목표($g$)와 같은 모양으로 변화시켜야 함.
+
+
 
 
 

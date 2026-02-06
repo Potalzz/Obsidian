@@ -556,6 +556,8 @@ $$\nabla \cdot X=\nabla\times X^{\perp}$$
 
 
 ### 라플라시안 (Laplacian)
+>특정 지점이 주변 평균보다 얼마나 튀어나왔는지(볼록/오목)를 계산하는 도구
+
 기하학, 렌더링, 시뮬레이션, 이미징 전반에 걸쳐 나타나는 그래픽스에서 중요한 객체
 - 푸리에 변환 / 주파수 분해의 기초
 - 모델 편미분방정식(라플라스, 열, 파동 방정식)을 정의하는 데 사용됨
@@ -583,5 +585,22 @@ $$\Delta f:=\Sigma_{i}\partial^{2}f/\partial x_{i}^{2}$$
 함수 $f$의 라플라시안은 함수의 모든 이차 편미분의 합이다.
 
 
+### 헤시안 (Hessian)
 
+헤시안은 복잡한 함수를 몇 가지 간단한 항으로 국소적으로(locally) 근사하는 데 도움을 준다.
+
+- 테일러 급수를 떠올려 보자.$$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\prime}(x_{0})+\cdot\cdot\cdot$$
+- **다변수 함수**에 대해서는 이것을 어떻게 할까 ?
+    
+- 이미 그라디언트를 사용한 최적 선형 근사에 대해 이야기했다.$$f(x)\approx f(x_{0})+\langle\nabla f(x_{0}),x-x_{0}\rangle$$
+- 헤시안은 우리에게 그다음, **이차(quadratic)** 항을 제공한다.
+
+
+일반적으로 기호 $\nabla^{2}$로 헤시안을 표기한다.
+
+그라디언트가 **함수의 편미분을 제공하는 벡터**였던 것처럼, 헤시안은 **그라디언트의 편미분을 제공하는 연산자**이다.
+$$(\nabla^{2}f)u:=D_{u}(\nabla f)$$
+
+함수 $f(x):R^{n}\rightarrow R$에 대해, 더 명시적으로 쓸 수 있다.
+$$\nabla^{2}f:=[\begin{matrix}\frac{\partial^{2}f}{\partial x_{1}\rho x_{1}}&...&\frac{\partial^{2}f}{\partial x_{1}\partial x_{a}}\\ .&...&.\\ .&...&.\\ \frac{\partial^{2}f}{\partial x_{i}\partial x_{1}}&...&\frac{\partial^{2}f}{\partial x_{i}\partial x_{i}}\end{matrix}]$$
  

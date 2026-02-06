@@ -547,7 +547,10 @@ $$\nabla=(\frac{\partial}{\partial u_{1}},\frac{\partial}{\partial u_{2}},\frac{
 
 
 #### 발산 vs 회전 (2D)
-X의 발산은 X를 90도 회전시킨 것의 회전과 같다.$$\nabla \cdot X=\nabla\times X^{\perp}$$
+X의 발산은 X를 90도 회전시킨 것의 회전과 같다.
+![[Pasted image 20260207022533.png]]
+$$\nabla \cdot X=\nabla\times X^{\perp}$$
+발산과 회전은 완전히 다른 개념이 아니다. 상호보완적인 역할을 한다.
 벡터장을 가지고 이런 종류의 게임을 하는 것은 알고리즘(ex. 유체 시뮬레이션)에서 중요한 역할을 한다.
 
 

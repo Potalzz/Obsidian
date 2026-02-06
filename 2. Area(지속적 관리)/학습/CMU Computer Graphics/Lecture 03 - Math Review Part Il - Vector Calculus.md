@@ -451,5 +451,8 @@ $F$의 값을 가장 빨리 증가시키기 위한 $f$의 값을 찾아야 한�
 모든 함수 u에 대해 다음을 만족하는 함수 $\nabla F$를 찾는다.
 $$\langle\langle\nabla F, u \rangle\rangle = D_uF$$
 
+전통적인 극한으로 돌아가보자.
+$$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
+
 
 

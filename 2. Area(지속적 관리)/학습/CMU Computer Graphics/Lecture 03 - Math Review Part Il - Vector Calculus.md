@@ -465,6 +465,10 @@ $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
 
 ![[Pasted image 20260207001716.png]]
 - $F(f):=\langle\langle f,g\rangle\rangle$, $\nabla F=g$
+
+
+
+
 - $F(f):=||f||^2$, $\nabla F(f0)=2f0$
 
 

@@ -420,4 +420,8 @@ $$u^{T}v=\sum_{i=1}^{n}u_{i}v_{i}$$
 $u^Tv$는 각 항의 합과 같다.
 
 $$\frac{\partial}{\partial u_{k}}\sum_{i=1}^{n}u_{i}v_{i}=\sum_{i=1}^{n}\frac{\partial}{\partial u_{k}}(u_{i}v_{i})=v_{k}$$
+각각 편미분을 취하게 되면 $u_k$가 나온다.
 
+$$\Rightarrow\nabla_{u}f=[\begin{matrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{matrix}]$$
+결과적으로 u에 대한 f의 그라디언트는 벡터 $v$인 것을 알 수 있다.
+달리 말하면: $\nabla_{u}(u^{T}v)=v$

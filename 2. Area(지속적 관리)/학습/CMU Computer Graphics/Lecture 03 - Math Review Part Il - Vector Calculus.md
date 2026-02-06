@@ -523,7 +523,18 @@ $$\frac{d}{dx}x^{2}=2x$$
 - 장이 얼마나 수축/팽창하고 있는가? -> **발산 (Divergence)**
     
 - 장이 얼마나 회전하고 있는가? -> **회전 (Curl)**
+![[Pasted image 20260207021125.png]]
 
+
+#### 발산 (Divergence)
+- div X는 일반적으로 $\nabla\cdot X$으로도 표기된다.
+	
+- 발산에 대한 좌표 정의를 제안합니다.
+    
+- $\nabla$를 미분들의 벡터로 생각해보자.$$\nabla=(\frac{\partial}{\partial u_{1}},\cdot\cdot\cdot,\frac{\partial}{\partial u_{n}})$$
+- X를 "함수들의 벡터"로 생각해보자.$$X(u)=(X_{1}(u),...,X_{n}(u))$$
+    
+- 그러면 발산은 다음과 같다.$$\nabla\cdot X:=\sum_{i=1}^{n}\partial X_{i}/\partial u_{i}$$
 
 
 

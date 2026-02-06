@@ -471,9 +471,7 @@ $D_u$의 정체: 방향 도함수 (Directional Derivative)
 $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
 위 수식만 알면 된다.
 
-구체적인 사례를 보면 이러한 전략이 더욱 명확해질 것이다.
-
-
+![[Pasted image 20260207001716.png]]
 - $F(f):=\langle\langle f,g\rangle\rangle$, $\nabla F=g$
 - $F(f):=||f||^2$, $\nabla F(f0)=2f0$
 

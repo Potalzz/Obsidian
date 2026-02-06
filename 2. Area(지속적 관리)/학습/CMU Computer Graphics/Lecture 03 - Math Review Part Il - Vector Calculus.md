@@ -422,6 +422,12 @@ $u^Tv$는 각 항의 합과 같다.
 $$\frac{\partial}{\partial u_{k}}\sum_{i=1}^{n}u_{i}v_{i}=\sum_{i=1}^{n}\frac{\partial}{\partial u_{k}}(u_{i}v_{i})=v_{k}$$
 각각 편미분을 취하게 되면 $u_k$가 나온다.
 
-$$\Rightarrow\nabla_{u}f=[\begin{matrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{matrix}]$$
+$$\Rightarrow\nabla_{u}f=\begin{bmatrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{bmatrix}$$
 결과적으로 u에 대한 f의 그라디언트는 벡터 $v$인 것을 알 수 있다.
-달리 말하면: $\nabla_{u}(u^{T}v)=v$
+쉽게 말하면 $\nabla_{u}(u^{T}v)=v$이고 $\frac{d}{dx}(xy)=y$와 크게 다르지 않다.
+
+>**그래픽스에서 행렬을 포함하는 표현식을 미분할 수 있는 것은 매우 유용하다.**
+
+결국, 표현식들은 일반적인 미분과 매우 비슷해 보인다.
+![[Pasted image 20260206175308.png]]
+

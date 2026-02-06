@@ -340,6 +340,8 @@ $$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\pri
 위의 수식을 뜯어서 살펴보자.
 $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \epsilon \mathbf{u}) - f(\mathbf{x}_0)}{\epsilon}$$
 
+- $D_{\mathbf{u}}$: 방향 도함수를 의미. $u$방향으로 미분을 하겠다
+	
 - **$\mathbf{x}_0$**: 현재 내가 서 있는 위치
     
 - **$\mathbf{u}$**: 내가 이동하려는 **방향**을 나타내는 화살표(벡터) (보통 길이는 1로 고정)
@@ -450,26 +452,16 @@ $F$의 값을 가장 빨리 증가시키기 위한 $f$의 값을 찾아야 한�
 기울기의 다른 정의로 돌아가서, 
 모든 함수 u에 대해 $\langle\langle\nabla F, u \rangle\rangle = D_uF$를 만족하는 함수 $\nabla F$를 찾는다.
 
-다음으로 넘어가기 전에, "$\langle \langle$ , $D_uF$" 두 기호에 대해 알아보고 넘어가자.
-
-#### 1. $\langle \langle$
-이 두 개짜리 꺽쇠는 **함수의 내적**을 의미한다.
+참고로, "$\langle \langle$" 이 두 개짜리 꺽쇠는 **함수의 내적**을 의미한다.
 
 - **벡터의 내적:** 성분끼리 곱해서 더함($\sum$)$$\langle u, v \rangle = \sum u_i v_i$$
 - **함수의 내적:** 함수값끼리 곱해서 적분($\int$)$$\langle\langle f, g \rangle\rangle = \int_{\Omega} f(x)g(x) \, dx$$
-지금 다루는 공간은 유한한 벡터 공간이 아니라, **무한한 함수 공간**이기 때문에 위와 같이 표기한다.
+지금 다루는 공간은 유한한 벡터 공간이 아니라, **무한한 함수 공간**이기 때문에 위와 같이 함수의 내적으로 표기한다.
 하지만 본질적으로는 **두 대상이 얼마나 비슷한가?** 를 측정하는 것으로 동일하다.
 
-#### 2. $D_uF$
-$D_u$의 정체: 방향 도함수 (Directional Derivative)
-
-- **$D$**: **미분(Derivative)** 을 하겠다는 뜻
-- **$u$**: **어떤 방향으로?** 를 나타냄.
-
-
-문제를 해결하기 위해 전통적인 극한으로 돌아가보자.
+문제를 해결하기 위해 이전의 방법으로 돌아가서 살펴보자.
 $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
-위 수식만 알면 된다.
+$F$에 대해서 방향 미분을 한다고 이해하면 됨.
 
 ![[Pasted image 20260207001716.png]]
 - $F(f):=\langle\langle f,g\rangle\rangle$, $\nabla F=g$

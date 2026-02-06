@@ -545,6 +545,10 @@ $$\nabla=(\frac{\partial}{\partial u_{1}},\frac{\partial}{\partial u_{2}},\frac{
 그러면 회전은 다음과 같다.$$\nabla\times X:=\begin{bmatrix}\partial X_{3}/\partial u_{2}-\partial X_{2}/\partial u_{3}\\ \partial X_{1}/\partial u_{3}-\partial X_{3}/\partial u_{1}\\ \partial X_{2}/\partial u_{1}-\partial X_{1}/\partial u_{2}\end{bmatrix}$$
 2D 회전: $\nabla\times X:=\partial X_{2}/\partial u_{1}-\partial X_{1}/\partial u_{2}$
 
- 
+
+#### 발산 vs 회전 (2D)
+X의 발산은 X를 90도 회전시킨 것의 회전과 같다.$$\nabla \cdot X=\nabla\times X^{\perp}$$
+벡터장을 가지고 이런 종류의 게임을 하는 것은 알고리즘(ex. 유체 시뮬레이션)에서 중요한 역할을 한다.
+
 
 

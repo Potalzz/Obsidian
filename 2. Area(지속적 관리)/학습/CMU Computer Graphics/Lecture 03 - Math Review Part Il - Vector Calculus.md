@@ -421,3 +421,4 @@ $u^Tv$는 각 항의 합과 같다.
 $$\frac{\partial}{\partial u_{k}}\sum_{i=1}^{n}u_{i}v_{i}=\sum_{i=1}^{n}\frac{\partial}{\partial u_{k}}(u_{i}v_{i})=v_{k}$$
 각 항에 편미분을 취하면
 
+$\$

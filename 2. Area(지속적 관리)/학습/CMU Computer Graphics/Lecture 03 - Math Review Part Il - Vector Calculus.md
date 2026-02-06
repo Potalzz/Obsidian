@@ -527,16 +527,23 @@ $$\frac{d}{dx}x^{2}=2x$$
 
 
 #### 발산 (Divergence)
-- div X는 일반적으로 $\nabla\cdot X$으로도 표기된다.
-	
-- 발산에 대한 좌표 정의를 제안합니다.
-    
-- $\nabla$를 미분들의 벡터로 생각해보자.$$\nabla=(\frac{\partial}{\partial u_{1}},\cdot\cdot\cdot,\frac{\partial}{\partial u_{n}})$$
-- X를 "함수들의 벡터"로 생각해보자.$$X(u)=(X_{1}(u),...,X_{n}(u))$$
-    
-- 그러면 발산은 다음과 같다.$$\nabla\cdot X:=\sum_{i=1}^{n}\partial X_{i}/\partial u_{i}$$
+div X는 일반적으로 $\nabla\cdot X$으로도 표기된다.
 
+발산에 대한 좌표 정의를 암시한다.
 
+$\nabla$를 미분들의 벡터로 생각해보자.$$\nabla=(\frac{\partial}{\partial u_{1}},\cdot\cdot\cdot,\frac{\partial}{\partial u_{n}})$$
+X를 함수들의 벡터로 생각해보자.$$X(u)=(X_{1}(u),...,X_{n}(u))$$
+그러면 발산은 다음과 같다.$$\nabla\cdot X:=\sum_{i=1}^{n}\partial X_{i}/\partial u_{i}$$
+
+#### 회전 (Curl)
+curl X는 일반적으로 $\nabla\times X$으로도 표기된다.
+
+회전에 대한 좌표 정의를 암시한다.
+
+이번에는 $\nabla$를 딱 세 개의 미분 벡터로 생각해보자.(3차원의 경우)
+$$\nabla=(\frac{\partial}{\partial u_{1}},\frac{\partial}{\partial u_{2}},\frac{\partial}{\partial u_{3}})$$X를 세 함수들의 벡터로 생각해보자.$$X(u)=(X_{1}(u),X_{2}(u),X_{3}(u))$$
+그러면 회전은 다음과 같다.$$\nabla\times X:=\begin{bmatrix}\partial X_{3}/\partial u_{2}-\partial X_{2}/\partial u_{3}\\ \partial X_{1}/\partial u_{3}-\partial X_{3}/\partial u_{1}\\ \partial X_{2}/\partial u_{1}-\partial X_{1}/\partial u_{2}\end{bmatrix}$$
+2D 회전: $\nabla\times X:=\partial X_{2}/\partial u_{1}-\partial X_{1}/\partial u_{2}$
 
  
 

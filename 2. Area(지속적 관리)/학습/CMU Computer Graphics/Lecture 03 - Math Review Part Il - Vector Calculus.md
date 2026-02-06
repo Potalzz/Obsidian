@@ -435,3 +435,9 @@ $$\Rightarrow\nabla_{u}f=\begin{bmatrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{bmat
 ![[Pasted image 20260206175308.png]]
 
 이러한 원리를 이해하고 나면, 행렬을 좌표로 표현할 필요가 없어진다.
+
+
+### $L^2$Gradient (Advanced)
+
+$f$를 입력으로 받는 함수 $F(f)$를 고려해보자. $f$에 대한 $F$의 그라디언트는 무엇일까 ?
+

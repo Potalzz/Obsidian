@@ -437,7 +437,7 @@ $$\Rightarrow\nabla_{u}f=\begin{bmatrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{bmat
 이러한 원리를 이해하고 나면, 행렬을 좌표로 표현할 필요가 없어진다.
 
 
-### $L^2$Gradient (Advanced)
+### $L^2$ Gradient (Advanced)
 
 $f$를 입력으로 받는 함수 $F(f)$를 고려해보자.
 
@@ -453,6 +453,11 @@ $$\langle\langle\nabla F, u \rangle\rangle = D_uF$$
 
 전통적인 극한으로 돌아가보자.
 $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
+위 수식만 알면 된다.
+
+구체적인 사례를 보면 이러한 전략이 더욱 명확해질 것임.
+
+#### Visual Example: $L^2$ Gradient
 
 
 

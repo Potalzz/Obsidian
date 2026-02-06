@@ -431,3 +431,5 @@ $$\Rightarrow\nabla_{u}f=\begin{bmatrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{bmat
 결국, 표현식들은 일반적인 미분과 매우 비슷해 보인다.
 ![[Pasted image 20260206175308.png]]
 
+이러한 원리를 이해하고 나면, 행렬을 좌표로 표현할 필요가 없어진다.
+

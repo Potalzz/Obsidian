@@ -561,11 +561,27 @@ $$\nabla \cdot X=\nabla\times X^{\perp}$$
 - 모델 편미분방정식(라플라스, 열, 파동 방정식)을 정의하는 데 사용됨
 - 기하학에 대한 풍부한 정보를 인코딩함
 
-![[Pasted image 20260207023211.png]]
+![[Pasted image 20260207030910.png]]
 마찬가지로, 라플라시안은 함수의 곡률(curvature)을 측정한다.
 
-
-#### 라플라시안 - 많은 정의들
 입력으로 스칼라 함수를 받는다.
+
 보통 $\Delta$ 델타로 표기한다.
+
+라플라시안의 많은 시작점들
+- 그라디언트의 발산: $\Delta f:=\nabla\cdot\nabla f=div(gradf)$
+    
+- 2계 편미분의 합: $\Delta f:=\Sigma_{i=1}^{n}\partial^{2}f/\partial x_{i}^{2}$
+    
+- 디리클레 에너지의 그라디언트: $\Delta f:=-\nabla_{f}(\frac{1}{2}||\nabla f||^{2})$
+    
+- 유추에 의한 정의: 그래프 라플라시안
+	- ![[Pasted image 20260207031033.png]]
+- 표면적의 변화(variation)
+
+$$\Delta f:=\Sigma_{i}\partial^{2}f/\partial x_{i}^{2}$$
+함수 $f$의 라플라시안은 함수의 모든 이차 편미분의 합이다.
+
+
+
  

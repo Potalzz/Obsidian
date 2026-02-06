@@ -411,10 +411,14 @@ $$\langle\nabla f(x),u\rangle=D_{u}f(x)$$
 
 ### 내적의 그라디언트(Gradient of Dot Product)
 $$f:=u^{T}v$$
-$u$와 $v$의 내적을 행렬로 표현.(행과 열 개수를 맞추기 위해 u를 전치)
+$u$와 $v$의 내적을 행렬 연산으로 표현.(행과 열 개수를 맞추기 위해 u를 전치)
 
 좌표를 통해 써보면서 $u$에 대한 $f$의 그라디언트를 구해보자.
 
+$$u^{T}v=\sum_{i=1}^{n}u_{i}v_{i}$$
+$u^Tv$는 각 항의 합과 같다.
 
+$$\frac{\partial}{\partial u_{k}}\sum_{i=1}^{n}u_{i}v_{i}=\sum_{i=1}^{n}\frac{\partial}{\partial u_{k}}(u_{i}v_{i})=v_{k}$$
+각 항에 편미분을 취하면
 
  

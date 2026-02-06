@@ -473,8 +473,9 @@ $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
 
 구체적인 사례를 보면 이러한 전략이 더욱 명확해질 것이다.
 
-- $F(f):=\langle\langle f,g\rangle\rangle$
-- $\nabla F=g$
+
+- $F(f):=\langle\langle f,g\rangle\rangle$, $\nabla F=g$
+- $F(f):=||f||^2$, $\nabla F(f0)=2f0$
 
 
 

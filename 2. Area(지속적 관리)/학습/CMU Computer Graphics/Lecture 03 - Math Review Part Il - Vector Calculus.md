@@ -305,7 +305,7 @@ $$u\times(v\times w)=v(u\cdot w)-w(u\cdot v)$$
 ![[Pasted image 20260204152621.png]]
 
 
-### 미분 (Derivative)
+### 도함수 (Derivative)
 ![[Pasted image 20260204154441.png]]
 $$f^{\prime}(x_{0}):=lim_{\epsilon\rightarrow0}\frac{f(x_{0}+\epsilon)-f(x_{0})}{\epsilon}$$
 
@@ -316,7 +316,7 @@ $$f^{\prime}(x_{0}):=lim_{\epsilon\rightarrow0}\frac{f(x_{0}+\epsilon)-f(x_{0})}
 
 
 
-### 최적 선형 근사 (Derivative as Best Linear Approximation)
+### 최적 선형 근사에서의 도함수 (Derivative as Best Linear Approximation)
 무한히 미분 가능한 함수 f(x)는 테일러 급수(Taylor series)로 표현될 수 있다.
 $$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\prime}(x_{0})+\cdot\cdot\cdot$$
 [상수항 + 선형항 + 이차항 ...]
@@ -325,14 +325,14 @@ $$f(x)=f(x_{0})+f^{\prime}(x_{0})(x-x_{0})+\frac{(x-x_{0})^{2}}{2!}f^{\prime\pri
 그래픽스에서 계산 효율을 위해 곡선을 직선(1차)이나 포물선(2차)으로 단순화해서 처리할 때 사용한다.
 
 
-### 방향 미분 (Directional Derivative)
+### 방향 도함수 (Directional Derivative)
 >임의의 방향에 대한 기울기 값(스칼라)
 
 ![[Pasted image 20260205151506.png]]
 
-**일반적인 미분**은 특정 축 방향(x축, y축)으로만 갔을 때의 기울기를 묻는 것이지만,
+**일반적인 도함수**은 특정 축 방향(x축, y축)으로만 갔을 때의 기울기를 묻는 것이지만,
 - **ex)** 오직 x축 방향으로만 이동했을 때의 기울기
-**방향 미분**은 임의의 방향으로 이동했을 때의 경사를 의미한다.
+**방향 도함수**은 임의의 방향으로 이동했을 때의 경사를 의미한다.
 - **ex)** 37.5도 방향으로 이동했을 때의 기울기
   
 위에서 slice된 이미지는, 가고자 하는 방향으로 단면을 자르고, 절단면의 곡선에서 기울기를 보겠다는 것을 의미한다.
@@ -363,8 +363,8 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 ### 좌표계에서의 그라디언트 (Gradient in Coordinates)
 가장 친숙한 정의 : **편미분**들의 리스트
 
-방향 미분은 특정 방향에 대한 1차원 미분을 제공.
-그라디언트는 단지 방향 미분을 리스트로 나타낸 것에 불과하다.
+방향 도함수는 특정 방향에 대한 1차원 미분을 제공.
+그라디언트는 단지 방향 도함수를 리스트로 나타낸 것에 불과하다.
 $$\nabla f=\begin{bmatrix}\partial f/\partial x_{1}\\ \vdots\\ \partial f/\partial x_{n}\end{bmatrix}$$
 
 하지만 이렇게 생각하면 두 가지 문제점이 존재한다.

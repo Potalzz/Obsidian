@@ -464,9 +464,10 @@ $$D_{u}F(f)=lim_{\epsilon\rightarrow0}\frac{F(f+\epsilon u)-F(f)}{\epsilon}$$
 $F$에 대해서 방향 미분을 한다고 이해하면 됨.
 
 아래 예시를 살펴보자.
-#### 1. $F(f):=\langle\langle f,g\rangle\rangle$
-
+#### 1. $F(f):=\langle\langle f,g\rangle\rangle$ (1차함수 형태)
 ![[Pasted image 20260207001716.png]]
+목표는 그라디언트 $F$를 찾는 것이므로, $F$의 크기를 가장 가파르게 증가시킬 수 있는 값을 찾는 것이다.
+
 $\nabla F=g$
 - 어떤 함수($f$)와 목표($g$)의 유사도(내적)를 높이려면, 그 함수를 목표($g$)와 같은 모양으로 변화시켜야 함.
 

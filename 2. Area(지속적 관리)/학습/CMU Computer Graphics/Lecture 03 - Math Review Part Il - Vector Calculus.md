@@ -365,7 +365,7 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 
 방향 도함수는 특정 방향에 대한 1차원 미분을 제공.
 그라디언트는 단지 방향 도함수를 리스트로 나타낸 것에 불과하다.
-$$\nabla f=\begin{bmatrix}\partial f/\partial x_{1}\\ \vdots\\ \partial f/\partial x_{n}\end{bmatrix}$$
+$$\nabla f = \begin{bmatrix} \frac{\partial f}{\partial x_1} \\ \frac{\partial f}{\partial u_2} \\ \vdots \\ \frac{\partial f}{\partial x_n} \end{bmatrix}$$
 
 하지만 이렇게 생각하면 두 가지 문제점이 존재한다.
 1. 내적의 역할이 명확하지 않다.(강의 뒷 부분에서 다시 얘기)
@@ -413,12 +413,11 @@ $$\langle\nabla f(x),u\rangle=D_{u}f(x)$$
 $$f:=u^{T}v$$
 $u$와 $v$의 내적을 행렬 연산으로 표현.(행과 열 개수를 맞추기 위해 u를 전치)
 
-좌표를 통해 써보면서 $u$에 대한 $f$의 그라디언트를 구해보자.
+**좌표를 통해 써보면서 $u$에 대한 $f$의 그라디언트($\nabla f$)를 구해보자.**
+-> 벡터 $u$의 모든 성분($u_1, u_2, \dots, u_n$)에 대해서 각각 편미분을 수행해서 나열해라는 의미임.
 
 $$u^{T}v=\sum_{i=1}^{n}u_{i}v_{i}$$
 $u^Tv$는 각 항의 합과 같다.
 
 $$\frac{\partial}{\partial u_{k}}\sum_{i=1}^{n}u_{i}v_{i}=\sum_{i=1}^{n}\frac{\partial}{\partial u_{k}}(u_{i}v_{i})=v_{k}$$
-각 항에 편미분을 취하면
 
-$\$

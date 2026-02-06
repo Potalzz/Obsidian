@@ -359,6 +359,9 @@ $$D_{\mathbf{u}}f(\mathbf{x}_0) = \lim_{\epsilon \to 0} \frac{f(\mathbf{x}_0 + \
 ![[Pasted image 20260205152956.png]]
 다변수 함수 $f(x)$가 주어졌을 때, 그라디언트 $\nabla f(x)$는 각 지점에 벡터를 할당한다.
 
+그라디언트의 화살표가 왜 위와 같이 형성되는지에 대해서 시각적으로 잘 설명한 영상이 있으니 꼭 보는 것을 추천한다.
+https://www.youtube.com/watch?v=GkB4vW16QHI
+
 
 ### 좌표계에서의 그라디언트 (Gradient in Coordinates)
 가장 친숙한 정의 : **편미분**들의 리스트
@@ -432,4 +435,3 @@ $$\Rightarrow\nabla_{u}f=\begin{bmatrix}v_{1}\\ \cdot\cdot\cdot\\ v_{n}\end{bmat
 ![[Pasted image 20260206175308.png]]
 
 이러한 원리를 이해하고 나면, 행렬을 좌표로 표현할 필요가 없어진다.
-

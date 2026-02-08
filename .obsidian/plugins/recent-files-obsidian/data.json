@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "HLSL Shader",
+      "path": "2. Area(지속적 관리)/학습/Unity/HLSL Shader.md"
+    },
+    {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Kai 지원서",
       "path": "2. Area(지속적 관리)/이력서/Kai 지원서.md"
-    },
-    {
-      "basename": "Glayer 프로젝트 정리",
-      "path": "1. Project(진행 중인 프로젝트)/Apple Developer Academy (진행중)/Challenge6/Glayer 프로젝트 정리.md"
     }
   ],
   "omittedPaths": [],

@@ -21,7 +21,7 @@
 
 `UnityObjectToClipPos(v.vertex)`는 선형대수학적으로 **좌표계 변환(Change of Basis)** 을 수행. 3D 공간의 점을 모니터 화면(클립 공간)으로 옮기기 위해 다음 3가지 행렬을 순서대로 곱하는 과정.
 
-$$V_{clip} = M_{projection} \times M_{view} \times M_{model} \times V_{local}$$
+$$V_{clip} = P_{projection} \times V_{view} \times M_{model} \times L_{local}$$
 
 이 세 행렬을 미리 하나로 합쳐놓은 것이 바로 **MVP 행렬**(`UNITY_MATRIX_MVP`)이다.
 

@@ -1,4 +1,4 @@
-### 자주 사용하는 타입
+
 `float4` = swift로 치면 `SIMD4<float>`와 같음.
 
 자주 사용하는 `fixed`, `half`, `float`를 보자.
@@ -8,3 +8,9 @@
 
 정밀도 순서
 `float` > `half` > `fixed`
+
+
+---
+
+`UnityObjectToClipPos()`
+인자로 받은 값에 MVP(Model, View, Projection)행렬을 곱해주는 유니티 내장 메서드

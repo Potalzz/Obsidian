@@ -12,5 +12,7 @@
 
 ---
 
-`UnityObjectToClipPos()`
-인자로 받은 값에 MVP(Model, View, Projection)행렬을 곱해주는 유니티 내장 메서드
+`UnityObjectToClipPos()`
+>3D 공간의 점을 모니터 화면(클립 공간)으로 좌표게 변환
+
+인자로 받은 값에 MVP(Model, View, Projection) 3개의 행렬을 각각 곱해주는 유니티 내장 메서드

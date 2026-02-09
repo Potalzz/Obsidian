@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Portfolio",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Portfolio.md"
+    },
+    {
       "basename": "HLSL Shader",
       "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/HLSL Shader.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "무인 매장 관련",
       "path": "1. Project(진행 중인 프로젝트)/창업/아이템/무인 매장 관련.md"
-    },
-    {
-      "basename": "열한시",
-      "path": "1. Project(진행 중인 프로젝트)/창업/인터뷰/열한시.md"
     }
   ],
   "omittedPaths": [],

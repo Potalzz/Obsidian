@@ -1,8 +1,20 @@
 {
   "recentFiles": [
     {
-      "basename": "Step 2",
-      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 2.md"
+      "basename": "Step 4 - C샵 상호작용 및 폴리싱",
+      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 4 - C샵 상호작용 및 폴리싱.md"
+    },
+    {
+      "basename": "Step 3 - 투시 및 프레넬 효과",
+      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 3 - 투시 및 프레넬 효과.md"
+    },
+    {
+      "basename": "Step 5 - 기술 문서 작성 및 녹화",
+      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 5 - 기술 문서 작성 및 녹화.md"
+    },
+    {
+      "basename": "Step 2 - 스캔 파동(Wave) 수학적 구현",
+      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 2 - 스캔 파동(Wave) 수학적 구현.md"
     },
     {
       "basename": "Pasted image 20260209172214",
@@ -187,18 +199,6 @@
     {
       "basename": "1월29일 과기대 멘토링",
       "path": "1. Project(진행 중인 프로젝트)/창업/멘토링/1월29일 과기대 멘토링.md"
-    },
-    {
-      "basename": "멘토링 기록",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge6/멘토링 기록.md"
-    },
-    {
-      "basename": "개발",
-      "path": "3. Resource(정보 저장소)/Apple Developer Academy/Challenge6/개발/개발.md"
-    },
-    {
-      "basename": "Drawing 2026-01-22 16.39.38.excalidraw",
-      "path": "Excalidraw/Drawing 2026-01-22 16.39.38.excalidraw.md"
     }
   ],
   "omittedPaths": [],

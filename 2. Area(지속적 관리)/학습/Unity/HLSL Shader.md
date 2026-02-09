@@ -42,3 +42,9 @@ $$V_{clip} = M_{projection} \times M_{view} \times M_{model} \times V_{local}$$
     - **View Space → Clip Space**
         
     - 3D 공간을 원근법이 적용된 2D 사다리꼴 공간(Frustum)으로 찌그러뜨린다.
+
+
+## 셰이더는 총 두 가지로 나뉨
+하나는 콘텐츠 셰이더, 하나는 엔진 셰이더
+
+콘텐츠 셰이더는 

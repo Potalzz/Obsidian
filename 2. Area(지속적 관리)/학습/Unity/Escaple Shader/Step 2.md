@@ -328,4 +328,178 @@ fixed4 frag (v2f i) : SV_Target
 
 - **Step 3 예고:** 투시 및 프레넬(Fresnel) 효과, ZTest(가려진 부분 강조)
     
-- **Step 4 예고:** C# 스크립트 상호작용 (Raycast로 스캔 트리거, Coroutine 애니메이션)
+- **Step 4 예고:** C# 스크립트 상호작용 (Raycast로 스캔 트리거, Coroutine 애니메이션)\
+
+
+# 완료
+✅ **2단계 구현 완료! (Step 2 Implementation Complete!)**
+
+### **구현된 내용 (What Was Implemented)**
+
+Unity X-Ray 스캐너 셰이더를 위한 **스캔 웨이브 효과(Scan Wave Effect)** 구현을 성공적으로 마쳤습니다. 달성한 내용은 다음과 같습니다.
+
+**1. 거리 기반 스캔 링 (ScannerShader.shader: 72번째 줄)**
+
+- `distance()` 함수를 사용하여 각 픽셀에서 스캐너 중심까지의 유클리드 거리 계산
+    
+- 월드 공간(World Space)에서 구형 파동 전파 패턴 생성
+    
+
+**2. 부드러운 링 경계 (ScannerShader.shader: 87-94번째 줄)**
+
+- 두 개의 `smoothstep()` 함수를 사용하여 부드러운 가장자리를 가진 링 생성
+    
+- 분기 없는(Branchless) 알고리즘으로 GPU 효율성 보장 (Warp Divergence 방지)
+    
+- `wave1`은 안쪽 경계에서 페이드 인(Fade-in), `wave2`는 바깥쪽 경계에서 페이드 아웃(Fade-out)
+    
+- 두 값을 곱하여 `_ScanRadius`를 중심으로 하는 링 생성
+    
+
+**3. 프로시저럴 격자 패턴 (ScannerShader.shader: 104-111번째 줄)**
+
+- `frac()`을 사용하여 X, Y, Z 축에 반복되는 0~1 패턴 생성
+    
+- 3축 평균을 통해 균일한 3D 격자 생성
+    
+- `pow(1 - x, 3)`을 사용하여 대비를 높여 격자 선을 선명하게 만듦
+    
+- 텍스처가 필요 없음 = 메모리 효율적
+    
+
+**4. 사이버펑크 색상 테마 (ScannerShader.shader: 118-129번째 줄)**
+
+- **스캔 색상:** 메인 링을 위한 밝은 시안색 (0.2, 0.8, 1.0)
+    
+- **격자 색상:** 격자 선을 위한 어두운 파란색 (0.1, 0.4, 0.8)
+    
+- 가산 혼합(Additive blending)으로 웨이브와 격자 효과 결합
+    
+
+### **시각적 검증 (Visual Verification)**
+
+스크린샷을 통해 효과가 완벽하게 작동함을 확인할 수 있습니다.
+
+- ✅ 구(Sphere) 위에 밝은 시안색 스캔 링이 보임
+    
+- ✅ 스캔 웨이브 위에 격자 패턴(수직선 등)이 오버레이 됨
+    
+- ✅ 링 가장자리에 부드러운 그라디언트 적용 (계단 현상 없음)
+    
+- ✅ 사이버펑크 미학 달성
+    
+
+### **테스트 설정 완료 (Testing Setup Created)**
+
+**테스트 오브젝트:** ScanTestSphere
+
+- **위치:** (0, 2, 0)
+    
+- **크기(Scale):** 10x10x10
+    
+- **재질(Material):** Step 2 셰이더가 적용된 ScannerMaterial
+    
+
+**현재 재질 속성:**
+
+- `_ScanRadius`: 5.0 (이 값을 조정하여 링의 확장/축소 확인)
+    
+- `_ScanWidth`: 0.5 (링의 두께)
+    
+- `_ScannerCenter`: (0, 0, 0)
+    
+
+### **추가 테스트 방법 (How to Test Further)**
+
+1. **동적 반경 테스트:**
+    
+    - Project 창에서 `ScannerMaterial` 선택
+        
+    - Inspector에서 `_ScanRadius`를 1.0 → 10.0으로 조정
+        
+    - 시안색 링이 밖으로 퍼져 나가는 것을 관찰
+        
+2. **다중 오브젝트 테스트:**
+    
+    - 더 많은 오브젝트(Cube, Cylinder 등) 생성
+        
+    - `ScannerMaterial` 적용
+        
+    - 모든 오브젝트에 동시에 동일한 스캔 웨이브가 나타나는지 확인
+        
+3. **격자 밀도 테스트:**
+    
+    - 셰이더 코드 101번째 줄에서 `gridFrequency`를 5.0에서 변경해보기:
+        
+        - 2.0 = 듬성듬성한 격자
+            
+        - 10.0 = 촘촘한 격자
+            
+    - 패턴 밀도 변화 관찰
+        
+
+### **주요 기술적 성과 (Key Technical Achievements)**
+
+✅ **GPU 최적화:**
+
+- Branchless 코드 (if문 없음)
+    
+- Vertex Shader에서 월드 공간 변환 (정점당 1회 수행)
+    
+- Fragment Shader는 보간된 값을 사용 (효율적)
+    
+
+✅ **수학적 구현:**
+
+- 구형 전파를 위한 `distance()`
+    
+- 부드러운 링 경계를 위한 이중 `smoothstep()`
+    
+- 프로시저럴 패턴을 위한 `frac()`
+    
+
+✅ **시각적 품질:**
+
+- 부드러운 안티앨리어싱(Anti-aliased) 경계
+    
+- 사이버펑크 색상 팔레트
+    
+- 텍스처 샘플링 없는 격자 오버레이
+    
+
+### **수정된 파일 (Files Modified)**
+
+- `Assets/Shaders/ScannerShader.shader` (64-136번째 줄)
+    
+    - 디버그 패턴을 완전한 스캔 웨이브 구현 코드로 교체
+        
+    - 면접 대비를 위한 상세 주석 추가
+        
+
+### **오류 없음 (No Errors)**
+
+Unity 콘솔에 컴파일 오류가 0개입니다. 셰이더는 **Step 3**로 넘어갈 준비가 완료되었습니다.
+
+### **다음 단계 미리보기 (Next Steps Preview)**
+
+**Step 3**에서는 다음이 추가됩니다:
+
+- 투명도 (Blend Mode 수정)
+    
+- 프레넬 효과 (시야각에 따른 밝기 변화)
+    
+- ZTest 설정 (가려진 물체를 투시하는 진정한 X-Ray 효과)
+    
+
+**Step 4**에서는 C# 스크립팅이 추가됩니다:
+
+- 마우스 클릭으로 스캔 트리거
+    
+- Coroutine을 통한 반경 자동 확장
+    
+- Raycast를 통한 동적 위치 지정
+    
+
+---
+
+스캔 웨이브 효과가 이제 완전히 작동하며 Unity 에디터에서 수동 테스트할 준비가 되었습니다! 🎉

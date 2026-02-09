@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "3a0630bf9cf1e671",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.7"
+              },
+              "icon": "lucide-book-up",
+              "title": "릴리즈 노트 1.11.7"
+            }
+          },
+          {
             "id": "7e67c6773d9e0f71",
             "type": "leaf",
             "state": {
@@ -49,7 +61,8 @@
               "title": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -233,7 +246,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9ae748fed9357960",
+  "active": "3a0630bf9cf1e671",
   "lastOpenFiles": [
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
     "2. Area(지속적 관리)/학습/Unity/HLSL Shader.md",

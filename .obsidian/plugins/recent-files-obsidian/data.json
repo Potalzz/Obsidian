@@ -1,24 +1,28 @@
 {
   "recentFiles": [
     {
+      "basename": "로드맵",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md"
+    },
+    {
       "basename": "HLSL Shader",
-      "path": "2. Area(지속적 관리)/학습/Unity/HLSL Shader.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/HLSL Shader.md"
     },
     {
       "basename": "Step 4 - C샵 상호작용 및 폴리싱",
-      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 4 - C샵 상호작용 및 폴리싱.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Step 4 - C샵 상호작용 및 폴리싱.md"
     },
     {
       "basename": "Step 3 - 투시 및 프레넬 효과",
-      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 3 - 투시 및 프레넬 효과.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Step 3 - 투시 및 프레넬 효과.md"
     },
     {
       "basename": "Step 2 - 스캔 파동(Wave) 수학적 구현",
-      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 2 - 스캔 파동(Wave) 수학적 구현.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Step 2 - 스캔 파동(Wave) 수학적 구현.md"
     },
     {
       "basename": "Step 5 - 기술 문서 작성 및 녹화",
-      "path": "2. Area(지속적 관리)/학습/Unity/Escaple Shader/Step 5 - 기술 문서 작성 및 녹화.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Step 5 - 기술 문서 작성 및 녹화.md"
     },
     {
       "basename": "Pasted image 20260209172214",
@@ -46,11 +50,11 @@
     },
     {
       "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
-      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
     {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
-      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
     },
     {
       "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
@@ -182,7 +186,7 @@
     },
     {
       "basename": "Lecture 01 - Introduction to Computer Graphics",
-      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md"
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md"
     },
     {
       "basename": "모델하우스 관련",
@@ -195,10 +199,6 @@
     {
       "basename": "열한시",
       "path": "1. Project(진행 중인 프로젝트)/창업/인터뷰/열한시.md"
-    },
-    {
-      "basename": "1월29일 과기대 멘토링",
-      "path": "1. Project(진행 중인 프로젝트)/창업/멘토링/1월29일 과기대 멘토링.md"
     }
   ],
   "omittedPaths": [],

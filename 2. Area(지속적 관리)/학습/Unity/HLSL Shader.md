@@ -44,7 +44,10 @@ $$V_{clip} = M_{projection} \times M_{view} \times M_{model} \times V_{local}$$
     - 3D 공간을 원근법이 적용된 2D 사다리꼴 공간(Frustum)으로 찌그러뜨린다.
 
 
-## 셰이더는 총 두 가지로 나뉨
+## 셰이더의 종류
+
+셰이더는 역할에 따라 총 두가지로 나뉨.
+
 하나는 콘텐츠 셰이더, 하나는 엔진 셰이더
 
 **콘텐츠 셰이더**는 머티리얼 형태로 특정 오브젝트에만 영향을 끼침. 물, 불 등 이펙트를 아티스트가 잘 활용할 수 있게 파라미터화시켜서 셰이더로 만든 것.
@@ -54,3 +57,21 @@ $$V_{clip} = M_{projection} \times M_{view} \times M_{model} \times V_{local}$$
 - Unity: Shader = 머티리얼용 셰이더
     
 - Unreal: Material ≠ Shader (엔진 내부 셰이더 따로 존재)
+
+Unity 기준
+
+|**문서 용어**|**실무적 분류**|
+|---|---|
+|ShaderLab Shader|Content Shader|
+|Shader Graph|Content Shader|
+|Custom Render Feature|Engine Shader 성향|
+|URP/HDRP 내부 셰이더|Engine Shader|
+
+Unreal 기준
+
+|**문서 용어**|**실무적 분류**|
+|---|---|
+|Material|Content Shader|
+|Material Function|Content Shader|
+|Global Shader|Engine Shader|
+|Engine .usf|Engine Shader|

@@ -1,16 +1,20 @@
 {
   "recentFiles": [
     {
+      "basename": "Claude Code",
+      "path": "2. Area(지속적 관리)/학습/Claude Code.md"
+    },
+    {
+      "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
+    },
+    {
       "basename": "HLSL Shader",
       "path": "2. Area(지속적 관리)/학습/Unity/HLSL Shader.md"
     },
     {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
       "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
-    },
-    {
-      "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
-      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
     {
       "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
@@ -195,10 +199,6 @@
     {
       "basename": "아이디어",
       "path": "2. Area(지속적 관리)/블로그/아이디어.md"
-    },
-    {
-      "basename": "Kai 지원서",
-      "path": "2. Area(지속적 관리)/이력서/Kai 지원서.md"
     }
   ],
   "omittedPaths": [],

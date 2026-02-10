@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "조사",
+      "path": "1. Project(진행 중인 프로젝트)/창업/리서치/조사.md"
+    },
+    {
       "basename": "Portfolio",
       "path": "4. Archive(자료 보관소)/기타/Escaple Shader/Portfolio.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Drawing 2026-02-02 19.04.15.excalidraw",
       "path": "Excalidraw/Drawing 2026-02-02 19.04.15.excalidraw.md"
-    },
-    {
-      "basename": "Drawing 2026-02-02 18.54.44.excalidraw",
-      "path": "Excalidraw/Drawing 2026-02-02 18.54.44.excalidraw.md"
     }
   ],
   "omittedPaths": [],

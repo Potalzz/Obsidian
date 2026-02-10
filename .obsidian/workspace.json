@@ -11,10 +11,14 @@
             "id": "9ae748fed9357960",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "1. Project(진행 중인 프로젝트)/창업/리서치/조사.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "새 탭"
+              "title": "조사"
             }
           },
           {
@@ -45,8 +49,7 @@
               "title": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +116,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -229,8 +233,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e67c6773d9e0f71",
+  "active": "9ae748fed9357960",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/창업/리서치/조사.md",
+    "4. Archive(자료 보관소)/기타/Escaple Shader/Portfolio.md",
     "2. Area(지속적 관리)/이력서/Kai 지원서.md",
     "2. Area(지속적 관리)/학습/Unity/HLSL Shader.md",
     "2. Area(지속적 관리)/학습/Unity",
@@ -248,7 +254,6 @@
     "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",
     "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md",
     "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md",
-    "4. Archive(자료 보관소)/기타/Escaple Shader/Portfolio.md",
     "Pasted image 20260210045846.png",
     "Pasted image 20260210045835.png",
     "Pasted image 20260210045824.png",
@@ -272,7 +277,6 @@
     "Pasted image 20260207032253.png",
     "Pasted image 20260207031033.png",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Main_딥러닝.md",
-    "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/Ai 기초지식.md",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/선형대수학.canvas",
     "무제.canvas",
     "무제.base",

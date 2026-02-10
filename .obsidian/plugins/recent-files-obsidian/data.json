@@ -1,12 +1,16 @@
 {
   "recentFiles": [
     {
+      "basename": "펄어비스",
+      "path": "2. Area(지속적 관리)/이력서/펄어비스.md"
+    },
+    {
       "basename": "Portfolio",
       "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Portfolio.md"
     },
     {
       "basename": "HLSL Shader",
-      "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/HLSL Shader.md"
+      "path": "HLSL Shader.md"
     },
     {
       "basename": "로드맵",
@@ -195,10 +199,6 @@
     {
       "basename": "모델하우스 관련",
       "path": "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md"
-    },
-    {
-      "basename": "무인 매장 관련",
-      "path": "1. Project(진행 중인 프로젝트)/창업/아이템/무인 매장 관련.md"
     }
   ],
   "omittedPaths": [],

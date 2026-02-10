@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Graphics/Technical Artist.md",
+                "file": "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Technical Artist"
+              "title": "로드맵"
             }
           }
         ]
@@ -206,8 +206,8 @@
   },
   "active": "5234ac53d407c87f",
   "lastOpenFiles": [
-    "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md",
     "1. Project(진행 중인 프로젝트)/Graphics/Technical Artist.md",
+    "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md",
     "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md",
     "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md",
     "4. Archive(자료 보관소)/기타/Escaple Shader/Portfolio.md",

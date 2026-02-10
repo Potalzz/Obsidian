@@ -117,7 +117,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -233,7 +234,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "cb03ac896b648f56",
+  "active": "7e67c6773d9e0f71",
   "lastOpenFiles": [
     "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Portfolio.md",
     "2. Area(지속적 관리)/이력서/펄어비스.md",

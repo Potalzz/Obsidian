@@ -5,6 +5,18 @@
       "path": "2. Area(지속적 관리)/이력서/펄어비스.md"
     },
     {
+      "basename": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle",
+      "path": "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
+    },
+    {
+      "basename": "visionOS view계층 정복",
+      "path": "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md"
+    },
+    {
+      "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
+      "path": "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md"
+    },
+    {
       "basename": "Portfolio",
       "path": "1. Project(진행 중인 프로젝트)/Graphics/Unity/Escaple Shader/Portfolio.md"
     },
@@ -63,10 +75,6 @@
     {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
       "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md"
-    },
-    {
-      "basename": "그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?",
-      "path": "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md"
     },
     {
       "basename": "Main_딥러닝",
@@ -191,14 +199,6 @@
     {
       "basename": "1월28일 생숙, 공유 숙박업 리서치",
       "path": "1. Project(진행 중인 프로젝트)/창업/리서치/1월28일 생숙, 공유 숙박업 리서치.md"
-    },
-    {
-      "basename": "Lecture 01 - Introduction to Computer Graphics",
-      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md"
-    },
-    {
-      "basename": "모델하우스 관련",
-      "path": "1. Project(진행 중인 프로젝트)/창업/아이템/모델하우스 관련.md"
     }
   ],
   "omittedPaths": [],

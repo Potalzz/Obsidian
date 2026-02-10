@@ -1,12 +1,28 @@
 {
   "recentFiles": [
     {
-      "basename": "조사",
-      "path": "1. Project(진행 중인 프로젝트)/창업/리서치/조사.md"
+      "basename": "Technical Artist",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/Technical Artist.md"
+    },
+    {
+      "basename": "로드맵",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md"
+    },
+    {
+      "basename": "할 일",
+      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
+    },
+    {
+      "basename": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle",
+      "path": "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
     },
     {
       "basename": "Portfolio",
       "path": "4. Archive(자료 보관소)/기타/Escaple Shader/Portfolio.md"
+    },
+    {
+      "basename": "조사",
+      "path": "1. Project(진행 중인 프로젝트)/창업/리서치/조사.md"
     },
     {
       "basename": "Step 2 - 스캔 파동(Wave) 수학적 구현",
@@ -29,10 +45,6 @@
       "path": "2. Area(지속적 관리)/이력서/펄어비스.md"
     },
     {
-      "basename": "visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle",
-      "path": "2. Area(지속적 관리)/블로그/원고/visionOS  \"X\"버튼 및 디지털크라운 클릭 감지하기 + Lifecycle.md"
-    },
-    {
       "basename": "visionOS view계층 정복",
       "path": "2. Area(지속적 관리)/블로그/원고/visionOS view계층 정복.md"
     },
@@ -43,10 +55,6 @@
     {
       "basename": "HLSL Shader",
       "path": "HLSL Shader.md"
-    },
-    {
-      "basename": "로드맵",
-      "path": "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md"
     },
     {
       "basename": "Step 3 - 투시 및 프레넬 효과",
@@ -67,10 +75,6 @@
     {
       "basename": "아이디어",
       "path": "2. Area(지속적 관리)/블로그/아이디어.md"
-    },
-    {
-      "basename": "할 일",
-      "path": "1. Project(진행 중인 프로젝트)/프로그래밍/할 일.md"
     },
     {
       "basename": "Claude Code",
@@ -195,10 +199,6 @@
     {
       "basename": "Pasted image 20260131203852",
       "path": "Pasted image 20260131203852.png"
-    },
-    {
-      "basename": "Drawing 2026-02-02 19.04.15.excalidraw",
-      "path": "Excalidraw/Drawing 2026-02-02 19.04.15.excalidraw.md"
     }
   ],
   "omittedPaths": [],

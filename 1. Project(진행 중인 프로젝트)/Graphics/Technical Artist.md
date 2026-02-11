@@ -8,3 +8,6 @@ TAT, TAA로 분류하기도 함.
 
 TAT는 엔진 프로그래머에서 시작,
 TAA는 아트쪽 분야에서 시작.
+
+
+그래픽스 렌더 파이프라인과 플랫폼(특히 모바일)에 대한 이해가 필수 [어쩌다TA 유튜브 댓글](https://www.youtube.com/watch?v=hwvRFAvQ5ww)

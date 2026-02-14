@@ -59,8 +59,15 @@ Rasterization, Ray tracing
 ![](../../../assets/images/Pasted%20image%2020260214203342.png)
 
 Why?
-- 모든 것이 삼각형으로 환원되면, 그리기에 매우 최적화된 파이프라인을 만드는 데 집중할 수 있음.
+- 어떤 모양이든 근사 가능
+- 항상 평면적, 법선이 명확함
+- 꼭짓점에서 데이터를 보간하기 쉬움
+
+>모든 것이 삼각형으로 환원되면, 그리기에 매우 최적화된 파이프라인을 만드는 데 집중할 수 있음.
 
 **The Rasterization Pipeline**
 ![](../../../assets/images/Pasted%20image%2020260214204113.png)
+
+**Computing triangle coverage**
+![](../../../assets/images/Pasted%20image%2020260214210203.png)
 

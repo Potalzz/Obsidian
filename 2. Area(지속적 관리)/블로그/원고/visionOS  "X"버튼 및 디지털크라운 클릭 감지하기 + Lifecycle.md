@@ -3,12 +3,12 @@
 Glayer 프로젝트를 진행하면서 Immersive Space상태에서 2D Window를 "X"버튼을 클릭하여 닫으면 Immersive Space만 존재하고 아무 동작도 할 수 없는 문제가 발생했다.
 
 
-![[Pasted image 20251225063410.png]]
+![[../../../assets/images/Pasted image 20251225063410.png]]
 (요게 바로 x 버튼)
 
 `onDisappear`를 통해서 window가 닫히는 순간을 감지하려 했지만 아무 동작도 하지 않았고, 닫기 버튼을 직접 트리거할 수 있는 API는 존재하지 않았다.
 
-![[Pasted image 20251224181834.png]]
+![[../../../assets/images/Pasted image 20251224181834.png]]
 
 때문에, window가 닫힐 때 실제로 어떤 변화가 일어나는지 visionOS의 Lifecycle 관점에서 알아보고 방법을 공유하고자 한다.
 
@@ -111,7 +111,7 @@ SwiftUI는 ‘뷰가 사라졌다(onDisappear)’고 판단하지 않는다.
 
 공식 문서에서는 scenePhase 감지에 대한 예제를 아래와 같이 사용하고 있다.
 
-![[Pasted image 20251225052133.png]]
+![[../../../assets/images/Pasted image 20251225052133.png]]
 
 scenePhase만 감지하기 위해서는 위와 같이 간단하게 scenePhase의 변화를 감지하고 실행하고자 하는 코드를 추가하면 된다.
 
@@ -121,7 +121,7 @@ scenePhase만 감지하기 위해서는 위와 같이 간단하게 scenePhase의
 
 # + 해당 방식으로 디지털 크라운 클릭도 감지할 수 있다
 
-![[Pasted image 20251225062921.png]]
+![[../../../assets/images/Pasted image 20251225062921.png]]
 visionOS에서는 **디지털 크라운 클릭** 시,
 **Immersive 상태인지 여부에 따라 전혀 다른 동작이 발생한다.**
 

@@ -73,7 +73,7 @@ $$\text{Internal Logic: } \sqrt{(x-c_x)^2 + (y-c_y)^2 + (z-c_z)^2}$$
     
 - **World Space:** 씬 전체에서 동일한 기준점을 사용하여, 여러 오브젝트에 같은 스캔 효과를 동시에 적용 가능하며 회전/이동 시에도 스캔 방향이 일정함.
     
-![[Pasted image 20260209172153.png]]
+![[../../../assets/images/Pasted image 20260209172153.png]]
 ### B. Smoothstep Function (부드러운 경계)
 
 **수학 공식:**
@@ -128,7 +128,7 @@ $$\text{frac}(x) = x - \text{floor}(x) \quad (\text{소수 부분 추출, } 0 \s
 
 ### D. Coordinate Systems (좌표계 이해)
 
-![[Pasted image 20260209172214.png]]
+![[../../../assets/images/Pasted image 20260209172214.png]]
 
 **변환 과정:**
 

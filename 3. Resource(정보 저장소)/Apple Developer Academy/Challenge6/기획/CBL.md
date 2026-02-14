@@ -30,7 +30,7 @@
 - XR환경에서는 무한한 공간을 제공하고, 상호작용도 가능하기에 현실에서 할 수 없는 경험을 제공할 수 있다.
 
 **왜 이 문제가 중요한가 ?**
-- ![[Pasted image 20250908220544.png]]
+- ![[../../../../assets/images/Pasted image 20250908220544.png]]
 
 
 ## 2. Investigate (탐구) - 현상 분석 및 지식 습득
@@ -44,20 +44,20 @@
 >**핵심 검증 질문 (Need-to-Know-List)**
 >챌린지를 해결하기 위해 알아야 할 모든 질문을 브레인스토밍
 
-![[Pasted image 20250908221228.png]]
+![[../../../../assets/images/Pasted image 20250908221228.png]]
 
 
 ### 2.2 Guiding Activities & Resources (탐구 활동 및 자원 조사)
 >**데이터 수집 (Data Collention)**
 >GQ에 대한 답을 찾기 위한 구체적인 계획을 세우고 실행.
 
-![[Pasted image 20250908221329.png]]
+![[../../../../assets/images/Pasted image 20250908221329.png]]
 
 ### 2.3 Synthesis (핵심)
 >**인사이트 도출 (Finding the "Root Cause")**
 >수집된 데이터를 분석하여 핵심 인사이트(사업의 기회) 발견
 
-![[Pasted image 20250908221412.png]]
+![[../../../../assets/images/Pasted image 20250908221412.png]]
 
 
 ### Investigate 단계 검증

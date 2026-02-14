@@ -1,6 +1,62 @@
 {
   "recentFiles": [
     {
+      "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
+    },
+    {
+      "basename": "수업에 필요한 자료",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/수업에 필요한 자료.md"
+    },
+    {
+      "basename": "Lecture 01 - Introduction to Computer Graphics",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md"
+    },
+    {
+      "basename": "수업에 필요한 자료",
+      "path": "2. Area(지속적 관리)/학습/CMU Computer Graphics/수업에 필요한 자료.md"
+    },
+    {
+      "basename": "HLSL Shader",
+      "path": "HLSL Shader.md"
+    },
+    {
+      "basename": "무제 1",
+      "path": "무제 1.base"
+    },
+    {
+      "basename": "무제 2",
+      "path": "무제 2.base"
+    },
+    {
+      "basename": "무제",
+      "path": "무제.base"
+    },
+    {
+      "basename": "그림_가로 1",
+      "path": "assets/images/그림_가로 1.png"
+    },
+    {
+      "basename": "6F685F40-7C16-438E-A016-CACB21EC2574_1_102_a",
+      "path": "assets/images/6F685F40-7C16-438E-A016-CACB21EC2574_1_102_a.jpeg"
+    },
+    {
+      "basename": "20230128_150508",
+      "path": "assets/images/20230128_150508.jpg"
+    },
+    {
+      "basename": "ACBD98A5-E093-446D-A798-D7EEE9682D4D_1_102_a",
+      "path": "assets/images/ACBD98A5-E093-446D-A798-D7EEE9682D4D_1_102_a.jpeg"
+    },
+    {
+      "basename": "E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c",
+      "path": "assets/images/E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c.jpeg"
+    },
+    {
+      "basename": "IMG_3881",
+      "path": "assets/images/IMG_3881.jpg"
+    },
+    {
       "basename": "Lecture 04 - Drawing a Triangle",
       "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 04 - Drawing a Triangle.md"
     },
@@ -57,20 +113,16 @@
       "path": "2. Area(지속적 관리)/블로그/원고/그래픽스에서 선형대수를 선호하는 이유가 뭘까 ?.md"
     },
     {
-      "basename": "HLSL Shader",
-      "path": "HLSL Shader.md"
-    },
-    {
       "basename": "Step 3 - 투시 및 프레넬 효과",
       "path": "4. Archive(자료 보관소)/기타/Escaple Shader/Step 3 - 투시 및 프레넬 효과.md"
     },
     {
       "basename": "Pasted image 20260209172214",
-      "path": "Pasted image 20260209172214.png"
+      "path": "assets/images/Pasted image 20260209172214.png"
     },
     {
       "basename": "Pasted image 20260209172153",
-      "path": "Pasted image 20260209172153.png"
+      "path": "assets/images/Pasted image 20260209172153.png"
     },
     {
       "basename": "방탈출 앱 개발",
@@ -83,10 +135,6 @@
     {
       "basename": "Claude Code",
       "path": "2. Area(지속적 관리)/학습/Claude Code.md"
-    },
-    {
-      "basename": "Lecture 02 - Math Review Part I - Linear Algebra",
-      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md"
     },
     {
       "basename": "Lecture 03 - Math Review Part Il - Vector Calculus",
@@ -110,95 +158,47 @@
     },
     {
       "basename": "Pasted image 20250830162853",
-      "path": "Pasted image 20250830162853.png"
-    },
-    {
-      "basename": "IMG_3881",
-      "path": "IMG_3881.jpg"
+      "path": "assets/images/Pasted image 20250830162853.png"
     },
     {
       "basename": "Pasted image 20250830162521",
-      "path": "Pasted image 20250830162521.png"
+      "path": "assets/images/Pasted image 20250830162521.png"
     },
     {
       "basename": "Pasted image 20250829091420",
-      "path": "Pasted image 20250829091420.png"
+      "path": "assets/images/Pasted image 20250829091420.png"
     },
     {
       "basename": "Pasted image 20250828204813",
-      "path": "Pasted image 20250828204813.png"
-    },
-    {
-      "basename": "E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c",
-      "path": "E17C0B49-58DA-4DBF-9ED8-0B1DD9E293A3_4_5005_c.jpeg"
-    },
-    {
-      "basename": "ACBD98A5-E093-446D-A798-D7EEE9682D4D_1_102_a",
-      "path": "ACBD98A5-E093-446D-A798-D7EEE9682D4D_1_102_a.jpeg"
+      "path": "assets/images/Pasted image 20250828204813.png"
     },
     {
       "basename": "C72F0752-3A97-481E-94B0-713EDE7C259C_1_102_a",
-      "path": "C72F0752-3A97-481E-94B0-713EDE7C259C_1_102_a.jpeg"
-    },
-    {
-      "basename": "그림_가로 1",
-      "path": "그림_가로 1.png"
-    },
-    {
-      "basename": "6F685F40-7C16-438E-A016-CACB21EC2574_1_102_a",
-      "path": "6F685F40-7C16-438E-A016-CACB21EC2574_1_102_a.jpeg"
-    },
-    {
-      "basename": "20230128_150508",
-      "path": "20230128_150508.jpg"
-    },
-    {
-      "basename": "ㅜㅐ샤ㅐ",
-      "path": "ㅜㅐ샤ㅐ.md"
-    },
-    {
-      "basename": "무제",
-      "path": "무제.canvas"
-    },
-    {
-      "basename": "무제",
-      "path": "무제.base"
-    },
-    {
-      "basename": "무제",
-      "path": "무제.md"
-    },
-    {
-      "basename": "무제 1",
-      "path": "무제 1.base"
-    },
-    {
-      "basename": "무제 2",
-      "path": "무제 2.base"
+      "path": "assets/images/C72F0752-3A97-481E-94B0-713EDE7C259C_1_102_a.jpeg"
     },
     {
       "basename": "Pasted image 20260131175729",
-      "path": "Pasted image 20260131175729.png"
+      "path": "assets/images/Pasted image 20260131175729.png"
     },
     {
       "basename": "Pasted image 20260131190117",
-      "path": "Pasted image 20260131190117.png"
+      "path": "assets/images/Pasted image 20260131190117.png"
     },
     {
       "basename": "Pasted image 20260131195756",
-      "path": "Pasted image 20260131195756.png"
+      "path": "assets/images/Pasted image 20260131195756.png"
     },
     {
       "basename": "Pasted image 20260201184653",
-      "path": "Pasted image 20260201184653.png"
+      "path": "assets/images/Pasted image 20260201184653.png"
     },
     {
       "basename": "Pasted image 20250830185611",
-      "path": "Pasted image 20250830185611.png"
+      "path": "assets/images/Pasted image 20250830185611.png"
     },
     {
       "basename": "Pasted image 20260131190149",
-      "path": "Pasted image 20260131190149.png"
+      "path": "assets/images/Pasted image 20260131190149.png"
     }
   ],
   "omittedPaths": [],

@@ -11,7 +11,7 @@
 
 텍스처 없이 순수 수학 함수만으로 렌더링되는 실시간 X-Ray 스캔 이펙트입니다. `distance()`, `smoothstep()`, `frac()`, `pow()` 등 HLSL 내장 함수의 조합으로 스캔 웨이브, 프로시저럴 그리드, 프레넬 림 라이팅을 구현하며, 마우스 클릭 지점에서 동심원이 확장되는 인터랙티브 시스템을 포함합니다.
 
-![[Pasted image 20260210045803.png]]
+![[../../../assets/images/Pasted image 20260210045803.png]]
 
 | 지표 | 수치 |
 |------|------|
@@ -134,7 +134,7 @@ v2f vert (appdata v)
 }
 ```
 
-![[Pasted image 20260210045824.png]]
+![[../../../assets/images/Pasted image 20260210045824.png]]
 
 **설계 의도**: 모든 좌표 변환을 버텍스 셰이더에서 수행하고, 결과를 보간기(Interpolator)를 통해 프래그먼트로 전달합니다. 프래그먼트에서 행렬 곱셈을 하면 픽셀당 4x4 MUL이 실행되므로 비용이 급증합니다. 버텍스에서 한 번만 계산하고 하드웨어가 자동으로 보간하는 것이 효율적입니다.
 
@@ -155,7 +155,7 @@ float wave2 = smoothstep(outerEdge, _ScanRadius, distanceFromCenter);  // 1→0
 float scanWave = wave1 * wave2;  // 중앙에서만 1.0
 ```
 
-![[Pasted image 20260210045835.png]]
+![[../../../assets/images/Pasted image 20260210045835.png]]
 
 **수학적 분석**: `distance()` 함수는 내부적으로 `sqrt(dot(a-b, a-b))`를 수행합니다. `sqrt`는 SFU(Special Function Unit)에서 처리되며 1사이클에 완료됩니다. 두 개의 `smoothstep`은 각각 Hermite 다항식 `3t² - 2t³`을 계산하는데, 이는 FMAD(Fused Multiply-Add) 명령어 체인으로 변환되어 처리량(throughput)이 높습니다.
 
@@ -180,7 +180,7 @@ float NdotV = saturate(dot(normalDir, viewDir));
 float fresnel = pow(1.0 - NdotV, _FresnelPower) * _FresnelIntensity;
 ```
 
-![[Pasted image 20260210045846.png]]
+![[../../../assets/images/Pasted image 20260210045846.png]]
 
 **물리적 원리**: `dot(N, V)`는 표면 노멀과 시선 벡터 사이 각도의 코사인입니다. 카메라를 정면으로 향하는 표면에서는 1.0(프레넬 기여 0), 가장자리(grazing angle)에서는 0에 가까워져(프레넬 기여 최대) 림 글로우가 발생합니다. 이는 Schlick 근사의 단순화된 형태로, 실제 물리 기반 렌더링에서 사용되는 Fresnel-Schlick 공식 `F0 + (1-F0)(1-cosθ)^5`와 같은 원리입니다.
 

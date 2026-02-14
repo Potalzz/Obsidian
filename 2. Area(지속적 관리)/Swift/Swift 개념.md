@@ -1603,10 +1603,10 @@ ARKit은 데이터 보안이 철저하게 구성되어있다.
 
 공간에 직접 배치할 수도 있지만, `WorldAnchors`로 앵커링한 것과 그렇지 않은 것에는 차이점이 존재한다.
 
-![[Pasted image 20250830162521.png]]
+![[../../assets/images/Pasted image 20250830162521.png]]
 가상 콘텐츠를 띄우면 똑같이 고정 된 것 같아 보이지만
 
-![[Pasted image 20250830162605.png]]
+![[../../assets/images/Pasted image 20250830162605.png]]
 앱의 원점 위치가 변경되면, 앵커링 되지 않은 오브젝트는 앱의 원점에 맞춰서 이동한다.
 
 **앵커링 한 오브젝트**
@@ -1615,7 +1615,7 @@ ARKit은 데이터 보안이 철저하게 구성되어있다.
 **앵커링 하지 않은 오브젝트**
 앱의 원점 기준에서 **상대적**으로 위치
 
-![[Pasted image 20250830162853.png]]
+![[../../assets/images/Pasted image 20250830162853.png]]
 앵커링 예시 [이미지 출처](https://developer.apple.com/videos/)
 
 
@@ -1854,7 +1854,7 @@ RealityView { content in
 
 다시 공식 문서로 돌아가 `RealityView`의 형태를 살펴보자.
 
-![[Pasted image 20251023045940.png]]
+![[../../assets/images/Pasted image 20251023045940.png]]
 `RealityView`의 선언을 쉽게 풀어쓰면 다음과 같다.
 
 **`RealityView`는 메인 스레드에서 동작하고 동시성에 안전한(`@MainActor @preconcurrency`) 구조체(struct)이다.**
@@ -1863,12 +1863,12 @@ RealityView { content in
 
 `<Content>` 제네릭 타입은 **직접 명시하는 것이 아니라**, 각 이니셜라이저의 `where` 절에서 **자동으로 결정**되므로, 이니셜라이저가 있는 부분을 살펴보자.
 
-![[Pasted image 20251023051409.png]]
+![[../../assets/images/Pasted image 20251023051409.png]]
 [`RealityView`에는 다양한 종류의 초기화 함수가 존재하는 것을 볼 수 있다.]
 
 다양한 초기화 함수 중에서 가장 많이 쓰이는 `make`, `update` 형태를 살펴보자.
 
-![[Pasted image 20251023051524.png]]
+![[../../assets/images/Pasted image 20251023051524.png]]
 >선택적 업데이트 클로저를 통해 visionOS에 대한 새로운 RealityView를 만든다.
 
 이 `init`함수는 `make`와 `update`라는 두 개의 함수를 받고, 두 파라미터의 타입은 모두 **클로저(함수**)이다.
@@ -1878,13 +1878,13 @@ RealityView { content in
 
 `RealityViewContent`에 대해 더욱 자세하게 알아보기 위해 선언부로 이동해보자.
 
-![[Pasted image 20251023064612.png]]
+![[../../assets/images/Pasted image 20251023064612.png]]
 "이 유형은 사용자가 직접 만들지 않고, `RealityView`가 값을 자동으로 생성합니다."라고 주석이 쓰여있고,
 `RealityView`가 값을 어떻게 생성하는지는 내부적으로 구현 되어있기 떄문에 코드를 확인할 수는 없다.
 
 
 
-![[Pasted image 20251023064107.png]]
+![[../../assets/images/Pasted image 20251023064107.png]]
 
 다만, `RealityViewContent`는 `RealityViewContentProtocol`을 준수하고 있어 `content.add(entity)`로 Entity를 추가할 수 있고 추가된 Entity는 `content.entities` 컬렉션에 담긴다.
 
@@ -1893,7 +1893,7 @@ RealityView { content in
 
 이제 **Content**가 무엇인지 알았으니 나머지 이니셜라이저의 파라미터(make, update)를 살펴보자
 
-![[Pasted image 20251023051524.png]]
+![[../../assets/images/Pasted image 20251023051524.png]]
 
 각 파라미터에 대한 설명은 다음과 같다.
 
@@ -1986,10 +1986,10 @@ struct ContentView: View {
 
 
 **Attachment**
-![[Pasted image 20251024044646.png]]
+![[../../assets/images/Pasted image 20251024044646.png]]
 `(make, update, attachments)`이니셜라이저를 공식문서에서 보면, attachments는 `AttachmentContent`타입을 반환하는 것을 볼 수 있다.
 
-![[Pasted image 20251024044519.png]]
+![[../../assets/images/Pasted image 20251024044519.png]]
 attachments 클로저에 선언된 Entity들은 `AttachmentContent`타입으로 반환되고, 반환된 것들을 **make**클로저에서 받아와서 사용할 수 있다.
 
 
@@ -2078,7 +2078,7 @@ attachments 클로저에 선언된 Entity들은 `AttachmentContent`타입으로 
 ### Domain
 도메인은 엔티티와 Usecase를 포함하는 영역.
 
-![[Pasted image 20251101183447.png]]
+![[../../assets/images/Pasted image 20251101183447.png]]
 
 
 

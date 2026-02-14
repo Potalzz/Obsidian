@@ -31,3 +31,14 @@ Rasterization, Ray tracing
 - 입력: 어떤 이미지를 그리고 싶은가 ?
 - 단계: 입력-> 출력으로부터의 변환의 과정
 - 출력: 최종 결과물
+
+
+## Raterization Pipeline
+
+현대의 실시간 이미지 생성을 래스터화를 기반으로 한다.
+- Input: 3D 프리미티브(사실상 모두 삼각형)
+	- 추가 속성(ex. Color)을 가질 수도 있음
+- Output: 비트맵 이미지(깊이, 알파 등 포함 가능)
+![[Pasted image 20260214182846.png]]
+
+

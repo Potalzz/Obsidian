@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "Lecture 04 - Drawing a Triangle",
+      "path": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 04 - Drawing a Triangle.md"
+    },
+    {
       "basename": "Technical Artist",
       "path": "1. Project(진행 중인 프로젝트)/Graphics/Technical Artist.md"
     },
@@ -195,10 +199,6 @@
     {
       "basename": "Pasted image 20260131190149",
       "path": "Pasted image 20260131190149.png"
-    },
-    {
-      "basename": "Pasted image 20260131203852",
-      "path": "Pasted image 20260131203852.png"
     }
   ],
   "omittedPaths": [],

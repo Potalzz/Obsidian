@@ -41,5 +41,3 @@ Rasterization, Ray tracing
 - Output: 비트맵 이미지(깊이, 알파 등 포함 가능)
 ![[../../../assets/images/Pasted image 20260214182846.png]]
 
-
-![](../../../assets/images/Pasted%20image%2020260214184551.png)

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
+                "file": "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 04 - Drawing a Triangle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 03 - Math Review Part Il - Vector Calculus"
+              "title": "Lecture 04 - Drawing a Triangle"
             }
           }
         ],
@@ -103,7 +103,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812
+    "width": 253.50247192382812,
+    "collapsed": true
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -221,6 +222,7 @@
   },
   "active": "f8d1a392f5722336",
   "lastOpenFiles": [
+    "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
     "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 04 - Drawing a Triangle.md",
     "1. Project(진행 중인 프로젝트)/Graphics/Technical Artist.md",
     "1. Project(진행 중인 프로젝트)/Graphics/로드맵.md",
@@ -228,7 +230,6 @@
     "2. Area(지속적 관리)/학습/Claude Code.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
-    "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 03 - Math Review Part Il - Vector Calculus.md",
     "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 02 - Math Review Part I - Linear Algebra.md",
     "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/수업에 필요한 자료.md",
     "2. Area(지속적 관리)/학습/CMU Computer Graphics/Lecture 01 - Introduction to Computer Graphics.md",

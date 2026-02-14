@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 253.50247192382812,
-    "collapsed": true
+    "width": 253.50247192382812
   },
   "right": {
     "id": "16a9b7a976caad7b",
@@ -207,6 +206,9 @@
   },
   "active": "5234ac53d407c87f",
   "lastOpenFiles": [
+    "assets/images/Pasted image 20260214184551.png",
+    "assets/images",
+    "assets",
     "Pasted image 20260214182846.png",
     "1. Project(진행 중인 프로젝트)/Graphics/Technical Artist.md",
     "1. Project(진행 중인 프로젝트)/Graphics/CMU Computer Graphics/Lecture 04 - Drawing a Triangle.md",
@@ -248,13 +250,10 @@
     "Pasted image 20260207041530.png",
     "Pasted image 20260207032652.png",
     "Pasted image 20260207032253.png",
-    "Pasted image 20260207031033.png",
     "3. Resource(정보 저장소)/프로그래밍/Ai Tech 딥러닝 공부/선형대수학.canvas",
     "무제.canvas",
     "무제.base",
     "무제 1.base",
-    "무제 2.base",
-    "1. Project(진행 중인 프로젝트)/창업/인터뷰",
     "무제 2.canvas",
     "무제 1.canvas",
     "4. Archive/AI 공부/Ai Tech 딥러닝 공부/선형대수학.canvas"

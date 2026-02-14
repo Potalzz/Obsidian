@@ -1,5 +1,8 @@
 {
   "promptDelete": false,
   "alwaysUpdateLinks": true,
-  "spellcheck": false
+  "spellcheck": false,
+  "useMarkdownLinks": true,
+  "attachmentFolderPath": "assets/images",
+  "newLinkFormat": "relative"
 }

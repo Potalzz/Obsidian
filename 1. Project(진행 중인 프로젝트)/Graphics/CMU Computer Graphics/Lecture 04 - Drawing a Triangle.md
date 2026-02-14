@@ -60,3 +60,7 @@ Rasterization, Ray tracing
 
 Why?
 - 모든 것이 삼각형으로 환원되면, 그리기에 매우 최적화된 파이프라인을 만드는 데 집중할 수 있음.
+
+**The Rasterization Pipeline**
+![](../../../assets/images/Pasted%20image%2020260214204113.png)
+
